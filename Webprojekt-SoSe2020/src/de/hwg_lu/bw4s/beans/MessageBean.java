@@ -18,7 +18,7 @@ public class MessageBean {
 	}
 	public void setLoginSuccessful() {
 		this.infoMsg   = "Anmeldung erfolgreich";
-		this.actionMsg = "Bitte wählen Sie eine Anwendung";
+		this.actionMsg = "Bitte wï¿½hlen Sie eine Anwendung";
 	}
 	public void setLoginFailed() {
 		this.infoMsg   = "Nickname oder Passwort ist falsch";
@@ -45,12 +45,12 @@ public class MessageBean {
 		this.actionMsg = "Bitte wenden Sie sich an Ihren IT-Support";
 	}
 	public void setRegistrationWelcome() {
-		this.infoMsg   = "Willkommen zur BW4S-Registrierung";
+		this.infoMsg   = "Willkommen zur Registrierung";
 		this.actionMsg = "Bitte registrieren Sie sich";
 	}
 
 	public void setGeneralWelcome() {
-		this.infoMsg   = "Willkommen am BW4S-Portal";
+		this.infoMsg   = "Willkommen am Wirschaftsinformatik-Portal";
 		this.actionMsg = "Bitte melden Sie sich an";
 	}
 	public String getInfoMsg() {

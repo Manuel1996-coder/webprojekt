@@ -9,7 +9,7 @@ public class GUIBean {
 		html +="<table>\n";
 		html +="<tr>\n";
 		html +="	<td>\n";
-		html +="		<h4>BW4S-Portal</h4>\n";
+		html +="		<h4>Wirtschaftsinformatik-Portal</h4>\n";
 		html +="	</td>\n";
 		html +="	<td>\n";
 		html +="		<img src='../img/HWGLU_logo.png' width='150' />\n";	
