@@ -25,7 +25,7 @@
   
   Grobe Vorstellung der PortalView:
   -
-  Menuleiste:
+  Menueleiste:
   1. Semester   2. Semester   3. Semester   4. Semester   5. Semester
   
   Topdown (Beispiel: 1. Semester):
