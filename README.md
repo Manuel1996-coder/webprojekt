@@ -35,7 +35,7 @@
   - Buchführung & Kostenrechnung
   - Recht
   - Marketing
-  - Einführung in die Wirtschaftinformatik
+  - Einführung in die Wirtschaftsinformatik
   - Programmieren 1
 
   
