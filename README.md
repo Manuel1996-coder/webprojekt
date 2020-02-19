@@ -27,12 +27,12 @@
   1. Semester  2. Semester  3. Semester  4. Semester  5. Semester
   
   Topdown (Beispiel: 1. Semester):
-  ABWL & Buchführung
-  Programmieren 1
-  Wirtschaftsmathematik
-  Einführung in die Wirtschaftinformatik
-  Soft Skills 1 & 2
-  Englisch 1
+  - ABWL & Buchführung
+  - Programmieren 1
+  - Wirtschaftsmathematik
+  - Einführung in die Wirtschaftinformatik
+  - Soft Skills 1 & 2
+  - Englisch 1
   
   
   
