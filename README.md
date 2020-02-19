@@ -9,22 +9,24 @@
   - Alle Module (Namen aller Module)
  --------------------------------------------------
  Grobe Vorstellung der RegView:
+ -
  
   Registrieren: 
-  Name
-  Matrikelnummer
-  Email
-  Passwort
+  - Name
+  - Matrikelnummer
+  - Email
+  - Passwort
   
   Grobe Vorstellung der LoginView:
- 
+ -
   Anmelden:
-  Matrikelnummer
-  Passowort
+  - Matrikelnummer
+  - Passowort
   
   Grobe Vorstellung der PortalView:
+  -
   Menuleiste:
-  1. Semester  2. Semester  3. Semester  4. Semester  5. Semester
+  1. Semester   2. Semester   3. Semester   4. Semester   5. Semester
   
   Topdown (Beispiel: 1. Semester):
   - ABWL & Buchführung
