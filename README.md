@@ -1,6 +1,6 @@
 # Agenda Webprojekt_SS_2020_Roeckle:
 
-[x]RegAppl, RegView & RegBean erstellen
+[ ] RegAppl, RegView & RegBean erstellen
 2. ~~LoginAppl, LoginView & LogBean erstellen~~
 3. ~~Datenbank einbinden (JDBC-Folder einziehen in den Projekt),~~ Benutzerdaten anpassen !!!!!!
 
