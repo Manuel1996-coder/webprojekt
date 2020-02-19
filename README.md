@@ -7,8 +7,8 @@
 3. Benutzerdaten im JDBC-Ornder anpassen !!!!!!
 4. LoginView & RegView mit css einbinden (Vorlage erstelllen)
 5. Design der HomepageView erstellen, Ideen sammeln, wie könnte es aussehen
-  - Suchleiste
-  - Alle Module (Namen aller Module)
+  > Suchleiste
+  > Alle Module (Namen aller Module)
  --------------------------------------------------
  Grobe Vorstellung der RegView:
  -
