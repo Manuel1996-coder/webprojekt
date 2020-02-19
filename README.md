@@ -28,7 +28,7 @@
   Menuleiste:
   1. Semester   2. Semester   3. Semester   4. Semester   5. Semester
   
-  Topdown (Beispiel: 1. Semester):
+  Topdown (Beispiel: 1. Semester): nimm die neue PO 2019!
   - ABWL & Buchführung
   - Programmieren 1
   - Wirtschaftsmathematik
