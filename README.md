@@ -38,7 +38,7 @@
   - Einführung in die Wirtschaftsinformatik
   - Programmieren 1
 
-  
+ 
   
   
   
