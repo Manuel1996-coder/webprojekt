@@ -21,7 +21,7 @@ public class MessageBean {
 		this.actionMsg = "Bitte w�hlen Sie eine Anwendung";
 	}
 	public void setLoginFailed() {
-		this.infoMsg   = "Nickname oder Passwort ist falsch";
+		this.infoMsg   = "Matrikelnummer oder Passwort ist falsch";
 		this.actionMsg = "Bitte versuchen Sie es noch einmal";
 	}
 	public void setRegistrationSuccessful() {
@@ -33,11 +33,11 @@ public class MessageBean {
 		this.actionMsg = "Bitte gehen Sie jetzt zur Anmeldung";
 	}
 	public void setAccountAlreadyExists() {
-		this.infoMsg   = "Der Nickname existiert bereits";
+		this.infoMsg   = "Der Benutzer existiert bereits";
 		this.actionMsg = "Bitte verwenden Sie einen anderen Nickname";
 	}
 	public void setAccountAlreadyExists(String userid) {
-		this.infoMsg   = "Der Nickname " + userid + " existiert bereits";
+		this.infoMsg   = "Die Matrikelnummer " + userid + " existiert bereits";
 		this.actionMsg = "Bitte verwenden Sie einen anderen Nickname";
 	}
 	public void setAnyError() {

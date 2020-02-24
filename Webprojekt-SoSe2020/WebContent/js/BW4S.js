@@ -58,7 +58,7 @@ function checkUsername(textInput){
 function checkUserid(textInput){
 	var myMsg = "";
 	if (textInput == ""){
-		myMsg = "Der Nickname darf nicht leer sein";
+		myMsg = "Die Matrikelnummer darf nicht leer sein";
 	}else{
 		myMsg = "";
 	}
