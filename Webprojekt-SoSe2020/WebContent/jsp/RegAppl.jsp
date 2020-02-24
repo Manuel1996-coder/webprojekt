@@ -30,7 +30,7 @@ if (mb == null){
 	session.setAttribute("mb", mb);
 }
 
-String userid = request.getParameter("userid");
+String matrkid = request.getParameter("matrkid");
 String password = request.getParameter("password");
 String username = request.getParameter("username");
 String email = request.getParameter("email");
@@ -47,7 +47,7 @@ if (zumLogin.equals("zum Login")){
 }else if (register.equals("Registrieren")){
 	System.out.print("registrieren wurde gedrückt" + "<br>");
 //	AccountBean ab = new AccountBean();
-	ab.setUserid(userid);
+	ab.setMatrkid(matrkid);
 	ab.setPassword(password);
 	ab.setUsername(username);
 	ab.setEmail(email);
@@ -60,11 +60,11 @@ if (zumLogin.equals("zum Login")){
 		boolean accountInserted = ab.insertIfNotExists();
 		if (accountInserted){
 //			mb.setRegistrationSuccessful();
-			mb.setRegistrationSuccessful(ab.getUserid());
+			mb.setRegistrationSuccessful(ab.getMatrkid());
 			response.sendRedirect("./RegView.jsp");
 		}else{
 //			mb.setAccountAlreadyExists();
-			mb.setAccountAlreadyExists(ab.getUserid());
+			mb.setAccountAlreadyExists(ab.getMatrkid());
 			response.sendRedirect("./RegView.jsp");		
 		}
 	}catch(SQLException se){
@@ -84,7 +84,7 @@ if (zumLogin.equals("zum Login")){
 
 
 
-out.print("JSP-out: userid: " + userid + "<br>");
+out.print("JSP-out: userid: " + matrkid + "<br>");
 out.print("JSP-out: password: " + password + "<br>");
 out.print("JSP-out: username: " + username + "<br>");
 out.print("JSP-out: email: " + email + "<br>");
@@ -94,7 +94,7 @@ out.print("JSP-out: register: " + register + "<br>");
 
 
 
-System.out.println("System-out: userid: " + userid);
+System.out.println("System-out: userid: " + matrkid);
 
 
 

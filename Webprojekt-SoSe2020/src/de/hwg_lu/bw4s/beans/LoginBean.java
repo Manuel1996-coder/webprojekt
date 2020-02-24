@@ -9,23 +9,23 @@ import de.hwg_lu.bw.jdbc.PostgreSQLAccess;
 
 public class LoginBean {
 	
-	String userid;
+	String matrkid;
 	String password;
 	boolean isLoggedIn;
 	Connection dbConn;
 	
 	public LoginBean() throws SQLException {
-		this.userid = "";
+		this.matrkid = "";
 		this.password = "";
 		this.isLoggedIn = false;
 		this.dbConn = new PostgreSQLAccess().getConnection();
 	}
 	
 	public boolean checkUseridPassword() throws SQLException{
-		String sql = "SELECT userid FROM account WHERE userid = ? AND password = ?";
+		String sql = "SELECT matrkid FROM benutzer WHERE matrkid = ? AND password = ?";
 		System.out.println(sql);
 		PreparedStatement prep = dbConn.prepareStatement(sql);
-		prep.setString(1, this.userid);
+		prep.setString(1, this.matrkid);
 		prep.setString(2, this.password);
 		ResultSet dbRes = prep.executeQuery();
 		return dbRes.next();
@@ -38,12 +38,15 @@ public class LoginBean {
 	public void setLoggedIn(boolean isLoggedIn) {
 		this.isLoggedIn = isLoggedIn;
 	}
-	public String getUserid() {
-		return userid;
+	
+	public String getMatrkid() {
+		return matrkid;
 	}
-	public void setUserid(String userid) {
-		this.userid = userid;
+
+	public void setMatrkid(String matrkid) {
+		this.matrkid = matrkid;
 	}
+
 	public String getPassword() {
 		return password;
 	}

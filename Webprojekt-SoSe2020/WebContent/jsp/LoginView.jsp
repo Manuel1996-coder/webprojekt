@@ -34,7 +34,7 @@
   <h1>Login</h1>
   <div class="textbox">
     <i class="fas fa-user"></i>
-    <input type="text" name="userid" placeholder="Username" value='<jsp:getProperty name="lb" property="userid" />' >
+    <input type="text" name="matrkid" placeholder="Matrikelnummer" value='<jsp:getProperty name="lb" property="matrkid" />' >
   </div>
 
   <div class="textbox">

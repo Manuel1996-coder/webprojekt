@@ -11,7 +11,7 @@ import de.hwg_lu.bw.jdbc.PostgreSQLAccess;
 
 public class AccountBean {
 
-	String userid;
+	String matrkid;
 	String password;
 	String active;
 	String admin;
@@ -22,7 +22,7 @@ public class AccountBean {
 	
 	public AccountBean() throws SQLException {
 		super();
-		this.userid   = "";
+		this.matrkid   = "";
 		this.password = "";
 		this.active   = "Y";
 		this.admin    = "N";
@@ -32,13 +32,13 @@ public class AccountBean {
 	}
 
 	public boolean insertIfNotExists() throws SQLException{
-		// Account nur einfügen, wenn er noch nicht existiert
+		// Account nur einfï¿½gen, wenn er noch nicht existiert
 		// return true: insert hat geklappt, Account gab's noch nicht
 		// return false: insert hat nicht geklappt, Account gab's schon
 		this.prepareAttributesForDB();
 		boolean gefunden = this.checkAccountExists();
 		if (gefunden){
-			System.out.println("Account " + this.userid + " existiert bereits");
+			System.out.println("Benutzer " + this.matrkid + " existiert bereits");
 			return false;
 		}else{
 			this.insertNoCheck();
@@ -49,7 +49,7 @@ public class AccountBean {
 	}
 
 	public void prepareAttributesForDB(){
-		if (this.userid.length() > 16) this.userid = this.userid.substring(0,16);
+		if (this.matrkid.length() > 16) this.matrkid = this.matrkid.substring(0,16);
 		if (this.password.length() > 32) this.password = this.password.substring(0,32);
 		if (this.username.length() > 256) this.username = this.username.substring(0,256);
 		if (this.email.length() > 256) this.email = this.email.substring(0,256);
@@ -66,13 +66,13 @@ public class AccountBean {
 	}
 	
 	public boolean checkAccountExists() throws SQLException{
-		// prüfen, ob der Account mit this.userid in der Tabelle account schon existiert
+		// prï¿½fen, ob der Account mit this.userid in der Tabelle account schon existiert
 		// return true, wenn Account existiert
 		// return false, wenn Account nicht existiert
 		String sql = "SELECT FROM account where userid = ?";
 		System.out.println(sql);
 		PreparedStatement prep = dbConn.prepareStatement(sql);
-		prep.setString(1, this.userid);
+		prep.setString(1, this.matrkid);
 		ResultSet dbRes = prep.executeQuery();
 		return dbRes.next();
 //		boolean gefunden = dbRes.next();
@@ -80,13 +80,13 @@ public class AccountBean {
 //		else return false;
 	}
 	public boolean checkAccountExists2() throws SQLException{
-		// prüfen, ob der Account mit this.userid in der Tabelle account schon existiert
+		// prï¿½fen, ob der Account mit this.userid in der Tabelle account schon existiert
 		// return true, wenn Account existiert
 		// return false, wenn Account nicht existiert
-		String sql = "SELECT count(*) FROM account where userid = ?";
+		String sql = "SELECT count(*) FROM benutzer where matrkid = ?";
 		System.out.println(sql);
 		PreparedStatement prep = dbConn.prepareStatement(sql);
-		prep.setString(1, this.userid);
+		prep.setString(1, this.matrkid);
 		ResultSet dbRes = prep.executeQuery();
 		dbRes.next();
 		int anzahl = dbRes.getInt(1);
@@ -94,14 +94,14 @@ public class AccountBean {
 		else return false;
 	}
 	public boolean checkAccountExists3() throws SQLException{
-		// prüfen, ob der Account mit this.userid in der Tabelle account schon existiert
+		// prï¿½fen, ob der Account mit this.userid in der Tabelle account schon existiert
 		// return true, wenn Account existiert
 		// return false, wenn Account nicht existiert
 		String sql = "SELECT * FROM account";
 		System.out.println(sql);
 		ResultSet dbRes = dbConn.createStatement().executeQuery(sql);
 		// ResultSet zeilenweise durchsuchen, ob sie this.userid finden
-		// Viel Spaß
+		// Viel Spaï¿½
 		boolean gefunden = false;
 		while(dbRes.next()){
 			
@@ -116,12 +116,12 @@ public class AccountBean {
 	public void insertNoCheck() throws SQLException{
 		// Datensatz in Tabelle account anlegen
 		// mit den Daten aus den Attributen des Objekts
-		String sql = "insert into account (userid, password, active, admin, username, email) "
+		String sql = "insert into benutzer (matrkid, password, active, admin, username, email) "
 					+ "values (?,?,?,?,?,?)";
 		System.out.println(sql);
 		
 		PreparedStatement prep = dbConn.prepareStatement(sql);
-		prep.setString(1, this.userid);
+		prep.setString(1, this.matrkid);
 		prep.setString(2, this.password);
 		prep.setString(3, this.active);
 		prep.setString(4, this.admin);
@@ -130,7 +130,7 @@ public class AccountBean {
 		
 		prep.executeUpdate();
 		
-		System.out.println("Account " + this.userid + " wurde erfolgreich angelegt");
+		System.out.println("Account " + this.matrkid + " wurde erfolgreich angelegt");
 	}
 	
 	
@@ -141,12 +141,15 @@ public class AccountBean {
 	
 	
 	
-	public String getUserid() {
-		return userid;
+	
+	public String getMatrkid() {
+		return matrkid;
 	}
-	public void setUserid(String userid) {
-		this.userid = userid;
+
+	public void setMatrkid(String matrkid) {
+		this.matrkid = matrkid;
 	}
+
 	public String getPassword() {
 		return password;
 	}

@@ -22,14 +22,14 @@ public String denullify(String s){
 }
 %>
 <%
-String userid   = request.getParameter("userid");
+String matrkid   = request.getParameter("matrkid");
 String password = request.getParameter("password");
 String login    = this.denullify(request.getParameter("login"));
 String zurReg   = this.denullify(request.getParameter("zurReg"));
 String comeFrom = this.denullify(request.getParameter("comeFrom"));
 
 if (login.equals("Anmelden")){
-	lb.setUserid(userid);
+	lb.setMatrkid(matrkid);
 	lb.setPassword(password);
 	try{
 		boolean loginOk = lb.checkUseridPassword();
