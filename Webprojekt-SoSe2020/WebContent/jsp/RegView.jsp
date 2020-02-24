@@ -58,7 +58,7 @@
 	<tr>
 		<td></td>
 		<td>
-			<input type="submit" name="zumLogin" value="zum Login" onclick="setButton(this.value)" />
+			
 			<input type="submit" name="register" value="Registrieren" onclick="setButton(this.value)" />
 		</td>
 	</tr>
