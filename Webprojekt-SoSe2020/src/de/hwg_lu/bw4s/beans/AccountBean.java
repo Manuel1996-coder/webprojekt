@@ -69,7 +69,7 @@ public class AccountBean {
 		// pr�fen, ob der Account mit this.userid in der Tabelle account schon existiert
 		// return true, wenn Account existiert
 		// return false, wenn Account nicht existiert
-		String sql = "SELECT FROM account where userid = ?";
+		String sql = "SELECT FROM benutzer where matrkid = ?";
 		System.out.println(sql);
 		PreparedStatement prep = dbConn.prepareStatement(sql);
 		prep.setString(1, this.matrkid);
@@ -97,7 +97,7 @@ public class AccountBean {
 		// pr�fen, ob der Account mit this.userid in der Tabelle account schon existiert
 		// return true, wenn Account existiert
 		// return false, wenn Account nicht existiert
-		String sql = "SELECT * FROM account";
+		String sql = "SELECT * FROM benutzer";
 		System.out.println(sql);
 		ResultSet dbRes = dbConn.createStatement().executeQuery(sql);
 		// ResultSet zeilenweise durchsuchen, ob sie this.userid finden

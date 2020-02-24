@@ -21,9 +21,9 @@
 <form id="regForm" action="./RegAppl.jsp" method="get" onsubmit="return inputCheck(this)">
 <table>
 	<tr>
-		<td>Matrikelnr.</td>
+		<td>MatrikelNr:</td>
 		<td><input type="text"
-					name="userid"
+					name="matrkid"
 					value='<jsp:getProperty name="ab" property="matrkid" />'
 					onkeyup="checkUserid(this.value)"
 					onchange="checkUserid(this.value)"
