@@ -19,11 +19,11 @@ public class AppInstallAccountTable {
 	public void installAccountTable() throws SQLException{
 		System.out.println("installAccountTable() gestartet");
 //		this.dropAccountTable();		
-//		this.createAccountTable();
-//		this.insertFirstUser();
-//		this.insertSecondUser();
-//		this.insertMoreUsers();
-//		this.insertMoreUsersKonventionell();
+		this.createAccountTable();
+		this.insertFirstUser();
+     	this.insertSecondUser();
+		this.insertMoreUsers();
+		this.insertMoreUsersKonventionell();
 //		this.showAccountData();
 	}
 	
@@ -58,7 +58,7 @@ public class AppInstallAccountTable {
 		System.out.println(sql);
 		Statement myStat = dbConn.createStatement();
 		myStat.executeUpdate(sql);
-		System.out.println("Testuser1 eingefügt");
+		System.out.println("Testuser1 eingefï¿½gt");
 	}
 
 	public void insertSecondUser() throws SQLException{
@@ -74,7 +74,7 @@ public class AppInstallAccountTable {
 		myStat.setString(5, "Testuser 2");
 		myStat.setString(6, "testus2@test.de");
 		myStat.executeUpdate();
-		System.out.println("Testuser2 eingefügt");
+		System.out.println("Testuser2 eingefï¿½gt");
 	}
 
 	public void insertMoreUsers() throws SQLException{
@@ -90,7 +90,7 @@ public class AppInstallAccountTable {
 		myStat.setString(5, "Testuser 3");
 		myStat.setString(6, "testus3@test.de");
 		myStat.executeUpdate();
-		System.out.println("Testuser eingefügt");
+		System.out.println("Testuser eingefï¿½gt");
 		myStat.setString(1, "testuser4");
 		myStat.setString(2, "geheim");
 		myStat.setString(3, "Y");
@@ -98,7 +98,7 @@ public class AppInstallAccountTable {
 		myStat.setString(5, "Testuser 4");
 		myStat.setString(6, "testus4@test.de");
 		myStat.executeUpdate();
-		System.out.println("Testuser eingefügt");
+		System.out.println("Testuser eingefï¿½gt");
 	}
 
 	public void insertMoreUsersKonventionell() throws SQLException{
@@ -110,7 +110,7 @@ public class AppInstallAccountTable {
 		System.out.println(sql);
 		Statement myStat = dbConn.createStatement();
 		myStat.executeUpdate(sql);
-		System.out.println("Testuser 5-6 eingefügt");
+		System.out.println("Testuser 5-6 eingefï¿½gt");
 	}
 	public void showAccountData() throws SQLException{
 		String sql = "SELECT USERID, PASSWORD, ACTIVE, ADMIN, USERNAME, EMAIL " +

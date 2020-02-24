@@ -24,14 +24,14 @@
 	<tr>
 		<td>Nickname:</td>
 		<td><input type="text"
-					name="userid"
+					name="userid" placeholder="Username"
 					value='<jsp:getProperty name="lb" property="userid" />' 
 			/>
 		</td>
 	</tr>
 	<tr>
 		<td>Passwort:</td>
-		<td><input type="password" name="password" value="" /></td>
+		<td><input type="password" name="password" placeholder="Passwort"value="" /></td>
 	</tr>
 	<tr>
 		<td></td>
