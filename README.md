@@ -1,13 +1,5 @@
 # Agenda Webprojekt_SS_2020_Roeckle:
 
-~~RegAppl, RegView & RegBean erstellen~~
-~~LoginAppl, LoginView & LogBean erstellen~~
-~~Datenbank einbinden (JDBC-Folder einziehen in den Projekt),~~ 
-
-3. Benutzerdaten im JDBC-Ornder anpassen !!!!!!
-4. LoginView & RegView mit css einbinden (Vorlage erstelllen)
-5. Design der HomepageView erstellen, Ideen sammeln, wie könnte es aussehen
-
  Grobe Vorstellung der RegView:
  -
  
