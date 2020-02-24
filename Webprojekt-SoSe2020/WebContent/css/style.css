@@ -13,7 +13,7 @@ body {
 	background-position: bottom;
 	
 	
-	font-family: sans-serif;
+	font-family: sans-serif; ;
 	
 }
 .menu-bar
@@ -32,9 +32,9 @@ body {
 
 .menu-bar ul li{
 	
-	width: 130px;
-	margin: 10px;
-	padding: 10px;
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
 }
 
 .menu-bar ul li a{
@@ -87,7 +87,7 @@ display:none;
 	
 	width: 150px;
 	padding: 10px;
-	border-bottom: 1px; dotted #fff;
+	border-bottom: 0.7px dotted #fff;
 	background: transparent;
 	border-radius: 0;
 	text-align: left;
@@ -104,6 +104,9 @@ display:none;
 	
 	color:#FF8C00;
 }
+
+
+
 
 
 

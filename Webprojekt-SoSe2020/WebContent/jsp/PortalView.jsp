@@ -14,6 +14,8 @@
 <link
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 	rel="stylesheet" />
+	
+	
 
 <body>
 	<form action="./PortalAppl.jsp" method="get">
@@ -29,7 +31,7 @@
 					<li><a href="#"><i class="far fa-smile"></i> 1.Semester</a>
 						<div class="sub-menu-1">
 							<ul>
-								<li><a href="#">ABWL</a></li>
+								<li><a href="../jsp/ABWL.jsp">ABWL</a></li>
 								<li><a href="#">Wirtschaftsmathe</a></li>
 								<li><a href="#">Buchführung & Kostenrechnung</a></li>
 								<li><a href="#">Recht</a></li>
@@ -118,45 +120,33 @@
 						</div></li>
 
 					<li><a> <i class="fas fa-sign-out-alt"></i> <input type="submit" name="logout"
-							value="Abmelden"
-							style="background: none; border-width: 0px; color: #fff;" /></a></li>
+							value="Abmelden" 
+							style="background: none; border-width: 0px; color: #fff; " /></a></li>
 
 
 
 				</ul>
 			</div>
-			
-			
-			
-			
-
 			<jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean"
 				scope="session" />
 			<jsp:useBean id="mb" class="de.hwg_lu.bw4s.beans.MessageBean"
 				scope="session" />
 			<jsp:useBean id="gb" class="de.hwg_lu.bw4s.beans.GUIBean"
 				scope="session" />
-
-
-
-
-
-			<%
+				
+				<%
 				if (!lb.isLoggedIn()) {
 					mb.setNotLoggedIn();
 					response.sendRedirect("./PortalAppl.jsp");
 				}
 			%>
 			
-			
-			
-
-
-
-
-
-			
 		</div>
+		
 	</form>
+	
+	
+	 
 </body>
+
 </html>
