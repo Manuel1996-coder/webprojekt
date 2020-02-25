@@ -1,10 +1,10 @@
 # Agenda Webprojekt_SS_2020_Roeckle:
-- DatebankVerbindung vorhanden!
-- Tabelle benutzer angelegt und Daten angepasst
-- NEXTToDo: 
+1. DatebankVerbindung vorhanden!
+2. Tabelle benutzer angelegt und Daten angepasst
+3. NEXTToDo: 
             - ErsteSeite vom Design her anpassen
             - LoginView, RegView Design anpassen
-            - Funktion RegView: Sobald ich mich registriert habe, bin ich auch automatisch angemeldet und gelange ebenfalls zur gleichen              View, wie von Login aus
+            - Funktion RegView: Sobald ich mich registriert habe, bin ich auch automatisch angemeldet und gelange ebenfalls zur gleichen            .  View, wie von Login aus
             - HomeSeite Design anpassen
             - HomeSeite anpassen -> Alle Fächer als eine extra View? oder die aktuelle View aktualisieren? Möglich überhaupt? Recherche
 
