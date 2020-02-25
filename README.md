@@ -1,7 +1,8 @@
 # Agenda Webprojekt_SS_2020_Roeckle:
 - DatebankVerbindung vorhanden!
 - Tabelle benutzer angelegt und Daten angepasst
-- NEXTToDo: -ErsteSeite vom Design her anpassen
+- NEXTToDo: 
+            -ErsteSeite vom Design her anpassen
             -LoginView, RegView Design anpassen
             -Funktion RegView: Sobald ich mich registriert habe, bin ich auch automatisch angemeldet und gelange ebenfalls zur gleichen              View, wie von Login aus
             -HomeSeite Design anpassen
