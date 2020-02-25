@@ -44,10 +44,5 @@ if (!lb.isLoggedIn()){
 }
 
 %>
-
-
-
-
-
 </body>
 </html>
