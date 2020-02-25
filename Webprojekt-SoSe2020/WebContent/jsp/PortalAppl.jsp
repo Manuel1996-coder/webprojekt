@@ -37,7 +37,7 @@ if (!lb.isLoggedIn()){
 	
 }else if(!comeFrom.equals("")){
 	//Message schon gesetzt
-	response.sendRedirect("./PortalView.jsp");
+	response.sendRedirect("./ErsteSeite.jsp");
 }else{
 	mb.setGeneralWelcome();
 	response.sendRedirect("./LoginAppl.jsp");
