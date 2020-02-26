@@ -31,12 +31,10 @@
 					<li><a href="#"><i class="far fa-smile"></i> 1.Semester</a>
 						<div class="sub-menu-1">
 							<ul>
-								<li><a href="../jsp/ABWL.jsp">ABWL</a></li>
-								<li><a href="#">Wirtschaftsmathe</a></li>
-								<li><a href="#">Buchführung & Kostenrechnung</a></li>
-								<li><a href="#">Recht</a></li>
-								<li><a href="#">Marketing</a></li>
-								<li><a href="#">Wirtschaftsinfo</a></li>
+								<li><a href="../jsp/ABWL.jsp">ABWL und Buchführung </a></li>
+								<li><a href="#">Wirtschaftsmathematik</a></li>
+								<li><a href="#">Social Skills</a></li>
+								<li><a href="#">Wirtschaftsinformatik</a></li>
 								<li><a href="#">Prog I</a></li>
 
 							</ul>

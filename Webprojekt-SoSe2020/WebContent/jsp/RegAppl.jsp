@@ -52,7 +52,7 @@
 				if (accountInserted) {
 					//			mb.setRegistrationSuccessful();
 					mb.setRegistrationSuccessful(ab.getMatrkid());
-					response.sendRedirect("./RegView.jsp");
+					response.sendRedirect("./ErsteSeite.jsp");
 				} else {
 					//			mb.setAccountAlreadyExists();
 					mb.setAccountAlreadyExists(ab.getMatrkid());
