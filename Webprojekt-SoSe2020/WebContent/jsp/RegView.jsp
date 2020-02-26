@@ -25,6 +25,8 @@
 
 	<form id="regForm" action="./RegAppl.jsp" method="get"
 		onsubmit="return inputCheck(this)">
+		
+		
 
 		<div class="reg-box">
 
@@ -66,10 +68,13 @@
 
 
 			<input type="submit" class="btn" name="register" value="Registrieren"
+				onclick="setButton(this.value)" id="detail"/>
+			<input type="submit" class="btn" name="zurueck" value="Zurück zum Login"
 				onclick="setButton(this.value)" />
-
+				
 
 		</div>
+		
 	</form>
 </body>
 </html>

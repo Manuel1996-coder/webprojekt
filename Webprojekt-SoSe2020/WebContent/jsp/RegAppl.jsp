@@ -14,16 +14,15 @@
 		class="de.hwg_lu.bw4s.beans.AccountBean" />
 	<jsp:useBean id="mb" scope="session"
 		class="de.hwg_lu.bw4s.beans.MessageBean" />
+	
 
-	<%!
-	public String denullify(String s) {
+	<%!public String denullify(String s) {
 		if (s == null)
 			return "";
 		else
 			return s;
-	}
-	%>
-	
+	}%>
+
 	<%
 		String matrkid = request.getParameter("matrkid");
 		String password = request.getParameter("password");
@@ -31,11 +30,11 @@
 		String email = request.getParameter("email");
 
 		String register = this.denullify(request.getParameter("register"));
-	
+		String zurueck = this.denullify(request.getParameter("zurueck"));
+
 		String comeFrom = this.denullify(request.getParameter("comeFrom"));
 
-		
-	 if (register.equals("Registrieren")) {
+		if (register.equals("Registrieren")) {
 			System.out.print("registrieren wurde gedrückt" + "<br>");
 			//	AccountBean ab = new AccountBean();
 			ab.setMatrkid(matrkid);
@@ -44,6 +43,8 @@
 			ab.setEmail(email);
 			ab.setActive("Y");
 			ab.setAdmin("N");
+
+			
 			//	session.setAttribute("ab", ab);
 			//	ab.insertNoCheck();
 
@@ -52,7 +53,7 @@
 				if (accountInserted) {
 					//			mb.setRegistrationSuccessful();
 					mb.setRegistrationSuccessful(ab.getMatrkid());
-					response.sendRedirect("./ErsteSeite.jsp");
+					response.sendRedirect("./RegView.jsp");
 				} else {
 					//			mb.setAccountAlreadyExists();
 					mb.setAccountAlreadyExists(ab.getMatrkid());
@@ -62,9 +63,13 @@
 				mb.setAnyError();
 				response.sendRedirect("./RegView.jsp");
 			}
+		
 		} else if (!comeFrom.equals("")) {
 			//Message ist schon gesetzt	
 			response.sendRedirect("./RegView.jsp");
+		} else if (zurueck.equals("Zurück zum Login")) {
+			//Message ist schon gesetzt	
+			response.sendRedirect("./LoginAppl.jsp?comeFrom=RegAppl");
 		} else {
 			System.out.print("weder zum Login noch Registrieren wurde gedrückt" + "<br>");
 			//Message
