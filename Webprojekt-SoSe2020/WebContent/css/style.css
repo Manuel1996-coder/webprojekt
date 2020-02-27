@@ -13,7 +13,20 @@ body {
 	background-position: bottom;
 	
 	
-	font-family: sans-serif; ;
+	font-family: sans-serif;
+	
+}
+
+input
+{
+	
+	
+	
+	background: none;
+	border-width: 0px; 
+	color: #fff;
+	font-size: 13px;
+	
 	
 }
 .menu-bar
@@ -32,9 +45,9 @@ body {
 
 .menu-bar ul li{
 	
-	width: 120px;
-	margin: 15px;
-	padding: 15px;
+	width: 130px;
+	margin: 10px;
+	padding: 10px;
 }
 
 .menu-bar ul li a{
@@ -43,10 +56,10 @@ body {
 	
 }
 
-.active, .menu-bar ul li:hover
+ .menu-bar ul li:hover
 {
 	background:#FF8C00;
-	border-radius: 3px;
+	border-radius: 12px;
 	
 }
 
@@ -70,14 +83,14 @@ display:none;
 	display: block;
 	position: absolute;
 	background: #FF4500;
-	margin-top: 15px;
+	margin-top: 10px;
 	margin-left: -15px;
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul 
 {
 	display: block;
-	margin: 10px;
+	margin: 20px;
 	
 	
 }
@@ -85,9 +98,9 @@ display:none;
 .menu-bar ul li:hover .sub-menu-1 ul li
 {
 	
-	width: 150px;
-	padding: 10px;
-	border-bottom: 0.7px dotted #fff;
+	width: 190px;
+	padding: 9px;
+	border-bottom: 0.4px dotted #fff;
 	background: transparent;
 	border-radius: 0;
 	text-align: left;

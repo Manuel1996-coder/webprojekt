@@ -14,8 +14,8 @@
 <link
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 	rel="stylesheet" />
-	
-	
+
+
 
 <body>
 	<form action="./PortalAppl.jsp" method="get">
@@ -27,99 +27,156 @@
 				<ul>
 
 
-					<li class="active"><a href="#"><i class="fas fa-home"></i> Home</a></li>
-					<li><a href="#"><i class="far fa-smile"></i> 1.Semester</a>
+					<li class="active"><i class="fas fa-home"></i> <input
+						type="submit" name="home" value="Home"></li>
+
+
+
+
+					<li><i class="far fa-smile"></i> <input type="submit"
+						name="1semester" value="1.Semester" />
+
+
+
+
 						<div class="sub-menu-1">
 							<ul>
-								<li><a href="../jsp/ABWL.jsp">ABWL und Buchführung </a></li>
-								<li><a href="#">Wirtschaftsmathematik</a></li>
-								<li><a href="#">Social Skills</a></li>
-								<li><a href="#">Wirtschaftsinformatik</a></li>
-								<li><a href="#">Prog I</a></li>
+									<li><input type="submit" name="PMPM"
+									value="ABWL und Buchführung" /></li>
+								<li><input type="submit" name="OR" value="Wirtschaftsmathematik" /></li>
+								<li><input type="submit" name="ufü" value="Social Skills" /></li>
+								<li><input type="submit" name="betriebsrechner"
+									value="Wirtschaftsinformatik" /></li>
+								<li><input type="submit" name="algoDatenbanken"
+									value="Prog I" /></li>
+								
 
 							</ul>
 
 						</div></li>
-					<li><a href="#"><i class="fas fa-baby"></i> 2.Semester</a>
+
+
+					<li><i class="fas fa-baby"></i> <input type="submit"
+						name="2semester" value="2.Semester" />
 
 						<div class="sub-menu-1">
 
 							<ul>
-								<li><a href="#">Investition & Finanzierung</a></li>
-								<li><a href="#">VWL</a></li>
-								<li><a href="#">Statistik</a></li>
-								<li><a href="#">Prog II</a></li>
-								<li><a href="#">Englisch & SoftSkills II</a></li>
-								<li><a href="#">Software Engineering</a></li>
 
-							</ul>
-
-
-						</div></li>
-					<li><a href="#"><i class="fas fa-glass-cheers"></i> 3.Semester</a>
-						<div class="sub-menu-1">
-
-							<ul>
-								<li><a href="#">Projekt-Mgmt & Prozess-Mgmt</a></li>
-								<li><a href="#">Operations Research</a></li>
-								<li><a href="#">Englisch II & Soft Skills II</a></li>
-								<li><a href="#">U-Führung & DL-Mgmt</a></li>
-								<li><a href="#">Betriebssys. & Rechnernetze</a></li>
-								<li><a href="#">Algo/Daten & Datenbanken </a></li>
-
-							</ul>
-
-
-						</div></li>
-					<li><a href="#"><i class="fas fa-university"></i> 4.Semester</a>
-
-						<div class="sub-menu-1">
-
-							<ul>
-								<li><a href="#">Wahlfach</a></li>
-								<li><a href="#">Data Science</a></li>
-								<li><a href="#">WebAnwendungen</a></li>
-								<li><a href="#">Seminar</a></li>
-								<li><a href="#">Englisch III & Soft Skills III</a></li>
-							</ul>
-
-
-						</div></li>
-					<li><a href="#"><i class="fas fa-graduation-cap"></i> 5.Semester</a>
-
-						<div class="sub-menu-1">
-
-							<ul>
-								<li><a href="#">Info-Sicher & Info-Mgmt</a></li>
-								<li><a href="#">Digital Business</a></li>
-								<li><a href="#">Praktikum Anwendungs.</a></li>
-								<li><a href="#">Business Intelligence</a></li>
-								<li><a href="#">ERP-Sys & SCM-Sys</a></li>
-								<li><a href="#">Eng. f. IT</a></li>
+								<li><input type="submit" name="PMPM"
+									value="Investition & Finanzierung" /></li>
+								<li><input type="submit" name="OR" value="VWL" /></li>
+								<li><input type="submit" name="ufü" value="Statistik" /></li>
+								<li><input type="submit" name="betriebsrechner"
+									value="Prog II" /></li>
+								<li><input type="submit" name="algoDatenbanken"
+									value="Englisch & SoftSkills II" /></li>
+								<li><input type="submit" name="software"
+									value="Software Engineering" /></li>
 
 							</ul>
 
 
 						</div></li>
-					<li><a href="#"><i class="fas fa-user"></i> Mein Profil</a>
+					<li><i class="fas fa-glass-cheers"></i> <input type="submit"
+						name="3semester" value="3.Semester" />
 
 						<div class="sub-menu-1">
 
+
+
 							<ul>
-								<li><a href="#">628761</a></li>
-								<li><a href="#">Profil bearbeiten</a></li>
-								<li><a href="#">Hilfe/Support</a></li>
 
 
+								<li><input type="submit" name="PMPM"
+									value="Projekt-Mgmt & Prozess-Mgmt" /></li>
+								<li><input type="submit" name="OR"
+									value="Operations Research" /></li>
+								<li><input type="submit" name="ufü"
+									value="U-Führung & DL-Mgmt" /></li>
+								<li><input type="submit" name="betriebsrechner"
+									value="Betriebssys. & Rechnernetze" /></li>
+								<li><input type="submit" name="algoDatenbanken"
+									value="Algo/Daten & Datenbanken" /></li>
 
 							</ul>
 
 
 						</div></li>
 
-					<li><a> <i class="fas fa-sign-out-alt"></i> <input type="submit" name="logout"
-							value="Abmelden" 
-							style="background: none; border-width: 0px; color: #fff; " /></a></li>
+
+					<li><i class="fas fa-university"></i> <input type="submit"
+						name="4semester" value="4.Semester" />
+
+						<div class="sub-menu-1">
+
+							<ul>
+
+								<li><input type="submit" name="wahlfach" value="Wahlfach" /></li>
+								<li><input type="submit" name="dataScience"
+									value="Data Science" /></li>
+								<li><input type="submit" name="webAnwendungs"
+									value="WebAnwendungen" /></li>
+								<li><input type="submit" name="seminar" value="Seminar" /></li>
+								<li><input type="submit" name="englisch3undSoftSkills3"
+									value="Englisch III & Soft Skills III" /></li>
+
+							</ul>
+
+
+						</div></li>
+					<li><i class="fas fa-graduation-cap"></i> <input type="submit"
+						name="5semester" value="5.Semester" />
+
+						<div class="sub-menu-1">
+
+							<ul>
+
+								<li><input type="submit" name="infoSicher"
+									value="Info-Sicher & Info-Mgmt" /></li>
+								<li><input type="submit" name="digitalBusiness"
+									value="Digital Business" /></li>
+								<li><input type="submit" name="praktikumAnwendungs"
+									value="Praktikum Anwendungs." /></li>
+								<li><input type="submit" name="businessIntelligence"
+									value="Business Intelligence" /></li>
+								<li><input type="submit" name="erpScm"
+									value="ERP-Sys & SCM-Sys" /></li>
+								<li><input type="submit" name="englischFIt"
+									value="Eng. f. IT" /></li>
+
+
+
+
+
+
+							</ul>
+
+
+						</div></li>
+					<li><i class="fas fa-user"></i> <input type="submit"
+						name="profil" value="Mein Profil" />
+
+						<div class="sub-menu-1">
+
+							<ul>
+								<li><input type="submit" name="Matrikelnummer"
+									value="628761" /></li>
+								<li><input type="submit" name="profilBearbeiten"
+									value="Profil bearbeiten" /></li>
+								<li><input type="submit" name="hilfe" value="Hilfe" /></li>
+
+
+
+
+							</ul>
+
+
+						</div></li>
+
+					<li><i class="fas fa-sign-out-alt"></i> <input type="submit"
+						name="logout" value="Abmelden"
+						 /></li>
 
 
 
@@ -131,20 +188,20 @@
 				scope="session" />
 			<jsp:useBean id="gb" class="de.hwg_lu.bw4s.beans.GUIBean"
 				scope="session" />
-				
-				<%
+
+			<%
 				if (!lb.isLoggedIn()) {
 					mb.setNotLoggedIn();
 					response.sendRedirect("./PortalAppl.jsp");
 				}
 			%>
-			
+
 		</div>
-		
+
 	</form>
-	
-	
-	 
+
+
+
 </body>
 
 </html>
