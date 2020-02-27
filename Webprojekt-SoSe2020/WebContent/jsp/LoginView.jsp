@@ -40,8 +40,8 @@
 			<input type="submit" class="btn" name="login" value="Anmelden">
 
 
-			Noch kein Account? Klicken Sie <a
-				href="./LoginAppl.jsp?zurReg=zurReg" href="../css/hallo.css">hier</a>.
+			Neu bei LazyNerds?  <a
+				href="./LoginAppl.jsp?zurReg=zurReg" href="../css/hallo.css">Registrieren</a>
 		</div>
 
 

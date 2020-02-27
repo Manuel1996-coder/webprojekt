@@ -164,6 +164,8 @@
 									value="628761" /></li>
 								<li><input type="submit" name="profilBearbeiten"
 									value="Profil bearbeiten" /></li>
+								<li><input type="submit" name="standort" value="Mein Standort"/></li>
+								<li><input type="submit" name="Ratespiel" value="Zum Ratespiel"/></li>
 								<li><input type="submit" name="hilfe" value="Hilfe" /></li>
 
 
