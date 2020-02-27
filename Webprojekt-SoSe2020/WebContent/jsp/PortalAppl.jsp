@@ -23,6 +23,8 @@ public String denullify(String s){
 String logout   = this.denullify(request.getParameter("logout"));
 String appl     = this.denullify(request.getParameter("appl"));
 String comeFrom = this.denullify(request.getParameter("comeFrom"));
+// Mein Profil
+String ratespiel = this.denullify(request.getParameter("ratespiel"));
 
 if (!lb.isLoggedIn()){
 	mb.setNotLoggedIn();
@@ -38,6 +40,9 @@ if (!lb.isLoggedIn()){
 }else if(!comeFrom.equals("")){
 	//Message schon gesetzt
 	response.sendRedirect("./ErsteSeite.jsp");
+}else if(ratespiel.equals("Zum Ratespiel")){
+	
+	response.sendRedirect("../jsp/Quiz.jsp");
 }else{
 	mb.setGeneralWelcome();
 	response.sendRedirect("./LoginAppl.jsp");

@@ -18,7 +18,16 @@
 
 
 <body>
+<jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean" scope="session" />
+	
+	
+	
 	<form action="./PortalAppl.jsp" method="get">
+	
+	
+	
+	
+	
 		<div class="mitte">
 			<div class="menu-bar">
 
@@ -161,11 +170,11 @@
 
 							<ul>
 								<li><input type="submit" name="Matrikelnummer"
-									value="628761" /></li>
+									value="<%= lb.getMatrkid() %>" /></li>
 								<li><input type="submit" name="profilBearbeiten"
 									value="Profil bearbeiten" /></li>
 								<li><input type="submit" name="standort" value="Mein Standort"/></li>
-								<li><input type="submit" name="Ratespiel" value="Zum Ratespiel"/></li>
+								<li><input type="submit" name="ratespiel" value="Zum Ratespiel"/></li>
 								<li><input type="submit" name="hilfe" value="Hilfe" /></li>
 
 
@@ -184,8 +193,7 @@
 
 				</ul>
 			</div>
-			<jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean"
-				scope="session" />
+			
 			<jsp:useBean id="mb" class="de.hwg_lu.bw4s.beans.MessageBean"
 				scope="session" />
 			<jsp:useBean id="gb" class="de.hwg_lu.bw4s.beans.GUIBean"

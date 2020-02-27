@@ -14,6 +14,11 @@
 		class="de.hwg_lu.bw4s.beans.AccountBean" />
 	<jsp:useBean id="mb" scope="session"
 		class="de.hwg_lu.bw4s.beans.MessageBean" />
+		
+		<jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean" scope="session" />
+	
+	<jsp:useBean id="gb" class="de.hwg_lu.bw4s.beans.GUIBean"
+		scope="session" />
 	
 
 	<%!public String denullify(String s) {
@@ -53,7 +58,25 @@
 				if (accountInserted) {
 					//			mb.setRegistrationSuccessful();
 					mb.setRegistrationSuccessful(ab.getMatrkid());
-					response.sendRedirect("./RegView.jsp");
+					
+					try{
+						boolean loginOk = lb.checkUseridPassword();
+						if (loginOk){
+							lb.setLoggedIn(true);
+							mb.setLoginSuccessful();
+							response.sendRedirect("./PortalAppl.jsp?comeFrom=RegAppl");
+						}else{
+							lb.setLoggedIn(false);
+							mb.setLoginFailed();
+							response.sendRedirect("./RegView.jsp");
+						}
+					}catch(SQLException se){
+						lb.setLoggedIn(false);
+						mb.setAnyError();
+						response.sendRedirect("./RegView.jsp");
+					}
+					
+					
 				} else {
 					//			mb.setAccountAlreadyExists();
 					mb.setAccountAlreadyExists(ab.getMatrkid());

@@ -4,6 +4,7 @@
 	padding: 0;
 	margin:0;
 	box-sizing: border-box;
+	color: #fff;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
 	background-color: #151414;
 	background-size: cover;
 	background-position: bottom;
+	color: #fff;
 	
 	
 	font-family: sans-serif;
@@ -34,6 +36,7 @@ input
 	
 	background: #FF4500;
 	text-align: center;
+	
 }
 
 .menu-bar ul {
