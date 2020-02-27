@@ -107,7 +107,7 @@ display:none;
 	
 }
 
-.menu-bar ul li:hover .sub-menu-1 ul li :last-child
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
 {
 	border-bottom: none;
 }
