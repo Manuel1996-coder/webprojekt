@@ -58,25 +58,7 @@
 				if (accountInserted) {
 					//			mb.setRegistrationSuccessful();
 					mb.setRegistrationSuccessful(ab.getMatrkid());
-					
-					try{
-						boolean loginOk = lb.checkUseridPassword();
-						if (loginOk){
-							lb.setLoggedIn(true);
-							mb.setLoginSuccessful();
-							response.sendRedirect("./PortalAppl.jsp?comeFrom=RegAppl");
-						}else{
-							lb.setLoggedIn(false);
-							mb.setLoginFailed();
-							response.sendRedirect("./RegView.jsp");
-						}
-					}catch(SQLException se){
-						lb.setLoggedIn(false);
-						mb.setAnyError();
-						response.sendRedirect("./RegView.jsp");
-					}
-					
-					
+				
 				} else {
 					//			mb.setAccountAlreadyExists();
 					mb.setAccountAlreadyExists(ab.getMatrkid());
