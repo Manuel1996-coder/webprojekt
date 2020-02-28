@@ -27,8 +27,8 @@
 
 			<h1>Login</h1>
 			<div class="textbox">
-				<i class="fas fa-user-graduate"></i> <input type="text" name="matrkid"
-					placeholder="Matrikelnummer"
+				<i class="fas fa-user-graduate"></i> <input type="text"
+					name="matrkid" placeholder="Matrikelnummer"
 					value='<jsp:getProperty name="lb" property="matrkid" />'>
 			</div>
 
@@ -40,8 +40,8 @@
 			<input type="submit" class="btn" name="login" value="Anmelden">
 
 
-			Neu bei LazyNerds?  <a
-				href="./LoginAppl.jsp?zurReg=zurReg" href="../css/hallo.css">Registrieren</a>
+			Neu bei LazyNerds? <a href="./LoginAppl.jsp?zurReg=zurReg"
+				href="../css/hallo.css">Registrieren</a>
 		</div>
 
 

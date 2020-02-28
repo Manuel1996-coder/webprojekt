@@ -1,88 +1,61 @@
-
-*
-{
+* {
 	padding: 0;
-	margin:0;
+	margin: auto;
 	box-sizing: border-box;
 	color: #fff;
 }
 
 body {
-	
 	background-color: #151414;
 	background-size: cover;
 	background-position: bottom;
 	color: #fff;
-	
-	
-	font-family: sans-serif;
-	
+
 }
 
-input
-{
-	
-	
-	
+input {
 	background: none;
-	border-width: 0px; 
+	border-width: 0px;
 	color: #fff;
 	font-size: 13px;
-	
-	
 }
-.menu-bar
-{
-	
+
+.menu-bar {
 	background: #FF4500;
 	text-align: center;
-	
 }
 
 .menu-bar ul {
-	
 	display: inline-flex;
 	list-style: none;
 	color: #fff;
 }
 
-.menu-bar ul li{
-	
+.menu-bar ul li {
 	width: 130px;
 	margin: 10px;
 	padding: 10px;
 }
 
-.menu-bar ul li a{
-	text-decoration:none;
+.menu-bar ul li a {
+	text-decoration: none;
 	color: #fff;
-	
 }
 
- .menu-bar ul li:hover
-{
-	background:#FF8C00;
+.menu-bar ul li:hover {
+	background: #FF8C00;
 	border-radius: 12px;
-	
 }
 
-
-
-.menu-bar .fa
-{
-	
+.menu-bar .fa {
 	margin-right: 8px;
 }
 
-
-.sub-menu-1 
-{
-display:none;	
-	
+.sub-menu-1 {
+	display: none;
 }
 
-.menu-bar ul li:hover .sub-menu-1 
-{
+.menu-bar ul li:hover .sub-menu-1 {
 	display: block;
 	position: absolute;
 	background: #FF4500;
@@ -90,74 +63,66 @@ display:none;
 	margin-left: -15px;
 }
 
-.menu-bar ul li:hover .sub-menu-1 ul 
-{
+.menu-bar ul li:hover .sub-menu-1 ul {
 	display: block;
 	margin: 20px;
-	
-	
 }
 
-.menu-bar ul li:hover .sub-menu-1 ul li
-{
-	
+.menu-bar ul li:hover .sub-menu-1 ul li {
 	width: 190px;
 	padding: 9px;
 	border-bottom: 0.4px dotted #fff;
 	background: transparent;
 	border-radius: 0;
 	text-align: left;
-	
 }
 
-.menu-bar ul li:hover .sub-menu-1 ul li:last-child
-{
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
 	border-bottom: none;
 }
 
-.menu-bar ul li:hover .sub-menu-1 ul li a:hover
-{
-	
-	color:#FF8C00;
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+	color: #FF8C00;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Cookie');
 
+@import
+	url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
+@import
+	url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+	;
 
+.container {
+	width: 700px;
+	margin: auto;
+	position: relative;
+}
 
+.search-box {
+	width: 100%;
+	position: relative;
+	top: 100px;
+	height: 40px;
+}
 
+.title {
+	font-family: 'Cookie';
+	font-size: 32px;
+	cursor: pointer;
+}
 
+.search-box>#search {
+	width: 640px;
+	height: 48px;
+	border-radius: 0px 0px 6px 6px;
+	box-shadow: 1px 2px 2px black;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.input:focus {
+	background-color: black;
+	font-size: 18px;
+	font-family: 'Open Sans';
+	padding: 0px 12px;
+}
