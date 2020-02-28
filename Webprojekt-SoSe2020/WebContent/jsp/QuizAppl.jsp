@@ -16,7 +16,7 @@ public String denullify(String s){
 <%
 String zurück   = this.denullify(request.getParameter("zurück"));
 
-if(zurück.equals("Zurueck")){
+if(zurück.equals("Zurueck zu Home")){
 	
 	response.sendRedirect("./ErsteSeite.jsp");
 }

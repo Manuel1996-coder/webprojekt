@@ -15,13 +15,39 @@
 
 h1 { 
 	background: transparent none repeat scroll 0 0 !important;
-	padding: 1rem !important;
+	
 	color: #fff;
 }
 
 h2 { 
 	
 	color: #fff;
+}
+
+#detail {
+margin-bottom: 0px;
+}
+
+input
+{
+cursor: pointer;
+	
+	width: 15%;
+  background: none;
+  border: 2px solid #FF4500;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+  margin-bottom: 0px;
+
+}
+
+input:hover {
+
+background-color: #FF8C00;
+	
 }
 
 #quiz ul {
@@ -71,26 +97,36 @@ h2 {
 
 #quiz button:not(.startBtn) {
 	display: none;
-	width: 100%;
+	width: 15%;
   background: none;
-  border: 2px solid #FF4500;
-  color: white;
+   margin-bottom: 0px;
   
-   padding: 15px 32px;
-  text-align: center;
+  
+  
+  
+  
   text-decoration: none;
   
-  font-size: 16px;
-  margin: 4px 2px;
+  
+  
   cursor: pointer;
   
+}
+
+
+
+button{
+
+width: 10%;
+
+
 }
 
 #quiz button,
 #quiz label {
 	cursor: pointer;
 	
-	width: 100%;
+	width: 15%;
   background: none;
   border: 2px solid #FF4500;
   color: white;
@@ -98,12 +134,21 @@ h2 {
   font-size: 18px;
   cursor: pointer;
   margin: 12px 0;
+   margin-bottom: 0px;
+}
+
+
+#quiz button:hover {
+
+background-color: #FF8C00;
+
+	
 }
 
 /* listing with solutions */
 
 .question {
-	font-weight: bold;
+	font-weight: normal;
 	color: #fff
 }
 
@@ -660,7 +705,7 @@ var myQuiz = {
 			t.createElement({
 				className: "startBtn",
 				tag: "button",
-				text: "Starten!"
+				text: "Jetzt Starten!"
 			}),
 			"p"
 		);
@@ -685,7 +730,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 	<form action="./QuizAppl.jsp" method="get">
 	
-	<input type="submit"value="Zurueck" name="zurück"> 
+	<input type="submit"value="Zurueck zu Home" name="zurück" id="detail"> 
 	
 	</form>
 
