@@ -30,6 +30,31 @@ public class AccountBean {
 		this.email    = "";
 		this.dbConn = new PostgreSQLAccess().getConnection();
 	}
+	
+	
+	public boolean checkUseridPassword() throws SQLException{
+		String sql = "SELECT matrkid FROM benutzer WHERE matrkid = ? AND password = ?";
+		System.out.println(sql);
+		PreparedStatement prep = dbConn.prepareStatement(sql);
+		prep.setString(1, this.matrkid);
+		prep.setString(2, this.password);
+		ResultSet dbRes = prep.executeQuery();
+		return dbRes.next();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	public boolean insertIfNotExists() throws SQLException{
 		// Account nur einf�gen, wenn er noch nicht existiert

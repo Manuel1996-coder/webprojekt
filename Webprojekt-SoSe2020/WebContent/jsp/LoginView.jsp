@@ -17,6 +17,7 @@
 	scope="session" />
 <jsp:useBean id="gb" class="de.hwg_lu.bw4s.beans.GUIBean"
 	scope="session" />
+	
 
 
 <body>

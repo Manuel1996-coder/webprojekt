@@ -29,6 +29,7 @@
 		String comeFrom = this.denullify(request.getParameter("comeFrom"));
 		// Mein Profil
 		String ratespiel = this.denullify(request.getParameter("ratespiel"));
+		String einstellungen = this.denullify(request.getParameter("einstellungen"));
 
 		if (!lb.isLoggedIn()) {
 			mb.setNotLoggedIn();
@@ -48,6 +49,9 @@
 			
 		} else if (ratespiel.equals("Zum Ratespiel")) {
 			response.sendRedirect("../jsp/Quiz.jsp");
+			
+		} else if (einstellungen.equals("Einstellungen")) {
+			response.sendRedirect("../jsp/EinstellungenView.jsp");
 			
 		} else {
 			mb.setGeneralWelcome();

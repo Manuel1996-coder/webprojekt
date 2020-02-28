@@ -24,6 +24,8 @@ public String denullify(String s){
 <%
 String matrkid   = request.getParameter("matrkid");
 String password = request.getParameter("password");
+String username = request.getParameter("username");
+String email = request.getParameter("email");
 String login    = this.denullify(request.getParameter("login"));
 String zurReg   = this.denullify(request.getParameter("zurReg"));
 String comeFrom = this.denullify(request.getParameter("comeFrom"));
@@ -31,12 +33,19 @@ String comeFrom = this.denullify(request.getParameter("comeFrom"));
 if (login.equals("Anmelden")){
 	lb.setMatrkid(matrkid);
 	lb.setPassword(password);
+	
+	
+	
 	try{
 		boolean loginOk = lb.checkUseridPassword();
 		if (loginOk){
 			lb.setLoggedIn(true);
 			mb.setLoginSuccessful();
-			response.sendRedirect("./PortalAppl.jsp?comeFrom=LoginAppl");
+			
+			
+				response.sendRedirect("./PortalAppl.jsp?comeFrom=LoginAppl");
+		
+		
 		}else{
 			lb.setLoggedIn(false);
 			mb.setLoginFailed();
