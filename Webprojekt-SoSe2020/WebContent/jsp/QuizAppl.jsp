@@ -18,7 +18,7 @@ String zurück   = this.denullify(request.getParameter("zurück"));
 
 if(zurück.equals("Zurueck zu Home")){
 	
-	response.sendRedirect("./ErsteSeite.jsp");
+	response.sendRedirect("./PortalView.jsp");
 }
 
 %>

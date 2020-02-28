@@ -136,6 +136,9 @@
 										value="Mein Standort" /></li>
 									<li><input type="submit" name="ratespiel"
 										value="Zum Ratespiel" /></li>
+										<li><input type="submit" name="einstellungen"
+										value="Einstellungen"/></li>
+										
 									<li><input type="submit" name="hilfe" value="Hilfe" /></li>
 								</ul>
 							</div></li>
