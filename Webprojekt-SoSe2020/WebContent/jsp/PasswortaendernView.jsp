@@ -16,6 +16,7 @@
 	<jsp:useBean id="ab" class="de.hwg_lu.bw4s.beans.AccountBean"
 		scope="session" />
 
+<form action="./PasswortaendernAppl.jsp" method="get">
 <table>
 
 <tr>
@@ -44,6 +45,6 @@
 
 <input type="submit"value="Zurueck zu Home" name="zurück" id="detail">
 <input type="submit"value="Änderung speichern" name="speichern" id="detail">
-
+</form>
 </body>
 </html>

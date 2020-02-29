@@ -17,8 +17,19 @@
 	<jsp:useBean id="ab" class="de.hwg_lu.bw4s.beans.AccountBean"
 		scope="session" />
 
+	
+	<%!public String denullify(String s) {
+		if (s == null)
+			return "";
+		else
+			return s;
+	}%>
 
 
+
+
+
+<% 
 
 
 String speichern   = this.denullify(request.getParameter("speichern"));
@@ -32,32 +43,31 @@ if(speichern.equals("Änderung speichern")){
 	
 	
 	try{
-	//	boolean altpasswortOk = ab.checkPassword();
-	//	if (altpasswortOk){
+		boolean altpasswortOk = ab.checkUseridPassword();
+		if (altpasswortOk){
 			
-		//	ab.deletePasswort();
+			ab.deletePasswort();
 			
 			
+			ab.setPassword(neuespassword);
 			
-		//	ab.setPassword(neuespassword);
-			
-		//	ab.insertNeuesPasswort();
+			ab.insertNeuesPasswort();
 			
 			
 			
 				response.sendRedirect("./PortalAppl.jsp?comeFrom=LoginAppl");
 		
 		
-	//	}else{
+		}else{
 			lb.setLoggedIn(false);
 			
 			response.sendRedirect("./LoginView.jsp");
-	//	}
-	//}catch(SQLException se){
+		}
+	}catch(SQLException se){
 		lb.setLoggedIn(false);
 		mb.setAnyError();
 		response.sendRedirect("./LoginView.jsp");
-	//}
+	}
 	
 	
 	
@@ -66,14 +76,14 @@ if(speichern.equals("Änderung speichern")){
 	
 	
 	response.sendRedirect("./PortalView.jsp");
-//} else {
+} else {
 	
 	response.sendRedirect("./PasswortaendernView.jsp");
 	
 	
-//}
+}
 
-
+%>
 
 </body>
 </html>
