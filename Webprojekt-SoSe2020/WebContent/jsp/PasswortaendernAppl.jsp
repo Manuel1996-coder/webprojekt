@@ -33,6 +33,7 @@
 
 
 String speichern   = this.denullify(request.getParameter("speichern"));
+String zurueckEinstellungen   = this.denullify(request.getParameter("zurueckEinstellungen"));
 String neuespassword = request.getParameter("neuespassword");
 
 
@@ -76,7 +77,12 @@ if(speichern.equals("Änderung speichern")){
 	
 	
 	response.sendRedirect("./PortalView.jsp");
-} else {
+} else if (zurueckEinstellungen.equals("Zurück zu Einstellungen")) {
+	
+	response.sendRedirect("./EinstellungenView.jsp");
+	
+	
+}else {
 	
 	response.sendRedirect("./PasswortaendernView.jsp");
 	

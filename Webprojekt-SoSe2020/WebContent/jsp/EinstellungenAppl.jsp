@@ -30,10 +30,18 @@ String usernameaendern   = this.denullify(request.getParameter("usernameaendern"
 if(zurück.equals("Zurueck zu Home")){
 	
 	response.sendRedirect("./PortalView.jsp");
+	
+	
+	
+	
 } else if(passwortaendern.equals("Passwort ändern")){
 	
-	response.sendRedirect("./Passwortaendern.jsp");
-} else if(accountLoeschen.equals("accountLoeschen")){
+	response.sendRedirect("./PasswortaendernView.jsp");
+} 
+
+
+
+else if(accountLoeschen.equals("accountLoeschen")){
 	
 	response.sendRedirect("./EinstellungenView.jsp");
 	} else if(usernameaendern.equals("usernameaendern")){
