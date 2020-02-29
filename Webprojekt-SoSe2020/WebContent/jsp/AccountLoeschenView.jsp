@@ -16,7 +16,7 @@
 	<jsp:useBean id="ab" class="de.hwg_lu.bw4s.beans.AccountBean"
 		scope="session" />
 
-<form action="./PasswortaendernAppl.jsp" method="get">
+<form action="./AccountLoeschenAppl.jsp" method="get">
 <table>
 
 
@@ -29,24 +29,12 @@
 </tr>
 <tr>
 
-<td><h3> Neues Passwort: </h3> </td>
-<td><input type="password" value="" name="neuespassword" id="btn"> </td>
-</tr>
-
-<tr>
-
-<td><h3> Erneut eingeben:
- </h3> </td>
-<td><input type="password"value="" name="neuespassword" id="btn"> </td>
-</tr>
-
-
 
 </table>
 
 
 <input type="submit"value="Zurück zu Einstellungen" name="zurueckEinstellungen" id="detail">
-<input type="submit"value="Änderung speichern" name="speichern" id="detail">
+<input type="submit"value="Account dauerhaft löschen" name="dauerhaftloeschen" id="detail">
 </form>
 </body>
 </html>

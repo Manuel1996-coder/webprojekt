@@ -22,7 +22,7 @@ public String denullify(String s){
 String zurück   = this.denullify(request.getParameter("zurück"));
 String accountLoeschen   = this.denullify(request.getParameter("accountLoeschen"));
 String passwortaendern   = this.denullify(request.getParameter("passwortaendern"));
-String usernameaendern   = this.denullify(request.getParameter("usernameaendern"));
+
 
 
 
@@ -41,13 +41,10 @@ if(zurück.equals("Zurueck zu Home")){
 
 
 
-else if(accountLoeschen.equals("accountLoeschen")){
+else if(accountLoeschen.equals("Account dauerhaft löschen")){
 	
-	response.sendRedirect("./EinstellungenView.jsp");
-	} else if(usernameaendern.equals("usernameaendern")){
-	
-		response.sendRedirect("./EinstellungenView.jsp");
-} else {
+	response.sendRedirect("./AccountLoeschenView.jsp");
+	}  else {
 	
 	response.sendRedirect("./EinstellungenView.jsp");
 	

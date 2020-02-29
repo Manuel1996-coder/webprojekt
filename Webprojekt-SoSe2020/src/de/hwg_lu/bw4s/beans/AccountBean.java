@@ -46,7 +46,7 @@ public class AccountBean {
 	
 	public void deletePasswort() throws SQLException {
 		
-		String sql="delete  from benutzer  where  password=?";
+		String sql="delete password from benutzer where password = ?";
 		System.out.println(sql);
 		PreparedStatement prep= dbConn.prepareStatement(sql);
 		prep.setString(1, this.password);
@@ -54,23 +54,7 @@ public class AccountBean {
 		System.out.println("password erfolgreich gelöscht");
 	}
 	
-	public void insertNeuesPasswort() throws SQLException {
-		
-		
-		
-		String sql = "insert into benutzer ( password) "
-				+ "values (?)";
-	System.out.println(sql);
 	
-	PreparedStatement prep = dbConn.prepareStatement(sql);
-	prep.setString(1, this.password);
-	
-	
-	prep.executeUpdate();
-	
-	System.out.println("Das Passwort wurde erfolgreich ersetzt");
-		
-	}
 	
 	
 	

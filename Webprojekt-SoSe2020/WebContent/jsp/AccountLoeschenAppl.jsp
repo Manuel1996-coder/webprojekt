@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@page import="java.sql.SQLException"%>
+    pageEncoding="UTF-8"%>
+    <%@page import="java.sql.SQLException"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,29 +30,27 @@
 
 
 	<%
-		String speichern = this.denullify(request.getParameter("speichern"));
+		String dauerhaftloeschen = this.denullify(request.getParameter("dauerhaftloeschen"));
 		String zurueckEinstellungen = this.denullify(request.getParameter("zurueckEinstellungen"));
 		String aktuellesPassword = request.getParameter("aktuellesPassword");
-		String neuespassword = request.getParameter("neuespassword");
+	
 
-		if (speichern.equals("Änderung speichern")) {
+		if (dauerhaftloeschen.equals("Account dauerhaft löschen")) {
 			lb.setAktupassword(aktuellesPassword);
 
 			try {
 				boolean altpasswortOk = lb.checkPassword();
 				if (altpasswortOk) {
 
-					lb.setNeuesPassword(neuespassword);
-
 					lb.setMatrkid(lb.getMatrkid());
+					
+					lb.deleteAccount();
 
-					lb.updatePassword();
-
-					response.sendRedirect("./PasswortaendernView.jsp");
+					response.sendRedirect("./AccountLoeschenView.jsp");
 
 				} else {
 
-					response.sendRedirect("./PasswortaendernView.jsp");
+					response.sendRedirect("./AccountLoeschenView.jsp");
 				}
 			} catch (SQLException se) {
 

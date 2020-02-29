@@ -55,17 +55,9 @@
 <td><h3> <%= ab.getEmail() %> </h3></td>
 
 
-
 </tr>
 
-<tr>
 
-<td><h3> Account löschen: </h3> </td>
-<td><input type="submit"value="Account dauerhaft löschen" name="accountLoeschen" id="btn"> </td>
-
-
-
-</tr>
 
 <tr>
 
@@ -78,12 +70,14 @@
 
 <tr>
 
-<td><h3> Username ändern: </h3> </td>
-<td><input type="submit"value="Username ändern" name="usernameaendern" id="btn"> </td>
+<td><h3> Account löschen: </h3> </td>
+<td><input type="submit"value="Account dauerhaft löschen" name="accountLoeschen" id="btn"> </td>
 
 
 
 </tr>
+
+
 
 
 

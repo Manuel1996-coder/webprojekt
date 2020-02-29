@@ -12,8 +12,10 @@ public class LoginBean {
 	
 	String matrkid;
 	String password;
+	String aktupassword;
 	String username;
 	String email;
+	String neuesPassword;
 	boolean isLoggedIn;
 	Connection dbConn;
 	
@@ -24,6 +26,8 @@ public class LoginBean {
 		this.password = "";
 		this.username = "";
 		this.email    = "";
+		this.aktupassword = "";
+		this.neuesPassword = "";
 		this.isLoggedIn = false;
 		
 		this.dbConn = new PostgreSQLAccess().getConnection();
@@ -42,6 +46,70 @@ public class LoginBean {
 		ResultSet dbRes = prep.executeQuery();
 		return dbRes.next();
 	}
+	
+	
+	
+	
+	
+	
+	// überprüfen ob die Passworter übereinstimmen
+	
+	
+	
+	public boolean checkPassword() throws SQLException{
+		String sql = "SELECT password FROM benutzer where password = ?";
+		System.out.println(sql);
+		PreparedStatement prep = dbConn.prepareStatement(sql);
+		prep.setString(1, this.aktupassword);
+		ResultSet dbRes = prep.executeQuery();
+		return dbRes.next();
+	}
+	
+	//  Passworter updaten
+	
+	public void updatePassword() throws SQLException{
+		String sql = "UPDATE benutzer SET password = ? WHERE matrkid = ?";
+		System.out.println(sql);
+		PreparedStatement prep = dbConn.prepareStatement(sql);
+		prep.setString(1, this.neuesPassword);
+		prep.setString(2, this.matrkid);
+		prep.executeUpdate();
+		System.out.println("Update erfolgreich");
+		
+	}
+	// Account loeschen
+	
+	public void deleteAccount() throws SQLException{
+		String sql = "DELETE FROM benutzer WHERE matrkid = ?";
+		System.out.println(sql);
+		PreparedStatement prep = dbConn.prepareStatement(sql);
+		prep.setString(1, "628761");
+		prep.executeUpdate();
+		System.out.println("Delete Account erfolgreich");
+	}
+	
+	
+	
+public void insertNeuesPasswort() throws SQLException {
+		
+		
+		
+		String sql = "insert into benutzer (password) "
+				+ "values (?)";
+	System.out.println(sql);
+	
+	PreparedStatement prep = dbConn.prepareStatement(sql);
+	prep.setString(1, this.neuesPassword);
+	
+	
+	prep.executeUpdate();
+	
+	System.out.println("Das Passwort wurde erfolgreich ersetzt");
+		
+	}
+	
+	
+	
 	
 
 	public boolean isLoggedIn() {
@@ -77,4 +145,25 @@ public class LoginBean {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	public String getAktupassword() {
+		return aktupassword;
+	}
+
+	public void setAktupassword(String aktupassword) {
+		this.aktupassword = aktupassword;
+	}
+
+	public String getNeuesPassword() {
+		return neuesPassword;
+	}
+
+	public void setNeuesPassword(String neuesPassword) {
+		this.neuesPassword = neuesPassword;
+	}
+	
+	
+	
+	
+	
 }
