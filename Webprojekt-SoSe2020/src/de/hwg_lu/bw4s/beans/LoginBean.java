@@ -83,7 +83,7 @@ public class LoginBean {
 		String sql = "DELETE FROM benutzer WHERE matrkid = ?";
 		System.out.println(sql);
 		PreparedStatement prep = dbConn.prepareStatement(sql);
-		prep.setString(1, "628761");
+		prep.setString(1, this.matrkid);
 		prep.executeUpdate();
 		System.out.println("Delete Account erfolgreich");
 	}

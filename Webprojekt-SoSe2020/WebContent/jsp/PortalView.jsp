@@ -123,15 +123,11 @@
 								</ul>
 							</div></li>
 						<li><i class="fas fa-user"></i> <input type="submit"
-							name="profil" value="Mein Profil" />
+							name="profil" value="<%=lb.getMatrkid()%>" />
 
 							<div class="sub-menu-1">
 
 								<ul>
-									<li><input type="submit" name="Matrikelnummer"
-										value="<%=lb.getMatrkid()%>" /></li>
-									<li><input type="submit" name="profilBearbeiten"
-										value="Profil bearbeiten" /></li>
 									<li><input type="submit" name="standort"
 										value="Mein Standort" /></li>
 									<li><input type="submit" name="ratespiel"

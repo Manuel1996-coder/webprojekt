@@ -37,7 +37,7 @@
 			
 		} else if (logout.equals("Abmelden")) {
 			lb.setLoggedIn(false);
-			mb.setLogoutSuccessful();
+				
 			response.sendRedirect("./LoginAppl.jsp?comeFrom=PortalAppl");
 			
 		} else if (!appl.equals("")) {

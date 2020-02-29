@@ -45,8 +45,11 @@
 					lb.setMatrkid(lb.getMatrkid());
 					
 					lb.deleteAccount();
+					
+					lb.setLoggedIn(false);
+					mb.setLogoutSuccessful();
 
-					response.sendRedirect("./AccountLoeschenView.jsp");
+					response.sendRedirect("./LoginView.jsp");
 
 				} else {
 
