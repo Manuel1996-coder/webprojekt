@@ -43,6 +43,7 @@ if (login.equals("Anmelden")){
 			mb.setLoginSuccessful();
 			
 			
+			
 				response.sendRedirect("./PortalAppl.jsp?comeFrom=LoginAppl");
 		
 		

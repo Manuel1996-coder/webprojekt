@@ -26,6 +26,7 @@
 			scope="session" />
 		<jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean"
 			scope="session" />
+			
 
 		<form action="./PortalAppl.jsp" method="get">
 
@@ -129,9 +130,11 @@
 
 								<ul>
 									<li><input type="submit" name="standort"
-										value="Mein Standort" /></li>
+										value="Standort HWG-LU" /></li>
 									<li><input type="submit" name="ratespiel"
 										value="Zum Ratespiel" /></li>
+										<li><input type="submit" name="video"
+										value="Zum HWG-LU Video" /></li>
 										<li><input type="submit" name="einstellungen"
 										value="Einstellungen"/></li>
 										

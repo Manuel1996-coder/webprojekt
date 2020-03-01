@@ -1,3 +1,4 @@
+<%@page import="java.sql.SQLException"%>
 <%@page import="de.hwg_lu.bw4s.beans.GUIBean"%>
 <%@page import="de.hwg_lu.bw4s.beans.MessageBean"%>
 <%@page import="de.hwg_lu.bw4s.beans.LoginBean"%>
@@ -16,6 +17,9 @@
 		scope="session" />
 	<jsp:useBean id="gb" class="de.hwg_lu.bw4s.beans.GUIBean"
 		scope="session" />
+		<jsp:useBean id="ab" class="de.hwg_lu.bw4s.beans.AccountBean"
+		scope="session" />
+		
 		
 	<%!public String denullify(String s) {
 		if (s == null)
@@ -30,6 +34,8 @@
 		// Mein Profil
 		String ratespiel = this.denullify(request.getParameter("ratespiel"));
 		String einstellungen = this.denullify(request.getParameter("einstellungen"));
+		String standort = this.denullify(request.getParameter("standort"));
+		String video = this.denullify(request.getParameter("video"));
 
 		if (!lb.isLoggedIn()) {
 			mb.setNotLoggedIn();
@@ -47,11 +53,30 @@
 			//Message schon gesetzt
 			response.sendRedirect("./PortalView.jsp");
 			
+		} else if (video.equals("Zum HWG-LU Video")) {
+			
+			
+			response.sendRedirect("../jsp/VideoView.jsp");
+			
 		} else if (ratespiel.equals("Zum Ratespiel")) {
 			response.sendRedirect("../jsp/Quiz.jsp");
 			
+		}else if (standort.equals("Standort HWG-LU")) {
+			
+			
+			response.sendRedirect("../jsp/KarteView.jsp");
+			
 		} else if (einstellungen.equals("Einstellungen")) {
-			response.sendRedirect("../jsp/EinstellungenView.jsp");
+			try{
+			lb.readAccountsFromDB();
+			} catch (SQLException se){
+				
+				System.out.println("DB schreiben fehlgeschlagen, Mist!");
+				System.out.println("SQLCode=" + se.getErrorCode());
+				System.out.println("Error-Message=" + se.getMessage());
+			}
+				
+			response.sendRedirect("./EinstellungenView.jsp");
 			
 		} else {
 			mb.setGeneralWelcome();
