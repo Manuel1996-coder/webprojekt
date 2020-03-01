@@ -6,12 +6,50 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<head> 
+    <meta charset="utf-8"/> 
+    <title>HTML5 Geolocation Beispiel mit Hilfe von Google Maps</title>
+    
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+</head>
+
 <body>
-
-<div style='height:300px;width:100%;'><iframe width="" 
-height="300" src=https://maps.google.de/maps?hl=de&q=LazyNerds%20%20Ernst-Boehe-Straße+4%20Ludwigshafen+am+Rhein&t=&z=10&ie=utf8&iwloc=b&output=embed frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style='height:300px;width:100%;'></iframe><p style="text-align:right; margin:0px; padding-top:-10px; line-height:10px;font-size:10px;margin-top: -25px;"><a href="http://www.checkpoll.de/google-maps-generator/" style="font-size:10px;" target="_blank">Google Maps Generator</a> by <a href="https://www.on-projects.de/" 
-rel="nofollow" style="font-size:10px;" 
-title="" target="_blank">on-projects</a></p></div>
-
+    <div id="pos" style="width:800px; height:600px;">
+        Deine Position wird ermittelt...
+    </div>
+    
+    <script>
+        function initialize(coords) {
+            var latlng = new google.maps.LatLng(coords.latitude, coords.longitude);
+            var myOptions = {
+                zoom: 8,
+                center: latlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("pos"), myOptions);
+            
+            var marker = new google.maps.Marker({
+                position: latlng, 
+                map: map, 
+                title: "Hier bist du :)"
+            }); 
+        }
+  
+        navigator.geolocation.getCurrentPosition(function(position){ 
+            initialize(position.coords);
+        }, function(){
+            document.getElementById('pos').innerHTML = 'Deine Position konnte leider nicht ermittelt werden';
+        });
+    </script>
+    
+    
+    
+    <iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBy4Kq7bnPbi8mPlM33mKvDkxTO7m8fbqE
+    &q=Space+Needle,Seattle+WA" allowfullscreen>
+</iframe>
 </body>
 </html>

@@ -42,14 +42,14 @@
 
 							<div class="sub-menu-1">
 								<ul>
-									<li><input type="submit" name="PMPM"
+									<li><input type="submit" name="ABWLBUCHF"
 										value="ABWL und Buchführung" /></li>
-									<li><input type="submit" name="OR"
+									<li><input type="submit" name="WM"
 										value="Wirtschaftsmathematik" /></li>
-									<li><input type="submit" name="ufü" value="Social Skills" /></li>
-									<li><input type="submit" name="betriebsrechner"
+									<li><input type="submit" name="SK" value="Social Skills" /></li>
+									<li><input type="submit" name="WI"
 										value="Wirtschaftsinformatik" /></li>
-									<li><input type="submit" name="algoDatenbanken"
+									<li><input type="submit" name="prog1"
 										value="Prog I" /></li>
 								</ul>
 							</div></li>
