@@ -6,8 +6,7 @@
 <meta charset="ISO-8859-1">
 <link href='https://fonts.googleapis.com/css?family=Fjalla+One'
 	rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css"
-	href="../css/StartseiteVorlage2.css">
+<link rel="stylesheet" type="text/css" href="../css/Startseite.css">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Startseite</title>
@@ -41,24 +40,28 @@
 
 
 	<!-- FUßZEILE -->
-	<footer class="footer-social-links">
 
-		<h6>Copyright lazyNerds 2020. All Rights Reserved</h6>
-		<link href='https://fonts.googleapis.com/css?family=Exo+2'
-			rel='stylesheet' type='text/css'>
-		<link
-			href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-			rel="stylesheet">
+		<div id="social-platforms">
+			<h6>Follow lazyNerds</h6>
+			<div>
+				<a class="tooltip" href="https://www.facebook.com/davidpottrell"
+					data-title="Facebook"><i class="fa fa-facebook"></i><span>Facebook</span></a>
 
+				<a class="tooltip" href="https://twitter.com/davidpottrell"
+					data-title="Twitter"><i class="fa fa-twitter"></i><span>Twitter</span></a>
 
+				<a class="tooltip" href="https://plus.google.com/+DavidPottrell"
+					data-title="Google+"><i class="fa fa-google-plus"></i><span>Google+</span></a>
 
-		<ul class="cont">
-			<li class="one-button"><i class="fa fa-twitter fa-2x"></i></li>
-			<li class="one-button"><i class="fa fa-facebook fa-2x"></i></li>
-			<li class="one-button"><i class="fa fa-linkedin fa-2x"></i></li>
-			<li class="one-button"><i class="fa fa-github fa-2x"></i></li>
-			<li class="one-button"><i class="fa fa-instagram fa-2x"></i></li>
-		</ul>
+				<a class="tooltip" href="https://uk.linkedin.com/in/pottrell"
+					data-title="LinkedIn"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
+
+				<a class="tooltip" href="https://codepen.io/davidpottrell/"
+					data-title="CodePen"><i class="fa fa-codepen"></i><span>CodePen</span></a>
+			</div>
+		</div>
+		  <footer>
+
 	</footer>
 </body>
 </html>
