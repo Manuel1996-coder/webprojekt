@@ -1,12 +1,29 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@page import="de.hwg_lu.bw4s.beans.LiteraturBean"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Fanshop WM 2010</title>
 </head>
 <body>
+<jsp:useBean id="fsb" class="de.hwg_lu.bw4s.beans.LiteraturBean" scope="session" />
+<h2>Willkommen zum Fanshop</h2>
+<h4>Was darf's denn sein?</h4>
+<form action="FanshopAppl.jsp" method="get">
+Kunde:
+<input type="text" name="kunde" value="" />
+<br>
+<input type="checkbox" name="artikel" value="0" />
+Power Fan 2720s, EUR 29,80
+<img src="../img/0.jpg" />  
+<!--<jsp:getProperty name="fsb" property="HTMLFromArtikel" /> -->
+<br>
+<input type="submit" name="bestellen" value="bestellen" />
+<input type="submit" name="indenwarenkorb" value="In den Warenkorb" />
 
+</form>
+<a href="./Impressum.jsp">Impressum</a>
 </body>
 </html>

@@ -143,6 +143,8 @@
 									<li><input type="submit" name="hilfe" value="Hilfe" /></li>
 								</ul>
 							</div></li>
+						<li><i class="fas fa-shopping-cart"></i> <input type="submit"
+							name="einkaufstasche" value="Warenkorb" /></li>
 						<li><i class="fas fa-sign-out-alt"></i> <input type="submit"
 							name="logout" value="Abmelden" /></li>
 					</ul>

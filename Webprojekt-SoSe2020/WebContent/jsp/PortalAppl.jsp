@@ -37,6 +37,7 @@
 		String ratespiel = this.denullify(request.getParameter("ratespiel"));
 		String einstellungen = this.denullify(request.getParameter("einstellungen"));
 		String standort = this.denullify(request.getParameter("standort"));
+		String einkaufstasche = this.denullify(request.getParameter("einkaufstasche"));
 		String video = this.denullify(request.getParameter("video"));
 		String abwlbuch = this.denullify(request.getParameter("abwlbuch"));
 		String sk = this.denullify(request.getParameter("sk"));
@@ -64,6 +65,11 @@
 			
 			
 			response.sendRedirect("../jsp/VideoView.jsp");
+			
+		} else if (einkaufstasche.equals("Warenkorb")) {
+			
+			
+			response.sendRedirect("../jsp/WarenkorbView.jsp");
 			
 		} else if (ratespiel.equals("Zum Ratespiel")) {
 			response.sendRedirect("../jsp/Quiz.jsp");

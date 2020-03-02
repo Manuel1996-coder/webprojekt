@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+td a {
+  padding-left: 20px;
+  background: url(img/u_list.gif) no-repeat left center;
+}
+
+thead th {
+  background: #681400;
+  border: 1px solid #681400;
+}
+
+<colgroup>
+  <col width="8%" />
+  <col width="56%" />
+  <col width="18%" span="2" />
+</colgroup>
+
+
+
+td {
+  background: #fff url(img/verlauf.gif) repeat-x left
+  bottom;
+}
+ 
+td.zebra {
+  background-image: none;
+  background-color: #ebfbc1;
+}
+
+tfoot td {
+  background: #fff url(img/cam_comp.gif) no-repeat 5px 15px;
+}
+
+tfoot td#total {
+  background-image: none;
+  color: #681400;
+  font-size: 120%;
+  background-color: #f4d37d;
+}
+
+tr:nth-child(odd) {
+  background: #fff url(img/verlauf.gif) repeat-x left bottom;
+}
+ 
+tr:nth-child(even) {
+  background-image: none;
+  background-color: #ebfbc1;
+}
+
+#tablediv {
+  border: 3px solid #bbb;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 5px 5px 15px #ccc;
+  -webkit-box-shadow: 5px 5px 15px #ccc;
+  box-shadow: 15px;
+  padding: 25px;
+  width: 50em;
+  font-size: 75%;
+  background: #d6e8ec url(img/back_tablediv.gif) repeat-x 0 0;
+}
