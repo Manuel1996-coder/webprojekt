@@ -40,12 +40,12 @@ public class SkriptBean {
 
 			
 			this.setProf("Prof. Dr. rer. pol. Stefan Bongard");
-			this.setSkript("../Skript/bwlSkript.pdf");
+			this.setSkript("../Skript/bwlSkript.pdf#toolbar=0");
 
 			break;
 		case "wm":
 			this.setProf("Prof. Dr. Wirtschaftsmathe");
-			this.setSkript("../Skript/bwlSkript.pdf");
+			this.setSkript("./Skript/bwlSkript.pdf");
 			
 			break;
 		case "sk":

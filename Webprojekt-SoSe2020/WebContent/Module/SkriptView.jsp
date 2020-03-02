@@ -9,8 +9,19 @@
 <jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean"
 	scope="session" />
 <body>
+<h1>Skript </h1>
 
-<a href="<%=kb.getSkript()%>">Hier bitte öffnen</a>
+
+<iframe src="<%=kb.getSkript()%>" width="100%" height="500px"> 
+
+</iframe>
+
+
+
+
+
+
+
 
 </body>
 </html>
