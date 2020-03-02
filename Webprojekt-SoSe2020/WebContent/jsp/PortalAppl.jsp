@@ -19,6 +19,8 @@
 		scope="session" />
 		<jsp:useBean id="ab" class="de.hwg_lu.bw4s.beans.AccountBean"
 		scope="session" />
+		<jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean"
+	scope="session" />
 		
 		
 	<%!public String denullify(String s) {
@@ -36,6 +38,11 @@
 		String einstellungen = this.denullify(request.getParameter("einstellungen"));
 		String standort = this.denullify(request.getParameter("standort"));
 		String video = this.denullify(request.getParameter("video"));
+		String abwlbuch = this.denullify(request.getParameter("abwlbuch"));
+		String sk = this.denullify(request.getParameter("sk"));
+		String wm = this.denullify(request.getParameter("wm"));
+		String wi = this.denullify(request.getParameter("wi"));
+		String prog1 = this.denullify(request.getParameter("prog1"));
 
 		if (!lb.isLoggedIn()) {
 			mb.setNotLoggedIn();
@@ -66,7 +73,47 @@
 			
 			response.sendRedirect("../jsp/KarteView.jsp");
 			
-		} else if (einstellungen.equals("Einstellungen")) {
+		} else if (abwlbuch.equals("ABWL und Buchfuehrung")) {
+			
+			kb.setModul("abwlbuch");
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.publikationen();
+			
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (wm.equals("Wirtschaftsmathematik")) {
+			
+			kb.setModul("wm");
+			kb.Professor();
+			
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (sk.equals("Social Skills")) {
+			
+			kb.setModul("sk");
+			kb.Professor();
+			
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (wi.equals("Wirtschaftsinformatik")) {
+			
+			kb.setModul("wi");
+			kb.Professor();
+			
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (prog1.equals("Prog I")) {
+			
+			kb.setModul("prog1");
+			kb.Professor();
+			
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (einstellungen.equals("Einstellungen")) {
 			try{
 			lb.readAccountsFromDB();
 			} catch (SQLException se){

@@ -10,11 +10,13 @@
 </head>
 <body>
 
+<form action="./AgendaAppl.jsp" method="get">
+
 <table  class="box"   >
 
 <tr>
-<td> <button class="glow-on-hover" type="submit" name="Prof" value="PROF" >PROF</button></td>
-<td> <button class="glow-on-hover" type="submit" name="Skript" value="SKRIPT" >SKRIPT</button></td>
+<td> <button class="glow-on-hover" type="submit" name="prof" value="PROF" >PROF</button></td>
+<td> <button class="glow-on-hover" type="submit" name="skript" value="SKRIPT" >SKRIPT</button></td>
 
 
 
@@ -39,7 +41,7 @@
 
 
 
-
+</form>
 
 
 

@@ -26,6 +26,8 @@
 			scope="session" />
 		<jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean"
 			scope="session" />
+			<jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean"
+	scope="session" />
 			
 
 		<form action="./PortalAppl.jsp" method="get">
@@ -42,12 +44,12 @@
 
 							<div class="sub-menu-1">
 								<ul>
-									<li><input type="submit" name="ABWLBUCHF"
-										value="ABWL und Buchführung" /></li>
-									<li><input type="submit" name="WM"
+									<li><input type="submit" name="abwlbuch"
+										value="ABWL und Buchfuehrung" /></li>
+									<li><input type="submit" name="wm"
 										value="Wirtschaftsmathematik" /></li>
-									<li><input type="submit" name="SK" value="Social Skills" /></li>
-									<li><input type="submit" name="WI"
+									<li><input type="submit" name="sk" value="Social Skills" /></li>
+									<li><input type="submit" name="wi"
 										value="Wirtschaftsinformatik" /></li>
 									<li><input type="submit" name="prog1"
 										value="Prog I" /></li>
@@ -150,10 +152,26 @@
 	</header>
 
 	<!-- SEARCHBOX -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 	<div class="container">
 		<div class="search-box">
-			<input id="search" placeholder=" Search..." type="text" class="input" title="Nach was suchst du?">
+			<input id="search" placeholder=" Search..." pattern="bottom" type="text" class="input" title="Nach was suchst du?">
 		</div>
 	</div>
 </body>
