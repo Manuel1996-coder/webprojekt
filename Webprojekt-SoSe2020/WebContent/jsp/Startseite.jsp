@@ -9,14 +9,17 @@
 <link rel="stylesheet" type="text/css" href="../css/Startseite.css">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Startseite</title>
+<title>Startseite | lazyNerds</title>
 </head>
 <body>
+
+	<!-- KOPFZEILE -->
+
 	<div id="navigation">
 		<div class="wrapper">
 			<div id="logo">
-				<img src="../img/logo_lazynerds.png" width="120" height="100"
-					alt="lazyNerds">
+				<img src="../img/imgStart/logo_lazynerds.png" width="120"
+					height="100" alt="lazyNerds">
 			</div>
 
 			<p id="menu">
@@ -24,6 +27,8 @@
 			</p>
 		</div>
 	</div>
+	
+	<!-- CONTENT -->
 
 	<div class="background">
 		<br> <br>
@@ -33,7 +38,8 @@
 			nur darin zurechtfinden.
 		<p class="zitat2">- Albert Einstein</p>
 		<div class="Porschediv">
-			<img src="../img/Albert-Einstein.jpg" class="Porsche"> <br>
+			<img src="../img/imgStart/Albert-Einstein.jpg" class="Porsche">
+			<br>
 		</div>
 		<br>
 	</div>
@@ -55,6 +61,7 @@
 				data-title="LinkedIn"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
 		</div>
 	</div>
+
 	<!-- FUßZEILE -->
 
 	<div class="footer">
@@ -64,9 +71,6 @@
 			type="submit" name="startseite" value="Startseite"> <input
 			type="submit" name="kontakt" value="Kontakt"> <input
 			type="submit" name="feedback" value="Feedback">
-
-
 	</div>
-
 </body>
 </html>
