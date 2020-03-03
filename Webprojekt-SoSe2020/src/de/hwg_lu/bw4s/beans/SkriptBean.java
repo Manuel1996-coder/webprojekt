@@ -92,7 +92,7 @@ public class SkriptBean {
 			html +="</table>\n";
 			html +="</td>\n";
 			html +="<td><img alt=\"Das Bild hochladen fehlgeschlagen\"\n" + 
-					"				src=\"../img/Bongard.jpg\"></td>\n";
+					"				src=\"../img/imgProf/Bongard.jpg\"></td>\n";
 			html +="</tr>\n";
 			html +="</table>\n";
 			html +="<a href=\"mailto:stefan.bongard@hwg-lu.de\">stefan.bongard@hwg-lu.de</a>\n";

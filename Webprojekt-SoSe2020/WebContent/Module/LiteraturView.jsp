@@ -9,21 +9,19 @@
 </head>
 <body>
 <jsp:useBean id="fsb" class="de.hwg_lu.bw4s.beans.LiteraturBean" scope="session" />
-<h2>Willkommen zum Fanshop</h2>
-<h4>Was darf's denn sein?</h4>
-<form action="FanshopAppl.jsp" method="get">
-Kunde:
-<input type="text" name="kunde" value="" />
+<h1>Literatur</h1>
+
+<form action="LiteraturAppl.jsp" method="get">
+
 <br>
-<input type="checkbox" name="artikel" value="0" />
-Power Fan 2720s, EUR 29,80
-<img src="../img/0.jpg" />  
-<!--<jsp:getProperty name="fsb" property="HTMLFromArtikel" /> -->
+<!--<input type="checkbox" name="artikel" value="0" />
+Power Fan 2720s, EUR 29,80 
+<img src="../img/0.jpg" />  -->
+<jsp:getProperty name="fsb" property="HTMLFromArtikel" />
 <br>
 <input type="submit" name="bestellen" value="bestellen" />
 <input type="submit" name="indenwarenkorb" value="In den Warenkorb" />
 
 </form>
-<a href="./Impressum.jsp">Impressum</a>
 </body>
 </html>

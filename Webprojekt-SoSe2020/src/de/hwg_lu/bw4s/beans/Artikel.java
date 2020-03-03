@@ -13,10 +13,18 @@ public class Artikel {
 	}
 	public String toKaestchen(){
 		String html = "";
-				
-		html += "<input type='checkbox' name='artikel' value='" + this.anr +"' />";
-		html += this.aname + ", EUR " + this.preis;
-		html += "<img src='../img/" + this.anr +".jpg' />";
+		html += "<table>";
+		html += "<tr>";
+		html += "<td>";
+		html += "<img  src='../img/" + this.anr +".jpg' width= '200' height= '200'/>";
+		html += "</td>";
+		html += "<td>";
+		html += this.aname +"<br><br><br><br>"+ " EUR " + this.preis;
+		html +=  "<br><br>"+"Hier auswählen: <input type='checkbox' name='artikel' value='" + this.anr +"' />";
+		html += "</td>";
+		html += "<tr>";
+		html += "</table>";
+		
 				
 		return html;
 	}

@@ -25,7 +25,7 @@ if(bestellung.equals("bestellen")){
 	msg.setDone();
 	else msg.setFail();
 }
-response.sendRedirect("./S621382-Fanshop.jsp");
+response.sendRedirect("../jsp/WarenkorbView.jsp");
 %>
 
 </body>
