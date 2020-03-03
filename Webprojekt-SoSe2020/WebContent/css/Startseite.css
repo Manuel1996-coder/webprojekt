@@ -45,8 +45,9 @@ body {
 }
 
 .zitat2 {
-    margin-right: 25px;
-    text-align: right;
+    margin-top: -10px;
+    ;
+    text-align: center;
     font-size: 13px;
     color: grey;
     font-style: italic;
@@ -83,7 +84,7 @@ body {
 
 .page-header {
     text-align: center;
-}<
+}
 
 .text-primary {
     padding-top: 10px;
@@ -128,19 +129,18 @@ h6 {
 }
 
 #navigation {
-    width: 100%;
-    height: 100px;
+    width: auto;
+    height: 80px;
     background-color: #151414;
-    ;
+    margin-left: auto;
 }
 
 #logo {
-    width: 70px;
+    width: 100px;
     height: 70px;
     float: left;
-    margin: 20px;
     margin-top: 5px;
-    ;
+    margin: auto;
     background-color: #151414;
 }
 
@@ -148,23 +148,23 @@ h6 {
     float: right;
     margin-top: 44px;
     margin-right: 30px;
-    color: white;
+    color: #F60;
 }
 
 a.MeineKlasse:link {
-    color: #fff;
+    color: green;
 }
 
 a.MeineKlasse:visited {
-    color: #555;
+    color: grey;
 }
 
 a.MeineKlasse:active {
-    color: #555;
+    color: #F60;
 }
 
 a.MeineKlasse:hover {
-    color: #aaa;
+    color: #F60;
 }
 
 .imgLogo {
@@ -175,16 +175,7 @@ a.MeineKlasse:hover {
     margin-top: 20px;
 }
 
-.fa-instagram {
-
-    color: white;
-}
-
-.fa-facebook {
-    color: #eeeeee;
-}
-
-.fa-linkedin {
+.fa-color {
     color: #eeeeee;
 }
 
@@ -281,10 +272,20 @@ ul.cont {
     margin-right: auto;
 }
 
+.footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
 #social-platforms {
     position: relative;
-    top: 100px;
-    top: 25vh;
+
     font-size: 1rem;
     text-align: center;
     height: 175px;
@@ -357,7 +358,7 @@ ul.cont {
 }
 
 #social-platforms a:hover {
-    background: #FF4500;
+    background: #F60;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.45);
 }
 
