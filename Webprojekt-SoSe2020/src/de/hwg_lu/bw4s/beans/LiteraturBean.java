@@ -15,6 +15,8 @@ public class LiteraturBean {
 	Vector<Artikel> artikelListe;
 	Connection dbConn;
 	int bnr;
+	
+	
 
 	public LiteraturBean() throws SQLException {
 		super();
@@ -22,10 +24,16 @@ public class LiteraturBean {
 		this.dbConn = new PostgreSQLAccess().getConnection();
 		this.getArtikelFromDB();
 	}
+	
+	
+	
+	
+	
+	
 
 	public void getArtikelFromDB() throws SQLException {
 
-		String sql = "SELECT * FROM ARTIKEL";
+		String sql = "SELECT * FROM ARTIKEL where modul='";
 
 		try {
 			Statement stmt = dbConn.createStatement();
@@ -36,8 +44,10 @@ public class LiteraturBean {
 			System.out.println(res.getInt("ANR"));
 			System.out.println(res.getString("ANAME"));
 			System.out.println(res.getDouble("PREIS"));
+			System.out.println(res.getString("AUTOR"));
+			System.out.println(res.getString("MODUL"));
 
-				Artikel art = new Artikel(res.getInt("ANR"), res.getString("ANAME"), res.getDouble("PREIS"));
+				Artikel art = new Artikel(res.getInt("ANR"), res.getString("ANAME"), res.getDouble("PREIS"), res.getString("AUTOR"), res.getString("MODUL"));
 				this.artikelListe.add(art);
 
 			}

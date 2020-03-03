@@ -9,7 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<link type="text/css" rel="stylesheet" href="../css/login.css" />
+<link type="text/css" rel="stylesheet" href="../css/hallo.css" />
 
 <jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean"
 	scope="session" />

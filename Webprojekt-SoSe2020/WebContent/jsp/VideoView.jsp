@@ -10,7 +10,7 @@
 
 <body>
 
-<h3> Hochschule Ludwigshafen am Rhein - Imagefilm </h3>
+<h3> Für die HWG-LU Fan's - Imagefilm </h3>
 
 
 

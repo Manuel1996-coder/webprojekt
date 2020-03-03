@@ -4,13 +4,28 @@ public class Artikel {
 	int anr;
 	String aname;
 	double preis;
+	String autor;
+	String modul;
+	
+	public Artikel() {
 		
-	public Artikel(int anr, String aname, double preis) {
+		
+	}
+	
+	
+	public Artikel(int anr, String aname, double preis, String autor, String modul) {
 		super();
 		this.anr = anr;
 		this.aname = aname;
 		this.preis = preis;
+		this.autor = autor;
+		this.modul = modul;
 	}
+	
+	
+	
+	
+	
 	public String toKaestchen(){
 		String html = "";
 		html += "<table>";
@@ -19,7 +34,8 @@ public class Artikel {
 		html += "<img  src='../img/" + this.anr +".jpg' width= '200' height= '200'/>";
 		html += "</td>";
 		html += "<td>";
-		html += this.aname +"<br><br><br><br>"+ " EUR " + this.preis;
+		html += this.aname +"<br> von " + this.autor;
+		html +=	"<br><br><br>"+ " EUR " + this.preis;
 		html +=  "<br><br>"+"Hier auswählen: <input type='checkbox' name='artikel' value='" + this.anr +"' />";
 		html += "</td>";
 		html += "<tr>";
@@ -47,5 +63,21 @@ public class Artikel {
 	public void setPreis(double preis) {
 		this.preis = preis;
 	}
+	public String getAutor() {
+		return autor;
+	}
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+	public String getModul() {
+		return modul;
+	}
+	public void setModul(String modul) {
+		this.modul = modul;
+	}
+	
+	
+	
+	
 	
 }

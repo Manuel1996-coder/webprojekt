@@ -8,11 +8,19 @@
 
 <link type="text/css" rel="stylesheet" href="../css/agenda.css" />
 </head>
+
+
 <body>
+
+
 
 <form action="./AgendaAppl.jsp" method="get">
 
-<table  class="box"   >
+<h1>AGENDA</h1>
+
+
+<table class="box">
+
 
 <tr>
 <td> <button class="glow-on-hover" type="submit" name="prof" value="PROF" >PROF</button></td>
@@ -31,6 +39,15 @@
 </tr>
 
 
+<tr>
+
+
+
+<td> <button class="glow-on-hover" type="submit" name="zurueck" value="Zurück" >Zurück</button></td>
+
+
+</tr>
+
 
 
 
@@ -38,6 +55,9 @@
 
 
 </table>
+
+
+ 
 
 
 

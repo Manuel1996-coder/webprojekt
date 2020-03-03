@@ -6,6 +6,9 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
+<jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean"
+	scope="session" />
 <body>
 
 <%!
@@ -19,6 +22,7 @@ String prof   = this.denullify(request.getParameter("prof"));
 String skript   = this.denullify(request.getParameter("skript"));
 String Literatur   = this.denullify(request.getParameter("Literatur"));
 String Altklausuren   = this.denullify(request.getParameter("Altklausuren"));
+String zurueck   = this.denullify(request.getParameter("zurueck"));
 
 
 
@@ -34,6 +38,11 @@ if(prof.equals("PROF")){
 }else if (Altklausuren.equals("ALTKLAUSUREN")){
 	
 	response.sendRedirect("../Module/AltklausurView.jsp");
+}else if (zurueck.equals("Zurück")){
+	kb.setButton(false);
+	kb.getHTMLFromArtikel();
+	
+	response.sendRedirect("../jsp/PortalView.jsp");
 }
 
 %>

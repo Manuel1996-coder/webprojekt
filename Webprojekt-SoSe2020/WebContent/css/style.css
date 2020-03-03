@@ -23,12 +23,14 @@ input {
 .menu-bar {
 	background: #FF4500;
 	text-align: center;
+	width: 100%;
 }
 
 .menu-bar ul {
 	display: inline-flex;
 	list-style: none;
 	color: #fff;
+	width: 100%;
 }
 
 .menu-bar ul li {

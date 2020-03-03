@@ -21,6 +21,8 @@
 		scope="session" />
 		<jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean"
 	scope="session" />
+	<jsp:useBean id="a" class="de.hwg_lu.bw4s.beans.Artikel"
+	scope="session" />
 		
 		
 	<%!public String denullify(String s) {
@@ -82,12 +84,15 @@
 		} else if (abwlbuch.equals("ABWL und Buchfuehrung")) {
 			
 			kb.setModul("abwlbuch");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
 			kb.Professor();
 			kb.titel();
 			kb.sprechstunde();
 			kb.lehrgebiete();
 			kb.forschungsschwerpunkte();
 			kb.publikationen();
+			a.setModul(abwlbuch);
 			
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
@@ -115,6 +120,8 @@
 		}else if (prog1.equals("Prog I")) {
 			
 			kb.setModul("prog1");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
 			kb.Professor();
 			
 			response.sendRedirect("../jsp/AgendaView.jsp");
