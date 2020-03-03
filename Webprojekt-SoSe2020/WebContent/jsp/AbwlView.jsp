@@ -18,7 +18,7 @@
 
 	<table>
 		<tr>
-			<td>Professur für Betriebswirtschaftslehre und Logistik
+			<td>Professor für Betriebswirtschaftslehre und Logistik
 				<table>
 					<tr>
 						<td><i class="fas fa-home"></i></td>
