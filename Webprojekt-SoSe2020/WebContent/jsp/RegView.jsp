@@ -21,13 +21,8 @@
 	<jsp:useBean id="gb" class="de.hwg_lu.bw4s.beans.GUIBean"
 		scope="session" />
 
-
-
 	<form id="regForm" action="./RegAppl.jsp" method="get"
 		onsubmit="return inputCheck(this)">
-		
-		
-
 		<div class="reg-box">
 
 			<h1>Registrieren</h1>
@@ -41,14 +36,11 @@
 			</div>
 			<div class="fehler" id="useridMsgFeld"></div>
 
-
-
 			<div class="textbox">
 				<i class="fas fa-lock"></i> <input type="password" name="password"
 					placeholder="Passwort" value="" onkeyup="checkPassword(this.value)" />
 			</div>
 			<div class="fehler" id="passwordMsgFeld"></div>
-
 
 			<div class="textbox">
 				<i class="fas fa-user"></i><input type="text" name="username"
@@ -58,7 +50,6 @@
 			</div>
 			<div class="fehler" id="usernameMsgFeld"></div>
 
-
 			<div class="textbox">
 				<i class="far fa-envelope"></i><input type="text" name="email"
 					placeholder="E-Mail"
@@ -66,15 +57,11 @@
 			</div>
 			<div class="fehler" id="emailMsgFeld"></div>
 
-
 			<input type="submit" class="btn" name="register" value="Registrieren"
-				onclick="setButton(this.value)" id="detail"/>
-			<input type="submit" class="btn" name="zurueck" value="Zurück zum Login"
+				onclick="setButton(this.value)" id="detail" /> <input type="submit"
+				class="btn" name="zurueck" value="Zurück zum Login"
 				onclick="setButton(this.value)" />
-				
-
 		</div>
-		
 	</form>
 </body>
 </html>
