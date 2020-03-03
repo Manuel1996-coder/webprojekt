@@ -12,26 +12,31 @@
 <title>Startseite | lazyNerds</title>
 </head>
 <body>
+	<div class="main-container">
 
-	<!-- KOPFZEILE -->
-
-	<div id="navigation">
-		<div class="wrapper">
-			<div id="logo">
-				<img src="../img/imgStart/logo_lazynerds.png" width="120"
-					height="100" alt="lazyNerds">
+		<!-- HEADER -->
+		<header class="block">
+			<ul class="header-menu horizontal-list">
+				<li><a class="header-menu-tab" href="#1"><span
+						class="icon entypo-cog scnd-font-color"></span>Registrieren</a></li>
+				<li><a class="header-menu-tab" class="MeineKlasse" href="#2"><span
+						class="icon fontawesome-user scnd-font-color"></span>Einloggen</a></li>
+				<li><a class="header-menu-tab" href="#3"><span
+						class="icon fontawesome-envelope scnd-font-color"></span>Über uns</a>
+				</li>
+			</ul>
+			<div class="profile-menu">
+				<img width="120px" hight="100" alt="lazyNerds"
+					src="../img/imgStart/logo_lazynerds.png">
 			</div>
-
-			<p id="menu">
-				<a class="MeineKlasse">Einloggen</a> <a class="MeineKlasse">Registrieren</a>
-			</p>
-		</div>
+		</header>
+		
 	</div>
-	
+
 	<!-- CONTENT -->
 
 	<div class="background">
-		<br> <br>
+		<br>
 		<p class="title1">Albert Einstein</p>
 
 		<p class="title2">Man muss die Welt nicht verstehen, man muss sich
@@ -39,9 +44,8 @@
 		<p class="zitat2">- Albert Einstein</p>
 		<div class="Porschediv">
 			<img src="../img/imgStart/Albert-Einstein.jpg" class="Porsche">
-			<br>
+		
 		</div>
-		<br>
 	</div>
 
 	<div id="social-platforms">

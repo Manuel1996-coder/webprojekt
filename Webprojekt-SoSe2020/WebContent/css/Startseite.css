@@ -2,6 +2,86 @@ body {
     background-color: #151414;
 }
 
+/**-------------Kopzeile-------------**/
+
+header {
+    height: 80px;
+}
+
+a.MeineKlasse:link {
+    color: white;
+}
+
+a.MeineKlasse:visited {
+    color: grey;
+}
+
+a.MeineKlasse:active {
+    color: #F60;
+}
+
+a.MeineKlasse:hover {
+    color: #F60;
+}
+
+.header-menu {
+    font-size: 17px;
+    line-height: 80px;
+}
+
+.header-menu-tab {
+    padding: 0 27px;
+    display: block;
+    line-height: 74px;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+}
+
+.header-menu-tab:hover {
+    background: black;
+    border-bottom: 4px solid #F60;
+    text-decoration: none;
+}
+
+.header-menu-tab .icon {
+    padding-right: 25px;
+}
+
+.header-menu li:hover .header-menu-number {
+    text-decoration: none;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.profile-menu {
+    float: right;
+    height: 80px;
+    padding-right: 25px;
+}
+
+.profile-menu p {
+    font-size: 17px;
+    display: inline-block;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.profile-menu a {
+    padding-left: 5px;
+}
+
+.profile-menu a:hover {
+    text-decoration: none;
+}
+
+/**-------------Content-------------**/
+.background {
+    background-color: #eeeeee;
+    border-radius: 8px;
+    margin: 40px;
+}
+
 .title1 {
     color: #0f0f0f;
     text-align: center;
@@ -11,16 +91,10 @@ body {
 }
 
 .title2 {
-    color: #2C3E50;
+    color: grey;
     text-align: center;
     font-size: 19px;
     font-style: italic;
-}
-
-.background {
-    background-color: #eeeeee;
-    border-radius: 6px;
-    margin: 40px;
 }
 
 .img {
@@ -144,37 +218,6 @@ h6 {
     background-color: #151414;
 }
 
-#menu {
-    float: right;
-    margin-top: 44px;
-    margin-right: 30px;
-    color: #F60;
-}
-
-a.MeineKlasse:link {
-    color: green;
-}
-
-a.MeineKlasse:visited {
-    color: grey;
-}
-
-a.MeineKlasse:active {
-    color: #F60;
-}
-
-a.MeineKlasse:hover {
-    color: #F60;
-}
-
-.imgLogo {
-    width: 140px;
-    height: 60px;
-    float: left;
-    margin: 5px;
-    margin-top: 20px;
-}
-
 .fa-color {
     color: #eeeeee;
 }
@@ -272,16 +315,6 @@ ul.cont {
     margin-right: auto;
 }
 
-.footer {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #efefef;
-    text-align: center;
-}
 
 #social-platforms {
     position: relative;
@@ -367,3 +400,16 @@ ul.cont {
     opacity: 1;
     z-index: 50;
 }
+/**-------------Fuﬂzeile-------------**/
+
+.footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
