@@ -17,20 +17,21 @@
 		<!-- HEADER -->
 		<header class="block">
 			<ul class="header-menu horizontal-list">
+				<li><a class="header-menu-tab" href="#3"><span
+						class="icon fontawesome-envelope scnd-font-color"></span>Wer sind
+						wir?</a></li>
 				<li><a class="header-menu-tab" href="#1"><span
 						class="icon entypo-cog scnd-font-color"></span>Registrieren</a></li>
 				<li><a class="header-menu-tab" class="MeineKlasse" href="#2"><span
 						class="icon fontawesome-user scnd-font-color"></span>Einloggen</a></li>
-				<li><a class="header-menu-tab" href="#3"><span
-						class="icon fontawesome-envelope scnd-font-color"></span>Über uns</a>
-				</li>
+
 			</ul>
 			<div class="profile-menu">
 				<img width="120px" hight="100" alt="lazyNerds"
 					src="../img/imgStart/logo_lazynerds.png">
 			</div>
 		</header>
-		
+
 	</div>
 
 	<!-- CONTENT -->
@@ -44,7 +45,7 @@
 		<p class="zitat2">- Albert Einstein</p>
 		<div class="Porschediv">
 			<img src="../img/imgStart/Albert-Einstein.jpg" class="Porsche">
-		
+
 		</div>
 	</div>
 
@@ -69,9 +70,8 @@
 	<!-- FUßZEILE -->
 
 	<div class="footer">
-		<input type="submit" name="datenschutz" value="Datenschutz"> <input
-			type="submit" name="impressum" value="Impressum"> <input
-			type="submit" name="ueberuns" value="Über uns"> <input
+		<a href="../jsp/DatenschutzView.jsp" class="changeLink">Datenschutz</a>
+		<input type="submit" name="impressum" value="Impressum"> <input
 			type="submit" name="startseite" value="Startseite"> <input
 			type="submit" name="kontakt" value="Kontakt"> <input
 			type="submit" name="feedback" value="Feedback">
