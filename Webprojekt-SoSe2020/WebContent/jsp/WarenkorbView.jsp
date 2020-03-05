@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Warenkorb | lazyNerds</title>
+<title>Warenkorb | lazyNerds </title>
 
 </head>
 <link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
@@ -27,9 +27,6 @@
 
 
 		<%=kb.getHTMLFromAusgewaehlteWarenkorbProdukte()%>
-		
-		
-
 		<tr>
             <td> </td>
 			<td> </td>
