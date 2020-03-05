@@ -132,11 +132,13 @@
 
 								<ul>
 									<li><input type="submit" name="standort"
-										value="Standort HWG-LU" /></li>
+										value="Mein Standort" /></li>
 									<li><input type="submit" name="ratespiel"
 										value="Zum Ratespiel" /></li>
 										<li><input type="submit" name="video"
 										value="Zum HWG-LU Video" /></li>
+										<li><input type="submit" name="bewertung"
+										value="LazyNerds Bewertung" /></li>
 										<li><input type="submit" name="einstellungen"
 										value="Einstellungen"/></li>
 										

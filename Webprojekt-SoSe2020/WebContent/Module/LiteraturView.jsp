@@ -7,6 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Fanshop WM 2010</title>
 </head>
+
+<link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
 <body>
 <jsp:useBean id="fsb" class="de.hwg_lu.bw4s.beans.LiteraturBean" scope="session" />
 <jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean" scope="session" />
@@ -20,8 +22,10 @@ Power Fan 2720s, EUR 29,80
 <img src="../img/0.jpg" />  -->
 <jsp:getProperty name="kb" property="HTMLFromArtikel" />
 <br>
-<input type="submit" name="bestellen" value="bestellen" />
+
 <input type="submit" name="indenwarenkorb" value="In den Warenkorb" />
+<input type="submit" name="zurueckzp"
+		value="Zum Portal">
 
 </form>
 </body>

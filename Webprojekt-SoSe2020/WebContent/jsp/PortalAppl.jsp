@@ -35,6 +35,7 @@
 		String logout = this.denullify(request.getParameter("logout"));
 		String appl = this.denullify(request.getParameter("appl"));
 		String comeFrom = this.denullify(request.getParameter("comeFrom"));
+		String home = this.denullify(request.getParameter("home"));
 		// Mein Profil
 		String ratespiel = this.denullify(request.getParameter("ratespiel"));
 		String einstellungen = this.denullify(request.getParameter("einstellungen"));
@@ -94,6 +95,7 @@
 			kb.publikationen();
 			a.setModul(abwlbuch);
 			
+			
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		}else if (wm.equals("Wirtschaftsmathematik")) {
@@ -103,10 +105,21 @@
 			
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
+		}else if (home.equals("Home")) {
+			
+			
+			
+			response.sendRedirect("../jsp/PortalView.jsp");
+			
 		}else if (sk.equals("Social Skills")) {
 			
 			kb.setModul("sk");
 			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+		
 			
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
@@ -114,6 +127,13 @@
 			
 			kb.setModul("wi");
 			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+		    kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
 			
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
@@ -123,7 +143,13 @@
 			kb.setButton(true);
 			kb.getArtikelFromDB();
 			kb.Professor();
-			
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		}else if (einstellungen.equals("Einstellungen")) {

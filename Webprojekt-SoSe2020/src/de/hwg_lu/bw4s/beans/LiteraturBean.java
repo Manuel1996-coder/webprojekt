@@ -22,7 +22,7 @@ public class LiteraturBean {
 		super();
 		artikelListe = new Vector<Artikel>();
 		this.dbConn = new PostgreSQLAccess().getConnection();
-		this.getArtikelFromDB();
+	//	this.getArtikelFromDB();
 	}
 	
 	
@@ -31,34 +31,34 @@ public class LiteraturBean {
 	
 	
 
-	public void getArtikelFromDB() throws SQLException {
-
-		String sql = "SELECT * FROM ARTIKEL where modul='";
-
-		try {
-			Statement stmt = dbConn.createStatement();
-			ResultSet res = stmt.executeQuery(sql);
-
-			while (res.next()) {
-
-			System.out.println(res.getInt("ANR"));
-			System.out.println(res.getString("ANAME"));
-			System.out.println(res.getDouble("PREIS"));
-			System.out.println(res.getString("AUTOR"));
-			System.out.println(res.getString("MODUL"));
-
-				Artikel art = new Artikel(res.getInt("ANR"), res.getString("ANAME"), res.getDouble("PREIS"), res.getString("AUTOR"), res.getString("MODUL"));
-				this.artikelListe.add(art);
-
-			}
-		} catch (SQLException se) {
-
-			System.out.println("B DB schreiben fehlgeschlagen, Mist!");
-			System.out.println("SQLCode=" + se.getErrorCode());
-			System.out.println("Error-Message=" + se.getMessage());
-
-		}
-	}
+//	public void getArtikelFromDB() throws SQLException {
+//
+//		String sql = "SELECT * FROM ARTIKEL where modul='";
+//
+//		try {
+//			Statement stmt = dbConn.createStatement();
+//			ResultSet res = stmt.executeQuery(sql);
+//
+//			while (res.next()) {
+//
+//			System.out.println(res.getInt("ANR"));
+//			System.out.println(res.getString("ANAME"));
+//			System.out.println(res.getDouble("PREIS"));
+//			System.out.println(res.getString("AUTOR"));
+//			System.out.println(res.getString("MODUL"));
+//
+//				Artikel art = new Artikel(res.getInt("ANR"), res.getString("ANAME"), res.getDouble("PREIS"), res.getString("AUTOR"), res.getString("MODUL"));
+//				this.artikelListe.add(art);
+//
+//			}
+//		} catch (SQLException se) {
+//
+//			System.out.println("B DB schreiben fehlgeschlagen, Mist!");
+//			System.out.println("SQLCode=" + se.getErrorCode());
+//			System.out.println("Error-Message=" + se.getMessage());
+//
+//		}
+//	}
 
 //	public String getHTMLFromArtikel(){
 //		

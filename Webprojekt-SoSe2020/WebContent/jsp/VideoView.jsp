@@ -9,6 +9,7 @@
 
 
 <body>
+<form action="./VideoAppl.jsp" method="get">
 
 <h3> Für die HWG-LU Fan's - Imagefilm </h3>
 
@@ -23,6 +24,6 @@
 
 
 <input type="submit"value="Zurück zu Home" name="zurück" id="detail"> 
-
+</form>
 </body>
 </html>
