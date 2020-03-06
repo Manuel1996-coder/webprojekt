@@ -15,43 +15,27 @@
 	<jsp:useBean id="sb" class="de.hwg_lu.bw4s.beans.StartseiteBean"
 		scope="session"></jsp:useBean>
 	<form action="../jsp/StartseiteAppl.jsp" method="get">
-		<div class="main-container">
 
-			<!-- HEADER -->
-			<header class="block">
-			<div class="profile-menu">
-					<img width="120px" height="130px" alt="lazyNerds"
-						src="../img/imgStart/logo_lazynerds.png">
-				</div>
+		<!-- HEADER -->
 
-				<li><input type="submit" name="einloggen" value="Einloggen"
-					class="header-menu-tab"><span
-					class="icon fontawesome-user scnd-font-color"></span></li>
-				<li><input type="submit" name="register" value="Registrieren"
-					class="header-menu-tab" href="#1"><span
-					class="icon entypo-cog scnd-font-color"></span></li>
-				<li><input type="submit" name="wir" value="Wer wir sind"
-					class="header-menu-tab" href="#2"><span
-					class="icon fontawesome-user scnd-font-color"></span></li>
-				</ul>
-				
-			</header>
-
-		</div>
+		<jsp:getProperty property="headerAsHtml" name="sb" />
 
 		<!-- CONTENT -->
 
 		<div class="background">
+
 			<br>
+
 			<p class="title1">Albert Einstein</p>
 
 			<p class="title2">Man muss die Welt nicht verstehen, man muss
 				sich nur darin zurechtfinden.
 			<p class="zitat2">- Albert Einstein</p>
+
 			<div class="Porschediv">
 				<img src="../img/imgStart/Albert-Einstein.jpg" class="Porsche">
-
 			</div>
+			<br>
 		</div>
 
 		<div id="social-platforms">
@@ -72,8 +56,10 @@
 			</div>
 		</div>
 
-		<!-- FUßZEILE -->
+		<!-- FOOTER -->
+
 		<jsp:getProperty property="footerAsHtml" name="sb" />
+
 	</form>
 </body>
 </html>

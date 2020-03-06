@@ -19,12 +19,13 @@
 	}%>
 
 	<%
+		String home = this.denullify(request.getParameter("home"));
+		String wir = this.denullify(request.getParameter("wir"));
 		String einloggen = this.denullify(request.getParameter("einloggen"));
 		String register = this.denullify(request.getParameter("register"));
 
 		String datenschutz = this.denullify(request.getParameter("datenschutz"));
 		String impressum = this.denullify(request.getParameter("impressum"));
-		String home = this.denullify(request.getParameter("home"));
 		String kontakt = this.denullify(request.getParameter("kontakt"));
 		String feedback = this.denullify(request.getParameter("feedback"));
 
@@ -48,6 +49,22 @@
 			response.sendRedirect("../jsp/DatenschutzView.jsp");
 		}
 
+		else if (impressum.endsWith("Impressum")) {
+			response.sendRedirect("../jsp/ImpressumView.jsp");
+		} 
+		
+		else if (kontakt.equals("Kontakt")) {
+			response.sendRedirect("../jsp/KontaktView.jsp");
+		}
+		
+		else if (feedback.equals("Feedback")) {
+			response.sendRedirect("../jsp/FeedbackView.jsp");
+		}
+		
+		else if(wir.equals("Wer wir sind")){
+			response.sendRedirect("../jsp/WirView.jsp");
+		}
+		
 		else {
 			response.sendRedirect("../jsp/StartseiteView.jsp");
 		}

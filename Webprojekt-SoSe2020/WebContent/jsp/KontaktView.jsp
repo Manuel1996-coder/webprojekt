@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<title>Kontakt | lazyNerds</title>
 <link rel="stylesheet" type="text/css" href="../css/Startseite.css">
-<title>Datenschutz | lazyNerds</title>
 </head>
 <body>
 	<jsp:useBean id="sb" class="de.hwg_lu.bw4s.beans.StartseiteBean"
@@ -20,9 +20,9 @@
 
 		<div class="background">
 			<br>
-			<p class="title1">Datenschutz</p>
+			<p class="title1">Kontakt</p>
 
-			<p class="title2">xx
+			<p class="title2">xx</p>
 			<p class="zitat2">xx</p>
 			<div class="Porschediv">
 				<img src="" class="Porsche">
@@ -32,6 +32,10 @@
 
 		<!-- FOOTER -->
 		<jsp:getProperty property="footerAsHtml" name="sb" />
+
+
+
+
 
 
 	</form>
