@@ -4,17 +4,18 @@ body {
 
 /**-------------Header-------------**/
 header {
-	height: 80px;
+	height: 90px;
 }
 
 .header-menu-tab {
 	padding: 0px 30px 0px 30px; display : block;
 	line-height: 74px;
 	font-size: 17px;
-	color: #666666;
+	color: #c6c5bf;
 	text-decoration: none;
 	text-align: center;
 	display: block;
+	float: right;
 }
 
 .header-menu-tab:hover {
@@ -30,7 +31,7 @@ header {
 }
 
 .profile-menu {
-	float: right;
+	float: left;
 	height: 80px;
 	padding-right: 25px;
 	background-color: #151414;
@@ -53,7 +54,7 @@ header {
 
 /**-------------Content-------------**/
 .background {
-	background-color: #eeeeee;
+	background-color: #c6c5bf;
 	border-radius: 8px;
 	margin: 40px;
 }
@@ -147,6 +148,8 @@ header {
 
 h3 {
 	text-align: center;
+	color: #797876;
+	text-decoration: none;
 }
 
 h4 {
@@ -156,7 +159,8 @@ h4 {
 h6 {
 	margin-bottom: 10px;
 	text-align: center;
-	color: #eeeeee;
+	color: #c6c5bf;
+	font-style: calibri;
 }
 
 .btn:hover {
@@ -221,7 +225,7 @@ i {
 }
 
 li {
-	float: left;
+	float: right;
 }
 
 .one-button::before {
@@ -239,7 +243,7 @@ li {
 
 .one-button {
 	cursor: pointer;
-	color: #eeeeee;
+	color: #c6c5bf;
 	position: relative;
 	z-index: 99999;
 	top: 30px;
@@ -292,8 +296,9 @@ ul.cont {
 	position: relative;
 	font-size: 1rem;
 	text-align: center;
-	height: 175px;
+	height: 185px;
 	overflow: hidden;
+	top: -50px;
 }
 
 #social-platforms a {
@@ -304,7 +309,7 @@ ul.cont {
 	width: 45px;
 	height: 45px;
 	font-size: 1.75em;
-	color: #fff;
+	color: #c6c5bf;
 	line-height: 1.15em;
 	border: 0;
 	cursor: pointer;
@@ -325,7 +330,7 @@ ul.cont {
 	opacity: 0;
 	font-size: .5em;
 	font-weight: 300;
-	color: #FFF;
+	color: #c6c5bf;
 	background: #000;
 	content: attr(data-title);
 	white-space: nowrap;
@@ -372,34 +377,26 @@ ul.cont {
 }
 /**-------------Fusszeile-------------**/
 .footer {
-	position: relative;
+	position: absolute;
 	right: 0;
-	bottom: -50px;
-	top: -30px;
 	left: 0;
+	height: 80px;
+	
+	bottom: -40px;
 	padding: 1rem;
-	background-color: #151414;
-	text-align:  right;
+	background-color: black;
+	text-align:  center;
+	font-size: 10px;
 }
 input[type=submit] {
 	background-color: #151414;
-	color: #666666;
+	color: #c6c5bf;
 	border: none;
 }
 
-a.changeLink:link {
-	color: #666666;
+#submit {
+	background-color: black;
+	color: #c6c5bf;
+	border: none;
+	font-size: 11px;
 }
-
-a.changeLink:visited {
-	color: #555;
-}
-
-a.changeLink:active {
-	color: #555;
-}
-
-a.changeLink:hover {
-	color: #aaa;
-}
-

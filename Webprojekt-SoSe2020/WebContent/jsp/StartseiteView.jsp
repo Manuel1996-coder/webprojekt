@@ -12,69 +12,68 @@
 <title>Startseite | lazyNerds</title>
 </head>
 <body>
-	<div class="main-container">
+	<jsp:useBean id="sb" class="de.hwg_lu.bw4s.beans.StartseiteBean"
+		scope="session"></jsp:useBean>
+	<form action="../jsp/StartseiteAppl.jsp" method="get">
+		<div class="main-container">
 
-		<!-- HEADER -->
-		<header class="block">
-			<ul class="header-menu horizontal-list">
-				<li><a class="header-menu-tab" href="#3"><span
-						class="icon fontawesome-envelope scnd-font-color"></span>Wer sind
-						wir?</a></li>
-				<li><a class="header-menu-tab" href="#1"><span
-						class="icon entypo-cog scnd-font-color"></span>Registrieren</a></li>
-				<li><a class="header-menu-tab" class="MeineKlasse" href="#2"><span
-						class="icon fontawesome-user scnd-font-color"></span>Einloggen</a></li>
-
-			</ul>
+			<!-- HEADER -->
+			<header class="block">
 			<div class="profile-menu">
-				<img width="120px" hight="100" alt="lazyNerds"
-					src="../img/imgStart/logo_lazynerds.png">
+					<img width="120px" height="130px" alt="lazyNerds"
+						src="../img/imgStart/logo_lazynerds.png">
+				</div>
+
+				<li><input type="submit" name="einloggen" value="Einloggen"
+					class="header-menu-tab"><span
+					class="icon fontawesome-user scnd-font-color"></span></li>
+				<li><input type="submit" name="register" value="Registrieren"
+					class="header-menu-tab" href="#1"><span
+					class="icon entypo-cog scnd-font-color"></span></li>
+				<li><input type="submit" name="wir" value="Wer wir sind"
+					class="header-menu-tab" href="#2"><span
+					class="icon fontawesome-user scnd-font-color"></span></li>
+				</ul>
+				
+			</header>
+
+		</div>
+
+		<!-- CONTENT -->
+
+		<div class="background">
+			<br>
+			<p class="title1">Albert Einstein</p>
+
+			<p class="title2">Man muss die Welt nicht verstehen, man muss
+				sich nur darin zurechtfinden.
+			<p class="zitat2">- Albert Einstein</p>
+			<div class="Porschediv">
+				<img src="../img/imgStart/Albert-Einstein.jpg" class="Porsche">
+
 			</div>
-		</header>
-
-	</div>
-
-	<!-- CONTENT -->
-
-	<div class="background">
-		<br>
-		<p class="title1">Albert Einstein</p>
-
-		<p class="title2">Man muss die Welt nicht verstehen, man muss sich
-			nur darin zurechtfinden.
-		<p class="zitat2">- Albert Einstein</p>
-		<div class="Porschediv">
-			<img src="../img/imgStart/Albert-Einstein.jpg" class="Porsche">
-
 		</div>
-	</div>
 
-	<div id="social-platforms">
-		<h6>Folge lazyNerds:</h6>
-		<div>
-			<a class="tooltip" href="https://www.facebook.com/NerdsLazy"
-				data-title="Facebook"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+		<div id="social-platforms">
+			<h6>follow me</h6>
+			<div>
+				<a class="tooltip" href="https://www.facebook.com/NerdsLazy"
+					data-title="Facebook"><i class="fa fa-facebook"></i><span>Facebook</span></a>
 
-			<a class="tooltip" href="https://twitter.com/NerdsLazy"
-				data-title="Twitter"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+				<a class="tooltip" href="https://twitter.com/NerdsLazy"
+					data-title="Twitter"><i class="fa fa-twitter"></i><span>Twitter</span></a>
 
-			<a class="tooltip" href="https://www.instagram.com/lazy.nerds/"
-				data-title="Instagram"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+				<a class="tooltip" href="https://www.instagram.com/lazy.nerds/"
+					data-title="Instagram"><i class="fa fa-instagram"></i><span>Instagram</span></a>
 
-			<a class="tooltip"
-				href="https://de.linkedin.com/in/lazy-nerds-30a0b01a4/en"
-				data-title="LinkedIn"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
+				<a class="tooltip"
+					href="https://de.linkedin.com/in/lazy-nerds-30a0b01a4/en"
+					data-title="LinkedIn"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
+			</div>
 		</div>
-	</div>
 
-	<!-- FUßZEILE -->
-
-	<div class="footer">
-		<a href="../jsp/DatenschutzView.jsp" class="changeLink">Datenschutz</a>
-		<input type="submit" name="impressum" value="Impressum"> <input
-			type="submit" name="startseite" value="Startseite"> <input
-			type="submit" name="kontakt" value="Kontakt"> <input
-			type="submit" name="feedback" value="Feedback">
-	</div>
+		<!-- FUßZEILE -->
+		<jsp:getProperty property="footerAsHtml" name="sb" />
+	</form>
 </body>
 </html>
