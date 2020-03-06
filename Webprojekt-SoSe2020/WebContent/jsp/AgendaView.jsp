@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Startseite</title>
+<title>Agenda | lazyNerds</title>
 
 <link type="text/css" rel="stylesheet" href="../css/agenda.css" />
 </head>
