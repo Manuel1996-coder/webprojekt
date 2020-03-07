@@ -8,7 +8,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<<<<<<< HEAD
 <title>PortalView | lazyNerds</title>
+=======
+<title>Portal | lazyNerds</title>
+>>>>>>> branch 'master' of https://github.com/Manuel1996-coder/webprojekt.git
 </head>
 <script type="text/javascript" src="../js/PortalJs.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />

@@ -719,7 +719,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </head>
 
 <body>
-	<h1>Ratespiel by LazyNerds</h1>
+	<h1>Quiz | lazyNerds</h1>
 
 	<main id="main">
 

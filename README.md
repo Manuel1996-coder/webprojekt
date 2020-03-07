@@ -2,19 +2,23 @@
 1. Datenbank Verbindung vorhanden bzw. anpassen!
 2. Tabelle benutzer angelegt und Daten angepasst!
 
-# NextToDo's: 
-- HomeSeite Design anpassen
-- HomeSeite anpassen -> Alle Fächer als eine extra View? oder die aktuelle View aktualisieren? Möglich überhaupt? Recherche
-- LoginView.jsp: Passwort vergessen, Registrieren, Fußnote
-- [Sevo] Startseite.jsp:  Fußnote beifügen mit Icons und Infos, Zitat, PortalView.jsp: SearchBox beifügen (nur eine Idee)
-- [Manu] RegView.jsp: erstellen LogView anpassen (background-color ausdenken), Funktion RegView: Sobald ich mich registriert habe, bin ich auch automatisch angemeldet und gelange ebenfalls zur gleichen PortalView, wie von Login aus, 
-- [Flux] ModulView.jsp: Beginne mit einem Design für die einzelnen Module, Funktion: Button mit: nächste Seite/nächstes Fach, Zurück,...
-
-
 # Hilfreiche Links
 - iframe: https://freefrontend.com/css-menu/
 - allInOne: https://codepen.io
-  
+
+# Updates:
+- titles überall anpassen
+- StarsteiteView: Überschirft anpassen, Bild mit Link anpassen, Header nach links, Icons nach unten, Feedbackseite mit Feedback anpassen
+- LoginView: Link-Farbe & Passwort anpassen, Kopf & Fußzeile hinzufügen
+- PortalView: searchbox, Standort ohne login anpassen (Hwg), Quiz mit Gewinnspiel enfügen
+- ModulView: css anpassen, name als name bei input
+- AltklausurView anpassen
+- LiteraturView: Je Fach hinzufügen
+- WarenkorbView: Kill-function überarbeiten, Summe nach 2 Stellen aufrunden
+- RechnungsView: ebenfalls 'Meine Einkäufe'
+- NotizenView: Notizen als Textarea machen und dann in DB speichern
+
+
   
   
   
