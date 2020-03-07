@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>1. Semester | Abwl</title>
+<title>Abwl | lazyNerds</title>
 <link type="text/css" rel="stylesheet" href="../css/alleModule.css" />
 <link
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"

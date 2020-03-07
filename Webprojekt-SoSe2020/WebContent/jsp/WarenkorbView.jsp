@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Warenkorb | lazyNerds</title>
 <link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
 </head>
 <body>

@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>PortalView</title>
+<title>Portal | lazyNerds</title>
 </head>
 <script type="text/javascript" src="../js/PortalJs.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />

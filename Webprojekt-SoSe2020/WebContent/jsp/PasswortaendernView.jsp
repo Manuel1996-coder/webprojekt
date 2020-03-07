@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Passwort ändern | lazyNerds</title>
 </head>
 <body>
 <jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean"

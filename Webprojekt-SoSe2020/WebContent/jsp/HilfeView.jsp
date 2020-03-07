@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Q&A | lazyNerds</title>
+<title>Hilfe | lazyNerds</title>
 </head>
 <body>
 <jsp:getProperty property="headerAsHtml" name="sb" />
