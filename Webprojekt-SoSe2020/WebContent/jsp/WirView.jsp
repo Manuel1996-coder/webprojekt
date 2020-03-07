@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<title>Wer wir sind | lazyNerds</title>
 <link rel="stylesheet" type="text/css" href="../css/Startseite.css">
-<title>Datenschutz | lazyNerds</title>
 </head>
 <body>
 	<jsp:useBean id="sb" class="de.hwg_lu.bw4s.beans.StartseiteBean"
@@ -20,7 +20,7 @@
 
 		<div class="background">
 			<br>
-			<p class="title1">Datenschutz</p>
+			<p class="title1">Wer wir sind</p>
 
 			<p class="title2">xx
 			<p class="zitat2">xx</p>
@@ -35,5 +35,6 @@
 
 
 	</form>
+
 </body>
 </html>

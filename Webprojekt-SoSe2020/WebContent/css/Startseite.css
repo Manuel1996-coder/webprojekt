@@ -4,59 +4,38 @@ body {
 
 /**-------------Header-------------**/
 header {
-	height: 90px;
+	height: 20px;
+
 }
 
-.header-menu-tab {
-	padding: 0px 30px 0px 30px; display : block;
-	line-height: 74px;
-	font-size: 17px;
-	color: #c6c5bf;
-	text-decoration: none;
-	text-align: center;
-	display: block;
-	float: right;
+.header-menu {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: right;
+	font-size: 10px;
+	background-color: transparent;
+	padding: 3em;
+
+}
+}
+input:hover {
+	opacity: 0.5;
+	color: #F60;
 }
 
-.header-menu-tab:hover {
-	background: black;
-	border-bottom: 4px solid #F60;
-	text-decoration: none;
-}
+.logo {
+	width: 70px;
+	height: 70px;
+	margin-left: 60px;
+	border-radius: 5px;
 
-.header-menu li:hover .header-menu-number {
-	text-decoration: none;
-	-webkit-transform: rotate(360deg);
-	transform: rotate(360deg);
 }
-
-.profile-menu {
-	float: left;
-	height: 80px;
-	padding-right: 25px;
-	background-color: #151414;
-}
-
-.profile-menu p {
-	font-size: 17px;
-	display: inline-block;
-	margin: 0;
-	padding-right: 10px;
-}
-
-.profile-menu a {
-	padding-left: 5px;
-}
-
-.profile-menu a:hover {
-	text-decoration: none;
-}
-
 /**-------------Content-------------**/
 .background {
 	background-color: #c6c5bf;
-	border-radius: 8px;
-	margin: 40px;
+	border-radius: 10px;
+	margin: 60px;
 }
 
 .title1 {
@@ -90,11 +69,6 @@ header {
 	border-radius: 5px;
 }
 
-.lo {
-	text-align: left;
-	margin-left: 170px;
-}
-
 .zitat2 {
 	margin-top: -10px;;
 	text-align: center;
@@ -103,48 +77,6 @@ header {
 	font-style: italic;
 }
 
-.wiki {
-	margin-left: 120px;
-	font-size: 20px;
-}
-
-.container {
-	width: 960px;
-}
-
-.navbar {
-	background-color: #808080;
-}
-
-.navbar-text {
-	text-transform: uppercase;
-	list-style-type: none;
-	color: red;
-}
-
-.navbar-text a:hover {
-	font-weight: bold;
-	text-decoration: none;
-}
-
-.jumbotron {
-	height: 800px;
-	background: transparent;
-}
-
-.page-header {
-	text-align: center;
-}
-
-.text-primary {
-	padding-top: 10px;
-}
-
-.text-secondary {
-	text-shadow: 1px 1px 1px #666666;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #cccccc;
-}
 
 h3 {
 	text-align: center;
@@ -163,30 +95,6 @@ h6 {
 	font-style: calibri;
 }
 
-.btn:hover {
-	background-color: black;
-	color: white;
-	transition: All 0.3s ease;
-	font-size: 19px;
-}
-
-.footer-nav {
-	list-style-type: none;
-}
-
-.wrapper {
-	width: 960px;
-	max-width: 90%;
-	margin: 0 auto;
-	background-color: #151414;
-}
-
-#navigation {
-	width: auto;
-	height: 80px;
-	background-color: #151414;
-	margin-left: auto;
-}
 
 #logo {
 	width: 100px;
@@ -211,23 +119,6 @@ h6 {
 	font-size: 10pt;
 }
 
-ul, li {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-
-i {
-	height: 25px;
-	width: 25px;
-	text-align: center;
-	transition: all 0.2s;
-}
-
-li {
-	float: right;
-}
-
 .one-button::before {
 	position: absolute;
 	height: 20px;
@@ -246,19 +137,14 @@ li {
 	color: #c6c5bf;
 	position: relative;
 	z-index: 99999;
-	top: 30px;
-	left: 10px;
+	top: 50px;
+	left: 0;
 	margin-left: 40px;
 	text-align: center;
 }
 
 .one-button:hover i {
 	color: #FF4500;
-}
-
-.one-button:active {
-	top: 5px;
-	transition: 0.1s;
 }
 
 .one-button i {
@@ -280,16 +166,6 @@ li {
 	border-radius: 50%;
 	z-index: 999;
 	border: 1px solid #000;
-}
-
-ul.cont {
-	left: 40px;
-	width: 550px;
-	margin-bottom: 200px;
-	text-align: center;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 #social-platforms {
@@ -375,27 +251,21 @@ ul.cont {
 	opacity: 1;
 	z-index: 50;
 }
+
 /**-------------Fusszeile-------------**/
 .footer {
 	position: absolute;
 	right: 0;
 	left: 0;
 	height: 80px;
-	
-	bottom: -40px;
 	padding: 1rem;
-	background-color: black;
-	text-align:  center;
+	background-color: #151414;
+	text-align: center;
 	font-size: 10px;
 }
-input[type=submit] {
-	background-color: #151414;
-	color: #c6c5bf;
-	border: none;
-}
 
-#submit {
-	background-color: black;
+input[type=submit] {
+	background-color: transparent;
 	color: #c6c5bf;
 	border: none;
 	font-size: 11px;

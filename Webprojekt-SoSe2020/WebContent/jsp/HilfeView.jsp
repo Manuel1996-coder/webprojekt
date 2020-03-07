@@ -1,26 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="../css/Startseite.css">
-<title>Datenschutz | lazyNerds</title>
+<title>Q&A | lazyNerds</title>
 </head>
 <body>
-	<jsp:useBean id="sb" class="de.hwg_lu.bw4s.beans.StartseiteBean"
-		scope="session"></jsp:useBean>
-	<form action="../jsp/StartseiteAppl.jsp" method="get">
-
-		<!-- HEADER-->
-
-		<jsp:getProperty property="headerAsHtml" name="sb" />
+<jsp:getProperty property="headerAsHtml" name="sb" />
 
 		<!-- CONTENT -->
 
 		<div class="background">
 			<br>
-			<p class="title1">Datenschutz</p>
+			<p class="title1">Häufige Fragen und Antworten</p>
 
 			<p class="title2">xx
 			<p class="zitat2">xx</p>
@@ -35,5 +28,6 @@
 
 
 	</form>
+
 </body>
 </html>
