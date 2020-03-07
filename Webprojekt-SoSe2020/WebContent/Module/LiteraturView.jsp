@@ -10,7 +10,7 @@
 <body>
 <jsp:useBean id="fsb" class="de.hwg_lu.bw4s.beans.LiteraturBean" scope="session" />
 <jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean" scope="session" />
-<h1>Literatur</h1>
+<h1>Literatur | lazyNerds</h1>
 
 <form action="LiteraturAppl.jsp" method="get">
 

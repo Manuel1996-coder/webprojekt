@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Skript | lazyNerds</title>
 </head>
 <jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean"
 	scope="session" />

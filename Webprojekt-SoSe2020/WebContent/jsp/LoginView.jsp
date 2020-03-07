@@ -9,7 +9,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Einloggen | lazyNerds</title>
 </head>
-<link type="text/css" rel="stylesheet" href="../css/hallo.css" />
+<link type="text/css" rel="stylesheet" href="../css/LoginStyle.css" />
+</head>
+<link type="text/css" rel="stylesheet" href="../css/Startseite.css" />
 
 <jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean"
 	scope="session" />
@@ -17,9 +19,8 @@
 	scope="session" />
 <jsp:useBean id="gb" class="de.hwg_lu.bw4s.beans.GUIBean"
 	scope="session" />
-	
-
-
+<jsp:useBean id="sb" class="de.hwg_lu.bw4s.beans.StartseiteBean"
+		scope="session"></jsp:useBean>
 <body>
 
 	<form action="./LoginAppl.jsp" method="get">
@@ -44,8 +45,7 @@
 			Neu bei LazyNerds? <a href="./LoginAppl.jsp?zurReg=zurReg"
 				href="../css/hallo.css">Registrieren</a>
 		</div>
-
-
+		<jsp:getProperty property="footerAsHtml" name="sb" />
 	</form>
 </body>
 </html>

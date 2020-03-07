@@ -9,7 +9,8 @@
 <link rel="stylesheet" type="text/css" href="../css/Startseite.css">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Startseite | lazyNerds </title>
+<script type="text/javascript" src="../js/StartseiteEinleitung.js"></script>
+<title>Startseite | lazyNerds</title>
 </head>
 <body>
 	<jsp:useBean id="sb" class="de.hwg_lu.bw4s.beans.StartseiteBean"
@@ -17,12 +18,19 @@
 	<form action="../jsp/StartseiteAppl.jsp" method="get">
 
 		<!-- HEADER -->
-
 		<jsp:getProperty property="headerAsHtml" name="sb" />
 
 		<!-- CONTENT -->
 
 		<div class="background">
+			<div id="window">
+				<div id="buttons">
+					<a href="#" id="minimize"></a> <a href="#" id="resize"></a> <a
+						href="#" id="close"></a>
+				</div>
+
+				<textarea id="textarea"></textarea>
+			</div>
 
 			<br>
 
@@ -35,10 +43,11 @@
 			<div class="Porschediv">
 				<img src="../img/imgStart/Albert-Einstein.jpg" class="Porsche">
 			</div>
-			<br>
-		</div>
 
+		</div>
+		<br> <br> <br>
 		<div id="social-platforms">
+
 			<h6>follow me</h6>
 			<div>
 				<a class="tooltip" href="https://www.facebook.com/NerdsLazy"
@@ -55,9 +64,9 @@
 					data-title="LinkedIn"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
 			</div>
 		</div>
+		<!--<jsp:getProperty property="contentStartseiteAsHtml" name="sb" />-->
 
 		<!-- FOOTER -->
-
 		<jsp:getProperty property="footerAsHtml" name="sb" />
 
 	</form>
