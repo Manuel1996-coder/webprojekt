@@ -1,0 +1,415 @@
+body {
+    background-color: #151414;
+}
+
+/**-------------Kopzeile-------------**/
+
+header {
+    height: 80px;
+}
+
+a.MeineKlasse:link {
+    color: white;
+}
+
+a.MeineKlasse:visited {
+    color: grey;
+}
+
+a.MeineKlasse:active {
+    color: #F60;
+}
+
+a.MeineKlasse:hover {
+    color: #F60;
+}
+
+.header-menu {
+    font-size: 17px;
+    line-height: 80px;
+}
+
+.header-menu-tab {
+    padding: 0 27px;
+    display: block;
+    line-height: 74px;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+}
+
+.header-menu-tab:hover {
+    background: black;
+    border-bottom: 4px solid #F60;
+    text-decoration: none;
+}
+
+.header-menu-tab .icon {
+    padding-right: 25px;
+}
+
+.header-menu li:hover .header-menu-number {
+    text-decoration: none;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.profile-menu {
+    float: right;
+    height: 80px;
+    padding-right: 25px;
+}
+
+.profile-menu p {
+    font-size: 17px;
+    display: inline-block;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.profile-menu a {
+    padding-left: 5px;
+}
+
+.profile-menu a:hover {
+    text-decoration: none;
+}
+
+/**-------------Content-------------**/
+.background {
+    background-color: #eeeeee;
+    border-radius: 8px;
+    margin: 40px;
+}
+
+.title1 {
+    color: #0f0f0f;
+    text-align: center;
+    font-size: 50px;
+    font-family: fjalla one;
+    font-weight: bold;
+}
+
+.title2 {
+    color: grey;
+    text-align: center;
+    font-size: 19px;
+    font-style: italic;
+}
+
+.img {
+    margin: 10px 40px 10px 40px;
+}
+
+.Porsche {
+    width: 100%;
+}
+
+.Porschediv {
+    background-color: #ffffff;
+    margin: 15%;
+    border-style: solid;
+    border-color: lightgrey;
+    border-radius: 5px;
+}
+
+.lo {
+    text-align: left;
+    margin-left: 170px;
+}
+
+.zitat2 {
+    margin-top: -10px;
+    ;
+    text-align: center;
+    font-size: 13px;
+    color: grey;
+    font-style: italic;
+}
+
+.wiki {
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+.container {
+    width: 960px;
+}
+
+.navbar {
+    background-color: #808080;
+}
+
+.navbar-text {
+    text-transform: uppercase;
+    list-style-type: none;
+    color: red;
+}
+
+.navbar-text a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.jumbotron {
+    height: 800px;
+    background: transparent;
+}
+
+.page-header {
+    text-align: center;
+}
+
+.text-primary {
+    padding-top: 10px;
+}
+
+.text-secondary {
+    text-shadow: 1px 1px 1px #666666;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+h6 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #eeeeee;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    transition: All 0.3s ease;
+    font-size: 19px;
+}
+
+.footer-nav {
+    list-style-type: none;
+}
+
+.wrapper {
+    width: 960px;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #151414;
+}
+
+#navigation {
+    width: auto;
+    height: 80px;
+    background-color: #151414;
+    margin-left: auto;
+}
+
+#logo {
+    width: 100px;
+    height: 70px;
+    float: left;
+    margin-top: 5px;
+    margin: auto;
+    background-color: #151414;
+}
+
+.fa-color {
+    color: #eeeeee;
+}
+
+.footer-social-links {
+    font-size: 14px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 10pt;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+i {
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+li {
+    float: left;
+}
+
+.one-button::before {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    padding: 1em;
+    border-radius: 100%;
+    content: "";
+    z-index: 999;
+    box-shadow: 0px 0px 5px 2px #666;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.one-button {
+    cursor: pointer;
+    color: #eeeeee;
+    position: relative;
+    z-index: 99999;
+    top: 30px;
+    left: 10px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.one-button:hover i {
+    color: #FF4500;
+}
+
+.one-button:active {
+    top: 5px;
+    transition: 0.1s;
+}
+
+.one-button i {
+    position: relative;
+    ;
+    z-index: 99999;
+    top: 13px;
+    left: 14px;
+    text-align: center;
+}
+
+.one-button::after {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: "";
+    height: 10px;
+    width: 10px;
+    padding: 1em;
+    border-radius: 50%;
+    z-index: 999;
+    border: 1px solid #000;
+}
+
+ul.cont {
+    left: 40px;
+    width: 550px;
+    margin-bottom: 200px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#social-platforms {
+    position: relative;
+
+    font-size: 1rem;
+    text-align: center;
+    height: 175px;
+    overflow: hidden;
+}
+
+#social-platforms a {
+    background: #000;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    font-size: 1.75em;
+    color: #fff;
+    line-height: 1.15em;
+    border: 0;
+    cursor: pointer;
+    margin: 4px;
+    padding: 10px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+    border-radius: 0 10px 10px 10px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+#social-platforms a span {
+    display: none;
+}
+
+#social-platforms a:after {
+    opacity: 0;
+    font-size: .5em;
+    font-weight: 300;
+    color: #FFF;
+    background: #000;
+    content: attr(data-title);
+    white-space: nowrap;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    z-index: -5;
+    cursor: help;
+    padding: 3px 8px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+#social-platforms a:before {
+    opacity: 0;
+    display: block;
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    margin-left: -5px;
+    z-index: 9;
+    cursor: help;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 5px solid #000;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+#social-platforms a:hover {
+    background: #F60;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.45);
+}
+
+#social-platforms a:hover:before,
+#social-platforms a:hover:after {
+    opacity: 1;
+    z-index: 50;
+}
+/**-------------Fuﬂzeile-------------**/
+
+.footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+

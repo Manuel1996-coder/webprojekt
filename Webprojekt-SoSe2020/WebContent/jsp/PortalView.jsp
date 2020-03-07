@@ -138,7 +138,7 @@
 										<li><input type="submit" name="video"
 										value="Zum HWG-LU Video" /></li>
 										<li><input type="submit" name="bewertung"
-										value="LazyNerds Bewertung" /></li>
+										value="LazyNerds Bewertungen" /></li>
 										<li><input type="submit" name="einstellungen"
 										value="Einstellungen"/></li>
 										

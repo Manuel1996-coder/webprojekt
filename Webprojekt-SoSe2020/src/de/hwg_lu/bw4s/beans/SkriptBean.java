@@ -21,6 +21,7 @@ public class SkriptBean {
 	String publikationen;
 	String funktion;
 	String beruflicher;
+	int anr;
 	boolean button;
 	Vector<Artikel> artikelListe;
 
@@ -35,7 +36,7 @@ public class SkriptBean {
 	}
 
 	public SkriptBean(String modul, String prof, String skript, String titel, String sprechstunde, String lehrgebiete,
-			String forschungsschwerpunkte, String publikationen, String beruflicher, String funktion, double summe) {
+			String forschungsschwerpunkte, String publikationen, String beruflicher, String funktion, double summe, int anr) {
 		super();
 		this.modul = modul;
 		this.prof = prof;
@@ -48,6 +49,7 @@ public class SkriptBean {
 		this.beruflicher = beruflicher;
 		this.funktion = funktion;
 		this.summe = summe;
+		this.anr = anr;
 
 	}
 
@@ -719,18 +721,20 @@ public class SkriptBean {
 					System.out.println(res.getString("AUTOR"));
 					System.out.println(res.getString("MODUL"));
 
-					Warenkorb art = new Warenkorb(res.getInt("ANR"), res.getString("ANAME"), res.getDouble("PREIS"),
-							res.getString("AUTOR"), res.getString("MODUL"));
+					
+					
+					Warenkorb art = new Warenkorb(String.valueOf(res.getInt("ANR")), res.getString("ANAME"), res.getDouble("PREIS"),
+							 res.getString("MODUL"));
 					
 					this.ausgewaehlteWarenkorbListe.add(art);
 
-					String sql2 = "insert into warenkorb (anzahl, aname, preis, modul) values (?,?,?,?)";
+					String sql2 = "insert into warenkorb (wnr, aname, preis, modul) values (?,?,?,?)";
 					System.out.println(sql2);
 
 					PreparedStatement prep = dbConn.prepareStatement(sql2);
 
-				//	prep.setInt(1, res.getInt("ANR"));
-					prep.setInt(1, 1);
+				    prep.setString(1, String.valueOf(res.getInt("ANR")));
+					
 					prep.setString(2, res.getString("ANAME"));
 					prep.setDouble(3, res.getDouble("PREIS"));
 					prep.setString(4, res.getString("MODUL"));
@@ -752,30 +756,64 @@ public class SkriptBean {
 
 	public String getHTMLFromAusgewaehlteWarenkorbProdukte() {
 
-		String alleArtikelHTML = "";
+		//String alleArtikelHTML = "";
+		String html = "";
 		this.setSumme(0.0);
 
 		for (Warenkorb art : ausgewaehlteWarenkorbListe) {
+			
+		//	String html = "";
+			
 
-			alleArtikelHTML += art.warenkorbEinführen() + "<br/>\n";
+			html += "<tr><br/>";
+			html += "<td><input type=\"text\" size=\"3\" value=\"1\"></td><br/>";
+			html += "<td>" + art.aname + "</td><br/>";
+			html += "<td>" + art.modul + "</td><br/>";
+			html += "<td>" + art.preis + "</td><br/>";
+			html += "<td>" + art.preis + "</td><br/>";
+			html += "		<td>" + 
+					"<a href='./WarenkorbAppl.jsp?action=kill&value=" + 
+								art.wnr +
+							"'>kill</a><br/>" +
+					"</td>\n<br/>";
+			
+			html += "</tr>";
+
+			 
+			
+		//	alleArtikelHTML += art.warenkorbEinführen() + "<br/>\n";
 			
 			this.summe += art.summeBerechnen();
 			
 		}
-		return alleArtikelHTML;
+		return html;
 
 	}
+	
+//	public void loescheWarenVektor(String xx) {
+//		
+//		this.ausgewaehlteWarenkorbListe.remove(xx);
+//		
+//		
+//		
+//	}
 	
 	
 	// Artikel vom Warenkorb löschen
 	
-			public void deleteArtikelVonWarenkorb() throws SQLException{
+			public void deleteArtikelVonWarenkorb(int wnr) throws SQLException{
 				String sql = "DELETE FROM warenkorb WHERE wnr = ?";
 				System.out.println(sql);
 				Connection dbConn = new PostgreSQLAccess().getConnection();
 				PreparedStatement prep = dbConn.prepareStatement(sql);
-				prep.setInt(1, 1);
+				prep.setInt(1, wnr);
 				prep.executeUpdate();
+				
+				
+				this.ausgewaehlteWarenkorbListe.removeElementAt(wnr);
+				
+				
+				//this.ausgewaehlteWarenkorbListe.clear();
 			}
 	
 	
@@ -885,5 +923,118 @@ public class SkriptBean {
 	public void setArtikelListe(Vector<Artikel> artikelListe) {
 		this.artikelListe = artikelListe;
 	}
+
+	public int getAnr() {
+		return anr;
+	}
+
+	public void setAnr(int anr) {
+		this.anr = anr;
+	}
+	
+	
+	//-----------------------------WARENKORB---------------------------------
+	
+	String wnr;
+	String aname;
+	double preis;
+	String autor;
+	
+
+	
+
+	public SkriptBean(String wnr, String aname, double preis, String autor, String modul) {
+		super();
+		this.wnr = wnr;
+		this.aname = aname;
+		this.preis = preis;
+		this.autor = autor;
+		this.modul = modul;
+	}
+
+//	public String warenkorbEinführen() {
+//		String html = "";
+//		
+//
+//		html += "<tr>";
+//		html += "<td><input type=\"text\" size=\"3\" value=\"1\"></td>";
+//		html += "<td>" + this.aname + "</td>";
+//		html += "<td>" + this.modul + "</td>";
+//		html += "<td>" + this.preis + "</td>";
+//		html += "<td>" + this.preis + "</td>";
+//		html += "		<td>" + 
+//				"<a href='./WarenkorbAppl.jsp?action=kill&value=" + 
+//							ausgewaehlteWarenkorbListe +
+//						"'>kill</a>" +
+//				"</td>\n";
+//		
+//		html += "</tr>";
+//		
+//		
+//
+//
+//		return html;
+//	}
+	
+	// Artikel vom Warenkorb löschen
+	
+		public void deleteArtikelVonWarenkorb(String wnr) throws SQLException{
+			String sql = "DELETE FROM warenkorb WHERE wnr = ?";
+			System.out.println(sql);
+			Connection dbConn = new PostgreSQLAccess().getConnection();
+			PreparedStatement prep = dbConn.prepareStatement(sql);
+			prep.setString(1, wnr);
+			prep.executeUpdate();
+		}
+	
+	public double summeBerechnen() {
+		double summe = 0.0;
+		
+		
+		
+		summe = this.preis;
+	   
+		
+		
+		return summe;
+	}
+
+	
+
+	public String getWnr() {
+		return wnr;
+	}
+
+	public void setWnr(String wnr) {
+		this.wnr = wnr;
+	}
+
+	public String getAname() {
+		return aname;
+	}
+
+	public void setAname(String aname) {
+		this.aname = aname;
+	}
+
+	public double getPreis() {
+		return preis;
+	}
+
+	public void setPreis(double preis) {
+		this.preis = preis;
+	}
+
+	public String getAutor() {
+		return autor;
+	}
+
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+
+	
+	
+	
 
 }

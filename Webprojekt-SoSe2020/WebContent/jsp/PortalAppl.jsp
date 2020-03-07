@@ -32,6 +32,9 @@
 			return s;
 	}%>
 	<%
+	
+	
+	    String bewertung = this.denullify(request.getParameter("bewertung"));
 		String logout = this.denullify(request.getParameter("logout"));
 		String appl = this.denullify(request.getParameter("appl"));
 		String comeFrom = this.denullify(request.getParameter("comeFrom"));
@@ -82,7 +85,12 @@
 			
 			response.sendRedirect("../jsp/KarteView.jsp");
 			
-		} else if (abwlbuch.equals("ABWL und Buchfuehrung")) {
+		} else if (bewertung.equals("LazyNerds Bewertungen")) {
+			
+			
+			response.sendRedirect("../jsp/BewertungView.jsp");
+			
+		}else if (abwlbuch.equals("ABWL und Buchfuehrung")) {
 			
 			kb.setModul("abwlbuch");
 			kb.setButton(true);

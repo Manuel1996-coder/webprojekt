@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Registriere | lazyNerds</title>
+<title>Registrieren | lazyNerds</title>
 <script type="text/javascript" src="../js/BW4S.js"></script>
 <link type="text/css" rel="stylesheet" href="../css/RegView.css" />
 <link type="text/css" rel="stylesheet" href="../css/RegViewStyle.css" />

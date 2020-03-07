@@ -8,7 +8,7 @@ import de.hwg_lu.bw.jdbc.PostgreSQLAccess;
 
 public class Warenkorb {
 
-	int anr;
+	String wnr;
 	String aname;
 	double preis;
 	String autor;
@@ -18,15 +18,15 @@ public class Warenkorb {
 
 	}
 
-	public Warenkorb(int anr, String aname, double preis, String autor, String modul) {
+	public Warenkorb(String wnr, String aname, double preis,  String modul) {
 		super();
-		this.anr = anr;
+		this.wnr = wnr;
 		this.aname = aname;
 		this.preis = preis;
-		this.autor = autor;
+		
 		this.modul = modul;
 	}
-
+/*
 	public String warenkorbEinführen() {
 		String html = "";
 		
@@ -39,8 +39,8 @@ public class Warenkorb {
 		html += "<td>" + this.preis + "</td>";
 		html += "		<td>" + 
 				"<a href='./WarenkorbAppl.jsp?action=kill&value=" + 
-							this.anr +
-						"'>Löschen</a>" +
+							1 +
+						"'>kill</a>" +
 				"</td>\n";
 		
 		html += "</tr>";
@@ -50,6 +50,7 @@ public class Warenkorb {
 
 		return html;
 	}
+	*/
 	
 	// Artikel vom Warenkorb löschen
 	
@@ -73,13 +74,20 @@ public class Warenkorb {
 		
 		return summe;
 	}
-
-	public int getAnr() {
-		return anr;
+	
+	public void delete(String anr) {
+		
+		
 	}
 
-	public void setAnr(int anr) {
-		this.anr = anr;
+	
+
+	public String getWnr() {
+		return wnr;
+	}
+
+	public void setWnr(String wnr) {
+		this.wnr = wnr;
 	}
 
 	public String getAname() {

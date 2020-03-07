@@ -1,4 +1,5 @@
-<%@page import="de.hwg_lu.bw4s.beans.GUIBean"%>
+ 
+ <%@page import="de.hwg_lu.bw4s.beans.GUIBean"%>
 <%@page import="de.hwg_lu.bw4s.beans.MessageBean"%>
 <%@page import="de.hwg_lu.bw4s.beans.LoginBean"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -7,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Einloggen| lazyNerds</title>
+<title>Einloggen | lazyNerds</title>
 </head>
 <link type="text/css" rel="stylesheet" href="../css/hallo.css" />
 
@@ -39,6 +40,7 @@
 			</div>
 
 			<input type="submit" class="btn" name="login" value="Anmelden">
+			Passwort vergessen?
 
 
 			Neu bei LazyNerds? <a href="./LoginAppl.jsp?zurReg=zurReg"
