@@ -38,9 +38,10 @@
 				<i class="fas fa-lock"></i> <input type="password" name="password"
 					placeholder="Passwort" value="">
 			</div>
+			 <a  href="#" id="a">Passwort vergessen?</a>
 
 			<input type="submit" class="btn" name="login" value="Anmelden">
-			Passwort vergessen?
+			
 
 
 			Neu bei LazyNerds? <a href="./LoginAppl.jsp?zurReg=zurReg"

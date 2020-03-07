@@ -117,7 +117,7 @@
 			
 			
 			
-			response.sendRedirect("../jsp/PortalView.jsp");
+			response.sendRedirect("../jsp/StartseiteView.jsp");
 			
 		}else if (sk.equals("Social Skills")) {
 			

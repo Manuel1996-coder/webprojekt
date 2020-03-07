@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Delete Account| lazyNerds</title>
+<title>Konto löschen| lazyNerds</title>
 </head>
 <link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
 <body>

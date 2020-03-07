@@ -29,7 +29,7 @@
 <br>
 
 Schreibe dein Kommentar:<br>
-<input type="text" name="kommentar" value="" placeholder="Dein Kommentar...">
+<input type="text" name="kommentar" value="" placeholder="Dein Kommentar..." >
 <br>
 <input type="submit" name="speichern" value="Speichern" >
 <input type="submit" name="timeline" value="Zur Timeline" >

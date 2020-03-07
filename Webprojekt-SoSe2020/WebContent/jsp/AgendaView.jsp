@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Startseite</title>
+<title>Agenda | lazyNerds</title>
 
 <link type="text/css" rel="stylesheet" href="../css/agenda.css" />
 </head>
@@ -47,7 +47,7 @@
 
 
 <td> <button class="glow-on-hover" type="submit" name="zurueck" value="Zurück" >Zurück</button></td>
-<td> <button class="glow-on-hover" type="submit" name="notizen" value="Meine Notizen" >Notizen</button></td>
+<td> <button class="glow-on-hover" type="submit" name="notizen" value="Notizen" >Notizen</button></td>
 
 
 </tr>

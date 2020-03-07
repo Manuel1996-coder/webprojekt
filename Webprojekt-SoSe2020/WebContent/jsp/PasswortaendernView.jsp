@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Passwort ändern | lazyNerds</title>
 </head>
 <link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
 <body>
