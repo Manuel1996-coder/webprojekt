@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>StartseiteAppl</title>
 </head>
 <body>
 	<jsp:useBean id="sb" class="de.hwg_lu.bw4s.beans.StartseiteBean"
