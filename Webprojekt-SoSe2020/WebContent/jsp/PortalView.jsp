@@ -8,13 +8,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<<<<<<< HEAD
-<title>PortalView | lazyNerds</title>
-=======
+
 <title>Portal | lazyNerds</title>
->>>>>>> branch 'master' of https://github.com/Manuel1996-coder/webprojekt.git
+
 </head>
 <script type="text/javascript" src="../js/PortalJs.js"></script>
+<script type="text/javascript" src="../js/searchbox.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 <link rel="stylesheet" type="text/css" href="../css/all.min.css" />
 <link
@@ -68,7 +67,7 @@
 									<li><input type="submit" name="PMPM"
 										value="Investition & Finanzierung" /></li>
 									<li><input type="submit" name="OR" value="VWL" /></li>
-									<li><input type="submit" name="ufü" value="Statistik" /></li>
+									<li><input type="submit" name="ufÃ¼" value="Statistik" /></li>
 									<li><input type="submit" name="betriebsrechner"
 										value="Prog II" /></li>
 									<li><input type="submit" name="algoDatenbanken"
@@ -86,8 +85,8 @@
 										value="Projekt-Mgmt & Prozess-Mgmt" /></li>
 									<li><input type="submit" name="OR"
 										value="Operations Research" /></li>
-									<li><input type="submit" name="ufü"
-										value="U-Führung & DL-Mgmt" /></li>
+									<li><input type="submit" name="ufÃ¼"
+										value="U-FÃ¼hrung & DL-Mgmt" /></li>
 									<li><input type="submit" name="betriebsrechner"
 										value="Betriebssys. & Rechnernetze" /></li>
 									<li><input type="submit" name="algoDatenbanken"
@@ -167,6 +166,21 @@
 <br>
 <br>
 <br>
+<h2> LazyNerds durchsuchen</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="../jsp/AgendaAppl.jsp?wi=Wirtschaftsinformatik">WI</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+</ul>
 <br>
 <br>
 <br>

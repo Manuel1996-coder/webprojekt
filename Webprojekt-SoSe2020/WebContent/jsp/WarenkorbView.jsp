@@ -3,13 +3,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<<<<<<< HEAD
-<title>Warenkorb | lazyNerds </title>
 
-=======
 <title>Warenkorb | lazyNerds</title>
 <link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
->>>>>>> branch 'master' of https://github.com/Manuel1996-coder/webprojekt.git
+
 </head>
 <link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
 <jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean"
