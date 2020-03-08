@@ -63,12 +63,21 @@
 		String modell = this.denullify(request.getParameter("modell"));
 		
 		
+	// 3.Semester
+	
+		String OR = this.denullify(request.getParameter("OR"));
+		String algoDatenbanken = this.denullify(request.getParameter("algoDatenbanken"));
+		String betriebsrechner = this.denullify(request.getParameter("betriebsrechner"));
+		String UFUDL = this.denullify(request.getParameter("UFUDL"));
 		
 		
 		
+	// 4. Semester
 		
-		
-		
+		String Supply = this.denullify(request.getParameter("Supply"));
+		String webAnwendung = this.denullify(request.getParameter("webAnwendung"));
+		String wahlfach = this.denullify(request.getParameter("wahlfach"));
+		String Seminar = this.denullify(request.getParameter("Seminar"));
 		
 		
 		
@@ -275,7 +284,141 @@
 			kb.publikationen();
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
+		}else if (OR.equals("Operations Research")) {
+			
+			kb.setModul("OR");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		} else if (algoDatenbanken.equals("Algo/Daten & Datenbanken")) {
+			
+			kb.setModul("algoDatenbanken");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (betriebsrechner.equals("Betriebssys. & Rechnernetze")) {
+			
+			kb.setModul("betriebsrechner");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (wahlfach.equals("Wahlfach")) {
+			
+			kb.setModul("wahlfach");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (Supply.equals("Supply Chain Managment")) {
+			
+			kb.setModul("Supply");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (webAnwendung.equals("WebAnwendungen")) {
+			
+			kb.setModul("webAnwendung");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (Seminar.equals("Seminar")) {
+			
+			kb.setModul("Seminar");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (UFUDL.equals("U-FÜhrung & DL-Mgmt")) {
+			
+			kb.setModul("UFUDL");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	
 		else if (einstellungen.equals("Einstellungen")) {
 			try{

@@ -88,8 +88,8 @@
 										value="Projekt-Mgmt & Prozess-Mgmt" /></li>
 									<li><input type="submit" name="OR"
 										value="Operations Research" /></li>
-									<li><input type="submit" name="ufÃ¼"
-										value="U-FÃ¼hrung & DL-Mgmt" /></li>
+									<li><input type="submit" name="UFUDL"
+										value="U-FÜhrung & DL-Mgmt" /></li>
 									<li><input type="submit" name="betriebsrechner"
 										value="Betriebssys. & Rechnernetze" /></li>
 									<li><input type="submit" name="algoDatenbanken"
@@ -103,11 +103,11 @@
 
 								<ul>
 									<li><input type="submit" name="wahlfach" value="Wahlfach" /></li>
-									<li><input type="submit" name="dataScience"
-										value="Data Science" /></li>
-									<li><input type="submit" name="webAnwendungs"
+									<li><input type="submit" name="Supply"
+										value="Supply Chain Managment" /></li>
+									<li><input type="submit" name="webAnwendung"
 										value="WebAnwendungen" /></li>
-									<li><input type="submit" name="seminar" value="Seminar" /></li>
+									<li><input type="submit" name="Seminar" value="Seminar" /></li>
 									<li><input type="submit" name="englisch3undSoftSkills3"
 										value="Englisch III & Soft Skills III" /></li>
 								</ul>
