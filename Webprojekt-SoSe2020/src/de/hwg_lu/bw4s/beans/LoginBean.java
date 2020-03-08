@@ -13,6 +13,7 @@ import de.hwg_lu.bw.jdbc.PostgreSQLAccess;
 public class LoginBean {
 
 	String matrkid;
+	
 	String password;
 	String aktupassword;
 	String username;

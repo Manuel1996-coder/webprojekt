@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Passwort ändern | lazyNerds</title>
 </head>
+<link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
 <body>
 <jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean"
 	scope="session" />

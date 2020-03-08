@@ -12,11 +12,14 @@
 
 <body>
 
+<jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean"
+	scope="session" />
+
 
 
 <form action="./AgendaAppl.jsp" method="get">
 
-<h1>AGENDA</h1>
+<h1> <%= kb.getModul() %> </h1>
 
 
 <table class="box">
@@ -44,6 +47,7 @@
 
 
 <td> <button class="glow-on-hover" type="submit" name="zurueck" value="Zurück" >Zurück</button></td>
+<td> <button class="glow-on-hover" type="submit" name="notizen" value="Notizen" >Notizen</button></td>
 
 
 </tr>

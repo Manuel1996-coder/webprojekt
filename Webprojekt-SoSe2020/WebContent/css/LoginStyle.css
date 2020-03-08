@@ -9,6 +9,9 @@ body {
 	background-color: #151414;
 	background-size: cover;
 }
+#a {
+	font-size: 10px;
+}
 
 .login-box {
 	width: 280px;

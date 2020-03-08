@@ -8,9 +8,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
 <title>Portal | lazyNerds</title>
+
 </head>
 <script type="text/javascript" src="../js/PortalJs.js"></script>
+<script type="text/javascript" src="../js/searchbox.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 <link rel="stylesheet" type="text/css" href="../css/all.min.css" />
 <link
@@ -61,16 +64,19 @@
 
 							<div class="sub-menu-1">
 								<ul>
-									<li><input type="submit" name="PMPM"
+									<li><input type="submit" name="Invest"
 										value="Investition & Finanzierung" /></li>
-									<li><input type="submit" name="OR" value="VWL" /></li>
-									<li><input type="submit" name="ufü" value="Statistik" /></li>
-									<li><input type="submit" name="betriebsrechner"
+									<li><input type="submit" name="VWL" value="VWL" /></li>
+									<li><input type="submit" name="Stat" value="Statistik" /></li>
+									<li><input type="submit" name="Prog2"
 										value="Prog II" /></li>
 									<li><input type="submit" name="algoDatenbanken"
 										value="Englisch & SoftSkills II" /></li>
 									<li><input type="submit" name="software"
 										value="Software Engineering" /></li>
+										<li><input type="submit" name="modell"
+										value="Modellierung" /></li>
+										
 								</ul>
 							</div></li>
 						<li><i class="fas fa-glass-cheers"></i> <input type="submit"
@@ -82,8 +88,8 @@
 										value="Projekt-Mgmt & Prozess-Mgmt" /></li>
 									<li><input type="submit" name="OR"
 										value="Operations Research" /></li>
-									<li><input type="submit" name="ufü"
-										value="U-Führung & DL-Mgmt" /></li>
+									<li><input type="submit" name="ufÃ¼"
+										value="U-FÃ¼hrung & DL-Mgmt" /></li>
 									<li><input type="submit" name="betriebsrechner"
 										value="Betriebssys. & Rechnernetze" /></li>
 									<li><input type="submit" name="algoDatenbanken"
@@ -132,11 +138,13 @@
 
 								<ul>
 									<li><input type="submit" name="standort"
-										value="Standort HWG-LU" /></li>
+										value="Mein Standort" /></li>
 									<li><input type="submit" name="ratespiel"
 										value="Zum Ratespiel" /></li>
 										<li><input type="submit" name="video"
 										value="Zum HWG-LU Video" /></li>
+										<li><input type="submit" name="bewertung"
+										value="LazyNerds Bewertungen" /></li>
 										<li><input type="submit" name="einstellungen"
 										value="Einstellungen"/></li>
 										
@@ -161,6 +169,21 @@
 <br>
 <br>
 <br>
+<h2> LazyNerds durchsuchen</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">WI</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+</ul>
 <br>
 <br>
 <br>

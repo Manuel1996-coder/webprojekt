@@ -1,5 +1,4 @@
- 
- <%@page import="de.hwg_lu.bw4s.beans.GUIBean"%>
+<%@page import="de.hwg_lu.bw4s.beans.GUIBean"%>
 <%@page import="de.hwg_lu.bw4s.beans.MessageBean"%>
 <%@page import="de.hwg_lu.bw4s.beans.LoginBean"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -10,7 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Einloggen | lazyNerds</title>
 </head>
-<link type="text/css" rel="stylesheet" href="../css/hallo.css" />
+<link type="text/css" rel="stylesheet" href="../css/LoginStyle.css" />
 
 <jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean"
 	scope="session" />
@@ -40,6 +39,11 @@
 
 			<input type="submit" class="btn" name="login" value="Anmelden">
 			
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> branch 'master' of https://github.com/Manuel1996-coder/webprojekt.git
 			Neu bei LazyNerds? <a href="./LoginAppl.jsp?zurReg=zurReg"
 				href="../css/hallo.css">Registrieren</a>
 		</div>

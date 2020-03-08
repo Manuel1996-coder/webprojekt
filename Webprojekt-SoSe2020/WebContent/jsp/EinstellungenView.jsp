@@ -10,9 +10,10 @@
 <meta charset="UTF-8">
 <title>Einstellungen | lazyNerds</title>
 </head>
+<link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
 
 
-<link type="text/css" rel="stylesheet" href="../css/einstellungen.css" />
+
 
 <body>
 	<jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean"
