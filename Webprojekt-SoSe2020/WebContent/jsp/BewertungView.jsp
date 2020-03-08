@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Bewertung | LazyNerds</title>
+<title>Bewertung | LazyNerds </title>
 </head>
 <link type="text/css" rel="stylesheet" href="../css/bewertung.css" />
 <link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
