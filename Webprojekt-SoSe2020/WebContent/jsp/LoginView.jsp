@@ -35,16 +35,9 @@
 				<i class="fas fa-lock"></i> <input type="password" name="password"
 					placeholder="Passwort" value="">
 			</div>
-			 <a  href="#" id="a">Passwort vergessen?</a>
-
-			<input type="submit" class="btn" name="login" value="Anmelden">
-			
-<<<<<<< HEAD
-=======
-
-
->>>>>>> branch 'master' of https://github.com/Manuel1996-coder/webprojekt.git
-			Neu bei LazyNerds? <a href="./LoginAppl.jsp?zurReg=zurReg"
+			<a href="#" id="a">Passwort vergessen?</a> <input type="submit"
+				class="btn" name="login" value="Anmelden"> Neu bei
+			LazyNerds? <a href="./LoginAppl.jsp?zurReg=zurReg"
 				href="../css/hallo.css">Registrieren</a>
 		</div>
 

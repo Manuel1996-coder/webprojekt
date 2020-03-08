@@ -24,11 +24,6 @@
 		else
 			return s;
 	}%>
-
-
-
-
-
 	<%
 		String dauerhaftloeschen = this.denullify(request.getParameter("dauerhaftloeschen"));
 		String zurueckEinstellungen = this.denullify(request.getParameter("zurueckEinstellungen"));
