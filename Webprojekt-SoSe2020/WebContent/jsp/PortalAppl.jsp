@@ -45,11 +45,36 @@
 		String standort = this.denullify(request.getParameter("standort"));
 		String einkaufstasche = this.denullify(request.getParameter("einkaufstasche"));
 		String video = this.denullify(request.getParameter("video"));
+	
+		
+		// 1er Semester	
 		String abwlbuch = this.denullify(request.getParameter("abwlbuch"));
 		String sk = this.denullify(request.getParameter("sk"));
 		String wm = this.denullify(request.getParameter("wm"));
 		String wi = this.denullify(request.getParameter("wi"));
 		String prog1 = this.denullify(request.getParameter("prog1"));
+		
+	// 		2.Semester	
+		String Invest = this.denullify(request.getParameter("Invest"));
+		String VWL = this.denullify(request.getParameter("VWL"));
+		String Stat = this.denullify(request.getParameter("Stat"));
+		String Prog2 = this.denullify(request.getParameter("Prog2"));
+		String software = this.denullify(request.getParameter("software"));
+		String modell = this.denullify(request.getParameter("modell"));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 		if (!lb.isLoggedIn()) {
 			mb.setNotLoggedIn();
@@ -160,7 +185,99 @@
 			kb.publikationen();
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
-		}else if (einstellungen.equals("Einstellungen")) {
+		}else if (Prog2.equals("Prog II")) {
+			
+			kb.setModul("Prog2");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (Invest.equals("Investition & Finanzierung")) {
+			
+			kb.setModul("Invest");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (VWL.equals("VWL")) {
+			
+			kb.setModul("VWL");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (Stat.equals("Statistik")) {
+			
+			kb.setModul("Stat");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (software.equals("Software Engineering")) {
+			
+			kb.setModul("software");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (modell.equals("Modellierung")) {
+			
+			kb.setModul("modell");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}
+	
+		else if (einstellungen.equals("Einstellungen")) {
 			try{
 			lb.readAccountsFromDB();
 			} catch (SQLException se){

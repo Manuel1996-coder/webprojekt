@@ -64,16 +64,19 @@
 
 							<div class="sub-menu-1">
 								<ul>
-									<li><input type="submit" name="PMPM"
+									<li><input type="submit" name="Invest"
 										value="Investition & Finanzierung" /></li>
-									<li><input type="submit" name="OR" value="VWL" /></li>
-									<li><input type="submit" name="ufÃ¼" value="Statistik" /></li>
-									<li><input type="submit" name="betriebsrechner"
+									<li><input type="submit" name="VWL" value="VWL" /></li>
+									<li><input type="submit" name="Stat" value="Statistik" /></li>
+									<li><input type="submit" name="Prog2"
 										value="Prog II" /></li>
 									<li><input type="submit" name="algoDatenbanken"
 										value="Englisch & SoftSkills II" /></li>
 									<li><input type="submit" name="software"
 										value="Software Engineering" /></li>
+										<li><input type="submit" name="modell"
+										value="Modellierung" /></li>
+										
 								</ul>
 							</div></li>
 						<li><i class="fas fa-glass-cheers"></i> <input type="submit"
@@ -171,7 +174,7 @@
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
 <ul id="myUL">
-  <li><a href="../jsp/AgendaAppl.jsp?wi=Wirtschaftsinformatik">WI</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">WI</a></li>
   <li><a href="#">Agnes</a></li>
 
   <li><a href="#">Billy</a></li>
