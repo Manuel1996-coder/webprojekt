@@ -9,7 +9,6 @@
 <link rel="stylesheet" type="text/css" href="../css/Startseite.css">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script type="text/javascript" src="../js/StartseiteEinleitung.js"></script>
 <title>Startseite | lazyNerds</title>
 </head>
 <body>
@@ -21,21 +20,32 @@
 		<jsp:getProperty property="headerAsHtml" name="sb" />
 
 		<!-- CONTENT -->
-
 		<div class="background">
-			<div id="window">
-				<div id="buttons">
-					<a href="#" id="minimize"></a> <a href="#" id="resize"></a> <a
-						href="#" id="close"></a>
-				</div>
 
+			<!-- Text erscheint beim Laden von selbst -->
+			<script type="text/javascript">
+				var textarea = $('textarea'), speed = 80, text = 'Hallo wir sind cool.';
+
+				function writeText(text) {
+					textarea.text(textarea.text()
+							+ text[$('#textarea').text().length]);
+
+					if (textarea.text().length == text.length) {
+						clearInterval(timeout);
+					}
+				}
+				var timeout = setInterval('writeText(text)', speed);
+			</script>
+
+			<div class="Porschediv">
 				<textarea id="textarea"></textarea>
 			</div>
-
 			<br>
-
-			<p class="title1">Albert Einstein</p>
-
+			
+			<div class="abstand">
+				<p class="title1">Albert Einstein</p>
+			</div>
+			
 			<p class="title2">Man muss die Welt nicht verstehen, man muss
 				sich nur darin zurechtfinden.
 			<p class="zitat2">- Albert Einstein</p>
@@ -65,10 +75,8 @@
 			</div>
 		</div>
 		<!--<jsp:getProperty property="contentStartseiteAsHtml" name="sb" />-->
-
 		<!-- FOOTER -->
 		<jsp:getProperty property="footerAsHtml" name="sb" />
-
 	</form>
 </body>
 </html>
