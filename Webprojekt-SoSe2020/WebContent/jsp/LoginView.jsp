@@ -1,4 +1,5 @@
-<%@page import="de.hwg_lu.bw4s.beans.GUIBean"%>
+ 
+ <%@page import="de.hwg_lu.bw4s.beans.GUIBean"%>
 <%@page import="de.hwg_lu.bw4s.beans.MessageBean"%>
 <%@page import="de.hwg_lu.bw4s.beans.LoginBean"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -9,9 +10,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Einloggen | lazyNerds</title>
 </head>
-<link type="text/css" rel="stylesheet" href="../css/LoginStyle.css" />
-</head>
-<link type="text/css" rel="stylesheet" href="../css/Startseite.css" />
+<link type="text/css" rel="stylesheet" href="../css/hallo.css" />
 
 <jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean"
 	scope="session" />
@@ -19,8 +18,7 @@
 	scope="session" />
 <jsp:useBean id="gb" class="de.hwg_lu.bw4s.beans.GUIBean"
 	scope="session" />
-<jsp:useBean id="sb" class="de.hwg_lu.bw4s.beans.StartseiteBean"
-		scope="session"></jsp:useBean>
+
 <body>
 
 	<form action="./LoginAppl.jsp" method="get">
@@ -38,14 +36,14 @@
 				<i class="fas fa-lock"></i> <input type="password" name="password"
 					placeholder="Passwort" value="">
 			</div>
+			 <a  href="#" id="a">Passwort vergessen?</a>
 
 			<input type="submit" class="btn" name="login" value="Anmelden">
-
-
+			
 			Neu bei LazyNerds? <a href="./LoginAppl.jsp?zurReg=zurReg"
 				href="../css/hallo.css">Registrieren</a>
 		</div>
-		<jsp:getProperty property="footerAsHtml" name="sb" />
+
 	</form>
 </body>
 </html>
