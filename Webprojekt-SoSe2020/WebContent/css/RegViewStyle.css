@@ -21,7 +21,7 @@ body {
 .reg-box h1 {
   float: left;
   font-size: 40px;
-  border-bottom: 6px solid #FF4500;
+  border-bottom: 6px solid #F60;
   margin-bottom: 50px;
   padding: 13px 0;
 }
@@ -32,7 +32,7 @@ body {
   font-size: 20px;
   padding: 8px 0;
   margin: 8px 0;
-  border-bottom: 1px solid #FF4500;
+  border-bottom: 1px solid #F60;
 }
 
 .textbox i {
@@ -55,7 +55,7 @@ body {
 .btn {
   width: 100%;
   background: none;
-  border: 2px solid #FF4500;
+  border: 2px solid #F60;
   color: white;
   padding: 5px;
   font-size: 18px;
@@ -65,7 +65,7 @@ body {
 
 .btn:hover {
 
-  background-color: #FF8C00;
+  background-color: #F60;
 }
 
 .registrierenLink {
@@ -77,7 +77,7 @@ body {
 
 a:link {
   background-color: transparent;
-  color: #FF4500;
+  color: #F60;
 
 }
 
@@ -89,9 +89,4 @@ a:active {
 
 #detail {
   margin-bottom: 0px;
-}
-
-*/ das ist doch erstmal Ã¼berflÃ¼ssig */ *.fehler {
-  color: red;
-
 }

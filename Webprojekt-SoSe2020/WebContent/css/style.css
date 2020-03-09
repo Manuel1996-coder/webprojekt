@@ -21,7 +21,7 @@ input {
 }
 
 .menu-bar {
-	background: #FF4500;
+	background: #F60;
 	text-align: center;
 	width: 100%;
 }
@@ -45,7 +45,7 @@ input {
 }
 
 .menu-bar ul li:hover {
-	background: #FF8C00;
+	background: #e75c01;
 	border-radius: 12px;
 }
 
@@ -60,7 +60,7 @@ input {
 .menu-bar ul li:hover .sub-menu-1 {
 	display: block;
 	position: absolute;
-	background: #FF4500;
+	background: #F60;
 	margin-top: 10px;
 	margin-left: -15px;
 }
