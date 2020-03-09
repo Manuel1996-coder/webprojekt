@@ -31,7 +31,7 @@
 		</div>
 
 		<!-- FOOTER -->
-		<jsp:getProperty property="footerAsHtml" name="sb" />
+		<jsp:getProperty property="startFooterAsHtml" name="sb" />
 
 
 	</form>

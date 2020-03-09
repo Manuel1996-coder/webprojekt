@@ -55,7 +55,7 @@
 		}
 
 		else if (feedback.equals("Feedback")) {
-			response.sendRedirect("../jsp/FeedbackView.jsp");
+			response.sendRedirect("../jsp/TimelineView.jsp");
 		}
 
 		else if (wir.equals("Wer wir sind")) {

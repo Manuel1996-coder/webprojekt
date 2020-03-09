@@ -22,16 +22,16 @@
 	scope="session" />
 <jsp:useBean id="gb" class="de.hwg_lu.bw4s.beans.GUIBean"
 	scope="session" />
+<jsp:useBean id="sb" class="de.hwg_lu.bw4s.beans.StartseiteBean"
+	scope="session" />
 
 <body>
-	<jsp:useBean id="sb" class="de.hwg_lu.bw4s.beans.StartseiteBean"
-		scope="session"></jsp:useBean>
-	<form action="../jsp/StartseiteAppl.jsp" method="get">
-
+	<form action="../jsp/LoginAppl.jsp" method="get">
 
 		<!-- HEADER -->
 		<jsp:getProperty property="headerAsHtml" name="sb" />
 
+		<!-- CONTENT -->
 		<div class="login-box">
 
 			<h1>Login</h1>
@@ -48,9 +48,12 @@
 			<a href="#" id="a">Passwort vergessen?</a> <input type="submit"
 				class="btn" name="login" value="Anmelden"> Neu bei
 			LazyNerds? <a href="./LoginAppl.jsp?zurReg=zurReg"
-				href="../css/hallo.css">Registrieren</a>
+				href="../css/LoginStyle.css"> Registrieren</a>
 		</div>
-		
+
+		<!-- FOOTER -->
+		<jsp:getProperty property="loginUndRegFooterAsHtml" name="sb" />
+
 	</form>
 </body>
 </html>
