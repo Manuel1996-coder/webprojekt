@@ -11,6 +11,14 @@ import de.hwg_lu.bw.jdbc.PostgreSQLAccess;
 
 public class SkriptBean {
 
+	public String getAltklausur() {
+		return altklausur;
+	}
+
+	public void setAltklausur(String altklausur) {
+		this.altklausur = altklausur;
+	}
+	String altklausur; 
 	String modul;
 	String prof;
 	String skript;
@@ -36,7 +44,7 @@ public class SkriptBean {
 	}
 
 	public SkriptBean(String modul, String prof, String skript, String titel, String sprechstunde, String lehrgebiete,
-			String forschungsschwerpunkte, String publikationen, String beruflicher, String funktion, double summe, int anr) {
+			String forschungsschwerpunkte, String publikationen, String beruflicher, String funktion, double summe, int anr, String altklausur) {
 		super();
 		this.modul = modul;
 		this.prof = prof;
@@ -50,6 +58,7 @@ public class SkriptBean {
 		this.funktion = funktion;
 		this.summe = summe;
 		this.anr = anr;
+		this.altklausur=altklausur;
 
 	}
 
