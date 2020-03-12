@@ -15,12 +15,7 @@ header {
 	font-size: 10px;
 	background-color: transparent;
 	padding: 3em;
-}
-
-}
-input:hover {
-	opacity: 0.5;
-	color: #F60;
+	color: grey;
 }
 
 .logo {
@@ -34,27 +29,27 @@ input:hover {
 textarea {
 	width: 100%;
 	min-height: 190px;
-	background: #c6c5bf;
+	background: transparent;
 	font-family: Verdana, sans-serif;
 	font-size: 95%;
 	color: #333;
 	overflow: auto;
 	position: relative;
 	border-radius: 10px;
-	border-color: grey;
+	border-color: #151414;
 	border-style: solid;
-	margin-top: 50px;
+	margin-top: 70px;
 }
 
 .start-background {
-	background-color: #c6c5bf;
+	background-color: #151414;
 	border-radius: 10px;
 	margin: 45px;
-	margin-top: -130px;
+	margin-top: 120px;
 }
 
 .background {
-	background-color: #c6c5bf;
+	background-color: #151414;
 	border-radius: 10px;
 	margin: 45px;
 	margin-top: 70px;
@@ -64,18 +59,16 @@ textarea {
 	margin-top: -50px;
 }
 
-
 .title1 {
-	color: #0f0f0f;
+	color: #c6c5bf;
 	text-align: center;
 	font-size: 50px;
 	font-family: fjalla one;
 	font-weight: bold;
-	margin-top: 20px;
 }
 
 .title2 {
-	color: grey;
+	color: #c6c5bf;
 	text-align: center;
 	font-size: 19px;
 	font-style: italic;
@@ -87,15 +80,44 @@ textarea {
 
 .Porsche {
 	width: 100%;
-	margin-bottom: 50px;
-	border-style: #c6c5bf;
+	margin-bottom: 10px;
+	border-style: solid;
 	border-color: grey;
 	border-radius: 10px;
 }
 
 .Porschediv {
-	background-color: #c6c5bf;
-	margin: 15%;
+	background-color: #151414;
+	margin: 30%;
+	margin-top: 45px;
+}
+
+.border1, .border2, .border3 {
+	float: left;
+	width: 100%;
+	margin-right: 2%;
+	padding: 20px;
+	background: #151414;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: grey;
+}
+
+.border3 {
+	margin-right: 0;
+}
+
+.border {
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+	padding: 20px;
+	background: #eee;
+	box-sizing: border-box;
+}
+.border:last-child {
+     margin-right: 0;
 }
 
 .zitat2 {
@@ -171,7 +193,7 @@ h6 {
 }
 
 .one-button:hover i {
-	color: #FF4500;
+	color: #F60;
 }
 
 .one-button i {
@@ -284,12 +306,12 @@ h6 {
 	position: absolute;
 	right: 0;
 	left: 0;
-	bottom: auto;
-	height: 80px;
+	margin: 10%; s height : 80px;
 	padding: 1rem;
 	background-color: #151414;
 	text-align: center;
-	margin-top: 10%;
+	margin-top: -20%;
+	height: 80px;
 }
 
 .login-footer {
@@ -301,14 +323,13 @@ h6 {
 	background-color: #151414;
 	text-align: center;
 	margin-top: 50%;
-	
 }
 
 .submit {
 	background-color: transparent;
 	color: #c6c5bf;
 	border: none;
-	font-size: 11px;
+	font-size: 15px;
 }
 
 /** HilfeView**/
@@ -326,7 +347,7 @@ h6 {
 
 .box {
 	position: relative;
-	background: #c6c5bf;
+	background: #151414;
 	height: 64px;
 	transition: all .15s ease-in-out;
 	margin-bottom: 20px;
@@ -367,7 +388,7 @@ h6 {
 	font-size: medium;
 	padding: 20px;
 	line-height: 120%;
-	color: black;
+	color: white;
 	display: none;
 }
 
@@ -388,7 +409,7 @@ input:checked+.box {
 }
 
 input:checked+.box .box-title {
-	background: #c6c5bf;
+	background: white;
 	border-bottom: 1px solid rgba(0, 0, 0, .18);
 }
 
@@ -418,4 +439,12 @@ input:checked+section.box .box-title:before {
 
 .color {
 	color: #F60;
+}
+
+input:hover {
+	color: white;
+}
+
+input {
+	color: grey;
 }

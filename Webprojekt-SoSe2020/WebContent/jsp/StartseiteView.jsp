@@ -10,7 +10,7 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<script type="text/javascript" src="../js/Startseite.s"></script>
+<script type="text/javascript" src="../js/Startseite.js"></script>
 <title>Startseite | lazyNerds</title>
 </head>
 <body>
@@ -24,24 +24,44 @@
 		<!-- CONTENT -->
 		<div class="start-background">
 
-			<div class="Porschediv">
+			<!-- <div class="Porschediv">
 				<textarea id="textarea"></textarea>
 			</div>
 			<br>
 
-			<div class="abstand-top">
-				<p class="title1">Albert Einstein</p>
-			</div>
+			<div class="abstand-top"> -->
+			<p class="title1">lazyNerds</p>
+		</div>
 
-			<p class="title2">Man muss die Welt nicht verstehen, man muss
-				sich nur darin zurechtfinden.
-			<p class="zitat2">- Albert Einstein</p>
+		<p class="title2">Man muss die Welt nicht verstehen, man muss sich
+			nur darin zurechtfinden.
+		<p class="zitat2">- Albert Einstein</p>
 
-			<div class="Porschediv">
-				<img src="../img/imgStart/Albert-Einstein.jpg" class="Porsche">
-			</div>
+		<div class="Porschediv">
+			<img src="../img/imgStart/Albert-Einstein.jpg" class="Porsche">
 
 		</div>
+		<div class="Porschediv">
+			<p class="title2">Sei auch ein lazyNerd!</p>
+			<div class="border">
+			<div class="border1" style="color: #c6c5bf;">
+				All die Jahre, f&uuml;r was den ganzen Aufwand genommen. Tagelang
+				auf eine Antwort von der ehemaligen Kommilitonen gewartet. Den
+				gr&ouml;&szlig;ten Stress &uuml;berhaupt erlebt, da ich keine
+				Struktur in meinem Leben hatte. Sei es in meinem Kleiderschrank,
+				Auto, Beziehung oder meinen Mitschrieben. Ich wusste nie was
+				P&uuml;nktlichkeit bedeutet. Und schon gar nicht wie man einen
+				Skript bearbeitet. Sei eine Ver&auml;ndung f&uuml;r dich selbst und
+				registriere dich kostenlos bei uns im <a href="../jsp/RegView.jsp">Portal</a>
+				ein. Wir garantieren dir, dein Studium so einfach wie m&ouml;glich
+				zu gestalten!
+			</div>
+			<div class="border2">hi</div>
+			<div class="border3"></div>
+			</div>
+		</div>
+
+
 		<br> <br> <br>
 		<div id="social-platforms">
 
@@ -62,7 +82,6 @@
 			</div>
 		</div>
 		<!--<jsp:getProperty property="contentStartseiteAsHtml" name="sb" />-->
-
 		<!-- FOOTER -->
 		<jsp:getProperty property="startFooterAsHtml" name="sb" />
 	</form>
