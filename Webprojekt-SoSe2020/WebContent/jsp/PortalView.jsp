@@ -15,6 +15,7 @@
 <script type="text/javascript" src="../js/PortalJs.js"></script>
 <script type="text/javascript" src="../js/searchbox.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/footer.css" />
 <link rel="stylesheet" type="text/css" href="../css/all.min.css" />
 <link
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -29,9 +30,11 @@
 			scope="session" />
 		<jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean"
 			scope="session" />
-			<jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean"
-	scope="session" />
-			
+		<jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean"
+			scope="session" />
+		<jsp:useBean id="sb" class="de.hwg_lu.bw4s.beans.StartseiteBean"
+			scope="session" />
+
 
 		<form action="./PortalAppl.jsp" method="get">
 
@@ -54,8 +57,7 @@
 									<li><input type="submit" name="sk" value="Social Skills" /></li>
 									<li><input type="submit" name="wi"
 										value="Wirtschaftsinformatik" /></li>
-									<li><input type="submit" name="prog1"
-										value="Prog I" /></li>
+									<li><input type="submit" name="prog1" value="Prog I" /></li>
 								</ul>
 							</div></li>
 
@@ -68,15 +70,14 @@
 										value="Investition & Finanzierung" /></li>
 									<li><input type="submit" name="VWL" value="VWL" /></li>
 									<li><input type="submit" name="Stat" value="Statistik" /></li>
-									<li><input type="submit" name="Prog2"
-										value="Prog II" /></li>
+									<li><input type="submit" name="Prog2" value="Prog II" /></li>
 									<li><input type="submit" name="algoDatenbanken"
 										value="Englisch & SoftSkills II" /></li>
 									<li><input type="submit" name="software"
 										value="Software Engineering" /></li>
-										<li><input type="submit" name="modell"
+									<li><input type="submit" name="modell"
 										value="Modellierung" /></li>
-										
+
 								</ul>
 							</div></li>
 						<li><i class="fas fa-glass-cheers"></i> <input type="submit"
@@ -141,13 +142,13 @@
 										value="Mein Standort" /></li>
 									<li><input type="submit" name="ratespiel"
 										value="Zum Ratespiel" /></li>
-										<li><input type="submit" name="video"
+									<li><input type="submit" name="video"
 										value="Zum HWG-LU Video" /></li>
-										<li><input type="submit" name="bewertung"
+									<li><input type="submit" name="bewertung"
 										value="LazyNerds Bewertungen" /></li>
-										<li><input type="submit" name="einstellungen"
-										value="Einstellungen"/></li>
-										
+									<li><input type="submit" name="einstellungen"
+										value="Einstellungen" /></li>
+
 									<li><input type="submit" name="hilfe" value="Hilfe" /></li>
 								</ul>
 							</div></li>
@@ -162,42 +163,21 @@
 	</header>
 
 	<!-- SEARCHBOX -->
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h2> LazyNerds durchsuchen</h2>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-
-<ul id="myUL">
-  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">WI</a></li>
-  <li><a href="#">Agnes</a></li>
-
-  <li><a href="#">Billy</a></li>
-  <li><a href="#">Bob</a></li>
-
-  <li><a href="#">Calvin</a></li>
-  <li><a href="#">Christina</a></li>
-  <li><a href="#">Cindy</a></li>
-</ul>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
+	<h2>
+		Hi lazyNerd! <br> Zu lazy um zu suchen?
+	</h2>
 
 	<div class="container">
 		<div class="search-box">
-			<input id="search" placeholder=" Search..." pattern="bottom" type="text" class="input" title="Nach was suchst du?">
+			<input id="search" placeholder="Durchsuche lazyNerds..."
+				pattern="middle" type="text" class="input"
+				title="Nach was suchst du?">
 		</div>
+
 	</div>
+
+	<jsp:getProperty property="loginUndRegFooterAsHtml" name="sb" />
+
 </body>
 </html>

@@ -9,7 +9,7 @@ public class StartseiteBean {
 	public String getHeaderAsHtml() {
 		String header = "";
 
-		header += "<header>\n" + "		<img src=\"../img/imgStart/logo.png\" class=\"logo\">\n"
+		header += "<header>\n" + "		<a href=\"../jsp/StartseiteView.jsp\"><img src=\"../img/imgStart/logo.png\" class=\"logo\"></a>\n"
 				+ "			<div class=\"header-menu\">\n"
 				+ "					<input type=\"submit\" name=\"home\" value=\"Home\" class=\"submit\"> <input\n"
 				+ "						type=\"submit\" name=\"wir\" value=\"Wer wir sind\" class=\"submit\"> <input\n"
@@ -54,7 +54,7 @@ public class StartseiteBean {
 				+ "			<input type=\"submit\" name=\"datenschutz\"\n"
 				+ "				value=\"Datenschutz\" class=\"submit\"> <input type=\"submit\"\n"
 				+ "				name=\"kontakt\" value=\"Kontakt\" class=\"submit\"> <input type=\"submit\"\n"
-				+ "				name=\"feedback\" value=\"Feedback\" class=\"submit\"><input type=\"submit\"\n"
+				+ "				name=\"feedback\" value=\"Feedback\" class=\"submit\"> <input type=\"submit\"\n"
 				+ "				name=\"support\" value=\"Support\" class=\"submit\"><br>\n"
 				+ "			<h3>Copyright © 2020 lazyNerds</h3>\n" + "</div>";
 
@@ -69,7 +69,7 @@ public class StartseiteBean {
 				+ "			<input type=\"submit\" name=\"datenschutz\"\n"
 				+ "				value=\"Datenschutz\" class=\"submit\"> <input type=\"submit\"\n"
 				+ "				name=\"kontakt\" value=\"Kontakt\" class=\"submit\"> <input type=\"submit\"\n"
-				+ "				name=\"feedback\" value=\"Feedback\" class=\"submit\"><input type=\"submit\"\n"
+				+ "				name=\"feedback\" value=\"Feedback\" class=\"submit\"> <input type=\"submit\"\n"
 				+ "				name=\"support\" value=\"Support\" class=\"submit\"><br>\n"
 				+ "			<h3>Copyright © 2020 lazyNerds</h3>\n" + "</div>";
 

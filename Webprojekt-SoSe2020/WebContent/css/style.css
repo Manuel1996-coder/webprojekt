@@ -10,7 +10,14 @@ body {
 	background-size: cover;
 	background-position: bottom;
 	color: #fff;
+}
 
+h2 {
+	text-align: center;
+	color: #c6c5bf;
+	font-family: sans-serif;
+	text-decoration: none;
+	margin-top: 20%;
 }
 
 input {
@@ -45,7 +52,7 @@ input {
 }
 
 .menu-bar ul li:hover {
-	background: #e75c01;
+	background: #F60;
 	border-radius: 12px;
 }
 
@@ -84,7 +91,7 @@ input {
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul li a:hover {
-	color: #FF8C00;
+	color: #F60;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Cookie');
@@ -97,15 +104,14 @@ input {
 	;
 
 .container {
-	width: 700px;
-	margin: auto;
-	position: relative;
+	margin: 10%;
+	position: absolute;
 }
 
 .search-box {
 	width: 100%;
-	position: relative;
-	top: 100px;
+	position: absolute;
+	margin-bottom: 20px;
 	height: 40px;
 }
 
@@ -116,10 +122,12 @@ input {
 }
 
 .search-box>#search {
-	width: 640px;
-	height: 48px;
+	width: 350px;
+	height: 45px;
 	border-radius: 0px 0px 6px 6px;
 	box-shadow: 1px 2px 2px black;
+	margin-bottom: 10%;
+	text-align: center;
 }
 
 .input:focus {
@@ -129,48 +137,71 @@ input {
 	padding: 0px 12px;
 }
 
-
-
-
-
-
-
-
-
-
-
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 #myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
+	background-image: url('/css/searchicon.png');
+	background-position: 10px 12px;
+	background-repeat: no-repeat;
+	width: 100%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 1px solid #ddd;
+	margin-bottom: 12px;
 }
 
 #myUL {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
 #myUL li a {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block
+	border: 1px solid #ddd;
+	margin-top: -1px; /* Prevent double borders */
+	background-color: #f6f6f6;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+	display: block
 }
+#myUL
 
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
+ 
+
+li
+
+ 
+
+a
+
+
+:hover
+
+
+:not
+
+ 
+
+(
+.header
+
+ 
+
+)
+{
+background-color
+
+
+:
+
+ 
+
+#eee
+
+
+;
 }
