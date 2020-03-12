@@ -18,7 +18,7 @@
 
 <h1>Altklausur</h1>
 
-<iframe src="<%=kb.getSkript()%>" width="100%" height="500px"> 
+<iframe src="<%=kb.getAltklausur()%>" width="100%" height="500px"> 
 
 </iframe>
 

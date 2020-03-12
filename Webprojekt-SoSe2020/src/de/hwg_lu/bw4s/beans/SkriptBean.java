@@ -69,11 +69,13 @@ public class SkriptBean {
 
 			this.setProf("Prof. Dr. rer. pol. Stefan Bongard");
 			this.setSkript("../Skript/Skript1/bwlSkript.pdf#toolbar=0");
+			this.setAltklausur("../Altklausuren/Semester1/BWL.pdf");
 
 			break;
 		case "wm":
 			this.setProf("Prof. Dr. Wirtschaftsmathe");
 			this.setSkript("./Skript/bwlSkript.pdf");
+			this.setAltklausur("../Altklausuren/Semester1/WM.pdf");
 
 			break;
 		case "sk":
@@ -89,32 +91,38 @@ public class SkriptBean {
 		case "prog1":
 			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
 			this.setSkript("../Skript/Skript1/Programierung1.pdf");
+			this.setAltklausur("../Altklausuren/Semester1/Prog1.pdf");
 
 			break;
 		case "Invest":
 			this.setProf("Prof. Dr. Andreas Diesch");
 			this.setSkript("../Skript/Skript2/Invest.pdf");
+			this.setAltklausur("../Altklausuren/Semester2/Invest.pdf");
 			
 			break;
 		case "modell":
 			this.setProf("Prof. Dr. Dorrhauer");
 			this.setSkript("../Skript/Skript2/Modellierung.pdf");
+			this.setAltklausur("../Altklausuren/Semester2/Modell.pdf");
 			
 			break;
 		case "software":
 			this.setProf("Prof. Dr. Dorrhauer");
 			this.setSkript("../Skript/Skript2/software.pdf");
+			this.setAltklausur("../Altklausuren/Semester2/SE.pdf");
 			
 			
 			break;
 		case "Prog2":
 			this.setProf("Prof. Dr. Peer Küppers");
 			this.setSkript("../Skript/Skript2/Programierung2.pdf");
+			this.setAltklausur("../Altklausuren/Semester2/Prog2.pdf");
 		
 			break;
 		case "VWL":
 			this.setProf("Markus, Heilig");
 			this.setSkript("../Skript/Skript2/VWL.pdf");
+			this.setAltklausur("../Altklausuren/Semester3/VWL.pdf");
 			
 			break;
 		case "OR":
@@ -125,16 +133,19 @@ public class SkriptBean {
 		case "algoDatenbanken":
 			this.setProf("Prof. Dr. Peer Küppers");
 			this.setSkript("../Skript/Skript3/Datenbanken.pdf");
+			this.setAltklausur("../Altklausuren/Semester3/Algorithme.pdf");
 			
 			break;
 		case "betriebsrechner":
 			this.setProf("Michael Gauglitz");
 			this.setSkript("../Skript/Skript3/Betriebssysteme.pdf");
+			this.setAltklausur("../Altklausuren/Semester3/Rechnerntze.pdf");
 			
 			break;
 		case "UFUDL":
 			this.setProf("Prof. Dr. rer. pol. Martin Selchert");
 			this.setSkript("../Skript/Skript4/DLM.pdf");
+			this.setAltklausur("../Altklausuren/Semester4/DL&UFU.pdf");
 			
 			break;
 		case "Supply":
@@ -145,6 +156,7 @@ public class SkriptBean {
 		case "webAnwendung":
 			this.setProf("Prof. Dr. Haio Röckle");
 			this.setSkript("../Skript/Skript4/Anwendung.pdf");
+			this.setAltklausur("../Altklausuren/Semester4/WEB.pdf");
 			
 			break;
 		case "Seminar":
@@ -155,6 +167,7 @@ public class SkriptBean {
 		case "wahlfach":
 			this.setProf("Prof. Dr. rer. pol. Petra Weber-Dreßler");
 			this.setSkript("../Skript/Skript4/Controlling.pdf");
+			this.setAltklausur("../Altklausuren/Semester4/WM.pdf");
 			
 	
 		default:
@@ -198,6 +211,7 @@ public class SkriptBean {
 		case "wm":
 			this.setProf("Prof. Dr. Wirtschaftsmathe");
 			this.setSkript("../Skript/bwlSkript.pdf");
+			this.setAltklausur("../Altklausuren/Semester1/WM.pdf");
 
 			break;
 		case "sk":
@@ -254,6 +268,7 @@ public class SkriptBean {
 
 			this.setProf("Prof. Dr. Dorrhauer");
 			this.setSkript("../Skript/Skript2/Ewi.pdf");
+			this.setAltklausur("../Altklausuren/Semester1/EWI.pdf");
 
 			break;
 		case "prog1":
@@ -284,6 +299,7 @@ public class SkriptBean {
 
 			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
 			this.setSkript("../Skript/Skript1/Programierung1.pdf");
+			this.setAltklausur("../Altklausuren/Semester1/Prog1.pdf");
 
 			break;
 			
@@ -315,6 +331,7 @@ public class SkriptBean {
 
 			this.setProf("Prof. Dr. Peer Küppersr");
 			this.setSkript("../Skript/Skript2/Programierung2.pdf");
+			this.setAltklausur("../Altklausuren/Semester2/Prog2.pdf");
 
 			break;
 		case "Invest":
@@ -343,6 +360,9 @@ public class SkriptBean {
 			html += "<a href=\"mailto:andreas.diesch@hwg-lu.de\">andreas.diesch@hwg-lu.de</a>\n";
 
 			this.setTitel(html);
+			this.setProf("Prof. Dr. Diesch");
+			this.setSkript("../Skript/Skript2/software.pdf");
+			this.setAltklausur("../Altklausuren/Semester2/Invest.pdf");
 
 			break;
 		case "software":
