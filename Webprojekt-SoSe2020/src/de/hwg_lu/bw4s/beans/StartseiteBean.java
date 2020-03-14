@@ -33,7 +33,7 @@ public class StartseiteBean {
 	public String getStartFooterAsHtml() {
 		String footer = "";
 
-		footer += "<div class=\"footer\">\n"
+		footer += "<div class=\"start-footer\">\n"
 				+ "			 <input type=\"submit\" name=\"impressum\" value=\"Impressum\" class=\"submit\">\n"
 				+ "			<input type=\"submit\" name=\"datenschutz\"\n"
 				+ "				value=\"Datenschutz\" class=\"submit\"> <input type=\"submit\"\n"
@@ -44,7 +44,7 @@ public class StartseiteBean {
 
 		return footer;
 	}
-	// Fußzeile für logn und reg
+	// Fußzeile für login und reg
 
 	public String getLoginUndRegFooterAsHtml() {
 		String footer = "";

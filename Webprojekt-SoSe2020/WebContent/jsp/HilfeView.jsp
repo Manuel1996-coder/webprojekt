@@ -7,7 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='https://fonts.googleapis.com/css?family=Fjalla+One'
 	rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="../css/Startseite.css">
+	<link rel="stylesheet" type="text/css" href="../css/Startseite.css">
+	
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Hilfe | lazyNerds</title>
@@ -25,6 +26,7 @@
 			<br>
 			<p class="title1">Häufige Fragen und Antworten</p>
 
+			<div class="Porschediv">
 			<nav class="accordion arrows">
 
 				<input type="radio" name="accordion" id="cb1" />
@@ -216,12 +218,13 @@
 				</section>
 				<input type="radio" name="accordion" id="acc-close" />
 			</nav>
+			</div>
 			<br> <br>
 			<br>
 
 
 			<!-- FOOTER -->
-			<jsp:getProperty property="startFooterAsHtml" name="sb" />
+			<jsp:getProperty property="loginFooterAsHtml" name="sb" />
 	</form>
 </body>
 </html>

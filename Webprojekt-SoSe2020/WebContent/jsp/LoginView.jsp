@@ -10,9 +10,10 @@
 <title>Einloggen | lazyNerds</title>
 </head>
 <link type="text/css" rel="stylesheet" href="../css/LoginStyle.css" />
+	<link rel="stylesheet" type="text/css" href="../css/Startseite.css">
+
 <link href='https://fonts.googleapis.com/css?family=Fjalla+One'
 	rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="../css/Startseite.css">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -58,7 +59,7 @@
 	<!-- FOOTER -->
 
 	<form action="../jsp/StartseiteAppl.jsp" method="get">
-		<jsp:getProperty property="loginUndRegFooterAsHtml" name="sb" />
+		<jsp:getProperty property="loginFooterAsHtml" name="sb" />
 	</form>
 </body>
 </html>

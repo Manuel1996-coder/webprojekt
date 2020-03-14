@@ -92,6 +92,21 @@ textarea {
 	margin-top: 45px;
 }
 
+.Porschediv-2 {
+	background-color: #141414;
+	margin: 10%;
+	margin-top: -20%;
+}
+
+.border {
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+	padding: 20px;
+	background: #eee;
+	box-sizing: border-box;
+}
+
 .border1, .border2, .border3 {
 	float: left;
 	width: 100%;
@@ -104,20 +119,21 @@ textarea {
 	border-color: grey;
 }
 
-.border3 {
-	margin-right: 0;
+.card {
+	border-radius: 2px;
+	display: inline-block;
+	height: 300px;
+	position: relative;
+	width: 300px;
 }
 
-.border {
-	float: left;
-	width: 32%;
-	margin-right: 2%;
-	padding: 20px;
-	background: #eee;
-	box-sizing: border-box;
+.card-1  {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
-.border:last-child {
-     margin-right: 0;
+
+.card-2 {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .zitat2 {
@@ -302,16 +318,17 @@ h6 {
 }
 
 /**-------------Footer-------------**/
-.footer {
+.start-footer {
 	position: absolute;
 	right: 0;
 	left: 0;
-	margin: 10%; s height : 80px;
+	margin: 10%;
+	height: 80px;
 	padding: 1rem;
 	background-color: #151414;
 	text-align: center;
-	margin-top: -20%;
 	height: 80px;
+	margin-top: -5%;
 }
 
 .login-footer {
@@ -322,7 +339,7 @@ h6 {
 	padding: 1rem;
 	background-color: #151414;
 	text-align: center;
-	margin-top: 50%;
+	margin-top: 70%;
 }
 
 .submit {
@@ -347,7 +364,7 @@ h6 {
 
 .box {
 	position: relative;
-	background: #151414;
+	background: grey;
 	height: 64px;
 	transition: all .15s ease-in-out;
 	margin-bottom: 20px;
@@ -388,7 +405,7 @@ h6 {
 	font-size: medium;
 	padding: 20px;
 	line-height: 120%;
-	color: white;
+	color: grey;
 	display: none;
 }
 
@@ -409,12 +426,13 @@ input:checked+.box {
 }
 
 input:checked+.box .box-title {
-	background: white;
+	background: grey;
 	border-bottom: 1px solid rgba(0, 0, 0, .18);
 }
 
 input:checked+.box .box-content, input:checked+.box .box-close {
 	display: inline-block;
+	background-color: #151414;
 }
 
 .arrows section .box-title {
@@ -447,4 +465,27 @@ input:hover {
 
 input {
 	color: grey;
+}
+
+/**BOX mit Hintergrund**/
+#flex-container {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.panel-test2 {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	cursor: text;
+	width: 40%;
+	padding: 20px;
+	text-align: center;
+	margin: 5%;
+	border: 1px solid;
+	box-shadow: 2px 2px 2px 2px #F60;
 }
