@@ -19,7 +19,7 @@
 
 <form action="./AgendaAppl.jsp" method="get">
 
-<h1> <%= kb.getModul() %> </h1>
+<h1> <%= kb.getModulValue() %> </h1>
 
 
 <table class="box">
