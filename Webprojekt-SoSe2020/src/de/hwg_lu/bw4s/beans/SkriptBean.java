@@ -392,6 +392,8 @@ public class SkriptBean {
 
 			this.setProf("Prof. Dr. Dorrhauer");
 			this.setSkript("../Skript/Skript2/software.pdf");
+			this.setAltklausur("../Altklausuren/Semester2/SE.pdf");
+			
 			break;
 			
 		case "OR":
@@ -451,6 +453,7 @@ public class SkriptBean {
 
 			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
 			this.setSkript("../Skript/Skript3/Algorithme.pdf");
+			this.setAltklausur("../Altklausuren/Semester3/Algorithme.pdf");
 			break;
 			
 		case "betriebsrechner":
@@ -481,6 +484,7 @@ public class SkriptBean {
 
 			this.setProf("Prof. Dr. Peer Küppersr");
 			this.setSkript("../Skript/Skript3/Rechnernetze.pdf");
+			this.setAltklausur("../Altklausuren/Semester3/Rechnernetze.pdf");
 
 			break;
 		
@@ -512,6 +516,7 @@ public class SkriptBean {
 
 			this.setProf("Prof. Dr. rer. pol. Martin Selchert");
 			this.setSkript("../Skript/Skript3/DLM&UFU.pdf");
+			this.setAltklausur("../Altklausuren/Semester4/DL&UFU.pdf");;
 
 			break;
 				
@@ -571,6 +576,8 @@ public class SkriptBean {
 			html += "<a href=\"mailto:haio.roeckle@hwg-lu.de\">haio.roeckle@hwg-lu.de</a>\n";
 
 			this.setTitel(html);
+			this.setSkript("../Skript/Skript4/Anwendung.pdf");
+			this.setAltklausur("../Altklausuren/Semester4/WEB.pdf");;
 
 			
 			break;
