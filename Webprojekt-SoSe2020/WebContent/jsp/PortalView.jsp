@@ -168,7 +168,7 @@
 		Hi lazyNerd! <br> Zu lazy um zu suchen?
 	</h2>
 
-	<div class="container">
+<!--	<div class="container">
 		<div class="search-box">
 			<input id="search" placeholder="Durchsuche lazyNerds..."
 				pattern="middle" type="text" class="input"
@@ -176,6 +176,31 @@
 		</div>
 
 	</div>
+	
+	<h2> LazyNerds durchsuchen</h2>-->
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Wirtschaftsinformatik</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Wirtschaftsinformatik Skript</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Wirtschaftsinformatik Altklausur</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Wirtschaftsinformatik Prof</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?abwlbuch=ABWL und Buchfuehrung">ABWL und Buchfuehrung</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?abwlbuch=ABWL und Buchfuehrung">ABWL und Buchfuehrung Skript</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?abwlbuch=ABWL und Buchfuehrung">ABWL und Buchfuehrung Altklausur</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?abwlbuch=ABWL und Buchfuehrung">ABWL und Buchfuehrung Prof</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Programmieren 1</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Programmieren 1 Skript</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Programmieren 1 Altklausur</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Programmieren 1 Prof</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Software Engineering</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Software Engineering Skript</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Software Engineering Altklausur</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Software Engineering Prof</a></li>
+ 
+  
+</ul>
 
 	<jsp:getProperty property="loginUndRegFooterAsHtml" name="sb" />
 
