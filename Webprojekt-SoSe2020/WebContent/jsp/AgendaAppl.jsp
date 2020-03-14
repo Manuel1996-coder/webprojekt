@@ -39,6 +39,25 @@ if(prof.equals("PROF")){
 	
 	response.sendRedirect("../Module/SkriptView.jsp");
 }else if(Literatur.equals("LITERATUR")){
+	
+kb.setMatrkid(lb.getMatrkid());
+	
+	
+	
+	try{
+		kb.createWarenkorbTable();
+	
+     } catch (SQLException se) {
+
+			System.out.println("B DB schreiben fehlgeschlagen, Mist!");
+			System.out.println("SQLCode=" + se.getErrorCode());
+			System.out.println("Error-Message=" + se.getMessage());
+
+		}
+	
+	
+	
+	
 	response.sendRedirect("../Module/LiteraturView.jsp");
 	
 }else if (Altklausuren.equals("ALTKLAUSUREN")){

@@ -31,7 +31,7 @@ public class Artikel {
 		html += "<table>";
 		html += "<tr>";
 		html += "<td>";
-		html += "<img  src='../img/" + this.anr + ".jpg' width= '200' height= '200'/>";
+		html += "<img  src='../img/" + this.aname + ".jpg' width= '200' height= '200'/>";
 		html += "</td>";
 		html += "<td>";
 		html += this.aname + "<br> von " + this.autor;

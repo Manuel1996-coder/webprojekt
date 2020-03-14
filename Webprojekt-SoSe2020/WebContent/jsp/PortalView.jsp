@@ -71,8 +71,7 @@
 									<li><input type="submit" name="VWL" value="VWL" /></li>
 									<li><input type="submit" name="Stat" value="Statistik" /></li>
 									<li><input type="submit" name="Prog2" value="Prog II" /></li>
-									<li><input type="submit" name="algoDatenbanken"
-										value="Englisch & SoftSkills II" /></li>
+									
 									<li><input type="submit" name="software"
 										value="Software Engineering" /></li>
 									<li><input type="submit" name="modell"
@@ -85,8 +84,7 @@
 
 							<div class="sub-menu-1">
 								<ul>
-									<li><input type="submit" name="PMPM"
-										value="Projekt-Mgmt & Prozess-Mgmt" /></li>
+									
 									<li><input type="submit" name="OR"
 										value="Operations Research" /></li>
 									<li><input type="submit" name="UFUDL"
@@ -109,8 +107,7 @@
 									<li><input type="submit" name="webAnwendung"
 										value="WebAnwendungen" /></li>
 									<li><input type="submit" name="Seminar" value="Seminar" /></li>
-									<li><input type="submit" name="englisch3undSoftSkills3"
-										value="Englisch III & Soft Skills III" /></li>
+									
 								</ul>
 							</div></li>
 						<li><i class="fas fa-graduation-cap"></i> <input
@@ -120,16 +117,13 @@
 								<ul>
 									<li><input type="submit" name="infoSicher"
 										value="Info-Sicher & Info-Mgmt" /></li>
-									<li><input type="submit" name="digitalBusiness"
-										value="Digital Business" /></li>
 									<li><input type="submit" name="praktikumAnwendungs"
-										value="Praktikum Anwendungs." /></li>
+										value="Praktikum Anwendungsysteme" /></li>
 									<li><input type="submit" name="businessIntelligence"
 										value="Business Intelligence" /></li>
 									<li><input type="submit" name="erpScm"
 										value="ERP-Sys & SCM-Sys" /></li>
-									<li><input type="submit" name="englischFIt"
-										value="Eng. f. IT" /></li>
+									
 								</ul>
 							</div></li>
 						<li><i class="fas fa-user"></i> <input type="submit"

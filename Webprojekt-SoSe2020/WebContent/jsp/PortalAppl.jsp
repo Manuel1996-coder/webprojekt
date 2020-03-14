@@ -79,7 +79,9 @@
 		String wahlfach = this.denullify(request.getParameter("wahlfach"));
 		String Seminar = this.denullify(request.getParameter("Seminar"));
 		
+		// 5. Semester
 		
+		String praktikumAnwendungs = this.denullify(request.getParameter("praktikumAnwendungs"));
 		
 		
 		
@@ -126,6 +128,8 @@
 			
 		}else if (abwlbuch.equals("ABWL und Buchfuehrung")) {
 			
+			kb.setModulValue(abwlbuch);
+			
 			kb.setModul("abwlbuch");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -135,15 +139,30 @@
 			kb.lehrgebiete();
 			kb.forschungsschwerpunkte();
 			kb.publikationen();
-			a.setModul(abwlbuch);
+			
 			
 			
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		}else if (wm.equals("Wirtschaftsmathematik")) {
 			
+			kb.setModulValue(wm);
+			
 			kb.setModul("wm");
+			
+			
+			
+			kb.setButton(true);
+			kb.getArtikelFromDB();
 			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.publikationen();
+			
+			
+			
 			
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
@@ -155,6 +174,7 @@
 			
 		}else if (sk.equals("Social Skills")) {
 			
+			kb.setModulValue(sk);
 			kb.setModul("sk");
 			kb.Professor();
 			kb.titel();
@@ -167,6 +187,7 @@
 			
 		}else if (wi.equals("Wirtschaftsinformatik")) {
 			
+			kb.setModulValue(wi);
 			kb.setModul("wi");
 			kb.Professor();
 			kb.titel();
@@ -181,6 +202,7 @@
 			
 		}else if (prog1.equals("Prog I")) {
 			
+			kb.setModulValue(prog1);
 			kb.setModul("prog1");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -196,6 +218,7 @@
 			
 		}else if (Prog2.equals("Prog II")) {
 			
+			kb.setModulValue(Prog2);
 			kb.setModul("Prog2");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -210,7 +233,7 @@
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		}else if (Invest.equals("Investition & Finanzierung")) {
-			
+			kb.setModulValue(Invest);
 			kb.setModul("Invest");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -225,7 +248,7 @@
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		}else if (VWL.equals("VWL")) {
-			
+			kb.setModulValue(VWL);
 			kb.setModul("VWL");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -240,7 +263,7 @@
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		}else if (Stat.equals("Statistik")) {
-			
+			kb.setModulValue(Stat);
 			kb.setModul("Stat");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -255,7 +278,7 @@
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		}else if (software.equals("Software Engineering")) {
-			
+			kb.setModulValue(software);
 			kb.setModul("software");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -270,7 +293,7 @@
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		}else if (modell.equals("Modellierung")) {
-			
+			kb.setModulValue(modell);
 			kb.setModul("modell");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -285,7 +308,7 @@
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		}else if (OR.equals("Operations Research")) {
-			
+			kb.setModulValue(OR);
 			kb.setModul("OR");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -300,7 +323,7 @@
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		} else if (algoDatenbanken.equals("Algo/Daten & Datenbanken")) {
-			
+			kb.setModulValue(algoDatenbanken);
 			kb.setModul("algoDatenbanken");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -315,7 +338,7 @@
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		}else if (betriebsrechner.equals("Betriebssys. & Rechnernetze")) {
-			
+			kb.setModulValue(betriebsrechner);
 			kb.setModul("betriebsrechner");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -330,7 +353,7 @@
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		}else if (wahlfach.equals("Wahlfach")) {
-			
+			kb.setModulValue(wahlfach);
 			kb.setModul("wahlfach");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -345,7 +368,7 @@
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		}else if (Supply.equals("Supply Chain Managment")) {
-			
+			kb.setModulValue(Supply);
 			kb.setModul("Supply");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -360,7 +383,7 @@
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		}else if (webAnwendung.equals("WebAnwendungen")) {
-			
+			kb.setModulValue(webAnwendung);
 			kb.setModul("webAnwendung");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -374,8 +397,24 @@
 			kb.publikationen();
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
-		}else if (Seminar.equals("Seminar")) {
+		}else if (praktikumAnwendungs.equals("Praktikum Anwendungsysteme")) {
+			kb.setModulValue(praktikumAnwendungs);
+			kb.setModul("webAnwendung");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
 			
+		}
+		else if (Seminar.equals("Seminar")) {
+			kb.setModulValue(Seminar);
 			kb.setModul("Seminar");
 			kb.setButton(true);
 			kb.getArtikelFromDB();
@@ -390,7 +429,7 @@
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
 		}else if (UFUDL.equals("U-FÜhrung & DL-Mgmt")) {
-			
+			kb.setModulValue(UFUDL);
 			kb.setModul("UFUDL");
 			kb.setButton(true);
 			kb.getArtikelFromDB();

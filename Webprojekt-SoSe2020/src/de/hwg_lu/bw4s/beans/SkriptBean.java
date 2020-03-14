@@ -18,7 +18,8 @@ public class SkriptBean {
 	public void setAltklausur(String altklausur) {
 		this.altklausur = altklausur;
 	}
-	String altklausur; 
+
+	String altklausur;
 	String modul;
 	String prof;
 	String skript;
@@ -29,6 +30,8 @@ public class SkriptBean {
 	String publikationen;
 	String funktion;
 	String beruflicher;
+	String matrkid;
+	String modulValue;
 	int anr;
 	boolean button;
 	Vector<Artikel> artikelListe;
@@ -44,7 +47,8 @@ public class SkriptBean {
 	}
 
 	public SkriptBean(String modul, String prof, String skript, String titel, String sprechstunde, String lehrgebiete,
-			String forschungsschwerpunkte, String publikationen, String beruflicher, String funktion, double summe, int anr, String altklausur) {
+			String forschungsschwerpunkte, String publikationen, String beruflicher, String funktion, double summe,
+			int anr, String altklausur, String matrkid, String modulValue) {
 		super();
 		this.modul = modul;
 		this.prof = prof;
@@ -58,9 +62,13 @@ public class SkriptBean {
 		this.funktion = funktion;
 		this.summe = summe;
 		this.anr = anr;
-		this.altklausur=altklausur;
+		this.altklausur = altklausur;
+		this.matrkid = matrkid;
+		this.modulValue = modulValue;
 
 	}
+	
+	
 
 	public void Professor() {
 
@@ -73,8 +81,8 @@ public class SkriptBean {
 
 			break;
 		case "wm":
-			this.setProf("Prof. Dr. Wirtschaftsmathe");
-			this.setSkript("./Skript/bwlSkript.pdf");
+			this.setProf("LB Lehmann");
+			this.setSkript("../Skript/Skript1/WM.pdf");
 			this.setAltklausur("../Altklausuren/Semester1/WM.pdf");
 
 			break;
@@ -86,6 +94,7 @@ public class SkriptBean {
 		case "wi":
 			this.setProf("Prof. Dr. Dorrhauer");
 			this.setSkript("../Skript/Skript1/Ewi.pdf");
+			this.setAltklausur("../Altklausuren/Semester1/EWI.pdf");
 
 			break;
 		case "prog1":
@@ -98,78 +107,89 @@ public class SkriptBean {
 			this.setProf("Prof. Dr. Andreas Diesch");
 			this.setSkript("../Skript/Skript2/Invest.pdf");
 			this.setAltklausur("../Altklausuren/Semester2/Invest.pdf");
-			
+
 			break;
 		case "modell":
 			this.setProf("Prof. Dr. Dorrhauer");
 			this.setSkript("../Skript/Skript2/Modellierung.pdf");
 			this.setAltklausur("../Altklausuren/Semester2/Modell.pdf");
-			
+
 			break;
 		case "software":
 			this.setProf("Prof. Dr. Dorrhauer");
 			this.setSkript("../Skript/Skript2/software.pdf");
 			this.setAltklausur("../Altklausuren/Semester2/SE.pdf");
-			
-			
+
 			break;
 		case "Prog2":
 			this.setProf("Prof. Dr. Peer Küppers");
 			this.setSkript("../Skript/Skript2/Programierung2.pdf");
 			this.setAltklausur("../Altklausuren/Semester2/Prog2.pdf");
-		
+
 			break;
 		case "VWL":
-			this.setProf("Markus, Heilig");
+			this.setProf("Markus Heilig");
 			this.setSkript("../Skript/Skript2/VWL.pdf");
 			this.setAltklausur("../Altklausuren/Semester3/VWL.pdf");
-			
+
 			break;
 		case "OR":
 			this.setProf("Prof. Dr. rer. pol. Joachim Schmidt");
-			this.setSkript("../Skript/Skript3/OR.pdf");	
-			
+			this.setSkript("../Skript/Skript3/OR.pdf");
+
 			break;
 		case "algoDatenbanken":
 			this.setProf("Prof. Dr. Peer Küppers");
 			this.setSkript("../Skript/Skript3/Datenbanken.pdf");
 			this.setAltklausur("../Altklausuren/Semester3/Algorithme.pdf");
-			
+
 			break;
 		case "betriebsrechner":
-			this.setProf("Michael Gauglitz");
+			this.setProf("Prof. Dr. Peer Küppers");
 			this.setSkript("../Skript/Skript3/Betriebssysteme.pdf");
 			this.setAltklausur("../Altklausuren/Semester3/Rechnerntze.pdf");
-			
+
 			break;
 		case "UFUDL":
 			this.setProf("Prof. Dr. rer. pol. Martin Selchert");
 			this.setSkript("../Skript/Skript4/DLM.pdf");
 			this.setAltklausur("../Altklausuren/Semester4/DL&UFU.pdf");
-			
+
 			break;
 		case "Supply":
 			this.setProf("Prof. Dr. rer. pol. Frank Thomé");
 			this.setSkript("../Skript/Skript4/Supply.pdf");
-			
+
 			break;
 		case "webAnwendung":
 			this.setProf("Prof. Dr. Haio Röckle");
 			this.setSkript("../Skript/Skript4/Anwendung.pdf");
 			this.setAltklausur("../Altklausuren/Semester4/WEB.pdf");
+
+			break;
 			
+		case "praktikumAnwendungs":
+			this.setProf("Prof. Dr. Haio Röckle");
+			this.setSkript("../Skript/Skript4/Anwendung.pdf");
+			this.setAltklausur("../Altklausuren/Semester4/WEB.pdf");
+
+			break;
+		case "Stat":
+			this.setProf("Sabine Gondrom");
+			this.setSkript("../Skript/Skript3/Statistik.pdf");
+			this.setAltklausur("../Altklausuren/Semester3/Statistik.pdf");
+
 			break;
 		case "Seminar":
 			this.setProf("Prof. Dr. Melcher, Joachim");
 			this.setSkript("../Skript/Skript4/Seminar.pdf");
-			
+
 			break;
 		case "wahlfach":
 			this.setProf("Prof. Dr. rer. pol. Petra Weber-Dreßler");
 			this.setSkript("../Skript/Skript4/Controlling.pdf");
 			this.setAltklausur("../Altklausuren/Semester4/WM.pdf");
-			
-	
+
 		default:
 			System.out.println("fehler");
 		}
@@ -209,11 +229,15 @@ public class SkriptBean {
 
 			break;
 		case "wm":
-			this.setProf("Prof. Dr. Wirtschaftsmathe");
-			this.setSkript("../Skript/bwlSkript.pdf");
-			this.setAltklausur("../Altklausuren/Semester1/WM.pdf");
+			
+			html += "Leider kein Profil verfügbar";
+			this.setTitel(html);
+			
 
 			break;
+			
+			
+			
 		case "sk":
 
 			html += "<table>\n";
@@ -238,8 +262,6 @@ public class SkriptBean {
 
 			this.setTitel(html);
 
-			this.setProf("Dieter Ott");
-			this.setSkript("../Skript/bwlSkript.pdf");
 			break;
 		case "wi":
 
@@ -265,10 +287,6 @@ public class SkriptBean {
 			html += "<a href=\"mailto:carsten.dorrhauer@hwg-lu.de\">carsten.dorrhauer@hwg-lu.de</a>\n";
 
 			this.setTitel(html);
-
-			this.setProf("Prof. Dr. Dorrhauer");
-			this.setSkript("../Skript/Skript2/Ewi.pdf");
-			this.setAltklausur("../Altklausuren/Semester1/EWI.pdf");
 
 			break;
 		case "prog1":
@@ -297,12 +315,11 @@ public class SkriptBean {
 
 			this.setTitel(html);
 
-			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
-			this.setSkript("../Skript/Skript1/Programierung1.pdf");
-			this.setAltklausur("../Altklausuren/Semester1/Prog1.pdf");
-
 			break;
 			
+			
+          
+
 		case "Prog2":
 
 			html += "<h3>Professur für Wirtschaftsinformatik</h3>\n";
@@ -328,10 +345,6 @@ public class SkriptBean {
 			html += "<a href=\"mailto:peer.kueppers@hwg-lu.de\">peer.kueppers@hwg-lu.de</a>\n";
 
 			this.setTitel(html);
-
-			this.setProf("Prof. Dr. Peer Küppersr");
-			this.setSkript("../Skript/Skript2/Programierung2.pdf");
-			this.setAltklausur("../Altklausuren/Semester2/Prog2.pdf");
 
 			break;
 		case "Invest":
@@ -390,12 +403,8 @@ public class SkriptBean {
 
 			this.setTitel(html);
 
-			this.setProf("Prof. Dr. Dorrhauer");
-			this.setSkript("../Skript/Skript2/software.pdf");
-			this.setAltklausur("../Altklausuren/Semester2/SE.pdf");
-			
 			break;
-			
+
 		case "OR":
 			html += "<h3>Diplom-Wirtschaftsingenieur</h3>\n";
 			html += "<br/>\n";
@@ -422,10 +431,8 @@ public class SkriptBean {
 
 			this.setTitel(html);
 
-			this.setProf("Prof. Dr. rer. pol. Joachim Schmidt");
-			this.setSkript("../Skript/Skript3/OR.pdf");
 			break;
-			
+
 		case "algoDatenbanken":
 			html += "<h3>Diplom-Mathematiker</h3>\n";
 			html += "<br/>\n";
@@ -451,11 +458,8 @@ public class SkriptBean {
 
 			this.setTitel(html);
 
-			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
-			this.setSkript("../Skript/Skript3/Algorithme.pdf");
-			this.setAltklausur("../Altklausuren/Semester3/Algorithme.pdf");
 			break;
-			
+
 		case "betriebsrechner":
 
 			html += "<h3>Professur für Wirtschaftsinformatik</h3>\n";
@@ -482,12 +486,8 @@ public class SkriptBean {
 
 			this.setTitel(html);
 
-			this.setProf("Prof. Dr. Peer Küppersr");
-			this.setSkript("../Skript/Skript3/Rechnernetze.pdf");
-			this.setAltklausur("../Altklausuren/Semester3/Rechnernetze.pdf");
-
 			break;
-		
+
 		case "UFUDL":
 
 			html += "<h3>Diplom-Kaufmann</h3>\n";
@@ -514,12 +514,8 @@ public class SkriptBean {
 
 			this.setTitel(html);
 
-			this.setProf("Prof. Dr. rer. pol. Martin Selchert");
-			this.setSkript("../Skript/Skript3/DLM&UFU.pdf");
-			this.setAltklausur("../Altklausuren/Semester4/DL&UFU.pdf");;
-
 			break;
-				
+
 		case "Supply":
 
 			html += "<h3>Diplom-Kaufmann, M.A.</h3>\n";
@@ -547,9 +543,8 @@ public class SkriptBean {
 
 			this.setTitel(html);
 
-			
 			break;
-			
+
 		case "webAnwendung":
 
 			html += "<h3>Diplom-Mathematiker</h3>\n";
@@ -576,12 +571,19 @@ public class SkriptBean {
 			html += "<a href=\"mailto:haio.roeckle@hwg-lu.de\">haio.roeckle@hwg-lu.de</a>\n";
 
 			this.setTitel(html);
-			this.setSkript("../Skript/Skript4/Anwendung.pdf");
-			this.setAltklausur("../Altklausuren/Semester4/WEB.pdf");;
 
-			
 			break;
 			
+		case "VWL":
+			html += "Leider kein Profil verfügbar";
+			this.setTitel(html);
+			break;
+		
+		case "Stat":
+			html += "Leider kein Profil verfügbar";
+			this.setTitel(html);
+			break;
+
 		case "wahlfach":
 
 			html += "<h3>Diplom-Kauffrau</h3>\n";
@@ -607,12 +609,12 @@ public class SkriptBean {
 			html += "<a href=\"mailto:petra.weber-dressler@hwg-lu.de\">petra.weber-dressler@hwg-lu.de</a>\n";
 
 			this.setTitel(html);
-			
-				break;
-			
+
+			break;
+
 		case "Seminar":
 
-			html += "<h3>Diplom-Mathematiker</h3>\n";
+			
 			html += "<br/>\n";
 			html += "<table>\n";
 			html += "<tr>\n";
@@ -635,9 +637,9 @@ public class SkriptBean {
 			html += "<a href=\"mailto:joahim.melcher@hwg-lu.de\">joahim.melcher@hwg-lu.de</a>\n";
 
 			this.setTitel(html);
-			
-	break;
-		
+
+			break;
+
 		default:
 			System.out.println("fehler");
 		}
@@ -659,8 +661,9 @@ public class SkriptBean {
 
 			break;
 		case "wm":
-			this.setProf("Prof. Dr. Wirtschaftsmathe");
-			this.setSkript("../Skript/bwlSkript.pdf");
+			
+			html += "";
+			this.setLehrgebiete(html);
 
 			break;
 		case "sk":
@@ -672,8 +675,6 @@ public class SkriptBean {
 			html += "</ul>\n";
 			this.setLehrgebiete(html);
 
-			this.setProf("Dieter Ott");
-			this.setSkript("../Skript/Skript1/Softskills.pdf");
 			break;
 		case "wi":
 			html += "<h3>Lehrgebiete</h3>\n";
@@ -687,11 +688,18 @@ public class SkriptBean {
 			html += "</ul>\n";
 			this.setLehrgebiete(html);
 
-			this.setProf("Prof. Dr. Dorrhauer");
-			this.setSkript("../Skript/Skript2/Ewi.pdf");
-
+			break;
+			
+		case "VWL":
+			html += "";
+			this.setLehrgebiete(html);
 			break;
 		
+		case "Stat":
+			html += "";
+			this.setLehrgebiete(html);
+			break;
+
 		case "prog1":
 
 			html += "<h3>Lehrgebiete</h3>\n";
@@ -701,9 +709,6 @@ public class SkriptBean {
 			html += "<li>Business Intelligence</li>\n";
 			html += "</ul>\n";
 			this.setLehrgebiete(html);
-
-			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
-			this.setSkript("../Skript/Skript1/Programierung1.pdf");
 
 			break;
 		case "Prog2":
@@ -715,14 +720,11 @@ public class SkriptBean {
 			html += "<li>Big Data Architekturene</li>\n";
 			html += "<li>Machine Learning</li>\n";
 			html += "<li>Datenbanken</li>\n";
-			
+
 			html += "</ul>\n";
 			this.setLehrgebiete(html);
 
-			this.setProf("Prof. Dr. Peer Küppers");
-			this.setSkript("../Skript/Skript2/Programierung2.pdf");
-
-			break;	
+			break;
 		case "Invest":
 			html += "<h3>Lehrgebiete</h3>\n";
 			html += "<br/>\n";
@@ -732,14 +734,12 @@ public class SkriptBean {
 			html += "<li>Besteuerung der Umstrukturierung von Unternehmen</li>\n";
 			html += "<li>Rechnungslegung</li>\n";
 			html += "<li>Investition</li>\n";
-			html += "<li>Kostenrechnung</li>\n";		
+			html += "<li>Kostenrechnung</li>\n";
 			html += "</ul>\n";
 			this.setLehrgebiete(html);
 
-			this.setProf("Prof. Dr. Andreas Diesch");
-			this.setSkript("../Skript/Skript2/Invest.pdf");
 			break;
-			
+
 		case "software":
 			html += "<h3>Lehrgebiete</h3>\n";
 			html += "<br/>\n";
@@ -752,12 +752,8 @@ public class SkriptBean {
 			html += "</ul>\n";
 			this.setLehrgebiete(html);
 
-			this.setProf("Prof. Dr. Dorrhauer");
-			this.setSkript("../Skript/Skript2/Ewi.pdf");
-
 			break;
-			
-			
+
 		case "OR":
 			html += "<h3>Lehrgebiete</h3>\n";
 			html += "<br/>\n";
@@ -768,10 +764,8 @@ public class SkriptBean {
 			html += "</ul>\n";
 			this.setLehrgebiete(html);
 
-			this.setProf("Prof. Dr. rer. pol. Joachim Schmidt");
-			this.setSkript("../Skript/Skript3/OR.pdf");
 			break;
-			
+
 		case "algoDatenbanken":
 			html += "<h3>Lehrgebiete</h3>\n";
 			html += "<br/>\n";
@@ -781,11 +775,8 @@ public class SkriptBean {
 			html += "</ul>\n";
 			this.setLehrgebiete(html);
 
-			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
-			this.setSkript("../Skript/Skript3/Algorithme.pdf");
-
 			break;
-			
+
 		case "betriebsrechner":
 			html += "<h3>Lehrgebiete</h3>\n";
 			html += "<br/>\n";
@@ -794,16 +785,12 @@ public class SkriptBean {
 			html += "<li>Big Data Architekturene</li>\n";
 			html += "<li>Machine Learning</li>\n";
 			html += "<li>Datenbanken</li>\n";
-			
+
 			html += "</ul>\n";
 			this.setLehrgebiete(html);
 
-			this.setProf("Prof. Dr. Peer Küppers");
-			this.setSkript("../Skript/Skript3/Rechnernetze.pdf");
-			
 			break;
-			
-			
+
 		case "UFUDL":
 			html += "<h3>Lehrgebiete</h3>\n";
 			html += "<br/>\n";
@@ -816,10 +803,8 @@ public class SkriptBean {
 			html += "</ul>\n";
 			this.setLehrgebiete(html);
 
-			this.setProf("Prof. Dr. rer. pol. Martin Selchert");
-			this.setSkript("../Skript/Skript4/DLM&UFU.pdf");
 			break;
-			
+
 		case "Supply":
 			html += "<h3>Lehrgebiete</h3>\n";
 			html += "<br/>\n";
@@ -828,14 +813,12 @@ public class SkriptBean {
 			html += "<li>ERP Systeme / ERP Consulting</li>\n";
 			html += "<li>Prozess- und Systemmodellierung</li>\n";
 			html += "<li>Internet of Things (IoT) Technologien und Anwendungen</li>\n";
-			
+
 			html += "</ul>\n";
 			this.setLehrgebiete(html);
 
-			this.setProf("Prof. Dr. rer. pol. Frank Thomé");
-			this.setSkript("../Skript/Skript4/Supply.pdf");
 			break;
-			
+
 		case "webAnwendung":
 			html += "<h3>Lehrgebiete</h3>\n";
 			html += "<br/>\n";
@@ -845,30 +828,20 @@ public class SkriptBean {
 			html += "<li>Web Anwendungen</li>\n";
 			html += "<li>Information Security</li>\n";
 			html += "<li>Wirtschaftsmathematik</li>\n";
-			
+
 			html += "</ul>\n";
 			this.setLehrgebiete(html);
 
-			this.setProf("Prof. Dr. Haio Röckle");
-			this.setSkript("../Skript/Skript4/Anwendung.pdf");
 			break;
-			
-			
+
 		case "Seminar":
-			html += "<h3>Lehrgebiete</h3>\n";
-			html += "<br/>\n";
-			html += "<ul>\n";
-			html += "<li>Wirtschaftsmathematik</li>\n";
-			html += "<li>Programmierung</li>\n";
 			
-			html += "</ul>\n";
+
+			html += "";
 			this.setLehrgebiete(html);
 
-			this.setProf("Prof. Dr. Joachim Melche");
-			this.setSkript("../Skript/Skript4/Seminar.pdf");
 			break;
-			
-			
+
 		case "wahlfach":
 			html += "<h3>Lehrgebiete</h3>\n";
 			html += "<br/>\n";
@@ -877,21 +850,12 @@ public class SkriptBean {
 			html += "<li>Strategisches und Operatives Controlling</li>\n";
 			html += "<li>Dienstleistungscontrolling</li>\n";
 			html += "<li>Controlling in internationalen Unternehmen</li>\n";
-			
+
 			html += "</ul>\n";
 			this.setLehrgebiete(html);
 
-			this.setProf("Prof. Dr. rer. pol. Petra Weber-Dreßler");
-			this.setSkript("../Skript/Skript4/Controlling.pdf");
 			break;
-			
-			
-			
-			
-			
-			
-		
-			
+
 		default:
 			System.out.println("fehler");
 		}
@@ -912,8 +876,8 @@ public class SkriptBean {
 
 			break;
 		case "wm":
-			this.setProf("Prof. Dr. Wirtschaftsmathe");
-			this.setSkript("../Skript/bwlSkript.pdf");
+			html += "";
+			this.setSprechstunde(html);
 
 			break;
 		case "sk":
@@ -925,8 +889,6 @@ public class SkriptBean {
 
 			this.setSprechstunde(html);
 
-			this.setProf("Prof. Ott");
-			this.setSkript("../Skript/bwlSkript.pdf");
 			break;
 		case "wi":
 			html += "<h3>Sprechstunde</h3>\n";
@@ -935,9 +897,6 @@ public class SkriptBean {
 			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
 
 			this.setSprechstunde(html);
-
-			this.setProf("Prof. Dr. Dorrhauer");
-			this.setSkript("../Skript/Skript1/Ewi.pdf");
 
 			break;
 		case "prog1":
@@ -948,8 +907,6 @@ public class SkriptBean {
 			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
 			html += "<a href=\"https://www.hwg-lu.de/fileadmin/user_upload/fachbereiche/fachbereich-3/Downloads/Dokumente/Wissenschaftliches_Arbeiten/3_WissenswertesAbschlussFreyburger.pdf\">Wissenswertes für Abschlussarbeiten</a>\n";
 			this.setSprechstunde(html);
-			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
-			this.setSkript("../Skript/Skript1/Programierung1.pdf");
 
 			break;
 		case "Prog2":
@@ -959,11 +916,9 @@ public class SkriptBean {
 			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
 			html += "<a href=\"https://www.hwg-lu.de/fileadmin/user_upload/fachbereiche/fachbereich-3/Downloads/Dokumente/Wissenschaftliches_Arbeiten/3_WissenswertesAbschlussFreyburger.pdf\">Wissenswertes für Abschlussarbeiten</a>\n";
 			this.setSprechstunde(html);
-			this.setProf("Prof. Dr. Peer Küppersr");
-			this.setSkript("../Skript/Skript2/Programierung2.pdf");
 
 			break;
-			
+
 		case "Invest":
 			html += "<h3>Sprechstunde</h3>\n";
 			html += "<br /> Mittwoch vormittags bis 11:30 Uhr\n";
@@ -972,11 +927,9 @@ public class SkriptBean {
 			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
 			html += "<a href=\"https://www.hwg-lu.de/fileadmin/user_upload/fachbereiche/fachbereich-3/Downloads/Dokumente/Wissenschaftliches_Arbeiten/3_WissenswertesAbschlussFreyburger.pdf\">Wissenswertes für Abschlussarbeiten</a>\n";
 			this.setSprechstunde(html);
-			this.setProf("Prof. Dr. Andreas Diesch");
-			this.setSkript("../Skript/Skript2/Invest.pdf");
 
 			break;
-			
+
 		case "software":
 			html += "<h3>Sprechstunde</h3>\n";
 			html += "<br /> nach telefonischer Vereinbarung\n";
@@ -985,25 +938,28 @@ public class SkriptBean {
 
 			this.setSprechstunde(html);
 
-			this.setProf("Prof. Dr. Dorrhauer");
-			this.setSkript("../Skript/Skript2/software.pdf");
-
 			break;
 			
-			
+		case "VWL":
+			html += "";
+			this.setSprechstunde(html);
+			break;
+		
+		case "Stat":
+			html += "";
+			this.setSprechstunde(html);
+			break;
+
 		case "OR":
 			html += "<h3>Sprechstunde</h3>\n";
 			html += "<br />Donnerstags 10:00 - 11:30 Uhr\n";
-			html += "<br /> und nach Vereinbarung \n";	
+			html += "<br /> und nach Vereinbarung \n";
 			html += "<br />\n";
 			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
 			this.setSprechstunde(html);
-			this.setProf("Prof. Dr. rer. pol. Joachim Schmidt");
-			this.setSkript("../Skript/Skript3/OR.pdf");
 
 			break;
-			
-			
+
 		case "algoDatenbanken":
 			html += "<h3>Sprechstunde</h3>\n";
 			html += "<br /> Mittwochs 13:30 bis 14:30 Uhr\n";
@@ -1012,11 +968,9 @@ public class SkriptBean {
 			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
 			html += "<a href=\"https://www.hwg-lu.de/fileadmin/user_upload/fachbereiche/fachbereich-3/Downloads/Dokumente/Wissenschaftliches_Arbeiten/3_WissenswertesAbschlussFreyburger.pdf\">Wissenswertes für Abschlussarbeiten</a>\n";
 			this.setSprechstunde(html);
-			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
-			this.setSkript("../Skript/Skript3/Algorithme.pdf");
 
 			break;
-			
+
 		case "betriebsrechner":
 			html += "<h3>Sprechstunde</h3>\n";
 			html += "<br /> nach Vereinbarung\n";
@@ -1024,11 +978,9 @@ public class SkriptBean {
 			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
 			html += "<a href=\"https://www.hwg-lu.de/fileadmin/user_upload/fachbereiche/fachbereich-3/Downloads/Dokumente/Wissenschaftliches_Arbeiten/3_WissenswertesAbschlussFreyburger.pdf\">Wissenswertes für Abschlussarbeiten</a>\n";
 			this.setSprechstunde(html);
-			this.setProf("Prof. Dr. Peer Küppersr");
-			this.setSkript("../Skript/Skript3/Betriebssysteme.pdf");
 
 			break;
-			
+
 		case "UFUDL":
 			html += "<h3>Sprechstunde</h3>\n";
 			html += "<br /> Termine montags nach Vereinbarung über das Sekretariat des Fachbereichs Dienstleistungen und Consulting, Frau Stefanie Gray\n";
@@ -1036,11 +988,9 @@ public class SkriptBean {
 			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
 			html += "<a href=\"https://www.hwg-lu.de/fileadmin/user_upload/fachbereiche/fachbereich-3/Downloads/Dokumente/Wissenschaftliches_Arbeiten/3_WissenswertesAbschlussFreyburger.pdf\">Wissenswertes für Abschlussarbeiten</a>\n";
 			this.setSprechstunde(html);
-			this.setProf("Prof. Dr. rer. pol. Martin Selchert");
-			this.setSkript("../Skript/Skript4/DLM&UFU.pdf");
 
 			break;
-			
+
 		case "Supply":
 			html += "<h3>Sprechstunde</h3>\n";
 			html += "<br />Termine nach Vereinbarung\n";
@@ -1048,52 +998,40 @@ public class SkriptBean {
 			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
 			html += "<a href=\"https://www.hwg-lu.de/fileadmin/user_upload/fachbereiche/fachbereich-3/Downloads/Dokumente/Wissenschaftliches_Arbeiten/3_WissenswertesAbschlussFreyburger.pdf\">Wissenswertes für Abschlussarbeiten</a>\n";
 			this.setSprechstunde(html);
-			this.setProf("Prof. Dr. rer. pol. Frank Thomé");
-			this.setSkript("../Skript/Skript4/Supply.pdf");
 
-			break;	
-			
-			
+			break;
+
 		case "webAnwendung":
 			html += "<h3>Sprechstunde</h3>\n";
 			html += "<br /> Dienstags 10:00 bis 11:30 Uhr\n";
-			html += "<br /> Termine nach Vereinbarung mit Frau Gray, 0621 5203-150\n";		
+			html += "<br /> Termine nach Vereinbarung mit Frau Gray, 0621 5203-150\n";
 			html += "<br />\n";
 			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
 			html += "<a href=\"https://www.hwg-lu.de/fileadmin/user_upload/fachbereiche/fachbereich-3/Downloads/Dokumente/Wissenschaftliches_Arbeiten/3_WissenswertesAbschlussFreyburger.pdf\">Wissenswertes für Abschlussarbeiten</a>\n";
 			this.setSprechstunde(html);
-			this.setProf("Prof. Dr. Haio Röckle");
-			this.setSkript("../Skript/Skript4/Anwendung.pdf");
 
-			break;	
-			
-			
+			break;
+
 		case "wahlfach":
-			html += "<h3>Sprechstunde</h3>\n";	
-			html += "<br /> Termine nach Vereinbarung mit Frau Gray\n";		
+			html += "<h3>Sprechstunde</h3>\n";
+			html += "<br /> Termine nach Vereinbarung mit Frau Gray\n";
 			html += "<br />\n";
 			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
 			html += "<a href=\"https://www.hwg-lu.de/fileadmin/user_upload/fachbereiche/fachbereich-3/Downloads/Dokumente/Wissenschaftliches_Arbeiten/3_WissenswertesAbschlussFreyburger.pdf\">Wissenswertes für Abschlussarbeiten</a>\n";
 			this.setSprechstunde(html);
-			this.setProf("Prof. Dr. rer. pol. Petra Weber-Dreßler");
-			this.setSkript("../Skript/Skript4/Controlling.pdf");
 
-			break;	
-			
+			break;
+
 		case "Seminar":
-			html += "<h3>Sprechstunde</h3>\n";	
-			html += "<br /> Termine nach Vereinbarung mit Frau Gray\n";		
+			html += "<h3>Sprechstunde</h3>\n";
+			html += "<br /> Termine nach Vereinbarung mit Frau Gray\n";
 			html += "<br />\n";
 			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
 			html += "<a href=\"https://www.hwg-lu.de/fileadmin/user_upload/fachbereiche/fachbereich-3/Downloads/Dokumente/Wissenschaftliches_Arbeiten/3_WissenswertesAbschlussFreyburger.pdf\">Wissenswertes für Abschlussarbeiten</a>\n";
 			this.setSprechstunde(html);
-			this.setProf("Prof. Dr. Joachim Melche");
-			this.setSkript("../Skript/Skript4/Seminar.pdf");
-			break;	
-			
-		
-			
-				
+
+			break;
+
 		default:
 			System.out.println("fehler");
 		}
@@ -1102,12 +1040,12 @@ public class SkriptBean {
 
 	public void forschungsschwerpunkte() {
 		String html = "";
-		html += "<h3>Forschungsschwerpunkte</h3>\n";
-		html += "<br />\n";
-		html += "<ul>\n";
+		
 		switch (this.modul) {
 		case "abwlbuch":
-
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Elektromobilität</li>\n";
 			html += "<li>System Dynamics</li>\n";
 			html += "</ul>\n";
@@ -1117,169 +1055,164 @@ public class SkriptBean {
 			break;
 		case "wm":
 
-			html += "<li>Elektromobilität</li>\n";
-			html += "<li>System Dynamics</li>\n";
-			html += "</ul>\n";
+			html += "";
+			this.setForschungsschwerpunkte(html);
 
 			break;
 		case "sk":
+			html += "";
+			this.setForschungsschwerpunkte(html);
 
 			break;
 		case "wi":
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>IT-Servicemanagement</li>\n";
 			html += "<li>Software Engineering</li>\n";
 			html += "</ul>\n";
 
 			this.setForschungsschwerpunkte(html);
 
-			this.setProf("Prof. Dr. Dorrhauer");
-			this.setSkript("../Skript/Skript1/Ewi.pdf");
-
 			break;
 		case "prog1":
-
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Business Intelligence mit SAP, Microsoft und Open Source</li>\n";
 			html += "<li>IT-Unterstützung der Unternehmensplanung</li>\n";
 			html += "</ul>\n";
 
 			this.setForschungsschwerpunkte(html);
 
-			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
-			this.setSkript("../Skript/Skript1/Programierung1.pdf");
 			break;
 		case "Prog2":
-
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Business Analytics</li>\n";
 			html += "<li>Predictive Applications für Industrie 4.0</li>\n";
 			html += "</ul>\n";
 
 			this.setForschungsschwerpunkte(html);
 
-			this.setProf("Prof. Dr. Peer Küppers");
-			this.setSkript("../Skript/Skript2/Programierung2.pdf");
-			
-
 			break;
-			
+
 		case "software":
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>IT-Servicemanagement</li>\n";
 			html += "<li>Software Engineering</li>\n";
 			html += "</ul>\n";
 
 			this.setForschungsschwerpunkte(html);
 
-			this.setProf("Prof. Dr. Dorrhauer");
-			this.setSkript("../Skript/Skript2/software.pdf");
-
 			break;
-			
+
 		case "Invest":
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Rechtsformwahl und Besteuerung</li>\n";
 			html += "<li>Unternehmensbewertung</li>\n";
 			html += "</ul>\n";
 
 			this.setForschungsschwerpunkte(html);
 
-			this.setProf("Prof. Dr. Andreas Diesch");
-			this.setSkript("../Skript/Skript2/Invest.pdf");
-
 			break;
-			
-			
+
 		case "OR":
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Management von Logistiknetzwerken</li>\n";
 			html += "<li>Transportsteuerung </li>\n";
-			html += "<li>Störungsmanagement in logistischen Netzen </li>\n";	
+			html += "<li>Störungsmanagement in logistischen Netzen </li>\n";
 			html += "</ul>\n";
 
 			this.setForschungsschwerpunkte(html);
 
-			this.setProf("Prof. Dr. rer. pol. Joachim Schmidt");
-			this.setSkript("../Skript/Skript3/OR.pdf");
-
 			break;
-			
+
 		case "algoDatenbanken":
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Business Intelligence mit SAP, Microsoft und Open Source</li>\n";
 			html += "<li>IT-Unterstützung der Unternehmensplanung</li>\n";
 			html += "</ul>\n";
 
 			this.setForschungsschwerpunkte(html);
 
-			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
-			this.setSkript("../Skript/Skript3/Algorithme.pdf");
-
 			break;
-			
+
 		case "betriebsrechner":
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Business Analytics</li>\n";
 			html += "<li>Predictive Applications für Industrie 4.0</li>\n";
 			html += "</ul>\n";
 
 			this.setForschungsschwerpunkte(html);
 
-			this.setProf("Prof. Dr. Peer Küppers");
-			this.setSkript("../Skript/Skript3/Rechnernetze.pdf");
-
 			break;
-			
+
 		case "UFUDL":
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Customer Relationship Management</li>\n";
 			html += "<li>Service und Vertriebsoptimierung</li>\n";
 			html += "<li>Strategisches Business Development</li>\n";
-			
+
 			html += "</ul>\n";
 
 			this.setForschungsschwerpunkte(html);
 
-			this.setProf("Prof. Dr. rer. pol. Martin Selchert");
-			this.setSkript("../Skript/Skript4/DLM&UFU.pdf");
+			break;
 
-			break;	
-			
 		case "Supply":
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Softwarearchitekturen</li>\n";
 			html += "<li>Internet of Things (IoT)</li>\n";
 			html += "<li>Industrie 4.0 / Logistik 4.0</li>\n";
 			html += "<li>Smart Energy Management</li>\n";
 			html += "<li>Smart Home / Ambient Assisted Living</li>\n";
-			
+
 			html += "</ul>\n";
 
 			this.setForschungsschwerpunkte(html);
 
-			this.setProf("Prof. Dr. rer. pol. Frank Thomé");
-			this.setSkript("../Skript/Skript4/Supply.pdf");
+			break;
 
-			
-			break;	
-			
 		case "webAnwendung":
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Software Entwicklung, Web Anwendungen, </li>\n";
 			html += "<li>Information Security</li>\n";
-			
+
 			html += "</ul>\n";
 
 			this.setForschungsschwerpunkte(html);
 
-			this.setProf("Prof. Dr. Haio Röckle");
-			this.setSkript("../Skript/Skript4/Anwendung.pdf");
-			
-	
-			break;	
-			
+			break;
+
 		case "wahlfach":
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Strategisches und operatives Controlling </li>\n";
 			html += "<li>Internationales Controlling</li>\n";
-			
+
 			html += "</ul>\n";
 
 			this.setForschungsschwerpunkte(html);
 
-			this.setProf("Prof. Dr. rer. pol. Petra Weber-Dreßler");
-			this.setSkript("../Skript/Skript4/Controlling.pdf");
-
-		
 		default:
 			System.out.println("fehler");
 		}
@@ -1303,18 +1236,22 @@ public class SkriptBean {
 
 			break;
 		case "wm":
+			
+			html += "";
+			this.setFunktion(html);
 
-			html += "<li>Elektromobilität</li>\n";
-			html += "<li>System Dynamics</li>\n";
-			html += "</ul>\n";
+			
 
 			break;
 		case "sk":
+			html += "";
+			this.setFunktion(html);
 
 			break;
 		case "wi":
-			this.setProf("Prof. Dr. Dorrhauer");
-			this.setSkript("../Skript/bwlSkript.pdf");
+			
+			html += "";
+			this.setFunktion(html);
 
 			break;
 
@@ -1326,11 +1263,8 @@ public class SkriptBean {
 
 			this.setFunktion(html);
 
-			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
-			this.setSkript("../Skript/selchert.pdf");
-
 			break;
-			
+
 		case "webAnwendung":
 
 			html += "<li>Dekan des Fachbereichs Dienstleistungen und Consulting</li>\n";
@@ -1339,13 +1273,8 @@ public class SkriptBean {
 
 			this.setFunktion(html);
 
-			this.setProf("Prof. Dr. Haio Röckle");
-			this.setSkript("../Skript/Skript4/Anwendung.pdf");
-			
 			break;
-			
-			
-			
+
 		case "wahlfach":
 
 			html += "<li>Mitglied im Fachbereichsrat</li>\n";
@@ -1355,15 +1284,8 @@ public class SkriptBean {
 
 			this.setFunktion(html);
 
-			this.setProf("Prof. Dr. rer. pol. Petra Weber-Dreßler");
-			this.setSkript("../Skript/Skript4/Controlling.pdf");
-			
-			
 			break;
-			
-			
-			
-			
+
 		default:
 			System.out.println("fehler");
 		}
@@ -1382,19 +1304,20 @@ public class SkriptBean {
 			html += "<li>System Dynamics</li>\n";
 			html += "</ul>\n";
 
-			this.setForschungsschwerpunkte(html);
+			this.setBeruflicher(html);
 
 			break;
 		case "wm":
 
-			html += "<li>Elektromobilität</li>\n";
-			html += "<li>System Dynamics</li>\n";
-			html += "</ul>\n";
+			html += "";
+			this.setBeruflicher(html);
+			
 
 			break;
 		case "sk":
 
 			html += "";
+			this.setBeruflicher(html);
 
 			break;
 		case "wi":
@@ -1428,9 +1351,6 @@ public class SkriptBean {
 
 			this.setBeruflicher(html);
 
-			this.setProf("Prof. Dr. Dorrhauer");
-			this.setSkript("../Skript/Skript1/Ewi.pdf");
-
 			break;
 		case "prog1":
 
@@ -1456,8 +1376,6 @@ public class SkriptBean {
 
 			this.setBeruflicher(html);
 
-			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
-			this.setSkript("../Skript/Skript1/Programierung1.pdf");
 			break;
 
 		case "Prog2":
@@ -1495,16 +1413,11 @@ public class SkriptBean {
 			html += "<td> seit 2017</td>\n";
 			html += "<td>Professor für Wirtschaftsinformatik an der Hochschule für Wirtschaft und Gesellschaft Ludwigshafen</td>\n";
 			html += "</tr>\n";
-			
+
 			html += "</table>\n";
 
 			this.setBeruflicher(html);
 
-			this.setProf("Prof. Dr. Peer Küppersr");
-			this.setSkript("../Skript/Skript2/Programierung2.pdf");
-		
-
-			
 			break;
 		case "Invest":
 
@@ -1525,38 +1438,35 @@ public class SkriptBean {
 			html += "<td>1997-2000</td>\n";
 			html += "<td>Schitag Ernst & Young AG, Stuttgart</td>\n";
 			html += "</tr>\n";
-			
+
 			html += "<tr>\n";
 			html += "<td>2001-2005</td>\n";
 			html += "<td>Ernst & Young AG, Stuttgart</td>\n";
 			html += "</tr>\n";
-			
+
 			html += "<tr>\n";
 			html += "<td>2005-2006</td>\n";
 			html += "<td>Geschäftsführer des Verbundes Europatreuhand Wirtschaftsprüfer • Steuerberater</td>\n";
 			html += "</tr>\n";
-			
+
 			html += "<tr>\n";
 			html += "<td>2006-2017</td>\n";
-			html += "<td>Mitglied des Vorstands bei der Baker Tilly AG \n" + 
-					"Wirtschaftsprüfungsgesellschaft und Leiter der Niederlassung Stuttgart</td>\n";
+			html += "<td>Mitglied des Vorstands bei der Baker Tilly AG \n"
+					+ "Wirtschaftsprüfungsgesellschaft und Leiter der Niederlassung Stuttgart</td>\n";
 			html += "</tr>\n";
-			
+
 			html += "<tr>\n";
 			html += "<td>seit 2017</td>\n";
-			html += "<td>Professor für Betriebswirtschaftslehre \n" + 
-					"insbesondere Betriebswirtschaftliche Steuerlehre und Wirtschaftsprüfung an der Hochschule für Wirtschaft und Gesellschaft Ludwigshafen</td>\n";
+			html += "<td>Professor für Betriebswirtschaftslehre \n"
+					+ "insbesondere Betriebswirtschaftliche Steuerlehre und Wirtschaftsprüfung an der Hochschule für Wirtschaft und Gesellschaft Ludwigshafen</td>\n";
 			html += "</tr>\n";
-			
+
 			html += "</table>\n";
 
 			this.setBeruflicher(html);
 
-			this.setProf("Prof. Dr. Andreas Diesch");
-			this.setSkript("../Skript/Skript2/Invest.pdf");
-			
 			break;
-			
+
 		case "software":
 
 			html += "<table border=\"2\">\n";
@@ -1588,12 +1498,8 @@ public class SkriptBean {
 
 			this.setBeruflicher(html);
 
-			this.setProf("Prof. Dr. Dorrhauer");
-			this.setSkript("../Skript/Skript2/software.pdf");
-
 			break;
-			
-			
+
 		case "OR":
 
 			html += "<table border=\"2\">\n";
@@ -1619,21 +1525,18 @@ public class SkriptBean {
 			html += "</tr>\n";
 			html += "<tr>\n";
 			html += "<td>2010</td>\n";
-			html += "<td>Business Director Central Europe der Quintiq B.V., s’ Hertogenbosch, Niederlande</td>\n";		
+			html += "<td>Business Director Central Europe der Quintiq B.V., s’ Hertogenbosch, Niederlande</td>\n";
 			html += "</tr>\n";
 			html += "<tr>\n";
 			html += "<td>seit 2011</td>\n";
-			html += "<td>Professur für Betriebswirtschaftslehre, insbesondere Logistik an der Hochschule für Wirtschaft und Gesellschaft Ludwigshafen</td>\n";		
+			html += "<td>Professur für Betriebswirtschaftslehre, insbesondere Logistik an der Hochschule für Wirtschaft und Gesellschaft Ludwigshafen</td>\n";
 			html += "</tr>\n";
 			html += "</table>\n";
 
 			this.setBeruflicher(html);
 
-			this.setProf("Prof. Dr. rer. pol. Joachim Schmidt");
-			this.setSkript("../Skript/Skript3/OR.pdf");
-
 			break;
-			
+
 		case "algoDatenbanken":
 
 			html += "<table border=\"2\">\n";
@@ -1658,11 +1561,8 @@ public class SkriptBean {
 
 			this.setBeruflicher(html);
 
-			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
-			this.setSkript("../Skript/Skript3/Algorithme.pdf");
 			break;
-			
-			
+
 		case "betriebsrechner":
 
 			html += "<table border=\"2\">\n";
@@ -1698,17 +1598,13 @@ public class SkriptBean {
 			html += "<td> seit 2017</td>\n";
 			html += "<td>Professor für Wirtschaftsinformatik an der Hochschule für Wirtschaft und Gesellschaft Ludwigshafen</td>\n";
 			html += "</tr>\n";
-			
+
 			html += "</table>\n";
 
 			this.setBeruflicher(html);
 
-			this.setProf("Prof. Dr. Peer Küppersr");
-			this.setSkript("../Skript/Skript2/Rechnernetze.pdf");
-		
 			break;
-			
-			
+
 		case "UFUDL":
 
 			html += "<table border=\"2\">\n";
@@ -1736,17 +1632,13 @@ public class SkriptBean {
 			html += "<td>seit 2010</td>\n";
 			html += "<td>Transferbeauftragter der Hochschule für Wirtschaft und Gesellschaft Ludwigshafen</td>\n";
 			html += "</tr>\n";
-				
+
 			html += "</table>\n";
 
 			this.setBeruflicher(html);
 
-			this.setProf("Prof. Dr. rer. pol. Martin Selchert");
-			this.setSkript("../Skript/Skript4/DLM&UFU.pdf");
-			
 			break;
-			
-			
+
 		case "Supply":
 
 			html += "<table border=\"2\">\n";
@@ -1756,25 +1648,21 @@ public class SkriptBean {
 			html += "</tr>\n";
 			html += "<tr>\n";
 			html += "<td>1999-2010</td>\n";
-			html += "<td>Beschäftigt bei SAP AG, Walldorf und SAP Labs Inc., Palo Alto, USA. \n" + 
-					"Tätigkeitsschwerpunkt: Softwareentwicklung Supply Chain Management,\n" + 
-					"zuletzt Programm-Manager für SAP Supply Network Collaboration (SNC)</td>\n";
+			html += "<td>Beschäftigt bei SAP AG, Walldorf und SAP Labs Inc., Palo Alto, USA. \n"
+					+ "Tätigkeitsschwerpunkt: Softwareentwicklung Supply Chain Management,\n"
+					+ "zuletzt Programm-Manager für SAP Supply Network Collaboration (SNC)</td>\n";
 			html += "</tr>\n";
 			html += "<tr>\n";
 			html += "<td>seit 2010</td>\n";
 			html += "<td>Professur für Wirtschaftsinformatik an der Hochschule für Wirtschaft und Gesellschaft Ludwigshafen</td>\n";
 			html += "</tr>\n";
-				
+
 			html += "</table>\n";
 
 			this.setBeruflicher(html);
-			this.setProf("Prof. Dr. rer. pol. Frank Thomé");
-			this.setSkript("../Skript/Skript4/Supply.pdf");
-			
-			
+
 			break;
-			
-			
+
 		case "webAnwendung":
 
 			html += "<table border=\"2\">\n";
@@ -1797,16 +1685,13 @@ public class SkriptBean {
 			html += "<tr>\n";
 			html += "<td>seit 2005</td>\n";
 			html += "<td>Professur für Wirtschaftsinformatik an der Hochschule für Wirtschaft und Gesellschaft Ludwigshafen</td>\n";
-			html += "</tr>\n";		
+			html += "</tr>\n";
 			html += "</table>\n";
 
 			this.setBeruflicher(html);
-			this.setProf("Prof. Dr. Haio Röckle");
-			this.setSkript("../Skript/Skript4/Anwendung.pdf");
-				
-				break;
-			
-			
+
+			break;
+
 		case "wahlfach":
 
 			html += "<table border=\"2\">\n";
@@ -1841,11 +1726,9 @@ public class SkriptBean {
 			html += "</table>\n";
 
 			this.setBeruflicher(html);
-			this.setProf("Prof. Dr. rer. pol. Petra Weber-Dreßler");
-			this.setSkript("../Skript/Skript4/Controlling.pdf");
-			
+
 			break;
-			
+
 		default:
 			System.out.println("fehler");
 		}
@@ -1876,14 +1759,14 @@ public class SkriptBean {
 
 			break;
 		case "wm":
-			this.setProf("Prof. Dr. Wirtschaftsmathe");
-			this.setSkript("../Skript/bwlSkript.pdf");
+			html = "";
+			this.setPublikationen(html);
 
 			break;
 		case "sk":
+			html = "";
+			this.setPublikationen(html);
 
-			this.setProf("Prof. Ott");
-			this.setSkript("../Skript/bwlSkript.pdf");
 			break;
 		case "wi":
 
@@ -1899,9 +1782,6 @@ public class SkriptBean {
 			html += "</ul>\n";
 
 			this.setPublikationen(html);
-
-			this.setProf("Prof. Dr. Dorrhauer");
-			this.setSkript("../Skript/Skript1/Ewi.pdf");
 
 			break;
 		case "prog1":
@@ -1924,11 +1804,8 @@ public class SkriptBean {
 
 			this.setPublikationen(html);
 
-			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
-			this.setSkript("../Skript/Skript1/Programierung1.pdf");
 			break;
-			
-			
+
 		case "Prog2":
 			html += "<h3>Publikationen</h3>\n";
 			html += "<br />\n";
@@ -1942,35 +1819,25 @@ public class SkriptBean {
 			html += "<li>Hellingrath, B., & Küppers, P. (2011). Multi-Agent Based Collaborative Demand and Capacity Network Planning in Heterarchical Supply Chains. In Proceedings of the 22nd International Joint Conference on Artificial Intelligence (IJCAI), Barcelona, Spain, 25–30.</li>\n";
 			html += "<li>Küppers, P. (2011). A Framework for Decentralized Coordination in Heterarchical Supply Chains. In Proceedings of the Wirtschaftsinformatik 2011 (Doctoral Consortium), Zürich, 124–129. </li>\n";
 			html += "</ul>\n";
-			
+
 			this.setPublikationen(html);
 
-			this.setProf("Prof. Dr. Peer Küppers");
-			this.setSkript("../Skript/Skript2/Programierung2.pdf");	
-			
 			break;
 		case "Invest":
 
-			html += "<li>2015	Bilanzierung von Lizenzvereinbarungen nach IFRS\n" + 
-					"DB vom 10.07.2015, Heft 27-28, Seite 1537 - 1545 </li>\n";
-			html += "<li>2012	Financial Benchmarking 2012\n" + 
-					"ISBN 978-3-00-040764-2</li>\n";	
-			html += "<li>2011	Financial Benchmarking 2011\n" + 
-					"ISBN 978-3-00-040763-5\n" + 
-					"</li>\n";		
-			html += "<li>2008	Financial Benchmarking 2008\n" + 
-					"ISBN 978-3-00-040762-8</li>\n";	
-			html += "<li>2007	Business Valuation in Germany\n" + 
-					"Finpress 4/2007, page 46-58 ISSN 1607-968X</li>\n";
-			
-			
+			html += "<li>2015	Bilanzierung von Lizenzvereinbarungen nach IFRS\n"
+					+ "DB vom 10.07.2015, Heft 27-28, Seite 1537 - 1545 </li>\n";
+			html += "<li>2012	Financial Benchmarking 2012\n" + "ISBN 978-3-00-040764-2</li>\n";
+			html += "<li>2011	Financial Benchmarking 2011\n" + "ISBN 978-3-00-040763-5\n" + "</li>\n";
+			html += "<li>2008	Financial Benchmarking 2008\n" + "ISBN 978-3-00-040762-8</li>\n";
+			html += "<li>2007	Business Valuation in Germany\n" + "Finpress 4/2007, page 46-58 ISSN 1607-968X</li>\n";
+
 			html += "</ul>\n";
 
 			this.setPublikationen(html);
 
 			break;
-			
-			
+
 		case "software":
 
 			html += "<h3>Publikationen</h3>\n";
@@ -1986,11 +1853,8 @@ public class SkriptBean {
 
 			this.setPublikationen(html);
 
-			this.setProf("Prof. Dr. Dorrhauer");
-			this.setSkript("../Skript/Skript2/software.pdf");
-		
 			break;
-			
+
 		case "OR":
 			html += "<h3>Publikationen</h3>\n";
 			html += "<br />\n";
@@ -2004,14 +1868,11 @@ public class SkriptBean {
 			html += "<li>„Denn wir wissen nicht, was sie tun. Wirksame Verkehrssteuerung mittels Telematik“ Verkehrsrundschau 9/2009; Verlag Heinrich Vogel </li>\n";
 			html += "<li>„Zustell-Logistik – Neue Anforderungen in der Kundenbelieferung“ In: Praxishandbuch Logistik; Herausgeber: Pradel, Piontek, Süssenguth, Schwolgin, Loseblattwerke Deutscher Wirtschaftsdienst 10/2010</li>\n";
 			html += "</ul>\n";
-			
+
 			this.setPublikationen(html);
 
-			this.setProf("Prof. Dr. rer. pol. Joachim Schmidt");
-			this.setSkript("../Skript/Skript3/OR.pdf");	
-			
 			break;
-			
+
 		case "algoDatenbanken":
 			html += "<h3>Publikationen</h3>\n";
 			html += "<br />\n";
@@ -2032,10 +1893,8 @@ public class SkriptBean {
 
 			this.setPublikationen(html);
 
-			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
-			this.setSkript("../Skript/Skript3/Algorithme.pdf");
 			break;
-			
+
 		case "betriebsrechner":
 			html += "<h3>Publikationen</h3>\n";
 			html += "<br />\n";
@@ -2049,14 +1908,11 @@ public class SkriptBean {
 			html += "<li>Hellingrath, B., & Küppers, P. (2011). Multi-Agent Based Collaborative Demand and Capacity Network Planning in Heterarchical Supply Chains. In Proceedings of the 22nd International Joint Conference on Artificial Intelligence (IJCAI), Barcelona, Spain, 25–30.</li>\n";
 			html += "<li>Küppers, P. (2011). A Framework for Decentralized Coordination in Heterarchical Supply Chains. In Proceedings of the Wirtschaftsinformatik 2011 (Doctoral Consortium), Zürich, 124–129. </li>\n";
 			html += "</ul>\n";
-			
+
 			this.setPublikationen(html);
 
-			this.setProf("Prof. Dr. Peer Küppers");
-			this.setSkript("../Skript/Skript3/Rechnernetze.pdf");	
-			
 			break;
-			
+
 		case "UFUDL":
 			html += "<h3>Publikationen</h3>\n";
 			html += "<br />\n";
@@ -2068,18 +1924,13 @@ public class SkriptBean {
 			html += "<li>Neue Geschäftsmöglichkeiten durch Informationstechnologie, zusammen mit Detlev J. Hoch, in: Hungenberg, Harald und Jürgen Meffert, Handbuch Strategisches Management, 2. Aufl., Wiesbaden, 2005, S. 755-778.</li>\n";
 			html += "<li>Wider die CRM-Unwägbarkeiten, mit Christoph Resch, in: E3, Oktober 2006, S. 60-62.</li>\n";
 			html += "<li>Häufige Fehler im Kundenbeziehungsmanagement – und wie man sie vermeidet?, in: Blaupause, Jan. 2007, S. 36-39. </li>\n";
-			
+
 			html += "</ul>\n";
-			
+
 			this.setPublikationen(html);
 
-			this.setProf("Prof. Dr. rer. pol. Martin Selchert");
-			this.setSkript("../Skript/Skript4/DLM&UFU.pdf");	
-			
 			break;
-			
-			
-			
+
 		case "wahlfach":
 			html += "<h3>Publikationen</h3>\n";
 			html += "<br />\n";
@@ -2087,17 +1938,13 @@ public class SkriptBean {
 
 			html += "<li>Internationalisierungsstrategien mittelständischer Unternehmen, Wiesbaden 1997.</li>\n";
 			html += "<li>Internationalisierungsstrategien mittelständischer Unternehmen, in: BF/M-Spiegel, 2/1997, S. 8-11.</li>\n";
-			html += "<li>Internationalisierungsstrategien mittelständischer Unternehmen, in: Meiler, R. C. (Hrsg.), Mittelstand und Betriebswirtschaft – Beiträge aus Wissenschaft und Praxis, Wiesbaden 1999, S. 241 – 266.</li>\n";	
+			html += "<li>Internationalisierungsstrategien mittelständischer Unternehmen, in: Meiler, R. C. (Hrsg.), Mittelstand und Betriebswirtschaft – Beiträge aus Wissenschaft und Praxis, Wiesbaden 1999, S. 241 – 266.</li>\n";
 			html += "</ul>\n";
-			
+
 			this.setPublikationen(html);
 
-			this.setProf("Prof. Dr. rer. pol. Petra Weber-Dreßler");
-			this.setSkript("../Skript/Skript4/Controlling.pdf");
-			
 			break;
-			
-			
+
 		case "webAnwendung":
 			html += "<h3>Publikationen</h3>\n";
 			html += "<br />\n";
@@ -2105,43 +1952,28 @@ public class SkriptBean {
 
 			html += "<li>H. Röckle: Wiener-Räume und asymptotische Entwicklung für die Wärmeleitungsgleichung, Diplomarbeit in Mathematik an der Ruhr-Universität Bochum (1991)</li>\n";
 			html += "<li>H. Röckle: Abstract Wiener Spaces, Infinite-Dimensional Gaussian Processes and Applications, Doktorarbeit in Mathematik an der Ruhr-Universität Bochum (1993)</li>\n";
-			html += "<li>H. Röckle: Banach Space-Valued Ornstein-Uhlenbeck Processes with General Drift Coefficients, Acta Appl. Math., Vol.47, No.3, pp. 323-349 (1997)</li>\n";			
+			html += "<li>H. Röckle: Banach Space-Valued Ornstein-Uhlenbeck Processes with General Drift Coefficients, Acta Appl. Math., Vol.47, No.3, pp. 323-349 (1997)</li>\n";
 			html += "<li>H. Röckle: Asymptotic Expansions Related to the Semiclassical Limit in Infinite Dimensions, to appear in: Advanced Topics in Applied Mathematics and Theoretical Physics: Complex Systems: Classical and Quantum Aspects, Proceedings Marseille (1994)</li>\n";
 			html += "<li>H. Röckle: Asymptotic Expansions for Ornstein-Uhlenbeck Semigroups over Banach Space Perturbed by a Potential, Preprint (1994)</li>\n";
-			html += "<li>S. Albeverio, H. Röckle, V. Steblovskaya: Asymptotic Expansions for Ornstein-Uhlenbeck Semigroups Perturbed by Potentials over Banach Spaces, Stochastics and Stochastics Reports, Vol. 69, Issue 3&4, pp. 195-238 (2000)</li>\n";	
+			html += "<li>S. Albeverio, H. Röckle, V. Steblovskaya: Asymptotic Expansions for Ornstein-Uhlenbeck Semigroups Perturbed by Potentials over Banach Spaces, Stochastics and Stochastics Reports, Vol. 69, Issue 3&4, pp. 195-238 (2000)</li>\n";
 			html += "<li>H. Röckle: Geschäftsprozesse als semantische Grundlage für Rollen- und Modellkonzepte der IT-Sicherheits-Administration, Arbeitspapier (1997)</li>\n";
 			html += "<li>H. Röckle, M. Schmitz: Kommunikationssicherheit und Datenschutz im Gesundheitswesen, output-Journal des Technologiezentrum Ruhr in Bochum, Ausgabe November 1998, Hrsg.: chip GmbH Bochum (1998)</li>\n";
-			html += "<li>H. Röckle, Th. Tigges: Online Shopping - Sicherheitsmaßnahmen schaffen Wettbewerbsvorteile, Synergie-Journal, Ausgabe Februar 1999, Hrsg: Technologiezentren im Land Nordrhein-Westfalen e.V. (1999)</li>\n";			
+			html += "<li>H. Röckle, Th. Tigges: Online Shopping - Sicherheitsmaßnahmen schaffen Wettbewerbsvorteile, Synergie-Journal, Ausgabe Februar 1999, Hrsg: Technologiezentren im Land Nordrhein-Westfalen e.V. (1999)</li>\n";
 			html += "<li>H. Röckle: Rollenbasierter Zugriffsschutz – Automatisierte Bildung der Rollen im Unternehmen auf der Basis eines prozessorientierten Vorgehensmodells, IT-Sicherheit, Ausgabe 2/1999, Hrsg.: Datakontext Fachverlag, Frechen (1999)</li>\n";
 			html += "<li>H. Röckle, G. Schimpf, R. Weidinger: Process-Oriented Approach for Role-Finding to Implement Role-Based Security Administration in a Large Industrial Organization, 5th ACM-Workshop on Role-Based Access Control, Berlin (2000)</li>\n";
-			html += "<li>H. Röckle, G. Schimpf: Rollen-Engineering im IT-Berechtigungsmanagement, KES 5/2000, (2000)</li>\n";			
+			html += "<li>H. Röckle, G. Schimpf: Rollen-Engineering im IT-Berechtigungsmanagement, KES 5/2000, (2000)</li>\n";
 			html += "<li>H. Röckle, G. Schimpf: Erfolgsfaktoren im Identitäts- und Berechtigungsmanagement, KES 3/2003, (2003)</li>\n";
 			html += "<li>H. Röckle: IT-Sicherheit für mittelständische Unternehmen, Synergiejournal der nordrhein-westfälischen Technologiezentren, Ausgabe 3/2003, (2003)</li>\n";
-			html += "<li>H. Röckle: Praktische und unpraktische Ansätze zur IT-Sicherheit für kleine und große Unternehmen, Vortragsmanuskript für das Institut für Sicherheit im E-Business (ISEB) an der Ruhr-Universität Bochum, (2004)</li>\n";			
+			html += "<li>H. Röckle: Praktische und unpraktische Ansätze zur IT-Sicherheit für kleine und große Unternehmen, Vortragsmanuskript für das Institut für Sicherheit im E-Business (ISEB) an der Ruhr-Universität Bochum, (2004)</li>\n";
 			html += "<li>H. Röckle, G. Schimpf: Security Reporting in großen Unternehmen, in: D-A-CH Security 2009, S. 240-252 (2009)</li>\n";
 			html += "<li>J. Janeschitz, H. Röckle: Monetäre Wirkungszusammenhänge zwischen Online-Werbung und Gesamterlös von Web Angeboten und web-unterstützten Angeboten, Preprint (2010)</li>\n";
-			html += "<li>C. Dorrhauer, H. Röckle: Messbarkeit der Sicherheitsqualität im Lebenszyklus betrieblicher Anwendungssysteme, in: Thomas Barton, Burkhard Erdlenbruch, Frank Herrmann, Christian Müller (Hrsg.), Herausforderungen an die Wirtschaftsinformatik: Betriebliche Anwendungssysteme, Verlag News & Media, Berlin 2011</li>\n";	
-			html += "<li>H. Röckle, G. Schimpf: Vertrauen und Risiken, IT Freelancer Magazin 03/2012</li>\n";	
-			
+			html += "<li>C. Dorrhauer, H. Röckle: Messbarkeit der Sicherheitsqualität im Lebenszyklus betrieblicher Anwendungssysteme, in: Thomas Barton, Burkhard Erdlenbruch, Frank Herrmann, Christian Müller (Hrsg.), Herausforderungen an die Wirtschaftsinformatik: Betriebliche Anwendungssysteme, Verlag News & Media, Berlin 2011</li>\n";
+			html += "<li>H. Röckle, G. Schimpf: Vertrauen und Risiken, IT Freelancer Magazin 03/2012</li>\n";
+
 			html += "</ul>\n";
-			
+
 			this.setPublikationen(html);
 
-			this.setProf("Prof. Dr. Haio Röckle");
-			this.setSkript("../Skript/Skript4/Anwendung.pdf");
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		
-			
-			
 		default:
 			System.out.println("fehler");
 		}
@@ -2157,13 +1989,25 @@ public class SkriptBean {
 		this.dbConn = new PostgreSQLAccess().getConnection();
 		this.getArtikelFromDB();
 		this.summe = 0.0;
+		this.modul = "";
+		this.prof = "";
+		this.skript = "";
+		this.titel = "";
+		this.sprechstunde = "";
+		this.lehrgebiete = "";
+		this.forschungsschwerpunkte = "";
+		this.publikationen = "";
+		this.beruflicher = "";
+		this.funktion = "";
+		
+		this.altklausur = "";
+		this.matrkid = "";
+		this.modulValue = "";
 	}
 
 	Connection dbConn;
 
 	public void getArtikelFromDB() throws SQLException {
-
-		
 
 		String sql = "SELECT * FROM artikel where modul ='" + this.modul + "'";
 
@@ -2222,8 +2066,6 @@ public class SkriptBean {
 
 	public void getausgewaehlteArtikelFromDB(String[] warenkorbValues) throws SQLException {
 
-		
-
 		for (String string : warenkorbValues) {
 
 			String sql = "SELECT * FROM artikel where anr ='" + string + "'";
@@ -2242,20 +2084,19 @@ public class SkriptBean {
 					System.out.println(res.getString("AUTOR"));
 					System.out.println(res.getString("MODUL"));
 
-					
-					
-					Warenkorb art = new Warenkorb(String.valueOf(res.getInt("ANR")), res.getString("ANAME"), res.getDouble("PREIS"),
-							 res.getString("MODUL"));
-					
+					Warenkorb art = new Warenkorb(String.valueOf(res.getInt("ANR")), res.getString("ANAME"),
+							res.getDouble("PREIS"), res.getString("MODUL"));
+
 					this.ausgewaehlteWarenkorbListe.add(art);
 
-					String sql2 = "insert into warenkorb (wnr, aname, preis, modul) values (?,?,?,?)";
+					String sql2 = "insert into warenkorb" + this.matrkid
+							+ "(wnr, aname, preis, modul) values (?,?,?,?)";
 					System.out.println(sql2);
 
 					PreparedStatement prep = dbConn.prepareStatement(sql2);
 
-				    prep.setString(1, String.valueOf(res.getInt("ANR")));
-					
+					prep.setString(1, String.valueOf(res.getInt("ANR")));
+
 					prep.setString(2, res.getString("ANAME"));
 					prep.setDouble(3, res.getDouble("PREIS"));
 					prep.setString(4, res.getString("MODUL"));
@@ -2273,18 +2114,29 @@ public class SkriptBean {
 
 		}
 	}
+
+	public void createWarenkorbTable() throws SQLException {
+		String sql = "create table Warenkorb" + this.matrkid + " (wnr character varying(255),"
+				+ " aname character varying(255)," + " preis numeric," + "modul character varying(255))";
+
+		System.out.println(sql);
+		Statement myStat = dbConn.createStatement();
+		myStat.executeUpdate(sql);
+		System.out.println("Tabelle <matrikelnummer>Notizen angelegt");
+
+	}
+
 	double summe = 0.0;
 
 	public String getHTMLFromAusgewaehlteWarenkorbProdukte() {
 
-		//String alleArtikelHTML = "";
+		// String alleArtikelHTML = "";
 		String html = "";
 		this.setSumme(0.0);
 
 		for (Warenkorb art : ausgewaehlteWarenkorbListe) {
-			
-		//	String html = "";
-			
+
+			// String html = "";
 
 			html += "<tr><br/>";
 			html += "<td><input type=\"text\" size=\"3\" value=\"1\"></td><br/>";
@@ -2292,25 +2144,20 @@ public class SkriptBean {
 			html += "<td>" + art.modul + "</td><br/>";
 			html += "<td>" + art.preis + "</td><br/>";
 			html += "<td>" + art.preis + "</td><br/>";
-			html += "		<td>" + 
-					"<a href='./WarenkorbAppl.jsp?action=kill&value=" + 
-								art.wnr +
-							"'>kill</a><br/>" +
-					"</td>\n<br/>";
-			
+			html += "		<td>" + "<a href='./WarenkorbAppl.jsp?action=kill&value=" + art.wnr + "'>kill</a><br/>"
+					+ "</td>\n<br/>";
+
 			html += "</tr>";
 
-			 
-			
-		//	alleArtikelHTML += art.warenkorbEinführen() + "<br/>\n";
-			
+			// alleArtikelHTML += art.warenkorbEinführen() + "<br/>\n";
+
 			this.summe += art.summeBerechnen();
-			
+
 		}
 		return html;
 
 	}
-	
+
 //	public void loescheWarenVektor(String xx) {
 //		
 //		this.ausgewaehlteWarenkorbListe.remove(xx);
@@ -2318,28 +2165,21 @@ public class SkriptBean {
 //		
 //		
 //	}
-	
-	
+
 	// Artikel vom Warenkorb löschen
-	
-			public void deleteArtikelVonWarenkorb(int wnr) throws SQLException{
-				String sql = "DELETE FROM warenkorb WHERE wnr = ?";
-				System.out.println(sql);
-				Connection dbConn = new PostgreSQLAccess().getConnection();
-				PreparedStatement prep = dbConn.prepareStatement(sql);
-				prep.setInt(1, wnr);
-				prep.executeUpdate();
-				
-				
-				this.ausgewaehlteWarenkorbListe.removeElementAt(wnr);
-				
-				
-				//this.ausgewaehlteWarenkorbListe.clear();
-			}
-	
-	
-	
-	
+
+	public void deleteArtikelVonWarenkorb(int wnr) throws SQLException {
+		String sql = "DELETE FROM warenkorb WHERE wnr = ?";
+		System.out.println(sql);
+		Connection dbConn = new PostgreSQLAccess().getConnection();
+		PreparedStatement prep = dbConn.prepareStatement(sql);
+		prep.setInt(1, wnr);
+		prep.executeUpdate();
+
+		this.ausgewaehlteWarenkorbListe.removeElementAt(wnr);
+
+		// this.ausgewaehlteWarenkorbListe.clear();
+	}
 
 	public Vector<Warenkorb> getAusgewaehlteWarenkorbListe() {
 		return ausgewaehlteWarenkorbListe;
@@ -2452,17 +2292,13 @@ public class SkriptBean {
 	public void setAnr(int anr) {
 		this.anr = anr;
 	}
-	
-	
-	//-----------------------------WARENKORB---------------------------------
-	
+
+	// -----------------------------WARENKORB---------------------------------
+
 	String wnr;
 	String aname;
 	double preis;
 	String autor;
-	
-
-	
 
 	public SkriptBean(String wnr, String aname, double preis, String autor, String modul) {
 		super();
@@ -2496,31 +2332,25 @@ public class SkriptBean {
 //
 //		return html;
 //	}
-	
+
 	// Artikel vom Warenkorb löschen
-	
-		public void deleteArtikelVonWarenkorb(String wnr) throws SQLException{
-			String sql = "DELETE FROM warenkorb WHERE wnr = ?";
-			System.out.println(sql);
-			Connection dbConn = new PostgreSQLAccess().getConnection();
-			PreparedStatement prep = dbConn.prepareStatement(sql);
-			prep.setString(1, wnr);
-			prep.executeUpdate();
-		}
-	
-	public double summeBerechnen() {
-		double summe = 0.0;
-		
-		
-		
-		summe = this.preis;
-	   
-		
-		
-		return summe;
+
+	public void deleteArtikelVonWarenkorb(String wnr) throws SQLException {
+		String sql = "DELETE FROM warenkorb WHERE wnr = ?";
+		System.out.println(sql);
+		Connection dbConn = new PostgreSQLAccess().getConnection();
+		PreparedStatement prep = dbConn.prepareStatement(sql);
+		prep.setString(1, wnr);
+		prep.executeUpdate();
 	}
 
-	
+	public double summeBerechnen() {
+		double summe = 0.0;
+
+		summe = this.preis;
+
+		return summe;
+	}
 
 	public String getWnr() {
 		return wnr;
@@ -2554,8 +2384,20 @@ public class SkriptBean {
 		this.autor = autor;
 	}
 
-	
-	
-	
+	public String getMatrkid() {
+		return matrkid;
+	}
+
+	public void setMatrkid(String matrkid) {
+		this.matrkid = matrkid;
+	}
+
+	public String getModulValue() {
+		return modulValue;
+	}
+
+	public void setModulValue(String modulValue) {
+		this.modulValue = modulValue;
+	}
 
 }
