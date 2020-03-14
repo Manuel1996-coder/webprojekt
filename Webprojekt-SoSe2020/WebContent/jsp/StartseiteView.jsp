@@ -39,28 +39,42 @@
 
 		<div class="Porschediv">
 			<img src="../img/imgStart/Albert-Einstein.jpg" class="Porsche">
-
 		</div>
-		<div class="Porschediv">
+
+		<div class="Porschediv-2">
 			<p class="title2">Sei auch ein lazyNerd!</p>
-			<div class="border">
-			<div class="border1" style="color: #c6c5bf;">
-				All die Jahre, f&uuml;r was den ganzen Aufwand genommen. Tagelang
-				auf eine Antwort von der ehemaligen Kommilitonen gewartet. Den
-				gr&ouml;&szlig;ten Stress &uuml;berhaupt erlebt, da ich keine
-				Struktur in meinem Leben hatte. Sei es in meinem Kleiderschrank,
-				Auto, Beziehung oder meinen Mitschrieben. Ich wusste nie was
-				P&uuml;nktlichkeit bedeutet. Und schon gar nicht wie man einen
-				Skript bearbeitet. Sei eine Ver&auml;ndung f&uuml;r dich selbst und
-				registriere dich kostenlos bei uns im <a href="../jsp/RegView.jsp">Portal</a>
-				ein. Wir garantieren dir, dein Studium so einfach wie m&ouml;glich
-				zu gestalten!
-			</div>
-			<div class="border2">hi</div>
-			<div class="border3"></div>
+			<div id="flex-container">
+				<div class="panel panel-test2">
+					<h3>
+						All die Jahre, f&uuml;r was den ganzen Aufwand genommen. Tagelang
+						auf eine Antwort von der ehemaligen Kommilitonen gewartet. Den
+						gr&ouml;&szlig;ten Stress &uuml;berhaupt erlebt, da ich keine
+						Struktur in meinem Leben hatte. Sei es in meinem Kleiderschrank,
+						Auto, Beziehung oder meinen Mitschrieben. Ich wusste nie was
+						P&uuml;nktlichkeit bedeutet. Und schon gar nicht wie man einen
+						Skript bearbeitet. Sei eine Ver&auml;ndung f&uuml;r dich selbst
+						und registriere dich kostenlos bei uns im <a
+							href="../jsp/RegView.jsp">Portal</a> ein. Wir garantieren dir,
+						dein Studium so einfach wie m&ouml;glich zu gestalten!
+					</h3>
+				</div>
+				<div class="panel panel-test2">
+					<h3>
+						Aktuelle News:
+						<ol>
+							<li>x</li>
+							<li>xx</li>
+							<li>xxx</li>
+							<li>xxxx</li>
+							<li>xxxxx</li>
+							<li>xxxxxx</li>
+
+
+						</ol>
+					</h3>
+				</div>
 			</div>
 		</div>
-
 
 		<br> <br> <br>
 		<div id="social-platforms">
