@@ -82,6 +82,9 @@
 		// 5. Semester
 		
 		String praktikumAnwendungs = this.denullify(request.getParameter("praktikumAnwendungs"));
+		String businessIntelligence = this.denullify(request.getParameter("businessIntelligence"));
+		String infoSicher = this.denullify(request.getParameter("infoSicher"));
+		String erpScm = this.denullify(request.getParameter("erpScm"));
 		
 		
 		
@@ -147,11 +150,7 @@
 		}else if (wm.equals("Wirtschaftsmathematik")) {
 			
 			kb.setModulValue(wm);
-			
 			kb.setModul("wm");
-			
-			
-			
 			kb.setButton(true);
 			kb.getArtikelFromDB();
 			kb.Professor();
@@ -176,6 +175,8 @@
 			
 			kb.setModulValue(sk);
 			kb.setModul("sk");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
 			kb.Professor();
 			kb.titel();
 			kb.sprechstunde();
@@ -189,6 +190,8 @@
 			
 			kb.setModulValue(wi);
 			kb.setModul("wi");
+			kb.setButton(true);
+			kb.getArtikelFromDB();;
 			kb.Professor();
 			kb.titel();
 			kb.sprechstunde();

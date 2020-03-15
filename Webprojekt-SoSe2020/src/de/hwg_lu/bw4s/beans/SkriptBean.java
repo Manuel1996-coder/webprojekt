@@ -404,6 +404,33 @@ public class SkriptBean {
 			this.setTitel(html);
 
 			break;
+		case "modell":
+
+			html += "<table>\n";
+			html += "<tr>\n";
+			html += "<td>Professur für Wirtschaftsinformatik\n";
+			html += "<table>\n";
+			html += "<tr>\n";
+			html += "<td><i class=\"fas fa-home\"></i></td>\n";
+			html += "<td>T001 (Turmstraße) </td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td><i class=\"fas fa-phone\"></i></td>\n";
+			html += "<td>+49 (0) 621/5203-330</td>\n";
+
+			html += "</tr>\n";
+			html += "</table>\n";
+			html += "</td>\n";
+			html += "<td><img alt=\"Das Bild hochladen fehlgeschlagen\"\n"
+					+ "				src=\"../img/imgProf/Dorrhauer_Carsten.jpg\"></td>\n";
+			html += "</tr>\n";
+			html += "</table>\n";
+			html += "<a href=\"mailto:carsten.dorrhauer@hwg-lu.de\">carsten.dorrhauer@hwg-lu.de</a>\n";
+
+			this.setTitel(html);
+
+			break;
+
 
 		case "OR":
 			html += "<h3>Diplom-Wirtschaftsingenieur</h3>\n";
@@ -753,6 +780,20 @@ public class SkriptBean {
 			this.setLehrgebiete(html);
 
 			break;
+		case "modell":
+			html += "<h3>Lehrgebiete</h3>\n";
+			html += "<br/>\n";
+			html += "<ul>\n";
+			html += "<li>Modellierung</li>\n";
+			html += "<li>Software Engineering</li>\n";
+			html += "<li>Information Management</li>\n";
+			html += "<li>ITIL</li>\n";
+
+			html += "</ul>\n";
+			this.setLehrgebiete(html);
+
+			break;
+
 
 		case "OR":
 			html += "<h3>Lehrgebiete</h3>\n";
@@ -940,6 +981,16 @@ public class SkriptBean {
 
 			break;
 			
+		case "modell":
+			html += "<h3>Sprechstunde</h3>\n";
+			html += "<br /> nach telefonischer Vereinbarung\n";
+			html += "<br />\n";
+			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
+
+			this.setSprechstunde(html);
+
+			break;
+			
 		case "VWL":
 			html += "";
 			this.setSprechstunde(html);
@@ -1109,6 +1160,19 @@ public class SkriptBean {
 			this.setForschungsschwerpunkte(html);
 
 			break;
+			
+		case "modell":
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
+			html += "<li>IT-Servicemanagement</li>\n";
+			html += "<li>Software Engineering</li>\n";
+			html += "</ul>\n";
+
+			this.setForschungsschwerpunkte(html);
+
+			break;
+
 
 		case "Invest":
 			html += "<h3>Forschungsschwerpunkte</h3>\n";
@@ -1499,6 +1563,40 @@ public class SkriptBean {
 			this.setBeruflicher(html);
 
 			break;
+			
+		case "modell":
+
+			html += "<table border=\"2\">\n";
+			html += "<tr>\n";
+			html += "<td>1989-1995</td>\n";
+			html += "<td>Studium (BWL und Informatik auf Lehramt) an der Universität Mannheim, Abschluß Dipl.-Hdl.</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td>1995-2001</td>\n";
+			html += "<td>Assistent von Prof. Dr. Franz Steffens am Lehrstuhl für Organisation und Wirtschaftsinformatik, Universität Mannheim</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td>2000</td>\n";
+			html += "<td>Promotion zum Dr. rer. pol. im Fach Wirtschaftsinformatik</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td>2001-2004</td>\n";
+			html += "<td>IT-Projektmanager bei der Heidelberger Druckmaschinen AG</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td>2004-2009</td>\n";
+			html += "<td>Professur für Angewandte Informatik im Studiengang Wirtschaftsingenieurwesen an der Berufsakademie Stuttgart</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td>seit 2009</td>\n";
+			html += "<td>Professur für Wirtschaftsinformatik an der Hochschule für Wirtschaft und Gesellschaft Ludwigshafen</td>\n";
+			html += "</tr>\n";
+			html += "</table>\n";
+
+			this.setBeruflicher(html);
+
+			break;
+
 
 		case "OR":
 
@@ -1854,6 +1952,23 @@ public class SkriptBean {
 			this.setPublikationen(html);
 
 			break;
+			
+		case "modell":
+
+			html += "<h3>Publikationen</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
+
+			html += "<li>Steffens, F./ Dorrhauer, C./ Zlender, A.: Usability-Test ausgewählter Geschäftsprozesse – Vergleich der SAP-Systeme R/3 4.0B und Enjoy R/3 Release (4.6A), in: HMD Praxis der Wirtschaftsinformatik 212(2000), S. 57-69</li>\n";
+			html += "<li>Dorrhauer, C./Zlender, A.: Business Software, Marburg 2004, ISBN 3-8288-8628-0</li>\n";
+			html += "<li>Dorrhauer, C.: ITIL V3 — IT–Servicemanagement für die \"Digital Firm\"?, in: Keuper, F./Hamidian, K./Verwaayen, E./Kalinowski, T. (Hrsg.), transformIT − Optimale Geschäftsprozesse durch eine transformierende IT, Wiesbaden 2009, S. 201−215.</li>\n";
+			html += "<li> Röckle, H./ Dorrhauer, C.: Messbarkeit der Sicherheitsqualität im Lebenszyklus betrieblicher Anwendungssysteme, in: Barton, T. u.a. (Hrsg.): Betriebliche Anwendungssysteme, Berlin 2011</li>\n";
+
+			html += "</ul>\n";
+
+			this.setPublikationen(html);
+
+			break;
 
 		case "OR":
 			html += "<h3>Publikationen</h3>\n";
@@ -1988,6 +2103,7 @@ public class SkriptBean {
 		ausgewaehlteWarenkorbListe = new Vector<Warenkorb>();
 		this.dbConn = new PostgreSQLAccess().getConnection();
 		this.getArtikelFromDB();
+		// this.artikelListe.clear();
 		this.summe = 0.0;
 		this.modul = "";
 		this.prof = "";
@@ -2008,7 +2124,7 @@ public class SkriptBean {
 	Connection dbConn;
 
 	public void getArtikelFromDB() throws SQLException {
-
+        this.artikelListe.clear();
 		String sql = "SELECT * FROM artikel where modul ='" + this.modul + "'";
 
 		System.out.println(sql);
@@ -2046,6 +2162,7 @@ public class SkriptBean {
 		if (button == false) {
 
 			this.artikelListe.clear();
+			
 			return alleArtikelHTML;
 
 		} else {

@@ -12,6 +12,8 @@ body {
 	color: #fff;
 }
 
+
+
 h2 {
 	text-align: center;
 	color: #c6c5bf;
@@ -143,26 +145,44 @@ input {
 
 #myInput {
 	background-image: url('/css/searchicon.png');
-	background-position: 10px 12px;
+	
 	background-repeat: no-repeat;
-	width: 100%;
+	width: 60%;
 	font-size: 16px;
-	padding: 12px 20px 12px 40px;
+	padding: 18px 20px 18px 60px;
 	border: 1px solid #ddd;
 	margin-bottom: 12px;
+	border-color: #F60;
+	
+	display: block;
+  margin-right: auto;
+  margin-left: auto;
+  
+   -moz-border-radius:30px;
+   -webkit-border-radius:30px;
+   border-radius:30px;
 }
 
 #myUL {
 	list-style-type: none;
-	padding: 0;
-	margin: 0;
+	width: 100%;
+	-moz-border-radius:30px;
+   -webkit-border-radius:30px;
+   border-radius:30px;
+   display: none;
+	
+	
 }
 
 #myUL li a {
 	border: 1px solid #ddd;
-	margin-top: -1px; /* Prevent double borders */
+	 /* Prevent double borders */
 	background-color: #f6f6f6;
-	padding: 12px;
+	width: 60%;
+	
+	
+	
+	
 	text-decoration: none;
 	font-size: 18px;
 	color: black;

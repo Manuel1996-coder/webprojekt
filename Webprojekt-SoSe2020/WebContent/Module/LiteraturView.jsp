@@ -5,14 +5,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Fanshop WM 2010</title>
+<title>Literatur | lazyNerds</title>
 </head>
 
 <link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
 <body>
 <jsp:useBean id="fsb" class="de.hwg_lu.bw4s.beans.LiteraturBean" scope="session" />
 <jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean" scope="session" />
-<h1>Literatur | lazyNerds</h1>
+<h1>Literatur <%= kb.getModulValue() %></h1>
 
 <form action="LiteraturAppl.jsp" method="get">
 

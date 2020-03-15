@@ -36,7 +36,7 @@
 			scope="session" />
 
 
-		<form action="./PortalAppl.jsp" method="get">
+		<form action="./PortalAppl.jsp" autocomplete="off" method="get">
 
 			<div class="mitte">
 				<div class="menu-bar">
@@ -116,7 +116,7 @@
 							<div class="sub-menu-1">
 								<ul>
 									<li><input type="submit" name="infoSicher"
-										value="Info-Sicher & Info-Mgmt" /></li>
+										value="Info-Sicherheit & Info-Mgmt" /></li>
 									<li><input type="submit" name="praktikumAnwendungs"
 										value="Praktikum Anwendungsysteme" /></li>
 									<li><input type="submit" name="businessIntelligence"
@@ -156,11 +156,22 @@
 		</form>
 	</header>
 
-	<!-- SEARCHBOX -->
+	<!-- SEARCHBOX 1-->
+	
+	 <div class="autocomplete" style="width:300px;">
+    <input id="myInput" type="text" name="myCountry" placeholder="Country">
+  </div>
+  <input type="submit">
+	
+	<br>
+	<br>
+	<!-- SEARCHBOX 1-->
 
 	<h2>
-		Hi lazyNerd! <br> Zu lazy um zu suchen?
+		Hi lazyNerd! <br> Zu lazy um zu suchen? <i class="fas fa-search"></i>
 	</h2>
+	<br>
+	
 
 <!--	<div class="container">
 		<div class="search-box">
@@ -173,7 +184,7 @@
 	
 	<h2> LazyNerds durchsuchen</h2>-->
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Durchsuche lazyNerds.." title="Type in a name">
 
 <ul id="myUL">
   <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Wirtschaftsinformatik</a></li>
@@ -184,14 +195,30 @@
   <li><a href="../jsp/PortalAppl.jsp?abwlbuch=ABWL und Buchfuehrung">ABWL und Buchfuehrung Skript</a></li>
   <li><a href="../jsp/PortalAppl.jsp?abwlbuch=ABWL und Buchfuehrung">ABWL und Buchfuehrung Altklausur</a></li>
   <li><a href="../jsp/PortalAppl.jsp?abwlbuch=ABWL und Buchfuehrung">ABWL und Buchfuehrung Prof</a></li>
-  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Programmieren 1</a></li>
-  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Programmieren 1 Skript</a></li>
-  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Programmieren 1 Altklausur</a></li>
-  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Programmieren 1 Prof</a></li>
-  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Software Engineering</a></li>
-  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Software Engineering Skript</a></li>
-  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Software Engineering Altklausur</a></li>
-  <li><a href="../jsp/PortalAppl.jsp?wi=Wirtschaftsinformatik">Software Engineering Prof</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?prog1=Prog I">Programmieren 1</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?prog1=Prog I">Programmieren 1 Skript</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?prog1=Prog I">Programmieren 1 Altklausur</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?prog1=Prog I">Programmieren 1 Prof</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?wm=Wirtschaftsmathematik">Wirtschaftsmathematik</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?wm=Wirtschaftsmathematik">Wirtschaftsmathematik Skript</a></li>
+   <li><a href="../jsp/PortalAppl.jsp?wm=Wirtschaftsmathematik">Wirtschaftsmathematik Altklausur</a></li>
+   <li><a href="../jsp/PortalAppl.jsp?wm=Wirtschaftsmathematik">Wirtschaftsmathematik Prof</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?sk=Social Skills">Social Skills</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?sk=Social Skills">Social Skills Skript</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?sk=Social Skills">Social Skills Altklausur</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?sk=Social Skills">Social Skills Prof</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?VWL=VWL">VWL</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?VWL=VWL">VWL Skript</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?VWL=VWL">VWL Altklausur</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?VWL=VWL">VWL Prof</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?Stat=Statistik">Statistik</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?Stat=Statistik">Statistik Skript</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?Stat=Statistik">Statistik Altklausur</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?Stat=Statistik">Statistik Prof</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?Prog2=Prog II">Prog II</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?Prog2=Prog II">Prog II Skript</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?Prog2=Prog II">Prog II Altklausur</a></li>
+  <li><a href="../jsp/PortalAppl.jsp?Prog2=Prog II">Prog II Prof</a></li>
  
   
 </ul>
