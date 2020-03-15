@@ -11,7 +11,7 @@
 	scope="session" />
 <body>
 	<form action="./WarenkorbAppl.jsp" method="get">
-		<h1>Vielen Dank für Deine Bestellung...</h1>
+		<h1>Vielen Dank für Deine Bestellung.</h1>
 		<h2>Die Rechnung</h2>
 		<table border="1">
 
