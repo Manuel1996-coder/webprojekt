@@ -430,7 +430,7 @@
 			kb.publikationen();
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
-		}else if (infoSicher.equals("Info-Sicherheit")) {
+		}else if (infoSicher.equals("Info-Sicherheit & InfoManagement")) {
 			kb.setModulValue(infoSicher);
 			kb.setModul("infoSicher");
 			kb.setButton(true);
