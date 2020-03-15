@@ -169,7 +169,7 @@ input {
 	-moz-border-radius:30px;
    -webkit-border-radius:30px;
    border-radius:30px;
-   display: none;
+   visibility: hidden;
 	
 	
 }
@@ -225,3 +225,9 @@ background-color
 
 ;
 }
+
+
+
+
+
+
