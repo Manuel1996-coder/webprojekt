@@ -103,6 +103,14 @@ public class SkriptBean {
 			this.setAltklausur("../Altklausuren/Semester1/Prog1.pdf");
 
 			break;
+		case "businessIntelligence":
+			this.setProf("Prof. Dr. rer. nat. Klaus Freyburger");
+			this.setSkript("../Skript/Skript5/BI.pdf");
+			this.setAltklausur("../Altklausuren/Semester1/Prog1.pdf");
+
+			break;	
+			
+			
 		case "Invest":
 			this.setProf("Prof. Dr. Andreas Diesch");
 			this.setSkript("../Skript/Skript2/Invest.pdf");
@@ -161,12 +169,27 @@ public class SkriptBean {
 			this.setSkript("../Skript/Skript4/Supply.pdf");
 
 			break;
+		case "erpScm":
+			this.setProf("Prof. Dr. rer. pol. Frank Thomé");
+			this.setSkript("../Skript/Skript5/ERP.pdf");
+
+			break;
 		case "webAnwendung":
 			this.setProf("Prof. Dr. Haio Röckle");
 			this.setSkript("../Skript/Skript4/Anwendung.pdf");
 			this.setAltklausur("../Altklausuren/Semester4/WEB.pdf");
 
 			break;
+		case "infoSicher":
+			this.setProf("Prof. Dr. Haio Röckle");
+			this.setSkript("../Skript/Skript5/InfoSicherheit.pdf");
+			this.setAltklausur("../Altklausuren/Semester5/InfoSicherheit.pdf");
+
+			break;
+			
+			
+			
+			
 			
 		case "praktikumAnwendungs":
 			this.setProf("Prof. Dr. Haio Röckle");
@@ -316,9 +339,36 @@ public class SkriptBean {
 			this.setTitel(html);
 
 			break;
+		case "businessIntelligence":
+
+			html += "<h3>Diplom-Mathematiker</h3>\n";
+			html += "<br/>\n";
+			html += "<table>\n";
+			html += "<tr>\n";
+			html += "<td>Professur für Betriebswirtschaftslehre, insbesondere Wirtschaftsinformatik\n";
+			html += "<table>\n";
+			html += "<tr>\n";
+			html += "<td><i class=\"fas fa-home\"></i></td>\n";
+			html += "<td>B305</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td><i class=\"fas fa-phone\"></i></td>\n";
+			html += "<td>+49 (0) 621/5203-219</td>\n";
+			html += "</tr>\n";
+			html += "</table>\n";
+			html += "</td>\n";
+			html += "<td><img alt=\"Das Bild hochladen fehlgeschlagen\"\n"
+					+ "				src=\"../img/imgProf/Freyburger_Klaus.jpg\"></td>\n";
+			html += "</tr>\n";
+			html += "</table>\n";
+			html += "<a href=\"mailto:klaus.freyburger@hwg-lu.de\">klaus.freyburger@hwg-lu.de</a>\n";
+
+			this.setTitel(html);
+
+			break;
 			
 			
-          
+	       
 
 		case "Prog2":
 
@@ -571,6 +621,39 @@ public class SkriptBean {
 			this.setTitel(html);
 
 			break;
+			
+		case "erpScm":
+
+			html += "<h3>Diplom-Kaufmann, M.A.</h3>\n";
+			html += "<br/>\n";
+			html += "<table>\n";
+			html += "<tr>\n";
+			html += "<td>Professur für Wirtschaftsinformatik\n";
+			html += "<table>\n";
+			html += "<tr>\n";
+			html += "<td><i class=\"fas fa-home\"></i></td>\n";
+			html += "<td>E1021a</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td><i class=\"fas fa-phone\"></i></td>\n";
+			html += "<td>+49 (0) 621/5203-213</td>\n";
+
+			html += "</tr>\n";
+			html += "</table>\n";
+			html += "</td>\n";
+			html += "<td><img alt=\"Das Bild hochladen fehlgeschlagen\"\n"
+					+ "				src=\"../img/imgProf/Thome_Frank.jpg\"></td>\n";
+			html += "</tr>\n";
+			html += "</table>\n";
+			html += "<a href=\"mailto:frank.thome@hwg-lu.de\">frank.thome@hwg-lu.de</a>\n";
+
+			this.setTitel(html);
+
+			break;		
+			
+			
+			
+			
 
 		case "webAnwendung":
 
@@ -600,6 +683,37 @@ public class SkriptBean {
 			this.setTitel(html);
 
 			break;
+		case "infoSicher":
+
+			html += "<h3>Diplom-Mathematiker</h3>\n";
+			html += "<br/>\n";
+			html += "<table>\n";
+			html += "<tr>\n";
+			html += "<td>Professur für Wirtschaftsinformatik\n";
+			html += "<table>\n";
+			html += "<tr>\n";
+			html += "<td><i class=\"fas fa-home\"></i></td>\n";
+			html += "<td>E34</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td><i class=\"fas fa-phone\"></i></td>\n";
+			html += "<td>+49 (0) 621/5203-227</td>\n";
+
+			html += "</tr>\n";
+			html += "</table>\n";
+			html += "</td>\n";
+			html += "<td><img alt=\"Das Bild hochladen fehlgeschlagen\"\n"
+					+ "				src=\"../img/imgProf/Roeckle_Haio.jpg\"></td>\n";
+			html += "</tr>\n";
+			html += "</table>\n";
+			html += "<a href=\"mailto:haio.roeckle@hwg-lu.de\">haio.roeckle@hwg-lu.de</a>\n";
+
+			this.setTitel(html);
+
+			break;
+			
+			
+			
 			
 		case "VWL":
 			html += "Leider kein Profil verfügbar";
@@ -738,6 +852,21 @@ public class SkriptBean {
 			this.setLehrgebiete(html);
 
 			break;
+			
+			
+			
+			
+		case "businessIntelligence":
+
+			html += "<h3>Lehrgebiete</h3>\n";
+			html += "<br/>\n";
+			html += "<ul>\n";
+			html += "<li>Programmierung </li>\n";
+			html += "<li>Business Intelligence</li>\n";
+			html += "</ul>\n";
+			this.setLehrgebiete(html);
+
+			break;
 		case "Prog2":
 
 			html += "<h3>Lehrgebiete</h3>\n";
@@ -859,6 +988,23 @@ public class SkriptBean {
 			this.setLehrgebiete(html);
 
 			break;
+			
+		case "erpScm":
+			html += "<h3>Lehrgebiete</h3>\n";
+			html += "<br/>\n";
+			html += "<ul>\n";
+			html += "<li>E-Business und Supply Chain Management </li>\n";
+			html += "<li>ERP Systeme / ERP Consulting</li>\n";
+			html += "<li>Prozess- und Systemmodellierung</li>\n";
+			html += "<li>Internet of Things (IoT) Technologien und Anwendungen</li>\n";
+
+			html += "</ul>\n";
+			this.setLehrgebiete(html);
+
+			break;		
+			
+			
+			
 
 		case "webAnwendung":
 			html += "<h3>Lehrgebiete</h3>\n";
@@ -874,6 +1020,24 @@ public class SkriptBean {
 			this.setLehrgebiete(html);
 
 			break;
+		case "infoSicher":
+			html += "<h3>Lehrgebiete</h3>\n";
+			html += "<br/>\n";
+			html += "<ul>\n";
+			html += "<li>Programmierung</li>\n";
+			html += "<li>Datenbanken</li>\n";
+			html += "<li>Web Anwendungen</li>\n";
+			html += "<li>Information Security</li>\n";
+			html += "<li>Wirtschaftsmathematik</li>\n";
+
+			html += "</ul>\n";
+			this.setLehrgebiete(html);
+
+			break;	
+			
+			
+			
+			
 
 		case "Seminar":
 			
@@ -950,6 +1114,20 @@ public class SkriptBean {
 			this.setSprechstunde(html);
 
 			break;
+		case "businessIntelligence":
+			html += "<h3>Sprechstunde</h3>\n";
+			html += "<br /> Mittwochs 13:30 bis 14:30 Uhr\n";
+			html += "<br /> Terminabsprache nach Vereinbarung per Mail\n";
+			html += "<br />\n";
+			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
+			html += "<a href=\"https://www.hwg-lu.de/fileadmin/user_upload/fachbereiche/fachbereich-3/Downloads/Dokumente/Wissenschaftliches_Arbeiten/3_WissenswertesAbschlussFreyburger.pdf\">Wissenswertes für Abschlussarbeiten</a>\n";
+			this.setSprechstunde(html);
+
+			break;		
+			
+			
+			
+			
 		case "Prog2":
 			html += "<h3>Sprechstunde</h3>\n";
 			html += "<br /> nach Vereinbarung\n";
@@ -1051,6 +1229,19 @@ public class SkriptBean {
 			this.setSprechstunde(html);
 
 			break;
+		case "erpScm":
+			html += "<h3>Sprechstunde</h3>\n";
+			html += "<br />Termine nach Vereinbarung\n";
+			html += "<br />\n";
+			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
+			html += "<a href=\"https://www.hwg-lu.de/fileadmin/user_upload/fachbereiche/fachbereich-3/Downloads/Dokumente/Wissenschaftliches_Arbeiten/3_WissenswertesAbschlussFreyburger.pdf\">Wissenswertes für Abschlussarbeiten</a>\n";
+			this.setSprechstunde(html);
+
+			break;			
+			
+			
+			
+			
 
 		case "webAnwendung":
 			html += "<h3>Sprechstunde</h3>\n";
@@ -1062,6 +1253,20 @@ public class SkriptBean {
 			this.setSprechstunde(html);
 
 			break;
+		case "infoSicher":
+			html += "<h3>Sprechstunde</h3>\n";
+			html += "<br /> Dienstags 10:00 bis 11:30 Uhr\n";
+			html += "<br /> Termine nach Vereinbarung mit Frau Gray, 0621 5203-150\n";
+			html += "<br />\n";
+			html += "<a href=\"https://olat.vcrp.de/dmz/\">zu den Veranstaltungsunterlagen in OLAT </a>\n";
+			html += "<a href=\"https://www.hwg-lu.de/fileadmin/user_upload/fachbereiche/fachbereich-3/Downloads/Dokumente/Wissenschaftliches_Arbeiten/3_WissenswertesAbschlussFreyburger.pdf\">Wissenswertes für Abschlussarbeiten</a>\n";
+			this.setSprechstunde(html);
+
+			break;		
+			
+			
+			
+			
 
 		case "wahlfach":
 			html += "<h3>Sprechstunde</h3>\n";
@@ -1135,6 +1340,20 @@ public class SkriptBean {
 			html += "</ul>\n";
 
 			this.setForschungsschwerpunkte(html);
+			
+		case "businessIntelligence":
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
+			html += "<li>Business Intelligence mit SAP, Microsoft und Open Source</li>\n";
+			html += "<li>IT-Unterstützung der Unternehmensplanung</li>\n";
+			html += "</ul>\n";
+
+			this.setForschungsschwerpunkte(html);
+	
+			
+			
+			
 
 			break;
 		case "Prog2":
@@ -1252,6 +1471,22 @@ public class SkriptBean {
 			this.setForschungsschwerpunkte(html);
 
 			break;
+			
+		case "erpScm":
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
+			html += "<li>Softwarearchitekturen</li>\n";
+			html += "<li>Internet of Things (IoT)</li>\n";
+			html += "<li>Industrie 4.0 / Logistik 4.0</li>\n";
+			html += "<li>Smart Energy Management</li>\n";
+			html += "<li>Smart Home / Ambient Assisted Living</li>\n";
+
+			html += "</ul>\n";
+
+			this.setForschungsschwerpunkte(html);
+
+			break;
 
 		case "webAnwendung":
 			html += "<h3>Forschungsschwerpunkte</h3>\n";
@@ -1265,6 +1500,22 @@ public class SkriptBean {
 			this.setForschungsschwerpunkte(html);
 
 			break;
+		case "infoSicher":
+			html += "<h3>Forschungsschwerpunkte</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
+			html += "<li>Software Entwicklung, Web Anwendungen, </li>\n";
+			html += "<li>Information Security</li>\n";
+
+			html += "</ul>\n";
+
+			this.setForschungsschwerpunkte(html);
+
+			break;
+			
+			
+			
+			
 
 		case "wahlfach":
 			html += "<h3>Forschungsschwerpunkte</h3>\n";
@@ -1328,8 +1579,26 @@ public class SkriptBean {
 			this.setFunktion(html);
 
 			break;
+		case "businessIntelligence":
+
+			html += "<li>Mitglied des Fachbereichsrates</li>\n";
+
+			html += "</ul>\n";
+
+			this.setFunktion(html);
+
+			break;
 
 		case "webAnwendung":
+
+			html += "<li>Dekan des Fachbereichs Dienstleistungen und Consulting</li>\n";
+
+			html += "</ul>\n";
+
+			this.setFunktion(html);
+
+			break;
+		case "infoSicher":
 
 			html += "<li>Dekan des Fachbereichs Dienstleistungen und Consulting</li>\n";
 
@@ -1417,6 +1686,31 @@ public class SkriptBean {
 
 			break;
 		case "prog1":
+
+			html += "<table border=\"2\">\n";
+			html += "<tr>\n";
+			html += "<td>1982-1989 </td>\n";
+			html += "<td>Studium der Mathematik und Betriebswirtschaftslehre an der Universität Mannheim und an der University of Massachusetts at Amherst USA </td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td>1991 </td>\n";
+			html += "<td>Promotion in Mathematik zum Dr. rer.nat.</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td>1991-2002</td>\n";
+			html += "<td>Beschäftigt bei der SAP AG in Walldorf, Tätigkeitsschwerpunkt: Entwicklung von Software zur Unternehmensplanung;\n"
+					+ "zuletzt Leiter der Entwicklung von SAP BW-BPS </td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td>seit 2002</td>\n";
+			html += "<td>Professur für Betriebswirtschaftslehre, insbesondere Wirtschaftsinformatik an der Hochschule für Wirtschaft und Gesellschaft Ludwigshafen</td>\n";
+			html += "</tr>\n";
+			html += "</table>\n";
+
+			this.setBeruflicher(html);
+
+			break;
+		case "businessIntelligence":
 
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
@@ -1760,8 +2054,63 @@ public class SkriptBean {
 			this.setBeruflicher(html);
 
 			break;
+		case "erpScm":
+
+			html += "<table border=\"2\">\n";
+			html += "<tr>\n";
+			html += "<td>1995-1999</td>\n";
+			html += "<td>Wissenschaftlicher Angestellter am Lehrstuhl für Wirtschaftsinformatik an der Rheinisch-Westfälischen Technischen Hochschule (RWTH) Aachen</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td>1999-2010</td>\n";
+			html += "<td>Beschäftigt bei SAP AG, Walldorf und SAP Labs Inc., Palo Alto, USA. \n"
+					+ "Tätigkeitsschwerpunkt: Softwareentwicklung Supply Chain Management,\n"
+					+ "zuletzt Programm-Manager für SAP Supply Network Collaboration (SNC)</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td>seit 2010</td>\n";
+			html += "<td>Professur für Wirtschaftsinformatik an der Hochschule für Wirtschaft und Gesellschaft Ludwigshafen</td>\n";
+			html += "</tr>\n";
+
+			html += "</table>\n";
+
+			this.setBeruflicher(html);
+
+			break;
+
 
 		case "webAnwendung":
+
+			html += "<table border=\"2\">\n";
+			html += "<tr>\n";
+			html += "<td> bis 1994</td>\n";
+			html += "<td>Mathematikstudium an den Universitäten Stuttgart, Köln und Bochum</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td>1994</td>\n";
+			html += "<td>Promotion zum Thema „Abstract Wiener Spaces, Infinite-Dimensional Gaussian Processes and Applications“</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td>1994-1998</td>\n";
+			html += "<td>Beschäftigt als IT-Berater und Projektleiter</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td>1998-2005</td>\n";
+			html += "<td>Geschäftsführender Gesellschafter der Röckle IT-Sicherheit GmbH in Bochum</td>\n";
+			html += "</tr>\n";
+			html += "<tr>\n";
+			html += "<td>seit 2005</td>\n";
+			html += "<td>Professur für Wirtschaftsinformatik an der Hochschule für Wirtschaft und Gesellschaft Ludwigshafen</td>\n";
+			html += "</tr>\n";
+			html += "</table>\n";
+
+			this.setBeruflicher(html);
+
+			break;
+			
+			
+			
+		case "infoSicher":
 
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
@@ -1903,6 +2252,28 @@ public class SkriptBean {
 			this.setPublikationen(html);
 
 			break;
+		case "businessIntelligence":
+			html += "<h3>Publikationen</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
+
+			html += "<li>Hagen, T.; Freyburger, K.: Neue Technologien als integraler Bestandteil eines Business Intelligence Curriculums am Beispiel von SAP BW on HANA, In: Nissen, V. et. al (Hrsg.): Multikonferenz Wirtschaftsinformatik (MKWI), S. 741-750 (2016)</li>\n";
+			html += "<li>Breitkopf, Freyburger, Grimm, Singh: Seismografen im Politik-Geschäft, Sentiment-Analyse sozialer Netzwerke, in BI Spektrum 2/2013</li>\n";
+			html += "<li>Business Planning and Support by IT-Systems, in: Rausch, Peter; Sheta, Alaa F.; Ayesh, Aladdin (Eds.), Business Intelligence and Performance Management, Springer 2013</li>\n";
+			html += "<li> Freyburger, Klaus; OSBI Lösungen in der Praxis: Anwendungsszenarien, in: Open Source Business Intelligence (OSBI): Möglichkeiten, Chancen und Risiken quelloffener BI-Lösungen, Haneke, Uwe/Trahasch, Stephan/Hagen, Tobias/Lauer, Tobias (Herausgeber),  Carl Hanser Verlag, München 2010</li>\n";
+			html += "<li> Freyburger, K.: OSBI – am Nutzen partizipieren statt ignorieren, is report 9/2008</li>\n";
+			html += "<li>Freyburger, K.; Lehmann, P.: Herausforderungen bei der Wirtschaftsinformatik-Ausbildung mit Standardsoftware am Beispiel von mySAP Business Intelligence, In: Proceedings zur Multikonferenz Wirtschaftsinformatik, 26.2. - 28.2.2008, München. </li>\n";
+			html += "<li>Seufert, A.; Lehmann, P.; Freyburger, K.: Zukunftsorientierte Unternehmenssteuerung auf der Basis von Business Intelligence - Herausforderungen und Potenziale für das Controlling, In: Controller-Leitfaden, Weka Verlag, Zürich, 2006.\n"
+					+ " </li>\n";
+			html += "<li> Freyburger, K.; Seufert, A.; Lehmann, P.; Zirn, W.; Grasse, S.; Suhl, C.: Unternehmensplanung mit SAP BW BPS, Steinbeis Edition, Okt. 2005.</li>\n";
+
+			html += "<li>Lehmann, P.; Freyburger, K.; Seufert, A.; Zirn, W.; Grasse, S.; Suhl, C.: Modellierung und Reporting mit SAP BW, Steinbeis Edition, Okt. 2005. </li>\n";
+			html += "</ul>\n";
+
+			this.setPublikationen(html);
+
+			break;
+
 
 		case "Prog2":
 			html += "<h3>Publikationen</h3>\n";
@@ -2088,6 +2459,37 @@ public class SkriptBean {
 			html += "</ul>\n";
 
 			this.setPublikationen(html);
+			break;
+			
+		case "infoSicher":
+			html += "<h3>Publikationen</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
+
+			html += "<li>H. Röckle: Wiener-Räume und asymptotische Entwicklung für die Wärmeleitungsgleichung, Diplomarbeit in Mathematik an der Ruhr-Universität Bochum (1991)</li>\n";
+			html += "<li>H. Röckle: Abstract Wiener Spaces, Infinite-Dimensional Gaussian Processes and Applications, Doktorarbeit in Mathematik an der Ruhr-Universität Bochum (1993)</li>\n";
+			html += "<li>H. Röckle: Banach Space-Valued Ornstein-Uhlenbeck Processes with General Drift Coefficients, Acta Appl. Math., Vol.47, No.3, pp. 323-349 (1997)</li>\n";
+			html += "<li>H. Röckle: Asymptotic Expansions Related to the Semiclassical Limit in Infinite Dimensions, to appear in: Advanced Topics in Applied Mathematics and Theoretical Physics: Complex Systems: Classical and Quantum Aspects, Proceedings Marseille (1994)</li>\n";
+			html += "<li>H. Röckle: Asymptotic Expansions for Ornstein-Uhlenbeck Semigroups over Banach Space Perturbed by a Potential, Preprint (1994)</li>\n";
+			html += "<li>S. Albeverio, H. Röckle, V. Steblovskaya: Asymptotic Expansions for Ornstein-Uhlenbeck Semigroups Perturbed by Potentials over Banach Spaces, Stochastics and Stochastics Reports, Vol. 69, Issue 3&4, pp. 195-238 (2000)</li>\n";
+			html += "<li>H. Röckle: Geschäftsprozesse als semantische Grundlage für Rollen- und Modellkonzepte der IT-Sicherheits-Administration, Arbeitspapier (1997)</li>\n";
+			html += "<li>H. Röckle, M. Schmitz: Kommunikationssicherheit und Datenschutz im Gesundheitswesen, output-Journal des Technologiezentrum Ruhr in Bochum, Ausgabe November 1998, Hrsg.: chip GmbH Bochum (1998)</li>\n";
+			html += "<li>H. Röckle, Th. Tigges: Online Shopping - Sicherheitsmaßnahmen schaffen Wettbewerbsvorteile, Synergie-Journal, Ausgabe Februar 1999, Hrsg: Technologiezentren im Land Nordrhein-Westfalen e.V. (1999)</li>\n";
+			html += "<li>H. Röckle: Rollenbasierter Zugriffsschutz – Automatisierte Bildung der Rollen im Unternehmen auf der Basis eines prozessorientierten Vorgehensmodells, IT-Sicherheit, Ausgabe 2/1999, Hrsg.: Datakontext Fachverlag, Frechen (1999)</li>\n";
+			html += "<li>H. Röckle, G. Schimpf, R. Weidinger: Process-Oriented Approach for Role-Finding to Implement Role-Based Security Administration in a Large Industrial Organization, 5th ACM-Workshop on Role-Based Access Control, Berlin (2000)</li>\n";
+			html += "<li>H. Röckle, G. Schimpf: Rollen-Engineering im IT-Berechtigungsmanagement, KES 5/2000, (2000)</li>\n";
+			html += "<li>H. Röckle, G. Schimpf: Erfolgsfaktoren im Identitäts- und Berechtigungsmanagement, KES 3/2003, (2003)</li>\n";
+			html += "<li>H. Röckle: IT-Sicherheit für mittelständische Unternehmen, Synergiejournal der nordrhein-westfälischen Technologiezentren, Ausgabe 3/2003, (2003)</li>\n";
+			html += "<li>H. Röckle: Praktische und unpraktische Ansätze zur IT-Sicherheit für kleine und große Unternehmen, Vortragsmanuskript für das Institut für Sicherheit im E-Business (ISEB) an der Ruhr-Universität Bochum, (2004)</li>\n";
+			html += "<li>H. Röckle, G. Schimpf: Security Reporting in großen Unternehmen, in: D-A-CH Security 2009, S. 240-252 (2009)</li>\n";
+			html += "<li>J. Janeschitz, H. Röckle: Monetäre Wirkungszusammenhänge zwischen Online-Werbung und Gesamterlös von Web Angeboten und web-unterstützten Angeboten, Preprint (2010)</li>\n";
+			html += "<li>C. Dorrhauer, H. Röckle: Messbarkeit der Sicherheitsqualität im Lebenszyklus betrieblicher Anwendungssysteme, in: Thomas Barton, Burkhard Erdlenbruch, Frank Herrmann, Christian Müller (Hrsg.), Herausforderungen an die Wirtschaftsinformatik: Betriebliche Anwendungssysteme, Verlag News & Media, Berlin 2011</li>\n";
+			html += "<li>H. Röckle, G. Schimpf: Vertrauen und Risiken, IT Freelancer Magazin 03/2012</li>\n";
+
+			html += "</ul>\n";
+
+			this.setPublikationen(html);
+
 
 		default:
 			System.out.println("fehler");

@@ -116,7 +116,7 @@
 							<div class="sub-menu-1">
 								<ul>
 									<li><input type="submit" name="infoSicher"
-										value="Info-Sicherheit & Info-Mgmt" /></li>
+										value="Info-Sicherheit" /></li>
 									<li><input type="submit" name="praktikumAnwendungs"
 										value="Praktikum Anwendungsysteme" /></li>
 									<li><input type="submit" name="businessIntelligence"

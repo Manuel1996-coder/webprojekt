@@ -415,7 +415,62 @@
 			kb.publikationen();
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
+		}else if (businessIntelligence.equals("Business Intelligence")) {
+			kb.setModulValue(businessIntelligence);
+			kb.setModul("businessIntelligence");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (infoSicher.equals("Info-Sicherheit")) {
+			kb.setModulValue(infoSicher);
+			kb.setModul("infoSicher");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
+		}else if (erpScm.equals("ERP-Sys & SCM-Sys")) {
+			kb.setModulValue(erpScm);
+			kb.setModul("erpScm");
+			kb.setButton(true);
+			kb.getArtikelFromDB();
+			kb.Professor();
+			kb.titel();
+			kb.sprechstunde();
+			kb.lehrgebiete();
+			kb.forschungsschwerpunkte();
+			kb.Funktion();
+			kb.Beruflicher();
+			kb.publikationen();
+			response.sendRedirect("../jsp/AgendaView.jsp");
+			
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		else if (Seminar.equals("Seminar")) {
 			kb.setModulValue(Seminar);
 			kb.setModul("Seminar");
