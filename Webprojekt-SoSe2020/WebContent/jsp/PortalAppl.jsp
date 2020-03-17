@@ -117,7 +117,7 @@
 			response.sendRedirect("../jsp/WarenkorbView.jsp");
 			
 		} else if (ratespiel.equals("Zum Ratespiel")) {
-			response.sendRedirect("../jsp/Quiz.jsp");
+			response.sendRedirect("../jsp/QuizView.jsp");
 			
 		}else if (standort.equals("Standort HWG-LU")) {
 			
