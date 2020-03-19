@@ -24,7 +24,7 @@
 		String accountLoeschen = this.denullify(request.getParameter("accountLoeschen"));
 		String passwortaendern = this.denullify(request.getParameter("passwortaendern"));
 
-		if (zurück.equals("Zurueck zu Home")) {
+		if (zurück.equals("Zum Portal")) {
 
 			response.sendRedirect("./PortalView.jsp");
 

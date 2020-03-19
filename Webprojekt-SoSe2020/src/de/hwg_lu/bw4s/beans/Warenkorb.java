@@ -62,6 +62,14 @@ public class Warenkorb {
 			prep.setString(1, anr);
 			prep.executeUpdate();
 		}
+		
+		
+		
+		
+		
+		
+		
+		
 	
 	public double summeBerechnen() {
 		double summe =0.0;

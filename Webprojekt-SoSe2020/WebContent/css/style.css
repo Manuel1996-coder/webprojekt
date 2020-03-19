@@ -12,7 +12,6 @@ body {
 	color: #fff;
 }
 
-
 h2 {
 	text-align: center;
 	color: #c6c5bf;
@@ -109,124 +108,80 @@ input {
 	position: absolute;
 }
 
-.search-box {
-	width: 100%;
-	position: absolute;
-	margin-bottom: 20px;
-	height: 40px;
-}
-
-.title {
-	font-family: 'Cookie';
-	font-size: 32px;
-	cursor: pointer;
-}
-
-.search-box>#search {
-	width: 350px;
-	height: 45px;
-	border-radius: 0px 0px 6px 6px;
-	box-shadow: 1px 2px 2px black;
-	margin-bottom: 10%;
+button {
 	text-align: center;
+	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.input:focus {
-	background-color: black;
-	font-size: 18px;
-	font-family: 'Open Sans';
-	padding: 0px 12px;
+.dropbtn {
+	background-color: transparent;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	width: 100%;
 }
 
-* {
-	box-sizing: border-box;
+.dropbtn:hover, .dropbtn:focus {
+	background-color: transparent;
 }
 
 #myInput {
-	background-image: url('/css/searchicon.png');
-	
+	box-sizing: border-box;
+	background-image: url('searchicon.png');
+	background-position: 14px 12px;
 	background-repeat: no-repeat;
-	width: 60%;
 	font-size: 16px;
-	padding: 18px 20px 18px 60px;
-	border: 1px solid #ddd;
-	margin-bottom: 12px;
-	border-color: #F60;
-	
-	display: block;
-  margin-right: auto;
-  margin-left: auto;
-  
-   -moz-border-radius:30px;
-   -webkit-border-radius:30px;
-   border-radius:30px;
+	padding: 14px 20px 12px 45px;
+	border: none;
+	border-bottom: 1px solid #ddd;
 }
 
-#myUL {
-	list-style-type: none;
-	width: 100%;
-	-moz-border-radius:30px;
-   -webkit-border-radius:30px;
-   border-radius:30px;
-   visibility: inherit;
-	
-	
+#myInput:focus {
+	outline: 3px solid #ddd;
 }
 
-#myUL li a {
-	border: 1px solid #ddd;
-	 /* Prevent double borders */
+.kasten {
+	margin: 20%;
+	margin-top: 70px;
+	margin-bottom: 20px;
+	border: 2px solid;
+	border-color: transparent;
+	border-radius: 10px;
+	border: 2px solid;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
 	background-color: #f6f6f6;
-	width: 60%;
-	
-	
-	
-	
-	text-decoration: none;
-	font-size: 18px;
+	min-width: 230px;
+	overflow: auto;
+	border: 1px solid #ddd;
+	z-index: 1;
+}
+
+.dropdown-content a {
 	color: black;
-	display: block
-}
-#myUL
-
- 
-
-li
-
- 
-
-a
-
-
-:hover
-
-
-:not
-
- 
-
-(
-.header
-
- 
-
-)
-{
-background-color
-
-
-:
-
- 
-
-#eee
-
-
-;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
 }
 
+.dropdown a:hover {
+	background-color: #ddd;
+}
 
-
-
-
-
+.show {
+	display: block;
+}

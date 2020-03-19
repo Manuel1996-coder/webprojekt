@@ -24,10 +24,7 @@
 			<th>Modul</th>
 			<th>Preis</th>
 			<th>Gesamt</th>
-			<th>Löschen</th>
 		</tr>
-
-
 		<%=kb.getHTMLFromAusgewaehlteWarenkorbProdukte()%>
 		<tr>
             <td> </td>
@@ -47,6 +44,9 @@
 	
 	<input type="submit" name="zurueckzp"
 		value="Zum Portal">
+		
+		<input type="submit" name="warenkorb"
+		value="Warenkorb Loeschen" >
 
 
 </form>

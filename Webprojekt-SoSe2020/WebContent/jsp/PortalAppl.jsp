@@ -39,6 +39,7 @@
 		String appl = this.denullify(request.getParameter("appl"));
 		String comeFrom = this.denullify(request.getParameter("comeFrom"));
 		String home = this.denullify(request.getParameter("home"));
+		String hilfe = this.denullify(request.getParameter("hilfe"));
 		// Mein Profil
 		String ratespiel = this.denullify(request.getParameter("ratespiel"));
 		String einstellungen = this.denullify(request.getParameter("einstellungen"));
@@ -119,7 +120,7 @@
 		} else if (ratespiel.equals("Zum Ratespiel")) {
 			response.sendRedirect("../jsp/QuizView.jsp");
 			
-		}else if (standort.equals("Standort HWG-LU")) {
+		}else if (standort.equals("HWG-LU Standort")) {
 			
 			
 			response.sendRedirect("../jsp/KarteView.jsp");
@@ -128,6 +129,11 @@
 			
 			
 			response.sendRedirect("../jsp/BewertungView.jsp");
+			
+		}else if (hilfe.equals("Hilfe")) {
+			
+			
+			response.sendRedirect("../jsp/HilfeView.jsp");
 			
 		}else if (abwlbuch.equals("ABWL und Buchfuehrung")) {
 			

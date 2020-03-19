@@ -1,6 +1,6 @@
 function inputCheck(myForm){
-	if (myForm.buttonClicked == "zum Login") return true;
-	var myUserid = myForm.userid.value;
+	if (myForm.buttonClicked == "login") return true;
+	var myUserid = myForm.matrkid.value;
 	var myUseridMsg = checkUserid(myUserid);
 //	document.getElementById("useridMsgFeld").innerText = myUseridMsg;
 	var myUsername = myForm.username.value;
@@ -59,6 +59,14 @@ function checkUserid(textInput){
 	var myMsg = "";
 	if (textInput == ""){
 		myMsg = "Die Matrikelnummer darf nicht leer sein";
+	}else if(textInput.length < 6){
+		myMsg = "Die Matrikelnummer muss mindestens 6 Zeichen lang sein";
+	}else if(document.textInput.value < "0" || "9" < document.textInput.value){
+		document.textInput.value = "";
+		document.textInput.focus();
+		myMsg = "Die Matrikelnummer nur zahlen";
+		return false;
+		
 	}else{
 		myMsg = "";
 	}

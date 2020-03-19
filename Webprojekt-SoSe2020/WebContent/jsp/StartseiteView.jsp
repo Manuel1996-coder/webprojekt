@@ -19,33 +19,28 @@
 	<form action="../jsp/StartseiteAppl.jsp" method="get">
 
 		<!-- HEADER -->
+
 		<jsp:getProperty property="headerAsHtml" name="sb" />
 
 		<!-- CONTENT -->
 		<div class="start-background">
 
-			<!-- <div class="Porschediv">
-				<textarea id="textarea"></textarea>
-			</div>
-			<br>
-
-			<div class="abstand-top"> -->
-			<p class="title1">lazyNerds</p>
+			<p class="title1-start">lazyNerds</p>
 		</div>
 
-		<p class="title2">Man muss die Welt nicht verstehen, man muss sich
-			nur darin zurechtfinden.
-		<p class="zitat2">- Albert Einstein</p>
+		<p class="title2-start">Man muss die Welt nicht verstehen, man
+			muss sich nur darin zurechtfinden.
+		<p class="zitat2-start">- Albert Einstein</p>
 
 		<div class="Porschediv">
 			<img src="../img/imgStart/Albert-Einstein.jpg" class="Porsche">
 		</div>
 
 		<div class="Porschediv-2">
-			<p class="title2">Sei auch ein lazyNerd!</p>
+			<p class="title2-start">Sei auch ein lazyNerd!</p>
 			<div id="flex-container">
 				<div class="panel panel-test2">
-					<h3>
+					<h5>
 						All die Jahre, f&uuml;r was den ganzen Aufwand genommen. Tagelang
 						auf eine Antwort von der ehemaligen Kommilitonen gewartet. Den
 						gr&ouml;&szlig;ten Stress &uuml;berhaupt erlebt, da ich keine
@@ -56,46 +51,28 @@
 						und registriere dich kostenlos bei uns im <a
 							href="../jsp/RegView.jsp">Portal</a> ein. Wir garantieren dir,
 						dein Studium so einfach wie m&ouml;glich zu gestalten!
-					</h3>
+					</h5>
 				</div>
 				<div class="panel panel-test2">
-					<h3>
+					<h5>
 						Aktuelle News:
 						<ol>
-							<li>x</li>
-							<li>xx</li>
-							<li>xxx</li>
-							<li>xxxx</li>
-							<li>xxxxx</li>
-							<li>xxxxxx</li>
-
-
+							<li><a
+								href="https://www.hwg-lu.de/hochschule/corona-aktuelle-informationen-der-hwg-lu.html">Corona-Virus</a></li>
+							<li><a
+								href="https://www.hwg-lu.de/hochschule/wir-ueber-uns.html">Unsere
+									Hochschule</a></li>
 						</ol>
-					</h3>
+					</h5>
 				</div>
 			</div>
 		</div>
 
 		<br> <br> <br>
-		<div id="social-platforms">
 
-			<h6>follow me</h6>
-			<div>
-				<a class="tooltip" href="https://www.facebook.com/NerdsLazy"
-					data-title="Facebook"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+		<!-- Icons -->
+		<jsp:getProperty property="socialButtons" name="sb" />
 
-				<a class="tooltip" href="https://twitter.com/NerdsLazy"
-					data-title="Twitter"><i class="fa fa-twitter"></i><span>Twitter</span></a>
-
-				<a class="tooltip" href="https://www.instagram.com/lazy.nerds/"
-					data-title="Instagram"><i class="fa fa-instagram"></i><span>Instagram</span></a>
-
-				<a class="tooltip"
-					href="https://de.linkedin.com/in/lazy-nerds-30a0b01a4/en"
-					data-title="LinkedIn"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
-			</div>
-		</div>
-		<!--<jsp:getProperty property="contentStartseiteAsHtml" name="sb" />-->
 		<!-- FOOTER -->
 		<jsp:getProperty property="startFooterAsHtml" name="sb" />
 	</form>

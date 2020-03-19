@@ -154,13 +154,13 @@ public class SkriptBean {
 			break;
 		case "betriebsrechner":
 			this.setProf("Prof. Dr. Peer Küppers");
-			this.setSkript("../Skript/Skript3/Betriebssysteme.pdf");
+			this.setSkript("../Skript/Skript3/Rechnernetze.pdf");
 			this.setAltklausur("../Altklausuren/Semester3/Rechnerntze.pdf");
 
 			break;
 		case "UFUDL":
 			this.setProf("Prof. Dr. rer. pol. Martin Selchert");
-			this.setSkript("../Skript/Skript4/DLM.pdf");
+			this.setSkript("../Skript/Skript4/DLM&UFU.pdf");
 			this.setAltklausur("../Altklausuren/Semester4/DL&UFU.pdf");
 
 			break;
@@ -223,6 +223,7 @@ public class SkriptBean {
 		String html = "";
 
 		switch (this.modul) {
+		
 		case "abwlbuch":
 
 			html += "<h3>Diplom-Kaufmann</h3>\n";
@@ -423,10 +424,7 @@ public class SkriptBean {
 			html += "<a href=\"mailto:andreas.diesch@hwg-lu.de\">andreas.diesch@hwg-lu.de</a>\n";
 
 			this.setTitel(html);
-			this.setProf("Prof. Dr. Diesch");
-			this.setSkript("../Skript/Skript2/software.pdf");
-			this.setAltklausur("../Altklausuren/Semester2/Invest.pdf");
-
+			
 			break;
 		case "software":
 
@@ -622,6 +620,8 @@ public class SkriptBean {
 
 			break;
 			
+		
+			
 		case "erpScm":
 
 			html += "<h3>Diplom-Kaufmann, M.A.</h3>\n";
@@ -720,9 +720,13 @@ public class SkriptBean {
 			this.setTitel(html);
 			break;
 		
-		case "Stat":
-			html += "Leider kein Profil verfügbar";
+            case "Stat":
+
+			
+            html += "Leider kein Profil verfügbar";
+
 			this.setTitel(html);
+
 			break;
 
 		case "wahlfach":
@@ -807,6 +811,14 @@ public class SkriptBean {
 			this.setLehrgebiete(html);
 
 			break;
+			
+			
+            case "Stat":
+			
+			html += "";
+			this.setLehrgebiete(html);
+
+			break;
 		case "sk":
 			html += "<h3>Lehrgebiete</h3>\n";
 			html += "<br/>\n";
@@ -836,10 +848,7 @@ public class SkriptBean {
 			this.setLehrgebiete(html);
 			break;
 		
-		case "Stat":
-			html += "";
-			this.setLehrgebiete(html);
-			break;
+		
 
 		case "prog1":
 
@@ -1034,8 +1043,8 @@ public class SkriptBean {
 			this.setLehrgebiete(html);
 
 			break;	
-			
-			
+   
+        
 			
 			
 
@@ -1085,6 +1094,8 @@ public class SkriptBean {
 			this.setSprechstunde(html);
 
 			break;
+			
+		
 		case "sk":
 
 			html += "<h3>Sprechstunde</h3>\n";
@@ -1320,6 +1331,12 @@ public class SkriptBean {
 			this.setForschungsschwerpunkte(html);
 
 			break;
+			
+		case "Stat":
+			html += "";
+			this.setForschungsschwerpunkte(html);
+
+			break;
 		case "wi":
 			html += "<h3>Forschungsschwerpunkte</h3>\n";
 			html += "<br />\n";
@@ -1536,13 +1553,14 @@ public class SkriptBean {
 
 	public void Funktion() {
 		String html = "";
-		html += "<h3>Funktionen an der Hochschule</h3>\n";
-		html += "<br />\n";
-		html += "<ul>\n";
+		
 
 		switch (this.modul) {
 		case "abwlbuch":
 
+			html += "<h3>Funktionen an der Hochschule</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Elektromobilität</li>\n";
 			html += "<li>System Dynamics</li>\n";
 			html += "</ul>\n";
@@ -1551,7 +1569,9 @@ public class SkriptBean {
 
 			break;
 		case "wm":
-			
+			html += "<h3>Funktionen an der Hochschule</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "";
 			this.setFunktion(html);
 
@@ -1559,6 +1579,17 @@ public class SkriptBean {
 
 			break;
 		case "sk":
+			html += "<h3>Funktionen an der Hochschule</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
+			html += "";
+			this.setFunktion(html);
+
+			break;
+			
+			
+		case "Stat":
+			
 			html += "";
 			this.setFunktion(html);
 
@@ -1571,7 +1602,9 @@ public class SkriptBean {
 			break;
 
 		case "prog1":
-
+			html += "<h3>Funktionen an der Hochschule</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Mitglied des Fachbereichsrates</li>\n";
 
 			html += "</ul>\n";
@@ -1580,7 +1613,9 @@ public class SkriptBean {
 
 			break;
 		case "businessIntelligence":
-
+			html += "<h3>Funktionen an der Hochschule</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Mitglied des Fachbereichsrates</li>\n";
 
 			html += "</ul>\n";
@@ -1590,7 +1625,9 @@ public class SkriptBean {
 			break;
 
 		case "webAnwendung":
-
+			html += "<h3>Funktionen an der Hochschule</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Dekan des Fachbereichs Dienstleistungen und Consulting</li>\n";
 
 			html += "</ul>\n";
@@ -1599,7 +1636,9 @@ public class SkriptBean {
 
 			break;
 		case "infoSicher":
-
+			html += "<h3>Funktionen an der Hochschule</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Dekan des Fachbereichs Dienstleistungen und Consulting</li>\n";
 
 			html += "</ul>\n";
@@ -1609,7 +1648,9 @@ public class SkriptBean {
 			break;
 
 		case "wahlfach":
-
+			html += "<h3>Funktionen an der Hochschule</h3>\n";
+			html += "<br />\n";
+			html += "<ul>\n";
 			html += "<li>Mitglied im Fachbereichsrat</li>\n";
 			html += "<li>Mitglied im Prüfungsausschuss</li>\n";
 
@@ -1627,12 +1668,12 @@ public class SkriptBean {
 
 	public void Beruflicher() {
 		String html = "";
-		html += "<h3>Beruflicher Werdegang</h3>\n";
+		
 
 		switch (this.modul) {
 
 		case "abwlbuch":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<li>Elektromobilität</li>\n";
 			html += "<li>System Dynamics</li>\n";
 			html += "</ul>\n";
@@ -1647,6 +1688,13 @@ public class SkriptBean {
 			
 
 			break;
+			
+		case "Stat":
+
+			html += "";
+			this.setBeruflicher(html);
+			
+		
 		case "sk":
 
 			html += "";
@@ -1654,7 +1702,7 @@ public class SkriptBean {
 
 			break;
 		case "wi":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td>1989-1995</td>\n";
@@ -1686,7 +1734,7 @@ public class SkriptBean {
 
 			break;
 		case "prog1":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td>1982-1989 </td>\n";
@@ -1711,7 +1759,7 @@ public class SkriptBean {
 
 			break;
 		case "businessIntelligence":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td>1982-1989 </td>\n";
@@ -1737,7 +1785,7 @@ public class SkriptBean {
 			break;
 
 		case "Prog2":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td>2001-2006 </td>\n";
@@ -1778,7 +1826,7 @@ public class SkriptBean {
 
 			break;
 		case "Invest":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td>1986-1993 </td>\n";
@@ -1826,7 +1874,7 @@ public class SkriptBean {
 			break;
 
 		case "software":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td>1989-1995</td>\n";
@@ -1859,7 +1907,7 @@ public class SkriptBean {
 			break;
 			
 		case "modell":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td>1989-1995</td>\n";
@@ -1893,7 +1941,7 @@ public class SkriptBean {
 
 
 		case "OR":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td>1986</td>\n";
@@ -1930,7 +1978,7 @@ public class SkriptBean {
 			break;
 
 		case "algoDatenbanken":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td>1982-1989 </td>\n";
@@ -1956,7 +2004,7 @@ public class SkriptBean {
 			break;
 
 		case "betriebsrechner":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td>2001-2006 </td>\n";
@@ -1998,7 +2046,7 @@ public class SkriptBean {
 			break;
 
 		case "UFUDL":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td>1988-1993</td>\n";
@@ -2032,7 +2080,7 @@ public class SkriptBean {
 			break;
 
 		case "Supply":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td>1995-1999</td>\n";
@@ -2055,7 +2103,7 @@ public class SkriptBean {
 
 			break;
 		case "erpScm":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td>1995-1999</td>\n";
@@ -2080,7 +2128,7 @@ public class SkriptBean {
 
 
 		case "webAnwendung":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td> bis 1994</td>\n";
@@ -2111,7 +2159,7 @@ public class SkriptBean {
 			
 			
 		case "infoSicher":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td> bis 1994</td>\n";
@@ -2140,7 +2188,7 @@ public class SkriptBean {
 			break;
 
 		case "wahlfach":
-
+			html += "<h3>Beruflicher Werdegang</h3>\n";
 			html += "<table border=\"2\">\n";
 			html += "<tr>\n";
 			html += "<td>1987-1992</td>\n";
@@ -2206,6 +2254,13 @@ public class SkriptBean {
 
 			break;
 		case "wm":
+			html = "";
+			this.setPublikationen(html);
+
+			break;
+			
+			
+		case "Stat":
 			html = "";
 			this.setPublikationen(html);
 
@@ -2504,7 +2559,7 @@ public class SkriptBean {
 		artikelListe = new Vector<Artikel>();
 		ausgewaehlteWarenkorbListe = new Vector<Warenkorb>();
 		this.dbConn = new PostgreSQLAccess().getConnection();
-		this.getArtikelFromDB();
+		//this.getArtikelFromDB();
 		// this.artikelListe.clear();
 		this.summe = 0.0;
 		this.modul = "";
@@ -2641,7 +2696,7 @@ public class SkriptBean {
 		System.out.println(sql);
 		Statement myStat = dbConn.createStatement();
 		myStat.executeUpdate(sql);
-		System.out.println("Tabelle <matrikelnummer>Notizen angelegt");
+		System.out.println("Tabelle Notizen<matrikelnummer> angelegt");
 
 	}
 
@@ -2663,18 +2718,24 @@ public class SkriptBean {
 			html += "<td>" + art.modul + "</td><br/>";
 			html += "<td>" + art.preis + "</td><br/>";
 			html += "<td>" + art.preis + "</td><br/>";
-			html += "		<td>" + "<a href='./WarenkorbAppl.jsp?action=kill&value=" + art.wnr + "'>kill</a><br/>"
-					+ "</td>\n<br/>";
-
 			html += "</tr>";
 
 			// alleArtikelHTML += art.warenkorbEinführen() + "<br/>\n";
 
 			this.summe += art.summeBerechnen();
-
+			
 		}
 		return html;
 
+	}
+	public void deleteWarenkorb() throws SQLException{
+		
+		this.ausgewaehlteWarenkorbListe.clear();
+		
+		String sql = "DELETE FROM warenkorb"+this.matrkid;
+		System.out.println(sql);
+		Connection dbConn = new PostgreSQLAccess().getConnection();
+		dbConn.createStatement().executeUpdate(sql);
 	}
 
 //	public void loescheWarenVektor(String xx) {

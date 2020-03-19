@@ -10,11 +10,7 @@
 <meta charset="UTF-8">
 <title>Einstellungen | lazyNerds</title>
 </head>
-<link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
-
-
-
-
+<link type="text/css" rel="stylesheet" href="../css/bewertung.css" />
 <body>
 	<jsp:useBean id="lb" class="de.hwg_lu.bw4s.beans.LoginBean"
 		scope="session" />
@@ -24,86 +20,72 @@
 		scope="session" />
 	<jsp:useBean id="ab" class="de.hwg_lu.bw4s.beans.AccountBean"
 		scope="session" />
-		
 
+	<jsp:useBean id="sb" class="de.hwg_lu.bw4s.beans.StartseiteBean"
+		scope="session"></jsp:useBean>
+
+	<!-- HEADER -->
+	<form action="../jsp/StartseiteAppl.jsp" method="get">
+		<jsp:getProperty property="headerAsHtml" name="sb" />
+	</form>
 
 	<form action="./EinstellungenAppl.jsp" method="get">
 
-		<h1>Einstellungen</h1>
+		<div class="background">
+			<h1>Einstellungen & Profil</h1>
+			<div class="Rand">
+				<div style="text-align: center;">
+					<div style="display: inline-block; text-align: left;">
+						<table class="KastenGroß">
+							<tr>
+								<td><h4>Benutzername:</h4></td>
+								<td>
+									<h4><%=lb.getUsername()%></h4>
+								</td>
+							</tr>
+							<tr>
+								<td><h4>Matrikelnummer:</h4></td>
+								<td><h4>
+										<%=lb.getMatrkid()%>
+									</h4></td>
+							</tr>
+							<tr>
+								<td><h4>E-mail-Adresse:</h4></td>
+								<td><h4>
+										<%=lb.getEmail()%>
+									</h4></td>
+							</tr>
+						</table>
+						<table>
+							<tr>
 
-		<table>
-
-			<tr>
-
-				<td><h3>Benutzername</h3></td>
-				<td>
-					<h3><%=lb.getUsername()%></h3>
-				</td>
-
-
-
-			</tr>
-
-			<tr>
-
-				<td><h3>Matrikelnummer</h3></td>
-				<td><h3>
-						<%=lb.getMatrkid()%>
-					</h3></td>
-
-
-
-			</tr>
-
-			<tr>
-
-				<td><h3>E-mail</h3></td>
-				<td><h3>
-						<%=lb.getEmail()%>
-					</h3></td>
-
-
-			</tr>
-
-
-
-			<tr>
-
-				<td><h3>Passwort ändern:</h3></td>
-				<td><input type="submit" value="Passwort ändern"
-					name="passwortaendern" id="btn"></td>
-
-
-
-			</tr>
-
-			<tr>
-
-				<td><h3>Account löschen:</h3></td>
-				<td><input type="submit" value="Account dauerhaft löschen"
-					name="accountLoeschen" id="btn"></td>
-
-
-
-			</tr>
-
-
-
-
-
-
-
-
-
-
-
-		</table>
-
-		<input type="submit" value="Zurueck zu Home" name="zurück" id="detail">
-
-
+								<td><h4>Du möchstest dein Passwort ändern?</h4></td>
+							</tr>
+							<tr>
+								<td class="mittig"><input type="submit"
+									value="Passwort ändern" name="passwortaendern" id="btn"
+									class="submitSetting"></td>
+							</tr>
+							<tr>
+								<td><h4>Du möchstest deinen Account löschen?</h4></td>
+							</tr>
+							<tr>
+								<td class="mittig"><input type="submit"
+									value="Account dauerhaft löschen" name="accountLoeschen"
+									id="btn" class="submitSetting"></td>
+							</tr>
+						</table>
+						<br> <br> <input type="submit" value="Zum Portal"
+							name="zurück" id="detail" class="submitSettingPortal">
+					</div>
+				</div>
+			</div>
+		</div>
 	</form>
 
-
+	<!-- FOOTER -->
+	<form action="../jsp/StartseiteAppl.jsp" method="get">
+		<jsp:getProperty property="startFooterAsHtml" name="sb" />
+	</form>
 </body>
 </html>

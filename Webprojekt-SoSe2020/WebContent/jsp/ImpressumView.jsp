@@ -4,6 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="../css/Startseite.css">
 <title>Impressum | lazyNerds</title>
 </head>
@@ -22,13 +24,27 @@
 			<br>
 			<p class="title1">Impressum</p>
 
-			<p class="title2">xx
-			<p class="zitat2">xx</p>
-			<div class="Porschediv">
-				<img src="" class="Porsche">
+
+			<p class="title2">Postanschrift:</p>
+			<div class="kasten">
+				<p class="untertext">
+					Hochschule für Wirtschaft und Gesellschaft Ludwigshafen<br>
+					Ernst-Boehe-Str. 4<br> Postfach: layzNerds <br> 67059
+					Ludwigshafen am Rhein
+				</p>
 			</div>
-			<br>
+			<p class="title2">Kontakt</p>
+			<div class="kasten">
+				<p class="untertext">
+					Tel. +49 123 456 - 7<br> E-Mail: lazyNerds@web.de
+				</p>
+			</div>
+			<br> <br> <br>
 		</div>
+
+		<!-- Icons -->
+		<jsp:getProperty property="socialButtons" name="sb" />
+
 
 		<!-- FOOTER -->
 		<jsp:getProperty property="startFooterAsHtml" name="sb" />

@@ -32,13 +32,22 @@
 		String zurueckzp = this.denullify(request.getParameter("zurueckzp"));
 		String action = this.denullify(request.getParameter("action"));
 		String value = this.denullify(request.getParameter("value"));
+		String warenkorb = this.denullify(request.getParameter("warenkorb"));
 		
 		
 
 		if (weitereinkaufen.equals("Weiter Einkaufen")) {
 
 			response.sendRedirect("../Module/LiteraturView.jsp");
-		} else if (jetztkaufen.equals("Jetzt Kaufen")) {
+		}else if (warenkorb.equals("Warenkorb Loeschen")) {
+		    
+			kb.deleteWarenkorb();
+			//kb.getHTMLFromAusgewaehlteWarenkorbProdukte();
+			response.sendRedirect("./WarenkorbView.jsp");
+
+		}
+		
+		else if (jetztkaufen.equals("Jetzt Kaufen")) {
 
 			response.sendRedirect("./RechnungsView.jsp");
 

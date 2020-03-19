@@ -26,40 +26,37 @@ header {
 	margin-top: 10px;
 }
 /**-------------Content-------------**/
-textarea {
-	width: 100%;
-	min-height: 190px;
-	background: transparent;
-	font-family: Verdana, sans-serif;
-	font-size: 95%;
-	color: #333;
-	overflow: auto;
-	position: relative;
-	border-radius: 10px;
-	border-color: #151414;
-	border-style: solid;
-	margin-top: 70px;
-}
 
 .start-background {
 	background-color: #151414;
 	border-radius: 10px;
-	margin: 45px;
+	margin: 65px;
 	margin-top: 120px;
 }
 
 .background {
+	background-color: #c6c5bf;
+	border-radius: 10px;
+	margin: 20%;
+	margin-top: 120px;
+}
+
+.backgroundWir {
 	background-color: #151414;
 	border-radius: 10px;
-	margin: 45px;
-	margin-top: 70px;
+	margin: 10%;
+	margin-top: 120px;
 }
 
 .abstand-top {
 	margin-top: -50px;
 }
 
-.title1 {
+.abstand-bottom {
+	margin-bottom: 10px;
+}
+
+.title1-start {
 	color: #c6c5bf;
 	text-align: center;
 	font-size: 50px;
@@ -67,7 +64,46 @@ textarea {
 	font-weight: bold;
 }
 
+.title1 {
+	color: #151414;
+	text-align: center;
+	font-size: 50px;
+	font-family: fjalla one;
+	font-weight: bold;
+}
+
 .title2 {
+	color: #151414;
+	text-align: center;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.untertext {
+	color: #151414;
+	text-align: justify;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.kasten {
+	margin: 20%;
+	border: 2px solid;
+	border-color: transparent;
+	border-radius: 10px;
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+
+.hilfekasten {
+	margin: 5%;
+	border: 2px solid;
+	border-color: transparent;
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+
+.title2-start {
 	color: #c6c5bf;
 	text-align: center;
 	font-size: 19px;
@@ -81,9 +117,22 @@ textarea {
 .Porsche {
 	width: 100%;
 	margin-bottom: 10px;
-	border-style: solid;
+	border: 2px solid;
 	border-color: grey;
 	border-radius: 10px;
+}
+
+.Anfangdiv {
+	margin: 10%;
+	margin-top: 45px;
+}
+
+.Anfang {
+	width: 100%;
+	border: 1px solid;
+	border-color: grey;
+	border-radius: 10px;
+	height: 100%;
 }
 
 .Porschediv {
@@ -98,45 +147,15 @@ textarea {
 	margin-top: -20%;
 }
 
-.border {
-	float: left;
-	width: 32%;
-	margin-right: 2%;
-	padding: 20px;
-	background: #eee;
-	box-sizing: border-box;
-}
-
-.border1, .border2, .border3 {
-	float: left;
-	width: 100%;
-	margin-right: 2%;
-	padding: 20px;
-	background: #151414;
-	box-sizing: border-box;
-	border-radius: 10px;
-	border-style: solid;
-	border-color: grey;
-}
-
-.card {
-	border-radius: 2px;
-	display: inline-block;
-	height: 300px;
-	position: relative;
-	width: 300px;
-}
-
-.card-1  {
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-}
-
-.card-2 {
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
 .zitat2 {
+	margin-top: -10px;;
+	text-align: center;
+	font-size: 13px;
+	color: #151414;
+	font-style: italic;
+}
+
+.zitat2-start {
 	margin-top: -10px;;
 	text-align: center;
 	font-size: 13px;
@@ -152,6 +171,16 @@ h3 {
 
 h4 {
 	text-align: center;
+}
+
+h5 {
+	text-align: center;
+	color: #797876;
+	text-decoration: none;
+	margin: 10%;
+	font-size: 16px;
+	font-family: fantasy;
+	font-style: normal;
 }
 
 h6 {
@@ -239,7 +268,7 @@ h6 {
 	text-align: center;
 	height: 185px;
 	overflow: hidden;
-	top: -70px;
+	margin-top: 70px;
 }
 
 #social-platforms a {
@@ -324,11 +353,12 @@ h6 {
 	left: 0;
 	margin: 10%;
 	height: 80px;
-	padding: 1rem;
+	padding: 10rem;
 	background-color: #151414;
 	text-align: center;
 	height: 80px;
 	margin-top: -5%;
+	margin-bottom: -20px;
 }
 
 .login-footer {
@@ -351,11 +381,11 @@ h6 {
 
 /** HilfeView**/
 .accordion {
-	margin: auto;
+	color: #151414;
 	font-size: medium;
-	margin-bottom: 20px;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-bottom: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 .accordion input {
@@ -364,7 +394,7 @@ h6 {
 
 .box {
 	position: relative;
-	background: grey;
+	background: #c6c5bf;
 	height: 64px;
 	transition: all .15s ease-in-out;
 	margin-bottom: 20px;
@@ -405,8 +435,10 @@ h6 {
 	font-size: medium;
 	padding: 20px;
 	line-height: 120%;
-	color: grey;
+	color: #151414;
 	display: none;
+	overflow: hidden;
+	background: #c6c5bf;
 }
 
 .box-close {
@@ -425,14 +457,8 @@ input:checked+.box {
 	box-shadow: 0 0 4px rgba(0, 0, 0, .16), 0 4px 8px rgba(0, 0, 0, .32);
 }
 
-input:checked+.box .box-title {
-	background: grey;
-	border-bottom: 1px solid rgba(0, 0, 0, .18);
-}
-
 input:checked+.box .box-content, input:checked+.box .box-close {
 	display: inline-block;
-	background-color: #151414;
 }
 
 .arrows section .box-title {
@@ -448,7 +474,7 @@ input:checked+.box .box-content, input:checked+.box .box-close {
 	left: 20px;
 	top: -2px;
 	transition: transform .15s ease-in-out;
-	color: black;
+	color: #151414;
 }
 
 input:checked+section.box .box-title:before {
@@ -459,6 +485,13 @@ input:checked+section.box .box-title:before {
 	color: #F60;
 }
 
+.farbe {
+	color: black;
+	font-weight: bold;
+	background-color: #c6c5bf;
+	opacity: 0.8;
+}
+
 input:hover {
 	color: white;
 }
@@ -467,7 +500,24 @@ input {
 	color: grey;
 }
 
-/**BOX mit Hintergrund**/
+a:link {
+	color: blue;
+	font-size: 18px;
+}
+
+a:hover {
+	color: grey;
+}
+
+a:visited {
+	color: white;
+}
+
+.bodycolor {
+	background-color: #151414;
+}
+
+/**BOX mit Hintergrund und nebeneinander**/
 #flex-container {
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -475,6 +525,39 @@ input {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+}
+
+#part2part {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.panel-test3 {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	cursor: text;
+	width: 50%;
+	margin: 0%;
+	border: 1px solid;
+	border-radius: 10px;
+}
+
+.panel-test4 {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	cursor: text;
+	width: 50%;
+	margin: 0%;
+	border: 1px solid;
+	border-radius: 10px;
+	border-color: transparent;
+	text-align: center;
 }
 
 .panel-test2 {
@@ -487,5 +570,9 @@ input {
 	text-align: center;
 	margin: 5%;
 	border: 1px solid;
-	box-shadow: 2px 2px 2px 2px #F60;
+	box-shadow: 1px 1px 1px 1px #F60;
+}
+
+span {
+	text-transform: uppercase;
 }

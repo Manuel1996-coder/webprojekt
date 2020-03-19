@@ -31,10 +31,9 @@ String zurReg   = this.denullify(request.getParameter("zurReg"));
 String comeFrom = this.denullify(request.getParameter("comeFrom"));
 
 if (login.equals("Anmelden")){
+	mb.setGeneralWelcome();
 	lb.setMatrkid(matrkid);
 	lb.setPassword(password);
-	
-	
 	
 	try{
 		boolean loginOk = lb.checkUseridPassword();

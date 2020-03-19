@@ -1,9 +1,164 @@
 @charset "UTF-8";
 
-/* Sternebewertung */
+body {
+	background-color: #151414;
+}
+
+/**-------------Header-------------**/
+header {
+	height: 20px;
+}
+
+.header-menu {
+	position: absolute;
+	top: 0;
+	width: 95%;
+	text-align: right;
+	font-size: 10px;
+	background-color: transparent;
+	padding: 3em;
+	color: grey;
+}
+
+.logo {
+	width: 70px;
+	height: 70px;
+	margin-left: 15px;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+h1 {
+	fonz-size: 25px;
+	font-family: fantasy;
+	color: #c6c5bf;
+	text-align: center;
+	margin-top: 100px;
+}
+h2 {
+	fonz-size: 16px;
+	color: #c6c5bf;
+	text-align: center;
+	margin-top: 20px;
+	color: #c6c5bf;
+}
+h3 {
+	text-align: center;
+	color: #797876;
+	text-decoration: none;
+}
+
+h4 {
+	text-align: center;
+	color: #c6c5bf;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+h5 {
+	text-align: center;
+	color: #c6c5bf;
+	text-decoration: none;
+}
+
+.background {
+	background-color: 151414;
+	border-radius: 10px;
+	border: 2px solid #F60;
+	margin: 20%;
+	margin-top: 120px;
+}
+
+.Rand {
+	margin: 10%;
+	margin-top: 45px;
+}
+.Kasten {
+	margin-bottom: 10px;
+	border: 1px solid;
+	border-color: transparent;
+	border-radius: 10px;
+	text-align: center;
+	size: 20px;
+}
+.KastenMitte {
+	width: 100%;
+	margin-left: 16%;
+	margin-right: 0;
+	text-align: center;
+
+}
+input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid ;
+	border-radius: 4px;
+	box-sizing: border-box;
+	text-align: center;
+	height: 60px;
+	background-color: grey;
+}
+input[type=text] {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	text-align: center;
+	height: 60px;
+}
+.submitBewertung{
+	width: 100%;
+	background-color: #F60;
+	color: white;
+	padding: 14px 20px;
+	margin: 15px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+}
+.submitSetting {
+	width: 100%;
+	background-color: #F60;
+	color: white;
+	padding: 10px 20px;
+	margin: 15px 0px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+}
+.submitSettingPortal {
+	width: 100%;
+	background-color: #2a2a2a;
+	color: white;
+	padding: 10px 20px;
+	margin: 8px 0px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 18px;
+	text-align: center;
+	float: none;
+}
+
+.submitSettingPortal:hover {
+	color: #F60;
+}
+input:hover {
+	color: white;
+}
+
+/** Sternebewertung **/
 
 span#Bewertung {
- line-height: 45px;
+ line-height: 35px;
+  display: none;
 }
 
 span.sternebewertung {
@@ -50,4 +205,33 @@ span.sternebewertung > input:checked ~ label:hover ~ label,
 span.sternebewertung > label:hover ~ input:checked ~ label {
  color: #F9B500;
  text-shadow: 1px 1px #F8BA01, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+/**----Footer----**/
+.start-footer {
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: 10%;
+	height: 80px;
+	padding: 10rem;
+	background-color: #151414;
+	text-align: center;
+	height: 80px;
+	margin-top: -5%;
+	margin-bottom: -20px;
+}
+.submit {
+	background-color: transparent;
+	color: #c6c5bf;
+	border: none;
+	font-size: 15px;
+}
+
+td {
+	float: left;
+}
+
+.mittig {
+	text-align: center;
+	float: none;
 }
