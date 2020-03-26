@@ -21,13 +21,10 @@ public class Bewertung {
 		this.matrikid = matrikid;
 	}
 	
+	// Kommentar auf die rechte Seite
 	public String bewertung() {
 		String html = "";
-		
-		
-			
-			
-			
+	
 			html += "<div class='container right'>";
 			html +=  "<div class='content'>";
 			html +=  "<h2>" +this.kommentar +"</h2>";
@@ -36,13 +33,11 @@ public class Bewertung {
 			html +=  "</div>";
 			html += "</div>";
 		
-		
-		
 
 		return html;
 	}
 	
-	
+	// Kommentar auf die linke Seite
 	public String bewertung2() {
 		
 		String html = "";
@@ -55,8 +50,6 @@ public class Bewertung {
 		html += "</div>";
 		
 		
-		
-
 		return html;
 	}
 	
