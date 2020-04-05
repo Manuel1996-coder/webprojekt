@@ -21,6 +21,7 @@
 		<div class="backgroundWir">
 			<br>
 			<p class="title1-start">Wir sind die lazyNerds!</p>
+			
 			<div class="Anfangdiv">
 				<p class="title2-start">Die ersten Ideen...</p>
 				<div id="part2part">

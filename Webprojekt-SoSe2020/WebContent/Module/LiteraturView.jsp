@@ -1,6 +1,6 @@
 <%@page import="de.hwg_lu.bw4s.beans.LiteraturBean"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,25 +8,40 @@
 <title>Literatur | lazyNerds</title>
 </head>
 
-<link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
+<link type="text/css" rel="stylesheet" href="../css/bewertung.css" />
 <body>
-<jsp:useBean id="fsb" class="de.hwg_lu.bw4s.beans.LiteraturBean" scope="session" />
-<jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean" scope="session" />
-<h1>Literatur <%= kb.getModulValue() %></h1>
+	<jsp:useBean id="fsb" class="de.hwg_lu.bw4s.beans.LiteraturBean"
+		scope="session" />
+	<jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean"
+		scope="session" />
+	<jsp:useBean id="sb" class="de.hwg_lu.bw4s.beans.StartseiteBean"
+		scope="session"></jsp:useBean>
 
-<form action="LiteraturAppl.jsp" method="get">
+	<!-- HEADER -->
+	<form action="../jsp/StartseiteAppl.jsp" method="get">
+		<jsp:getProperty property="headerAsHtml" name="sb" />
+	</form>
 
-<br>
-<!--<input type="checkbox" name="artikel" value="0" />
-Power Fan 2720s, EUR 29,80 
-<img src="../img/0.jpg" />  -->
-<jsp:getProperty name="kb" property="HTMLFromArtikel" />
-<br>
+	<div class="backgroundWir">
+		<div class="Anfang">
+			<h1>
+				Literatur
+				<%=kb.getModulValue()%></h1>
 
-<input type="submit" name="indenwarenkorb" value="In den Warenkorb" />
-<input type="submit" name="zurueckzp"
-		value="Zum Portal">
+			<jsp:getProperty name="kb" property="HTMLFromArtikel" />
 
-</form>
+			<div class="Anfangdiv">
+				<form action="LiteraturAppl.jsp" method="get">
+					<input type="submit" name="indenwarenkorb" value="In den Warenkorb"
+						class="submitSetting" /> <input type="submit" name="zurueckzp"
+						value="Zum Portal" class="submitSettingPortal">
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- FOOTER -->
+	<form action="../jsp/StartseiteAppl.jsp" method="get">
+		<jsp:getProperty property="startFooterAsHtml" name="sb" />
+	</form>
 </body>
 </html>

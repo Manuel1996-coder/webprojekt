@@ -14,17 +14,15 @@ public class NotizenBean {
 	String notiz;
 	Connection dbConn;
 	String matrkid;
-	
-	
 
 	public NotizenBean() throws SQLException {
 		super();
-		
+
 		this.notiz = "";
 		this.dbConn = new PostgreSQLAccess().getConnection();
 		this.getNotizDateienfromDB();
-		
-		
+		this.matrkid = "";
+
 	}
 
 	public NotizenBean(String notiz, String matrkid) {
@@ -34,17 +32,16 @@ public class NotizenBean {
 	}
 
 	public void createNotizTable() throws SQLException {
-		String sql = "create table notizen" + this.matrkid 
-				+ " (matrkid VARCHAR(10)	NOT NULL PRIMARY KEY,"
+		String sql = "create table notizen" + this.matrkid + " (matrkid VARCHAR(10)	NOT NULL PRIMARY KEY,"
 				+ "notiz 	VARCHAR(2000) 	NOT NULL            )";
 
 		System.out.println(sql);
 		Statement myStat = dbConn.createStatement();
 		myStat.executeUpdate(sql);
 		System.out.println("Tabelle <matrikelnummer>Notizen angelegt");
-		
-		//---------------------- insert --------------------
-		
+
+		// ---------------------- insert --------------------
+
 		String sql1 = "insert into notizen" + this.matrkid + " (matrkid,notiz) " + "values (?,?)";
 		System.out.println(sql);
 		try {
@@ -66,8 +63,7 @@ public class NotizenBean {
 		}
 
 		System.out.println("Notiz erfolgreich gespeichert");
-		
-		
+
 	}
 
 	public void insertNotiz() {
@@ -94,9 +90,9 @@ public class NotizenBean {
 
 		System.out.println("Notiz erfolgreich gespeichert");
 	}
-	
+
 	public void updateNotizen() throws SQLException {
-		String sql = "UPDATE notizen"+ this.matrkid + " SET notiz= ? WHERE matrkid = ?";
+		String sql = "UPDATE notizen" + this.matrkid + " SET notiz= ? WHERE matrkid = ?";
 		System.out.println(sql);
 		PreparedStatement prep = dbConn.prepareStatement(sql);
 		prep.setString(1, this.notiz);
@@ -107,8 +103,6 @@ public class NotizenBean {
 	}
 
 	public void getNotizDateienfromDB() throws SQLException {
-
-		
 
 		String sql = "select * from " + this.matrkid + "notizen";
 
@@ -124,7 +118,6 @@ public class NotizenBean {
 				this.setNotiz(notiz);
 				this.setMatrkid(matrikid);
 
-				
 			}
 		} catch (SQLException se) {
 
@@ -134,22 +127,33 @@ public class NotizenBean {
 
 		}
 
-		
-
 	}
-	
+
+//	public String getHTMLNotizen2() {
+//
+//		String html1 = "";
+//
+//		html1 += "<br><h3> Notizen von " + this.matrkid + "</h3>";
+//		html1 += "<textarea rows='50' cols='90%' name='notiz' style='position:relative;'>";
+//		html1 += this.notiz;
+//		html1 += "</textarea>";
+//
+//		return html1;
+//
+//	}
+
 	public String getHTMLNotizen() {
-		
+
 		String html = "";
 		
-		html += "<h1> Notizen von " + this.matrkid + "</h1><br>";
-		
+		html += "<h3> Notizen von " + this.matrkid + "</h3><br>";
+
+		html += "<h3>Hier kannst du deine eigenen Stichpunkte speichern. Nur du wirst Zugriff darauf haben, also mache dir keine Sorgen, deine Notizen werden nicht mit anderen geteilt. ;)</h3>";
 		html += "<textarea rows='40' cols='100' name='notiz'>";
 		html += this.notiz;
 		html += "</textarea><br>";
-		
+
 		return html;
-		
 	}
 
 	public String getMatrkid() {

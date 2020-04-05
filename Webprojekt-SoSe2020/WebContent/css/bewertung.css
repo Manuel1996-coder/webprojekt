@@ -4,6 +4,111 @@ body {
 	background-color: #151414;
 }
 
+.backgroundWir {
+	background-color: #151414;
+	border-radius: 10px;
+	margin: 5%;
+	margin-top: 120px;
+}
+
+.Anfang {
+	width: 100%;
+	border: 1px solid;
+	border-color: grey;
+	border-radius: 10px;
+	height: 100%;
+}
+
+.Klein {
+	width: 100%;
+	border-color: transparent; 
+	height: 85%;
+	margin: 5%;
+	height: 85%;
+}
+
+#Anfang2 {
+	margin: 10%;
+}
+
+.Anfangdiv {
+	margin: 40%;
+	margin-top: 45px;
+	margin-bottom: 0;
+}
+
+.AnfangdivNotizen {
+	margin: 30%;
+	margin-left: -30px;
+}
+
+#flex-container {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+#part2part {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.panel-test3 {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	cursor: text;
+	width: 50%;
+	margin: 0%;
+	border: 1px solid;
+	border-radius: 10px;
+	border-color: transparent;
+}
+
+.panel-test5 {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	cursor: text;
+	width: 50%;
+	margin: 0%;
+	border: 1px solid;
+	border-color: none;
+	text-align: center;
+}
+
+.panel-test4 {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	cursor: text;
+	width: 50%;
+	margin: 0%;
+	border: 1px solid;
+	border-color: transparent;
+	text-align: center;
+}
+
+.panel-test2 {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	cursor: text;
+	width: 40%;
+	padding: 20px;
+	text-align: center;
+	margin: 5%;
+	border: 1px solid;
+	box-shadow: 1px 1px 1px 1px #F60;
+}
+
 /**-------------Header-------------**/
 header {
 	height: 20px;
@@ -35,6 +140,7 @@ h1 {
 	text-align: center;
 	margin-top: 100px;
 }
+
 h2 {
 	fonz-size: 16px;
 	color: #c6c5bf;
@@ -42,10 +148,12 @@ h2 {
 	margin-top: 20px;
 	color: #c6c5bf;
 }
+
 h3 {
 	text-align: center;
 	color: #797876;
 	text-decoration: none;
+	font-size: 14px;
 }
 
 h4 {
@@ -73,6 +181,7 @@ h5 {
 	margin: 10%;
 	margin-top: 45px;
 }
+
 .Kasten {
 	margin-bottom: 10px;
 	border: 1px solid;
@@ -81,25 +190,34 @@ h5 {
 	text-align: center;
 	size: 20px;
 }
+
 .KastenMitte {
 	width: 100%;
 	margin-left: 16%;
 	margin-right: 0;
 	text-align: center;
-
 }
+
+.KastenMitteMitte {
+	width: 100%;
+	margin: 10%;
+	margin-left: 10%;
+	text-align: center;
+}
+
 input[type=password] {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
 	display: inline-block;
-	border: 1px solid ;
+	border: 1px solid;
 	border-radius: 4px;
 	box-sizing: border-box;
 	text-align: center;
 	height: 60px;
 	background-color: grey;
 }
+
 input[type=text] {
 	width: 50%;
 	padding: 12px 20px;
@@ -111,7 +229,8 @@ input[type=text] {
 	text-align: center;
 	height: 60px;
 }
-.submitBewertung{
+
+.submitBewertung {
 	width: 100%;
 	background-color: #F60;
 	color: white;
@@ -122,6 +241,7 @@ input[type=text] {
 	cursor: pointer;
 	font-size: 14px;
 }
+
 .submitSetting {
 	width: 100%;
 	background-color: #F60;
@@ -132,7 +252,9 @@ input[type=text] {
 	border-radius: 4px;
 	cursor: pointer;
 	text-align: center;
+	font-size: 14px;
 }
+
 .submitSettingPortal {
 	width: 100%;
 	background-color: #2a2a2a;
@@ -142,69 +264,73 @@ input[type=text] {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	font-size: 18px;
+	font-size: 14px;
 	text-align: center;
 	float: none;
+	margin-bottom: 20%;
 }
 
 .submitSettingPortal:hover {
 	color: #F60;
 }
+
 input:hover {
 	color: white;
 }
 
 /** Sternebewertung **/
-
 span#Bewertung {
- line-height: 35px;
-  display: none;
+	line-height: 35px;
+	display: none;
 }
 
 span.sternebewertung {
- float: Left;
+	float: Left;
 }
 
-span.sternebewertung:not(:checked) > input {
- display: None;
+span.sternebewertung:not (:checked ) >input {
+	display: None;
 }
 
-span.sternebewertung:not(:checked) > label {
- float: Right;
- width: 1em;
- padding: 0 .1em;
- overflow: Hidden;
- white-space: Nowrap;
- cursor: Pointer;
- font-size: 200%;
- line-height: 1.2;
- color: #D0D0D0;
- text-shadow: 1px 1px #B0B0B0, 2px 2px #606060, .1em .1em .2em rgba(0,0,0,.5);
- transition: all .5s;
+span.sternebewertung:not (:checked ) >label {
+	float: Right;
+	width: 1em;
+	padding: 0 .1em;
+	overflow: Hidden;
+	white-space: Nowrap;
+	cursor: Pointer;
+	font-size: 200%;
+	line-height: 1.2;
+	color: #D0D0D0;
+	text-shadow: 1px 1px #B0B0B0, 2px 2px #606060, .1em .1em .2em
+		rgba(0, 0, 0, .5);
+	transition: all .5s;
 }
 
-span.sternebewertung:not(:checked) > label:before {
- content: '★ ';
+span.sternebewertung:not (:checked ) >label:before {
+	content: '★ ';
 }
 
-span.sternebewertung > input:checked ~ label {
- color: #FFD700;
- text-shadow: 1px 1px #C06000, 2px 2px #904000, .1em .1em .2em rgba(0,0,0,.5);
+span.sternebewertung>input:checked ~ label {
+	color: #FFD700;
+	text-shadow: 1px 1px #C06000, 2px 2px #904000, .1em .1em .2em
+		rgba(0, 0, 0, .5);
 }
 
-span.sternebewertung:not(:checked) > label:hover,
-span.sternebewertung:not(:checked) > label:hover ~ label {
- color: #FFD700;
- text-shadow: 1px 1px #F29E02, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+span.sternebewertung:not (:checked ) >label:hover, span.sternebewertung:not
+	 (:checked ) >label:hover ~ label {
+	color: #FFD700;
+	text-shadow: 1px 1px #F29E02, 2px 2px #B57340, .1em .1em .2em
+		rgba(0, 0, 0, .5);
 }
 
-span.sternebewertung > input:checked + label:hover,
-span.sternebewertung > input:checked + label:hover ~ label,
-span.sternebewertung > input:checked ~ label:hover,
-span.sternebewertung > input:checked ~ label:hover ~ label,
-span.sternebewertung > label:hover ~ input:checked ~ label {
- color: #F9B500;
- text-shadow: 1px 1px #F8BA01, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+span.sternebewertung>input:checked+label:hover, span.sternebewertung>input:checked+label:hover 
+	 ~ label, span.sternebewertung>input:checked ~ label:hover, span.sternebewertung>input:checked 
+	 ~ label:hover ~ label, span.sternebewertung>label:hover ~ input:checked 
+	 ~ label {
+	color: #F9B500;
+	text-shadow: 1px 1px #F8BA01, 2px 2px #B57340, .1em .1em .2em
+		rgba(0, 0, 0, .5);
 }
 /**----Footer----**/
 .start-footer {
@@ -220,6 +346,7 @@ span.sternebewertung > label:hover ~ input:checked ~ label {
 	margin-top: -5%;
 	margin-bottom: -20px;
 }
+
 .submit {
 	background-color: transparent;
 	color: #c6c5bf;

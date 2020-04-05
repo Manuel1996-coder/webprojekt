@@ -28,18 +28,20 @@ public class Artikel {
 
 	public String toKaestchen() {
 		String html = "";
+		html += "<div class='KastenMitte'>";
 		html += "<table>";
 		html += "<tr>";
 		html += "<td>";
 		html += "<img  src='../img/"+this.aname+".jpg' width= '250' height= '300'/>";
 		html += "</td>";
 		html += "<td>";
-		html += this.aname + "<br> von " + this.autor;
-		html += "<br><br><br>" + " EUR " + this.preis;
+		html += "<h4>" + this.aname + "<br> von " + this.autor + "</h4>";
+		html += " EUR " + this.preis;
 		html += "<br><br>" + "Hier auswählen: <input type='checkbox' name='artikel' value='" + this.anr + "' />";
 		html += "</td>";
 		html += "<tr>";
 		html += "</table>";
+		html += "</div>";
 
 		return html;
 	}

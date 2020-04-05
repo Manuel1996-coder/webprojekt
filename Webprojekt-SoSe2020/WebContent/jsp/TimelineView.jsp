@@ -20,12 +20,14 @@
 	</form>
 
 	<form action="./TimelineAppl.jsp" method="get">
-		<h1>LazyNerds Kommentare</h1>
+
 		<div class="background">
+			<h1>LazyNerds Kommentare</h1>
 			<div class="timeline">
 				<%=bb.getHTMLTimeline()%>
 			</div>
-			<input type="submit" name="zurueckzp" value="Zum Portal" class="submitSettingPortal">
+			<input type="submit" name="zurueckzp" value="Zum Portal"
+				class="submitSettingPortal">
 		</div>
 	</form>
 	<!-- FOOTER -->
