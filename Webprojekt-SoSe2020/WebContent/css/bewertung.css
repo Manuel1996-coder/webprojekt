@@ -339,7 +339,6 @@ span.sternebewertung > label:hover ~ input:checked ~ label {
  color: #F9B500;
  text-shadow: 1px 1px #F8BA01, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
 }
-
 /**----Footer----**/
 .start-footer {
 	position: absolute;
