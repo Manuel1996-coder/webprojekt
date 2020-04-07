@@ -359,7 +359,7 @@ var myQuiz = {
 	data: [{
 		category: 'Spass',
 		question: 'Welcher Professor ist der Beste?',
-		solution: 'Professor Roeckle',
+		solution: 'Professor R&ouml;ckle',
 		falses: ['Professor Bonguard', 'Professor Selchert', 'Professor Dorrhauer'],
 		explanation: 'Es gibt nur eine Antwort!'
 	}, {
@@ -379,19 +379,19 @@ var myQuiz = {
 	category: 'Spass',
 	question: 'Lieblingsessen an der Mensa?',
 	solution: 'Nichts',
-	falses: ['Cevapcici', 'Reis mit Hähnchen', 'Salat'],
+	falses: ['Cevapcici', 'Reis mit H&auml;hnchen', 'Salat'],
 	explanation: 'Es gibt nur eine Antwort!'
 }, {
 	category: 'Prog',
-	question: 'Was ist ein gültiger Schlüsselwort in Java?',
+	question: 'Was ist ein g&uuml;ltiger Schl&uuml;sselwort in Java?',
 	solution: 'abstract',
 	falses: ['goto', 'sizeof', '0', 'abstrakt'],
 	explanation: 'Denk nach!'
 }, {
 	category: 'Uni',
 	question: 'Wer ist am Coolsten?',
-	solution: 'Prof. Röckle',
-	falses: ['V. Mayer', 'Prof. Küppers', 'Prof. Röckle', 'Frau Gondrom'],
+	solution: 'Prof. R&ouml;ckle',
+	falses: ['V. Mayer', 'Prof. K&uuml;ppers', 'Prof. R&ouml;ckle', 'Frau Gondrom'],
 	explanation: 'Es gibt nur eine Antwort!'
 }
 	],
