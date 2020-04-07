@@ -28,7 +28,7 @@
 		String Literatur = this.denullify(request.getParameter("Literatur"));
 		String Altklausuren = this.denullify(request.getParameter("Altklausuren"));
 		String zurueck = this.denullify(request.getParameter("zurueck"));
-		String notizen = this.denullify(request.getParameter("notizen"));
+		String quiz = this.denullify(request.getParameter("quiz"));
 
 		if (prof.equals("PROF")) {
 
@@ -79,22 +79,10 @@
 			response.sendRedirect("../jsp/PortalView.jsp");
 		} 
 	
-		 else if (notizen.equals("Notizen")) {
+		 else if (quiz.equals("Quiz")) {
 
-			nb.setMatrkid(lb.getMatrkid());
 
-			try {
-				nb.createNotizTable();
-				//nb.getNotizDateienfromDB();
-			} catch (SQLException se) {
-
-				System.out.println("B DB schreiben fehlgeschlagen, Mist!");
-				System.out.println("SQLCode=" + se.getErrorCode());
-				System.out.println("Error-Message=" + se.getMessage());
-
-			}
-
-			response.sendRedirect("../jsp/AgendaView.jsp");
+			response.sendRedirect("../jsp/QuizView.jsp");
 		}
 	%>
 

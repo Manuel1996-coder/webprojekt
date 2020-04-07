@@ -32,12 +32,13 @@ public class Artikel {
 		html += "<table>";
 		html += "<tr>";
 		html += "<td>";
-		html += "<img  src='../img/"+this.aname+".jpg' width= '250' height= '300'/>";
+		html += "<img  src='../img/" + this.aname + ".jpg' width= '250' height= '300'/> class='Anfang'";
 		html += "</td>";
 		html += "<td>";
 		html += "<h4>" + this.aname + "<br> von " + this.autor + "</h4>";
-		html += " EUR " + this.preis;
-		html += "<br><br>" + "Hier auswählen: <input type='checkbox' name='artikel' value='" + this.anr + "' />";
+		html += "<h4>EUR"+ this.preis + "</h4>";
+		html += "<br><br>" + " <h4>Hier auswählen: <input type='checkbox' name='artikel' value=' </h4>" + "<h4>"
+				+ this.anr + "<h4>'/>";
 		html += "</td>";
 		html += "<tr>";
 		html += "</table>";
@@ -58,8 +59,6 @@ public class Artikel {
 
 		return html;
 	}
-
-	
 
 	public int getAnr() {
 		return anr;

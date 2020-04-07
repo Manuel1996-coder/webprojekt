@@ -34,6 +34,9 @@
 		String indenwarenkorb = this.denullify(request.getParameter("indenwarenkorb"));
 		String zurueckzp = this.denullify(request.getParameter("zurueckzp"));
 		String[] artikel = request.getParameterValues("artikel");
+
+		String zurueckza = this.denullify(request.getParameter("zurueckza"));
+
 		if (artikel == null)
 			artikel = new String[1];
 
@@ -46,7 +49,7 @@
 			System.out.println("angekommen");
 			try {
 				kb.getausgewaehlteArtikelFromDB(artikel);
-				
+
 			} catch (SQLException se) {
 
 				System.out.println("B DB schreiben fehlgeschlagen, Mist!");
@@ -58,11 +61,13 @@
 
 			response.sendRedirect("../jsp/WarenkorbView.jsp");
 
-		}else if(zurueckzp.equals("Zum Portal")){
-			
+		} else if (zurueckzp.equals("Zum Portal")) {
 
 			response.sendRedirect("../jsp/PortalView.jsp");
-			
+
+		} else if (zurueckza.equals("Zur Agenda")) {
+
+			response.sendRedirect("../jsp/AgendaView.jsp");
 		} else {
 
 		}

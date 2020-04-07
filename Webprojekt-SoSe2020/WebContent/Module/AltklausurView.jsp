@@ -20,7 +20,7 @@
 	</form>
 
 	<div class="backgroundWir">
-		<div class="Anfang">
+		<div class="Anfang2">
 			<h1>Altklausur</h1>
 
 			<div class="Anfang2">

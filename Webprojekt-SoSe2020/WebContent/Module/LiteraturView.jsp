@@ -33,11 +33,11 @@
 			<div class="Anfangdiv">
 				
 					<input type="submit" name="indenwarenkorb" value="In den Warenkorb"
-						class="submitSetting" /> <input type="submit" name="zurueckzp"
-						value="Zum Portal" class="submitSettingPortal">
-				
+						class="submitSetting" /> <input type="submit" name="zurueckza" value="Zur Agenda"
+						class="submitSettingPortal">
 			</div>
 		</div>
+		<br>
 	</div>
 	</form>
 	<!-- FOOTER -->

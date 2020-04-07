@@ -54,8 +54,8 @@
 										value="Zurück">Zurück</button>
 								</td>
 								<td>
-									<button class="glow-on-hover" type="submit" name="notizen"
-										value="Notizen">Quiz</button>
+									<button class="glow-on-hover" type="submit" name="quiz"
+										value="Quiz">Quiz</button>
 								</td>
 							</tr>
 						</table>

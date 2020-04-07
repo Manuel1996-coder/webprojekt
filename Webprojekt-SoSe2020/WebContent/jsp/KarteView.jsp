@@ -42,6 +42,14 @@
 				</div>
 			</div>
 		</div>
+		
+		<div class="Anfangdiv">
+			<form action="./EinstellungenAppl.jsp" method="get">
+				<input type="submit" value="Zum Portal" name="zurück" id="detail"
+					class="submitSettingPortal">
+			</form>
+		</div>
+		
 	</div>
 	<!-- FOOTER -->
 	<form action="../jsp/StartseiteAppl.jsp" method="get">

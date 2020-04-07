@@ -134,7 +134,7 @@ public class SkriptBean {
 			break;
 		case "VWL":
 			this.setProf("Markus Heilig");
-			this.setSkript("../Skript/Skript2/VWL.pdf");
+			this.setSkript("../Skript/Skript3/VWL.pdf");
 			this.setAltklausur("../Altklausuren/Semester3/VWL.pdf");
 
 			break;

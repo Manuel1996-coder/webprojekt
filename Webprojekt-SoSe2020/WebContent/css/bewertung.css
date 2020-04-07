@@ -230,7 +230,7 @@ input[type=text] {
 	width: 50%;
 	padding: 12px 20px;
 	margin: 8px 0;
-	display: inline-block;
+	display: list-item;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
@@ -275,7 +275,7 @@ input[type=text] {
 	font-size: 14px;
 	text-align: center;
 	float: none;
-	margin-bottom: 20%;
+
 }
 
 .submitSettingPortal:hover {
@@ -287,7 +287,6 @@ input:hover {
 }
 
 /** Sternebewertung **/
-
 span#Bewertung {
  line-height: 35px;
   display: none;
@@ -295,6 +294,8 @@ span#Bewertung {
 
 span.sternebewertung {
  float: Left;
+
+
 }
 
 span.sternebewertung:not(:checked) > input {
@@ -330,7 +331,6 @@ span.sternebewertung:not(:checked) > label:hover ~ label {
  text-shadow: 1px 1px #F29E02, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
 }
 
-
 span.sternebewertung > input:checked + label:hover,
 span.sternebewertung > input:checked + label:hover ~ label,
 span.sternebewertung > input:checked ~ label:hover,
@@ -339,6 +339,7 @@ span.sternebewertung > label:hover ~ input:checked ~ label {
  color: #F9B500;
  text-shadow: 1px 1px #F8BA01, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
 }
+
 /**----Footer----**/
 .start-footer {
 	position: absolute;
@@ -368,4 +369,8 @@ td {
 .mittig {
 	text-align: center;
 	float: none;
+}
+
+.size {
+	size: 200%;
 }
