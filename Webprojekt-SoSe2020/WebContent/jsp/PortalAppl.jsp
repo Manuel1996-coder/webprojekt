@@ -483,7 +483,7 @@
 			kb.publikationen();
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
-		}else if (UFUDL.equals("U-FÜhrung & DL-Mgmt")) {
+		}else if (UFUDL.equals("U-Fuehrung & Dl-Mgmt")) {
 			kb.setModulValue(UFUDL);
 			kb.setModul("UFUDL");
 			kb.setButton(true);

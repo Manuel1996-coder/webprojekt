@@ -88,7 +88,7 @@
 									<li><input type="submit" name="OR"
 										value="Operations Research" /></li>
 									<li><input type="submit" name="UFUDL"
-										value="U-FÜhrung & DL-Mgmt" /></li>
+										value="U-Fuehrung & Dl-Mgmt" /></li>
 									<li><input type="submit" name="betriebsrechner"
 										value="Betriebssys. & Rechnernetze" /></li>
 									<li><input type="submit" name="algoDatenbanken"

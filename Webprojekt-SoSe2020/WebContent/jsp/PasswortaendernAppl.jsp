@@ -25,10 +25,6 @@
 			return s;
 	}%>
 
-
-
-
-
 	<%
 		String speichern = this.denullify(request.getParameter("speichern"));
 		String zurueckEinstellungen = this.denullify(request.getParameter("zurueckEinstellungen"));
@@ -48,7 +44,7 @@
 
 					lb.updatePassword();
 
-					response.sendRedirect("./PasswortaendernView.jsp");
+					response.sendRedirect("./LoginView.jsp");
 
 				} else {
 
@@ -56,7 +52,7 @@
 				}
 			} catch (SQLException se) {
 
-				response.sendRedirect("./PortalView.jsp");
+				response.sendRedirect("./PasswortaendernView.jsp");
 			}
 
 			//response.sendRedirect("./LoginView.jsp");

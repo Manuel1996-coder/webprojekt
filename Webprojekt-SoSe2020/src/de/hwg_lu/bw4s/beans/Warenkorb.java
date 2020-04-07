@@ -26,7 +26,7 @@ public class Warenkorb {
 		
 		this.modul = modul;
 	}
-/*
+
 	public String warenkorbEinführen() {
 		String html = "";
 		
@@ -50,7 +50,7 @@ public class Warenkorb {
 
 		return html;
 	}
-	*/
+	
 	
 	// Artikel vom Warenkorb löschen
 	
