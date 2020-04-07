@@ -10,8 +10,24 @@ public class StartseiteBean {
 		String header = "";
 
 		header += "<header>\n"
-				+ "		<a href=\"../jsp/PortalView.jsp\"><img src=\"../img/imgStart/logo.png\" class=\"logo\" title=\"lazyNerds\"/></a>\n"
+				+ "		<a href=\"../jsp/StartseiteView.jsp\"><img src=\"../img/imgStart/logo.png\" class=\"logo\" title=\"lazyNerds\"/></a>\n"
 				+ "					<div class=\"header-menu\">\n"
+				+ "									<input type=\"submit\" name=\"home\" value=\"Home\" class=\"submit\"> <input \n"
+				+ "									type=\"submit\" name=\"wir\" value=\"Wer wir sind\" class=\"submit\"> <input\n"
+				+ "								type=\"submit\" name=\"einloggen\" value=\"Einloggen\" class=\"submit\"> <input\n"
+				+ "									type=\"submit\" name=\"register\" value=\"Registrieren\" class=\"submit\">\n"
+				+ "								</div> </header>";
+
+		return header;
+	}
+
+	public String getHeaderAsHtml2() {
+		String header = "";
+
+		header += "<header>\n"
+				+ "		<a href=\"../jsp/StartseiteView.jsp\"><img src=\"../img/imgStart/logo.png\" class=\"logo\" title=\"lazyNerds\"/></a>\n"
+				+ "					<div class=\"header-menu\">\n"
+				+ "<input type=\"submit\" name=\"portal\" value=\"Wifo-Portal\" class=\"submit\">"
 				+ "									<input type=\"submit\" name=\"home\" value=\"Home\" class=\"submit\"> <input \n"
 				+ "									type=\"submit\" name=\"wir\" value=\"Wer wir sind\" class=\"submit\"> <input\n"
 				+ "								type=\"submit\" name=\"einloggen\" value=\"Einloggen\" class=\"submit\"> <input\n"

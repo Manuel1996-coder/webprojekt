@@ -49,7 +49,7 @@
 				<i class="fas fa-lock"></i> <input type="password" name="password"
 					placeholder="Passwort" value="">
 			</div>
-			<a href="#" id="a">Passwort vergessen?</a> <input type="submit"
+			<a href="../jsp/LoadingView.jsp" id="a">Passwort vergessen?</a> <input type="submit"
 				class="btn" name="login" value="Anmelden"> Neu bei
 			LazyNerds? <a href="./LoginAppl.jsp?zurReg=zurReg"
 				href="../css/LoginStyle.css"> Registrieren</a>

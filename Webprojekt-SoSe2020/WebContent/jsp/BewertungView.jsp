@@ -15,7 +15,7 @@
 
 	<!-- HEADER -->
 	<form action="../jsp/StartseiteAppl.jsp" method="get">
-		<jsp:getProperty property="headerAsHtml" name="sb" />
+		<jsp:getProperty property="headerAsHtml2" name="sb" />
 	</form>
 	
 	<form action="./BewertungAppl.jsp" method="get">

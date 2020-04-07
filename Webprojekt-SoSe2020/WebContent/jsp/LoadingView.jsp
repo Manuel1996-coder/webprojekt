@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Notizen | LazyNerds</title>
+<title>Loading | lazyNerds</title>
 </head>
 <link type="text/css" rel="stylesheet" href="../css/bewertung.css" />
 <body>
@@ -18,20 +18,22 @@
 		<jsp:getProperty property="headerAsHtml" name="sb" />
 	</form>
 
-	<form action="NotizenAppl.jsp" method="get">
+	<form action="StartseiteAppl.jsp" method="get">
 		<div class="backgroundWir">
 			<div class="Anfang">
 				<div class="Kasten">
-					<%=nb.getHTMLNotizen()%>
+				<h1>Diese Seite ist aktuell noch in Bearbeitung. Wir bitten um Geduld...</h1>
+				<div class="Kasten">
+				<img src="../img/imgStart/ungeduldig.gif">
+				</div>
 				</div>
 
 				<div class="Anfangdiv">
-					<input type="submit" name="speichern" value="Speichern"
-						class="submitSetting"> <input type="submit"
-						name="zurueckzs" value="Zurück zur Agenda"
+					<input type="submit"
+						name="zsartseite" value="Zurück zur Startseite"
 						class="submitSettingPortal">
 				</div>
-			</div>
+			</div><br>
 		</div>
 	</form>
 	<!-- FOOTER -->

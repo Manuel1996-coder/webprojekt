@@ -48,9 +48,9 @@
 						Auto, Beziehung oder meinen Mitschrieben. Ich wusste nie was
 						P&uuml;nktlichkeit bedeutet. Und schon gar nicht wie man einen
 						Skript bearbeitet. Sei eine Ver&auml;ndung f&uuml;r dich selbst
-						und registriere dich kostenlos bei uns im <a
-							href="../jsp/RegView.jsp">Portal</a> ein. Wir garantieren dir,
-						dein Studium so einfach wie m&ouml;glich zu gestalten!
+						und<a href="../jsp/RegView.jsp"> registriere dich kostenlos
+							bei uns im Portal</a> ein. Wir garantieren dir, dein Studium so
+						einfach wie m&ouml;glich zu gestalten!
 					</h5>
 				</div>
 				<div class="panel panel-test2">

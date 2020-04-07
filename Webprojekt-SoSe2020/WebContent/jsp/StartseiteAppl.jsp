@@ -20,6 +20,7 @@
 
 	<%
 		String home = this.denullify(request.getParameter("home"));
+		String portal = this.denullify(request.getParameter("portal"));
 		String wir = this.denullify(request.getParameter("wir"));
 		String einloggen = this.denullify(request.getParameter("einloggen"));
 		String register = this.denullify(request.getParameter("register"));
@@ -29,6 +30,8 @@
 		String kontakt = this.denullify(request.getParameter("kontakt"));
 		String feedback = this.denullify(request.getParameter("feedback"));
 		String support = this.denullify(request.getParameter("support"));
+		
+		String zstartseite = this.denullify(request.getParameter("zstartseite"));
 
 		if (register.equals("Registrieren")) {
 			response.sendRedirect("../jsp/RegView.jsp");
@@ -40,6 +43,10 @@
 
 		else if (home.equals("Home")) {
 			response.sendRedirect("../jsp/StartseiteView.jsp");
+		}
+
+		else if (portal.equals("Wifo-Portal")) {
+			response.sendRedirect("../jsp/PortalView.jsp");
 		}
 
 		else if (datenschutz.equals("Datenschutz")) {
@@ -64,8 +71,8 @@
 
 		else if (support.equals("Support")) {
 			response.sendRedirect("../jsp/HilfeView.jsp");
-		} 
-		
+		}
+
 		else {
 			response.sendRedirect("../jsp/StartseiteView.jsp");
 		}

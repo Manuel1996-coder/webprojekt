@@ -16,7 +16,7 @@
 
 		<!-- HEADER-->
 
-		<jsp:getProperty property="headerAsHtml" name="sb" />
+		<jsp:getProperty property="headerAsHtml2" name="sb" />
 
 		<!-- CONTENT -->
 

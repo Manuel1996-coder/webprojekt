@@ -178,7 +178,7 @@ h5 {
 	color: #797876;
 	text-decoration: none;
 	margin: 10%;
-	font-size: 16px;
+	font-size: 20px;
 	font-family: fantasy;
 	font-style: normal;
 }
@@ -501,16 +501,16 @@ input {
 }
 
 a:link {
-	color: blue;
+	color: #d8d8d8;
 	font-size: 18px;
 }
 
 a:hover {
-	color: grey;
+	color: #F60;
 }
 
 a:visited {
-	color: white;
+	color: #9d9d9d;
 }
 
 .bodycolor {
