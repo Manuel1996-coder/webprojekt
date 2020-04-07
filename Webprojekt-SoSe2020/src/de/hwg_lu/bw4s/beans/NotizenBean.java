@@ -20,15 +20,18 @@ public class NotizenBean {
 
 		this.notiz = "";
 		this.dbConn = new PostgreSQLAccess().getConnection();
-		this.getNotizDateienfromDB();
+		
+		//this.getNotizDateienfromDB();
+		
 		this.matrkid = "";
 
 	}
 
-	public NotizenBean(String notiz, String matrkid) {
+	public NotizenBean(String notiz, String matrkid) throws SQLException {
 		super();
 		this.notiz = notiz;
 		this.matrkid = matrkid;
+		this.getNotizDateienfromDB();
 	}
 
 	public void createNotizTable() throws SQLException {
@@ -36,8 +39,17 @@ public class NotizenBean {
 				+ "notiz 	VARCHAR(2000) 	NOT NULL            )";
 
 		System.out.println(sql);
+		
+		try {
 		Statement myStat = dbConn.createStatement();
 		myStat.executeUpdate(sql);
+		
+		} catch (SQLException se) {
+			System.out.println("B DB schreiben fehlgeschlagen, Mist!");
+			System.out.println("SQLCode=" + se.getErrorCode());
+			System.out.println("Error-Message=" + se.getMessage());
+				
+	}
 		System.out.println("Tabelle <matrikelnummer>Notizen angelegt");
 
 		// ---------------------- insert --------------------
@@ -61,6 +73,8 @@ public class NotizenBean {
 			System.out.println("Error-Message=" + se.getMessage());
 
 		}
+		
+		this.getNotizDateienfromDB();
 
 		System.out.println("Notiz erfolgreich gespeichert");
 
@@ -104,7 +118,7 @@ public class NotizenBean {
 
 	public void getNotizDateienfromDB() throws SQLException {
 
-		String sql = "select * from " + this.matrkid + "notizen";
+		String sql = "select * from notizen" + this.matrkid;
 
 		System.out.println(sql);
 
@@ -113,10 +127,10 @@ public class NotizenBean {
 			ResultSet dbResult = dbConn.createStatement().executeQuery(sql);
 			while (dbResult.next()) {
 
-				String matrikid = dbResult.getString("matrikid");
+				String matrkid = dbResult.getString("matrkid");
 				String notiz = dbResult.getString("notiz");
 				this.setNotiz(notiz);
-				this.setMatrkid(matrikid);
+				this.setMatrkid(matrkid);
 
 			}
 		} catch (SQLException se) {

@@ -45,8 +45,8 @@
 			response.sendRedirect("../Module/NotizenView.jsp");
 		} else
 		
-			if (zurueckzs.equals("Zurück zum Skript")) {
-			response.sendRedirect("../Module/NotizenView.jsp");
+			if (zurueckzs.equals("Zurück zur Agenda")) {
+			response.sendRedirect("../jsp/AgendaView.jsp");
 		}	
 	%>
 </body>

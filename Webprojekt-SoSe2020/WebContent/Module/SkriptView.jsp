@@ -21,7 +21,8 @@
 	<form action="../jsp/StartseiteAppl.jsp" method="get">
 		<jsp:getProperty property="headerAsHtml" name="sb" />
 	</form>
-
+  
+  <form action="../Module/SkriptAppl.jsp" method="get">    
 	<div class="backgroundWir">
 		<h1>Skript</h1>
 		<div class="Anfang">
@@ -44,14 +45,16 @@
 
 			<div class="Anfangdiv">
 
-				<form action="../Module/SkriptAppl.jsp" method="get">
+				
 					<input type="submit" name="speichern" value="Speichern"
 						class="submitSetting"> <input type="submit"
 						name="zurueckza" value="Zur Agenda" class="submitSettingPortal">
-				</form>
+		
 			</div>
 		</div>
 	</div>
+	
+	</form>	
 	<!-- FOOTER -->
 	<form action="../jsp/StartseiteAppl.jsp" method="get">
 		<jsp:getProperty property="startFooterAsHtml" name="sb" />

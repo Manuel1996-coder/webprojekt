@@ -28,7 +28,7 @@
 				<div class="Anfangdiv">
 					<input type="submit" name="speichern" value="Speichern"
 						class="submitSetting"> <input type="submit"
-						name="zurueckzs" value="Zurück zum Skript"
+						name="zurueckzs" value="Zurück zur Agenda"
 						class="submitSettingPortal">
 				</div>
 			</div>

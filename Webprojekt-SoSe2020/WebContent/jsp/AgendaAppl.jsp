@@ -34,10 +34,14 @@
 
 			response.sendRedirect("../Module/ProfView.jsp");
 		} else if (skript.equals("SKRIPT")) {
+			
 			nb.setMatrkid(lb.getMatrkid());
+			
 			try {
+				
 				nb.createNotizTable();
 				//nb.getNotizDateienfromDB();
+			
 			} catch (SQLException se) {
 
 				System.out.println("B DB schreiben fehlgeschlagen, Mist!");
