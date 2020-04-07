@@ -45,7 +45,6 @@
 
 			<div class="Anfangdiv">
 
-				
 					<input type="submit" name="speichern" value="Speichern"
 						class="submitSetting"> <input type="submit"
 						name="zurueckza" value="Zur Agenda" class="submitSettingPortal">
