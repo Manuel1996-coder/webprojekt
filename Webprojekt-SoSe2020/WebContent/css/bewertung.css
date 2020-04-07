@@ -330,6 +330,7 @@ span.sternebewertung:not(:checked) > label:hover ~ label {
  text-shadow: 1px 1px #F29E02, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
 }
 
+
 span.sternebewertung > input:checked + label:hover,
 span.sternebewertung > input:checked + label:hover ~ label,
 span.sternebewertung > input:checked ~ label:hover,
