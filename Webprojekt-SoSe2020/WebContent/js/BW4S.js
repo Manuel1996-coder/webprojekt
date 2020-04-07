@@ -61,11 +61,7 @@ function checkUserid(textInput){
 		myMsg = "Die Matrikelnummer darf nicht leer sein";
 	}else if(textInput.length < 6){
 		myMsg = "Die Matrikelnummer muss mindestens 6 Zeichen lang sein";
-	}else if(document.textInput.value < "0" || "9" < document.textInput.value){
-		document.textInput.value = "";
-		document.textInput.focus();
-		myMsg = "Die Matrikelnummer nur zahlen";
-		return false;
+
 		
 	}else{
 		myMsg = "";
