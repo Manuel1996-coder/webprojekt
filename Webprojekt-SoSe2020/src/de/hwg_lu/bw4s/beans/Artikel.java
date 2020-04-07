@@ -32,11 +32,11 @@ public class Artikel {
 		html += "<table>";
 		html += "<tr>";
 		html += "<td>";
-		html += "<img  src='../img/" + this.aname + ".jpg' width= '250' height= '300'/> class='Anfang'";
+		html += "<img  src='../img/" + this.aname + ".jpg' width= '250' height= '300'/>";
 		html += "</td>";
 		html += "<td>";
 		html += "<h4>" + this.aname + "<br> von " + this.autor + "</h4>";
-		html += "<h4>EUR"+ this.preis + "</h4>";
+		html += "<h4>EUR "+ this.preis + "</h4>";
 		html += "<br><br>" + " <h4>Hier auswählen: <input type='checkbox' name='artikel' value=' </h4>" + "<h4>"
 				+ this.anr + "<h4>'/>";
 		html += "</td>";
