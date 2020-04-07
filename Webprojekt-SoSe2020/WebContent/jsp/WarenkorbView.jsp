@@ -25,13 +25,15 @@
 			<th>Preis</th>
 			<th>Gesamt</th>
 		</tr>
+		<tr>
 		<%=kb.getHTMLFromAusgewaehlteWarenkorbProdukte()%>
+		</tr>
 		<tr>
             <td> </td>
 			<td> </td>
 			<td> </td>
 			<td>Summe Warenkorb:</td>
-			<td> <%= kb.getSumme() %></td>
+			<td> <%= kb.getSumme()%> EUR </td>
 		</tr>
 
 	</table>

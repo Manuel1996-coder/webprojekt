@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Rechnung | lazyNerds</title>
 </head>
 <link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
 <jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean"

@@ -21,7 +21,7 @@
 	<form action="../jsp/StartseiteAppl.jsp" method="get">
 		<jsp:getProperty property="headerAsHtml2" name="sb" />
 	</form>
-
+<form action="LiteraturAppl.jsp" method="get">
 	<div class="backgroundWir">
 		<div class="Anfang">
 			<h1>
@@ -31,14 +31,15 @@
 			<jsp:getProperty name="kb" property="HTMLFromArtikel" />
 
 			<div class="Anfangdiv">
-				<form action="LiteraturAppl.jsp" method="get">
+				
 					<input type="submit" name="indenwarenkorb" value="In den Warenkorb"
 						class="submitSetting" /> <input type="submit" name="zurueckzp"
 						value="Zum Portal" class="submitSettingPortal">
-				</form>
+				
 			</div>
 		</div>
 	</div>
+	</form>
 	<!-- FOOTER -->
 	<form action="../jsp/StartseiteAppl.jsp" method="get">
 		<jsp:getProperty property="startFooterAsHtml" name="sb" />
