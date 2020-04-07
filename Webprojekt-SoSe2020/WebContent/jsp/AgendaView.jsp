@@ -55,7 +55,7 @@
 								</td>
 								<td>
 									<button class="glow-on-hover" type="submit" name="notizen"
-										value="Notizen">Notizen</button>
+										value="Notizen">Quiz</button>
 								</td>
 							</tr>
 						</table>

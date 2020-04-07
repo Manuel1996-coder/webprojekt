@@ -38,7 +38,7 @@
 				</div>
 				<div class="panel panel-test1">
 					<div class="Klein">
-						<%=nb.getHTMLNotizen()%>
+						<%=nb.getHTMLNotizen2()%>
 					</div>
 				</div>
 			</div>

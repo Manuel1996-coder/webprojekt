@@ -143,18 +143,18 @@ public class NotizenBean {
 
 	}
 
-//	public String getHTMLNotizen2() {
-//
-//		String html1 = "";
-//
-//		html1 += "<br><h3> Notizen von " + this.matrkid + "</h3>";
-//		html1 += "<textarea rows='50' cols='90%' name='notiz' style='position:relative;'>";
-//		html1 += this.notiz;
-//		html1 += "</textarea>";
-//
-//		return html1;
-//
-//	}
+	public String getHTMLNotizen2() {
+
+		String html1 = "";
+
+		html1 += "<br><h3> Notizen von " + this.matrkid + "</h3>";
+		html1 += "<textarea rows='50' cols='90%' name='notiz' style='position:relative;'>";
+		html1 += this.notiz;
+		html1 += "</textarea>";
+
+		return html1;
+
+	}
 
 	public String getHTMLNotizen() {
 

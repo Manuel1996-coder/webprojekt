@@ -94,7 +94,7 @@
 
 			}
 
-			response.sendRedirect("../Module/NotizenView.jsp");
+			response.sendRedirect("../jsp/AgendaView.jsp");
 		}
 	%>
 

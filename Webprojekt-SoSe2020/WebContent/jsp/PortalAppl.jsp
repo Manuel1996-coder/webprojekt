@@ -468,15 +468,6 @@
 			
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		else if (Seminar.equals("Seminar")) {
 			kb.setModulValue(Seminar);
 			kb.setModul("Seminar");
@@ -509,19 +500,6 @@
 			
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	
 		else if (einstellungen.equals("Einstellungen")) {
 			try{
@@ -537,7 +515,7 @@
 			
 		} else {
 			mb.setGeneralWelcome();
-			response.sendRedirect("./LoginAppl.jsp");
+			response.sendRedirect("./PortalView.jsp");
 		}
 	%>
 </body>
