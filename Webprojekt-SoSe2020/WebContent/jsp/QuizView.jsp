@@ -1,53 +1,44 @@
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" media="screen" href="./Beispiel:SELFHTML-Beispiel-Grundlayout.css" />
-	<title>Ratespiel</title>
-	<style>
-	
-	body
-	{
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" media="screen"
+	href="./Beispiel:SELFHTML-Beispiel-Grundlayout.css" />
+<title>Ratespiel</title>
+<style>
+body {
 	background-color: #151414;
-	color: #fff;
-	
-	}
-
-h1 { 
-	background: transparent none repeat scroll 0 0 !important;
-	
 	color: #fff;
 }
 
-h2 { 
-	
+h1 {
+	background: transparent none repeat scroll 0 0 !important;
+	color: #fff;
+}
+
+h2 {
 	color: #fff;
 }
 
 #detail {
-margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
-input
-{
-cursor: pointer;
-	
+input {
+	cursor: pointer;
 	width: 15%;
-  background: none;
-  border: 2px solid #FF4500;
-  color: white;
-  padding: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  margin: 12px 0;
-  margin-bottom: 0px;
-
+	background: none;
+	border: 2px solid #FF4500;
+	color: white;
+	padding: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 12px 0;
+	margin-bottom: 0px;
 }
 
 input:hover {
-
-background-color: #FF8C00;
-	
+	background-color: #FF8C00;
 }
 
 #quiz ul {
@@ -73,17 +64,14 @@ background-color: #FF8C00;
 	text-align: start;
 	max-width: 33em;
 	color: #fff;
-	
-	
 }
 
-#quiz label:hover{
+#quiz label:hover {
 	background-color: #FF8C00;
 	color: #fff;
 }
 
-#quiz input:checked ~ label,
-#quiz input:focus ~ label  {
+#quiz input:checked ~ label, #quiz input:focus ~ label {
 	background-color: #FF4500;
 	border-color: #FF4500;
 	color: #fff;
@@ -92,61 +80,81 @@ background-color: #FF8C00;
 #quiz input {
 	left: -9999px;
 	position: absolute;
+}
+
+#quiz
+ 
+button
+:not
+ 
+(
+.startBtn
+ 
+)
+{
+display
+:
+ 
+none
+;
+
 	
+width
+:
+ 
+15%;
+background
+:
+ 
+none
+;
+
+	
+margin-bottom
+:
+ 
+0
+px
+;
+
+	
+text-decoration
+:
+ 
+none
+;
+
+	
+cursor
+:
+ 
+pointer
+;
+
+
+}
+button {
+	width: 10%;
 }
 
-#quiz button:not(.startBtn) {
-	display: none;
-	width: 15%;
-  background: none;
-   margin-bottom: 0px;
-  
-  
-  
-  
-  
-  text-decoration: none;
-  
-  
-  
-  cursor: pointer;
-  
-}
-
-
-
-button{
-
-width: 10%;
-
-
-}
-
-#quiz button,
-#quiz label {
+#quiz button, #quiz label {
 	cursor: pointer;
-	
 	width: 15%;
-  background: none;
-  border: 2px solid #FF4500;
-  color: white;
-  padding: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  margin: 12px 0;
-   margin-bottom: 0px;
+	background: none;
+	border: 2px solid #FF4500;
+	color: white;
+	padding: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 12px 0;
+	margin-bottom: 0px;
 }
-
 
 #quiz button:hover {
-
-background-color: #FF8C00;
-
-	
+	background-color: #FF8C00;
 }
 
 /* listing with solutions */
-
 .question {
 	font-weight: normal;
 	color: #fff
@@ -170,23 +178,19 @@ background-color: #FF8C00;
 	color: #f00;
 }
 
-.correct:before,
-.wrong:before {
+.correct:before, .wrong:before {
 	font: 2em bold;
 	padding: 0 0.2em;
 }
 
-#scores,
-#scores td,
-#scores th {
+#scores, #scores td, #scores th {
 	border: 1px solid black;
 	border-collapse: collapse;
 	text-align: center;
 	color: #fff
 }
-
-	</style>
-	<script>
+</style>
+<script>
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#Polyfill
 // Production steps of ECMA-262, Edition 6, 22.1.2.1
 if (!Array.from) {
@@ -354,10 +358,10 @@ var myQuiz = {
 	// data could be filled from an external source (JSON)
 	data: [{
 		category: 'Spass',
-		question: 'Welcher Prof ist der beste?',
+		question: 'Welcher Professor ist der Beste?',
 		solution: 'Professor Roeckle',
-		falses: ['Professor Bonguard', 'Professor Selchert', 'Herr Sponheimer'],
-		explanation: 'Es gibt nur eine Antwort'
+		falses: ['Professor Bonguard', 'Professor Selchert', 'Professor Dorrhauer'],
+		explanation: 'Es gibt nur eine Antwort!'
 	}, {
 		category: 'Uni',
 		question: 'Wie viele Semester studieren wir?',
@@ -366,11 +370,32 @@ var myQuiz = {
 		explanation: 'Wir studieren 6 Semester.'
 	}, {
 		category: 'Prog',
-		question: 'Eine Frage?',
-		solution: 'richte Antwort',
-		falses: ['1. falsche Antwort', '2. falsche Antwort', '3. falsche Antwort'],
-		explanation: 'Test Erklärung'
-	}],
+		question: 'Welche Programmiersprachen haben wir sehr gut gelernt?',
+		solution: 'Java',
+		falses: ['ABAP', 'PHP', 'JavaScript', 'C#'],
+		explanation: 'Wir sind die Experten!'
+	},
+	{
+	category: 'Spass',
+	question: 'Lieblingsessen an der Mensa?',
+	solution: 'Nichts',
+	falses: ['Cevapcici', 'Reis mit Hähnchen', 'Salat'],
+	explanation: 'Es gibt nur eine Antwort!'
+}, {
+	category: 'Prog',
+	question: 'Was ist ein gültiger Schlüsselwort in Java?',
+	solution: 'abstract',
+	falses: ['goto', 'sizeof', '0', 'abstrakt'],
+	explanation: 'Denk nach!'
+}, {
+	category: 'Uni',
+	question: 'Wer ist am Coolsten?',
+	solution: 'Prof. Röckle',
+	falses: ['V. Mayer', 'Prof. Küppers', 'Prof. Röckle', 'Frau Gondrom'],
+	explanation: 'Es gibt nur eine Antwort!'
+}
+	],
+	
 
 	emptyContainer: function () {
 		var t = this;
@@ -727,11 +752,11 @@ document.addEventListener("DOMContentLoaded", function () {
 			<h2 id="intro">Viel Spass beim Spielen!</h2>
 		</form>
 	</main>
-	
+
 	<form action="./QuizAppl.jsp" method="get">
-	
-	<input type="submit"value="Zurueck zu Home" name="zurück" id="detail"> 
-	
+
+		<input type="submit" value="Zurueck zu Home" name="zurück" id="detail">
+
 	</form>
 
 
