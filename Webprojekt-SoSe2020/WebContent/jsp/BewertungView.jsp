@@ -50,19 +50,19 @@
 
 					<br> <br> <br> <br>
 					<h2>Bewerte lazyNerds mit einem Kommentar...</h2>
+					
 					<div class="Kasten">
 						<input type="text" name="kommentar" value=""
 							placeholder="Dein Kommentar...">
-					</div>
-					<div class="Anfangdiv">
+							</div>
+					
 						<input type="submit" name="speichern" value="Speichern"
 							class="submitBewertung"> <input type="submit"
 							name="timeline" value="Zur Timeline" class="submitBewertung">
-						<input type="submit" value="Zum Portal" name="zurück" id="detail"
-							class="submitSettingPortal">
+						
 					</div>
+					
 				</div> 
-			</div>
 	</form>
 
 	<!-- FOOTER -->

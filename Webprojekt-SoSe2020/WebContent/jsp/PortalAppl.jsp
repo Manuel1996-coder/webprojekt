@@ -38,7 +38,7 @@
 		String logout = this.denullify(request.getParameter("logout"));
 		String appl = this.denullify(request.getParameter("appl"));
 		String comeFrom = this.denullify(request.getParameter("comeFrom"));
-		String home = this.denullify(request.getParameter("home"));
+		String startseite = this.denullify(request.getParameter("startseite"));
 		String hilfe = this.denullify(request.getParameter("hilfe"));
 		// Mein Profil
 		String ratespiel = this.denullify(request.getParameter("ratespiel"));
@@ -171,7 +171,7 @@
 			
 			response.sendRedirect("../jsp/AgendaView.jsp");
 			
-		}else if (home.equals("Home")) {
+		}else if (startseite.equals("Startseite")) {
 			
 			
 			

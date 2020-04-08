@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Agenda | lazyNerds</title>
 <link type="text/css" rel="stylesheet" href="../css/agenda.css" />
+
 </head>
 <body>
 	<jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean"

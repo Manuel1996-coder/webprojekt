@@ -8,7 +8,7 @@
 <link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
 
 </head>
-<link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
+
 <jsp:useBean id="kb" class="de.hwg_lu.bw4s.beans.SkriptBean"
 	scope="session" />
 

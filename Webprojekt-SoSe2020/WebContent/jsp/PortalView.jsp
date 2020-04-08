@@ -43,7 +43,7 @@
 
 					<ul>
 						<li class="active"><i class="fas fa-home"></i> <input
-							type="submit" name="home" value="Startseite"></li>
+							type="submit" name="startseite" value="Startseite"></li>
 
 						<li><i class="far fa-smile"></i> <input type="submit"
 							name="1semester" value="1.Semester" />

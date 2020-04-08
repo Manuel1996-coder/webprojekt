@@ -27,7 +27,9 @@ public class Artikel {
 	}
 
 	public String toKaestchen() {
+
 		String html = "";
+
 		html += "<div class='KastenMitte'>";
 		html += "<table>";
 		html += "<tr>";
@@ -36,15 +38,15 @@ public class Artikel {
 		html += "</td>";
 		html += "<td>";
 		html += "<h4>" + this.aname + "<br> von " + this.autor + "</h4>";
-		html += "<h4>EUR "+ this.preis + "</h4>";
-		html += "<br><br>" + " <h4>Hier auswählen: <input type='checkbox' name='artikel' value=' </h4>" + "<h4>"
-				+ this.anr + "<h4>'/>";
+		html += " EUR " + this.preis;
+		html += "<br><br>" + "Hier auswählen: <input type='checkbox' name='artikel' value='" + this.anr + "' />";
 		html += "</td>";
 		html += "<tr>";
 		html += "</table>";
 		html += "</div>";
 
 		return html;
+
 	}
 
 	public String warenkorbEinführen() {
