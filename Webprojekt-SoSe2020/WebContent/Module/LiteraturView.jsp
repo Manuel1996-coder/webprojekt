@@ -21,24 +21,24 @@
 	<form action="../jsp/StartseiteAppl.jsp" method="get">
 		<jsp:getProperty property="headerAsHtml2" name="sb" />
 	</form>
-<form action="LiteraturAppl.jsp" method="get">
-	<div class="backgroundWir">
-		<div class="Anfang">
-			<h1>
-				Literatur
-				<%=kb.getModulValue()%></h1>
+	<form action="LiteraturAppl.jsp" method="get">
+		<div class="backgroundWir">
+			<div class="Anfang">
+				<h1>
+					Literatur
+					<%=kb.getModulValue()%></h1>
 
-			<jsp:getProperty name="kb" property="HTMLFromArtikel" />
+				<jsp:getProperty name="kb" property="HTMLFromArtikel" />
 
-			<div class="Anfangdiv">
-				
+				<div class="Anfangdiv">
+
 					<input type="submit" name="indenwarenkorb" value="In den Warenkorb"
-						class="submitSetting" /> <input type="submit" name="zurueckza" value="Zur Agenda"
-						class="submitSettingPortal">
+						class="submitSetting" /> <input type="submit" name="zurueckza"
+						value="Zur Agenda" class="submitSettingPortal">
+				</div>
 			</div>
+			<br>
 		</div>
-		<br>
-	</div>
 	</form>
 	<!-- FOOTER -->
 	<form action="../jsp/StartseiteAppl.jsp" method="get">
