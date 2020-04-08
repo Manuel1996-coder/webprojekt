@@ -27,29 +27,29 @@ public class Warenkorb {
 		this.modul = modul;
 	}
 
-	public String warenkorbEinführen() {
-		String html = "";
-		
-
-		html += "<tr>";
-		html += "<td><input type=\"text\" size=\"3\" value=\"1\"></td>";
-		html += "<td>" + this.aname + "</td>";
-		html += "<td>" + this.modul + "</td>";
-		html += "<td>" + this.preis + "</td>";
-		html += "<td>" + this.preis + "</td>";
-		html += "		<td>" + 
-				"<a href='./WarenkorbAppl.jsp?action=kill&value=" + 
-							1 +
-						"'>kill</a>" +
-				"</td>\n";
-		
-		html += "</tr>";
-		
-		
-
-
-		return html;
-	}
+//	public String warenkorbEinführen() {
+//		String html = "";
+//		
+//
+//		html += "<tr>";
+//		html += "<td><input type=\"text\" size=\"3\" value=\"1\"></td>";
+//		html += "<td>" + this.aname + "</td>";
+//		html += "<td>" + this.modul + "</td>";
+//		html += "<td>" + this.preis + "</td>";
+//		html += "<td>" + this.preis + "</td>";
+//		html += "		<td>" + 
+//				"<a href='./WarenkorbAppl.jsp?action=kill&value=" + 
+//							1 +
+//						"'>kill</a>" +
+//				"</td>\n";
+//		
+//		html += "</tr>";
+//		
+//		
+//
+//
+//		return html;
+//	}
 	
 	
 	// Artikel vom Warenkorb löschen
