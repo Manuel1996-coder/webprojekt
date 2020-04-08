@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ABWLVIEW</title>
+<title>Prof | lazyNerds</title>
 <link type="text/css" rel="stylesheet" href="../css/AlleModule.css" />
 
 <link type="text/css" rel="stylesheet" href="../css/warenkorb.css" />
