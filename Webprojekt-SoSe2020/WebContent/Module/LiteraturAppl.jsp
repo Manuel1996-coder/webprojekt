@@ -61,11 +61,15 @@
 
 			response.sendRedirect("../jsp/WarenkorbView.jsp");
 
-		} else if (zurueckzp.equals("Zum Portal")) {
+		} 
+		
+		else if (zurueckzp.equals("Zum Portal")) {
 
 			response.sendRedirect("../jsp/PortalView.jsp");
 
-		} else if (zurueckza.equals("Zur Agenda")) {
+		} 
+		
+		else if (zurueckza.equals("Zur Agenda")) {
 
 			response.sendRedirect("../jsp/AgendaView.jsp");
 		} else {

@@ -1,0 +1,328 @@
+@charset "UTF-8";
+
+body {
+	background-color: #151414;
+	color: #c6c5bf;
+}
+
+h1 {
+	background: transparent none repeat scroll 0 0 !important;
+	color: #c6c5bf;
+}
+
+h2 {
+	color: #dedcd8;
+	text-align: center;
+}
+
+h3 {
+	color: #dedcd8;
+}
+
+h4 {	fonz-size: 16px;
+	color: #c6c5bf;
+	text-align: left;
+	margin-top: 20px;
+		color: #dedcd8;
+		float: left;
+}
+
+#detail {
+	margin-bottom: 0px;
+}
+
+#quiz ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: #c6c5bf;
+	text-align: center;
+}
+
+#quiz li {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	list-style: none;
+	
+}
+
+#quiz label {
+	display: block;
+	background-color: #F60;
+	border: 2px solid #F60 border-radius: 0.2em;
+	margin: 0.1em 0;
+	padding: 1em 2em;
+	text-align: start;
+	max-width: 33em;
+	color: #c6c5bf;
+}
+
+#quiz label:hover {
+	background-color: #FF8C00;
+	color: #fff;
+}
+
+#quiz input:checked ~ label, #quiz input:focus ~ label {
+	background-color: #F60;
+	border-color: #F60;
+	color: #c6c5bf;
+}
+
+#quiz input {
+	left: -9999px;
+	position: absolute;
+}
+
+#quiz
+
+
+
+
+
+ 
+
+
+
+
+
+button
+
+
+
+
+
+
+
+
+
+
+:not
+
+
+
+
+
+ 
+
+
+
+
+
+(
+.startBtn
+
+
+
+
+
+ 
+
+
+
+
+
+)
+{
+display
+
+
+
+
+
+
+
+
+
+
+:
+
+
+
+
+
+ 
+
+
+
+
+
+none
+
+
+
+
+
+
+
+
+
+
+;
+width
+
+
+
+
+
+
+
+
+
+
+:
+
+
+
+
+
+ 
+
+
+
+
+
+15%;
+background
+
+
+
+
+:
+
+
+
+
+none
+
+
+
+
+;
+margin-bottom
+
+
+
+
+:
+
+
+
+
+0
+px
+
+
+
+
+;
+text-decoration
+
+
+
+
+:
+
+
+
+
+none
+
+
+
+
+;
+cursor
+
+
+
+
+:
+
+
+
+
+pointer
+
+
+
+
+;
+}
+button {
+	width: 20%;
+	text-align: center;
+}
+
+#quiz button, #quiz label {
+	cursor: pointer;
+	width: 15%;
+	background: #F60;
+	border: 1px solid #F60;
+	color: white;
+	padding: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 12px 0;
+	margin-bottom: 0px;
+
+}
+
+#quiz button:hover {
+	background-color: #ff9307;
+}
+
+/* listing with solutions */
+.question {
+	font-weight: normal;
+	color: #c6c5bf;
+	text-align: center;
+}
+
+.correct {
+	color: #0c0;
+}
+
+.wrong {
+	color: #c00;
+}
+
+.correct:before {
+	content: '✓';
+	color: #0d0;
+}
+
+.wrong:before {
+	content: '✗';
+	color: #f00;
+}
+
+.correct:before, .wrong:before {
+	font: 2em bold;
+	padding: 0 0.2em;
+}
+
+#scores, #scores td, #scores th {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	color: #fff
+}
+
+.backPortal {
+	width: 15%;
+	background-color: #2a2a2a;
+	color: white;
+	padding: 10px 20px;
+	margin: 8px 0px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	text-align: center;
+	float: left;
+
+}
+}

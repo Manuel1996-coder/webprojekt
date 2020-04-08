@@ -16,23 +16,26 @@
 	<form action="../jsp/StartseiteAppl.jsp" method="get">
 		<jsp:getProperty property="headerAsHtml2" name="sb" />
 	</form>
-	<form action="./VideoAppl.jsp" method="get">
-		<div class="background">
-			<h1>Für die HWG-LU Fan's - Imagefilm</h1>
-			<div class="Kasten">
+
+	<div class="background">
+		<h1>Für die HWG-LU Fan's - Imagefilm</h1>
+		<div class="Kasten">
+			<form action="./VideoAppl.jsp" method="get">
 				<video src="../mp4/vid.mp4" width="80%" height="450" controls>
 				</video>
+			</form>
+		</div>
+		<div style="text-align: center;">
+			<div style="display: inline-block; text-align: left;">
 
-			</div>
-			<div style="text-align: center;">
-				<div style="display: inline-block; text-align: left;">
-
-					<input type="submit" value="Zurück zum Portal" name="zurück"
-						id="detail" class="submitSettingPortal">
-				</div>
+				<form action="../jsp/EinstellungenAppl.jsp" method="get">
+					<input type="submit" value="Zum Portal"
+							name="zurück" id="detail" class="submitSettingPortal">
+				</form>
 			</div>
 		</div>
-	</form>
+	</div>
+
 	<!-- FOOTER -->
 	<form action="../jsp/StartseiteAppl.jsp" method="get">
 		<jsp:getProperty property="startFooterAsHtml" name="sb" />

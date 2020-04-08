@@ -33,7 +33,10 @@
 				<div class="Anfangdiv">
 
 					<input type="submit" name="indenwarenkorb" value="In den Warenkorb"
-						class="submitSetting" /> <input type="submit" name="zurueckza"
+						class="submitSetting" /> 
+						
+						
+						<input type="submit" name="zurueckza"
 						value="Zur Agenda" class="submitSettingPortal">
 				</div>
 			</div>

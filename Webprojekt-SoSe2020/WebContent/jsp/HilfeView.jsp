@@ -46,7 +46,7 @@
 										ändern?</font></b><br>
 							</p>
 							<p style="padding-left: 1em;">
-								Schau mal <a href="#">hier</a> vorbei.
+								Schau mal <a href="../jsp/PasswortaendernView.jsp">hier</a> vorbei.
 							</p>
 							<p>
 								<b><font class="color">Wie kann ich einen Buch
@@ -152,8 +152,8 @@
 							<p style="padding-left: 1em;">
 								Das Ratespiel auch lazyQuiz genannt besteht aus Fragen bezüglich
 								dem Thema Informatik. Es ist vom Schwierigkeitsgrad ganz still
-								gelassen. Aber trotzdem entwas kniffelig. Du solltest in der
-								Lage sein, allegmeine Fragen zu deinem Studium beantworten zu
+								gelassen. Aber trotzdem etwas kniffelig. Du solltest in der
+								Lage sein, allgemeine Fragen zu deinem Studium beantworten zu
 								können. Teste dich <a href="../jsp/QuizView.jsp">jetzt</a> selsbt
 							</p>
 							<p>

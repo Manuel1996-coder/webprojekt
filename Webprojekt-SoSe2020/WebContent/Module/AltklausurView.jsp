@@ -20,10 +20,10 @@
 	</form>
 
 	<div class="backgroundWir">
-		<div class="Anfang2">
+		<div class="Anfang">
 			<h1>Altklausur</h1>
 
-			<div class="Anfang2">
+			<div class="Rand">
 				<iframe src="<%=kb.getAltklausur()%>" width="100%" height="1000px">
 
 				</iframe>
@@ -35,6 +35,7 @@
 				</form>
 			</div>
 		</div>
+		<br>
 	</div>
 
 	<!-- FOOTER -->
